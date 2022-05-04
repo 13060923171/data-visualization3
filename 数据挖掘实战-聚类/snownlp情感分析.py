@@ -21,8 +21,12 @@ def emotion_scroe(x):
     fenshu = score.sentiments - 0.5
     return fenshu
 
+def wenchu(x):
+    text = re.sub(r'(?:回复)?(?://)?@[\w\u2E80-\u9FFF]+:?|\[\w+\]', ',', x)
+    return text
+
 df1 = pd.DataFrame()
-df1['content'] = content3
+df1['content'] = content3.apply(wenchu)
 df1['emotion_scroe'] = df1['content'].apply(emotion_scroe)
 df1.to_csv('snownlp情感分析.csv',encoding='utf-8-sig')
 
