@@ -17,9 +17,10 @@ from sklearn.decomposition import LatentDirichletAllocation
 from gensim import corpora, models
 import itertools
 import pyLDAvis
-import pyLDAvis.sklearn
+import pyLDAvis.gensim
 import gensim
 from tqdm import tqdm
+
 
 def snownlp_fx():
     df = pd.read_excel('realme最终数据.xlsx')
@@ -36,15 +37,13 @@ def snownlp_fx():
     df1 = pd.DataFrame()
     df1['content'] = content
     df1['emotion_scroe'] = df1['content'].apply(emotion_scroe)
-    df1.to_csv('./realme-data/realme-snownlp情感分析.csv',encoding='utf-8-sig',index=False)
+    df1.to_csv('./realme-data/realme-snownlp情感分析.csv', encoding='utf-8-sig', index=False)
 
 
 def wordclound_fx():
     df = pd.read_csv('./realme-data/realme-snownlp情感分析.csv')
     df1 = df[df['emotion_scroe'] >= 0.5]
     df2 = df[df['emotion_scroe'] < 0.5]
-
-
 
     def is_all_chinese(strs):
         for _char in strs:
@@ -237,75 +236,89 @@ def lda_tfidf():
     df2 = pd.DataFrame(data)
     df2['tfidf'] = df2['tfidf'].astype('float64')
     df2 = df2.sort_values(by=['tfidf'], ascending=False)
-    df2.to_csv('./realme-data/realme-tfidf.csv', encoding='utf-8-sig',index=False)
+    df2.to_csv('./realme-data/realme-tfidf.csv', encoding='utf-8-sig', index=False)
 
-    # 设置特征数
-    n_features = 2000
-    tf_vectorizer = TfidfVectorizer(strip_accents='unicode',
-                                    max_features=n_features,
-                                    max_df=0.99,
-                                    min_df=0.002)  # 去除文档内出现几率过大或过小的词汇
+    fr = open('./realme-data/realme-class-fenci.txt', 'r', encoding='utf-8')
+    train = []
+    for line in fr.readlines():
+        line = [word.strip() for word in line.split(' ')]
+        train.append(line)
 
-    tf = tf_vectorizer.fit_transform(corpus)
+    dictionary = corpora.Dictionary(train)
+    corpus = [dictionary.doc2bow(text) for text in train]
 
-    plexs = []
-    scores = []
-    n_max_topic = 5
-    for i in tqdm(range(1,n_max_topic)):
+    # 构造主题数寻优函数
+    def cos(vector1, vector2):  # 余弦相似度函数
+        dot_product = 0.0
+        normA = 0.0
+        normB = 0.0
+        for a, b in zip(vector1, vector2):
+            dot_product += a * b
+            normA += a ** 2
+            normB += b ** 2
+        if normA == 0.0 or normB == 0.0:
+            return (None)
+        else:
+            return (dot_product / ((normA * normB) ** 0.5))
 
-        lda = LatentDirichletAllocation(n_components=i,
-                                    max_iter=50,
-                                    learning_method='online',
-                                    learning_offset=50,
-                                    random_state=0)
-        lda.fit(tf)
-        plexs.append(lda.perplexity(tf))
-        scores.append(lda.score(tf))
-    print(plexs)
-    min_perplexity = plexs.index(min(plexs)) + 1
-    lda = LatentDirichletAllocation(n_components=min_perplexity,
-                                    max_iter=50,
-                                    learning_method='online',
-                                    learning_offset=50,
-                                    random_state=0)
-    lda.fit(tf)
+        # 主题数寻优
 
-    #区间最右侧的值，不能大于n_max_topic
-    x_data = [x for x in range(len(plexs))]
+    def lda_k(x_corpus, x_dict):
+        # 初始化平均余弦相似度
+        mean_similarity = []
+        mean_similarity.append(1)
+
+        # 循环生成主题并计算主题间相似度
+        for i in np.arange(2, 11):
+            lda = models.LdaModel(x_corpus, num_topics=i, id2word=x_dict)  # LDA模型训练
+            for j in np.arange(i):
+                term = lda.show_topics(num_words=50)
+
+            # 提取各主题词
+            top_word = []
+            for k in np.arange(i):
+                top_word.append([''.join(re.findall('"(.*)"', i)) \
+                                 for i in term[k][1].split('+')])  # 列出所有词
+
+            # 构造词频向量
+            word = sum(top_word, [])  # 列出所有的词
+            unique_word = set(word)  # 去除重复的词
+
+            # 构造主题词列表，行表示主题号，列表示各主题词
+            mat = []
+            for j in np.arange(i):
+                top_w = top_word[j]
+                mat.append(tuple([top_w.count(k) for k in unique_word]))
+
+            p = list(itertools.permutations(list(np.arange(i)), 2))
+            l = len(p)
+            top_similarity = [0]
+            for w in np.arange(l):
+                vector1 = mat[p[w][0]]
+                vector2 = mat[p[w][1]]
+                top_similarity.append(cos(vector1, vector2))
+
+            # 计算平均余弦相似度
+            mean_similarity.append(sum(top_similarity) / l)
+        return (mean_similarity)
+
+    # 计算主题平均余弦相似度
+    word_k = lda_k(corpus, dictionary)
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.rcParams['axes.unicode_minus'] = False
     plt.figure(figsize=(10, 8), dpi=300)
-    plt.plot(x_data,plexs)
-    plt.xlabel('number of topic')
-    plt.ylabel('perplexity')
+    plt.plot(word_k)
     plt.title('LDA评论主题数寻优')
-    plt.savefig('LDA评论主题数寻优.png')
+    plt.xlabel('主题数')
+    plt.ylabel('平均余弦相似度')
+    plt.savefig('./realme-data/LDA评论主题数寻优.png')
     plt.show()
 
-    # 显示主题数 model.topic_word_
-    # print(lda.components_)
+    topic_lda = word_k.index(min(word_k)) + 1
 
-    # 几个主题就是几行 多少个关键词就是几列
-    print(lda.components_.shape)
+    lda = models.LdaModel(corpus=corpus, id2word=dictionary, num_topics=topic_lda)
 
-    # 计算困惑度
-    print(u'困惑度：')
-    print(lda.perplexity(tf, sub_sampling=False))
-
-    # 主题-关键词分布
-    def print_top_words(model, tf_feature_names, n_top_words):
-        for topic_idx, topic in enumerate(model.components_):  # lda.component相当于model.topic_word_
-            print('Topic #%d:' % topic_idx)
-            print(' '.join([tf_feature_names[i] for i in topic.argsort()[:-n_top_words - 1:-1]]))
-            print("")
-
-    # 定义好函数之后 暂定每个主题输出前20个关键词
-    n_top_words = 20
-    tf_feature_names = tf_vectorizer.get_feature_names()
-    # 调用函数
-    print_top_words(lda, tf_feature_names, n_top_words)
-
-    data = pyLDAvis.sklearn.prepare(lda, tf, tf_vectorizer)
+    data = pyLDAvis.gensim.prepare(lda, corpus, dictionary)
     pyLDAvis.save_html(data, './realme-data/realme-lda.html')
 
 

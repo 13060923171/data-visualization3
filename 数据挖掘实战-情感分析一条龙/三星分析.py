@@ -17,9 +17,9 @@ from sklearn.decomposition import LatentDirichletAllocation
 from gensim import corpora, models
 import itertools
 import pyLDAvis
-import pyLDAvis.sklearn
+import pyLDAvis.gensim
 import gensim
-
+from tqdm import tqdm
 
 def snownlp_fx():
     df = pd.read_excel('三星最终数据.xlsx')
@@ -212,6 +212,42 @@ def lda_tfidf():
     else:
         f.close()
 
+    corpus = []
+
+    # 读取预料 一行预料为一个文档
+    for line in open('./三星-data/三星-class-fenci.txt', 'r', encoding='utf-8').readlines():
+        corpus.append(line.strip())
+
+    # 将文本中的词语转换为词频矩阵 矩阵元素a[i][j] 表示j词在i类文本下的词频
+    vectorizer = CountVectorizer()
+
+    # 该类会统计每个词语的tf-idf权值
+    transformer = TfidfTransformer()
+
+    # 第一个fit_transform是计算tf-idf 第二个fit_transform是将文本转为词频矩阵
+    tfidf = transformer.fit_transform(vectorizer.fit_transform(corpus))
+    # 获取词袋模型中的所有词语
+    word = vectorizer.get_feature_names()
+
+    # 将tf-idf矩阵抽取出来 元素w[i][j]表示j词在i类文本中的tf-idf权重
+    weight = tfidf.toarray()
+
+    data = {'word': word,
+            'tfidf': weight.sum(axis=0).tolist()}
+    df2 = pd.DataFrame(data)
+    df2['tfidf'] = df2['tfidf'].astype('float64')
+    df2 = df2.sort_values(by=['tfidf'], ascending=False)
+    df2.to_csv('./三星-data/三星-tfidf.csv', encoding='utf-8-sig',index=False)
+
+    fr = open('./三星-data/三星-class-fenci.txt', 'r', encoding='utf-8')
+    train = []
+    for line in fr.readlines():
+        line = [word.strip() for word in line.split(' ')]
+        train.append(line)
+
+    dictionary = corpora.Dictionary(train)
+    corpus = [dictionary.doc2bow(text) for text in train]
+
     # 构造主题数寻优函数
     def cos(vector1, vector2):  # 余弦相似度函数
         dot_product = 0.0
@@ -267,15 +303,8 @@ def lda_tfidf():
             mean_similarity.append(sum(top_similarity) / l)
         return (mean_similarity)
 
-    # 建立词典
-    word_dict = corpora.Dictionary([[i] for i in df['content']])
-
-    # 建立语料库
-    word_corpus = [word_dict.doc2bow(j) for j in [[i] for i in df['content']]]
-
     # 计算主题平均余弦相似度
-    word_k = lda_k(word_corpus, word_dict)
-    print(word_k)
+    word_k = lda_k(corpus, dictionary)
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.rcParams['axes.unicode_minus'] = False
     plt.figure(figsize=(10, 8), dpi=300)
@@ -286,84 +315,19 @@ def lda_tfidf():
     plt.savefig('./三星-data/LDA评论主题数寻优.png')
     plt.show()
 
-    corpus = []
+    topic_lda = word_k.index(min(word_k)) + 1
 
-    # 读取预料 一行预料为一个文档
-    for line in open('./三星-data/三星-class-fenci.txt', 'r', encoding='utf-8').readlines():
-        corpus.append(line.strip())
+    lda = models.LdaModel(corpus=corpus, id2word=dictionary, num_topics=topic_lda)
 
-    # 将文本中的词语转换为词频矩阵 矩阵元素a[i][j] 表示j词在i类文本下的词频
-    vectorizer = CountVectorizer()
 
-    # 该类会统计每个词语的tf-idf权值
-    transformer = TfidfTransformer()
-
-    # 第一个fit_transform是计算tf-idf 第二个fit_transform是将文本转为词频矩阵
-    tfidf = transformer.fit_transform(vectorizer.fit_transform(corpus))
-    # 获取词袋模型中的所有词语
-    word = vectorizer.get_feature_names()
-
-    # 将tf-idf矩阵抽取出来 元素w[i][j]表示j词在i类文本中的tf-idf权重
-    weight = tfidf.toarray()
-
-    data = {'word': word,
-            'tfidf': weight.sum(axis=0).tolist()}
-    df2 = pd.DataFrame(data)
-    df2['tfidf'] = df2['tfidf'].astype('float64')
-    df2 = df2.sort_values(by=['tfidf'], ascending=False)
-    df2.to_csv('./三星-data/三星-tfidf.csv', encoding='utf-8-sig',index=False)
-
-    # 设置特征数
-    n_features = 2000
-
-    tf_vectorizer = TfidfVectorizer(strip_accents='unicode',
-                                    max_features=n_features,
-                                    max_df=0.99,
-                                    min_df=0.002)  # 去除文档内出现几率过大或过小的词汇
-
-    tf = tf_vectorizer.fit_transform(corpus)
-
-    #
-    # 设置主题数
-    n_topics = 3
-
-    lda = LatentDirichletAllocation(n_components=n_topics,
-                                    max_iter=100,
-                                    learning_method='online',
-                                    learning_offset=50,
-                                    random_state=0)
-    lda.fit(tf)
+    data = pyLDAvis.gensim.prepare(lda, corpus, dictionary)
+    pyLDAvis.save_html(data, './三星-data/三星-lda.html')
 
 
 
-    # 显示主题数 model.topic_word_
-    print(lda.components_)
 
-    # 几个主题就是几行 多少个关键词就是几列
-    print(lda.components_.shape)
-
-    # 计算困惑度
-    print(u'困惑度：')
-    print(lda.perplexity(tf, sub_sampling=False))
-
-    # 主题-关键词分布
-    def print_top_words(model, tf_feature_names, n_top_words):
-        for topic_idx, topic in enumerate(model.components_):  # lda.component相当于model.topic_word_
-            print('Topic #%d:' % topic_idx)
-            print(' '.join([tf_feature_names[i] for i in topic.argsort()[:-n_top_words - 1:-1]]))
-            print("")
-
-    # 定义好函数之后 暂定每个主题输出前20个关键词
-    n_top_words = 20
-    tf_feature_names = tf_vectorizer.get_feature_names()
-    # 调用函数
-    print_top_words(lda, tf_feature_names, n_top_words)
-
-    data = pyLDAvis.sklearn.prepare(lda, tf, tf_vectorizer)
-
-    pyLDAvis.save_json(data, './三星-data/三星-lda.json')
 
 if __name__ == '__main__':
-    # snownlp_fx()
-    # wordclound_fx()
+    snownlp_fx()
+    wordclound_fx()
     lda_tfidf()
