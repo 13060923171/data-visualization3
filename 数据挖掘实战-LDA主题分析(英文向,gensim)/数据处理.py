@@ -7,7 +7,7 @@ from langdetect import detect
 from langdetect import DetectorFactory
 DetectorFactory.seed = 0
 
-data = pd.read_excel('temp.xlsx')
+data = pd.read_excel('kw2.xlsx')
 
 
 stop_words = []
@@ -74,9 +74,13 @@ def clean_text(tweet):
     tweet = handle_emojis(tweet)
     # Replace multiple spaces with a single space
     tweet = re.sub(r'\s+', ' ', tweet)
+    # 去掉数字
+    tweet = re.sub(r'\d+', ' ', tweet)
+    # 标点符号
+    tweet = re.sub(r'[^A-Z^a-z^0-9^]', ' ', tweet)
     # processed_tweet.append(tweet)
     words = tweet.lower().split()
-    words = [w for w in words]
+    words = [w for w in words if w not in stop_words]
     for word in words:
         word = preprocess_word(word)
         # if is_valid_word(word):
@@ -87,15 +91,10 @@ def clean_text(tweet):
         return np.NAN
 
 
-data['comment_text_new'] = data['content']
-data['comment_text_new'] = data['comment_text_new'].apply(gettext)
-data['comment_text_new'] = data['comment_text_new'].apply(preprocess_word)
-data['comment_text_new'] = data['comment_text_new'].apply(clean_text)
+data['comment_title_new'] = data['title']
+data['comment_title_new'] = data['comment_title_new'].apply(gettext)
+data['comment_title_new'] = data['comment_title_new'].apply(preprocess_word)
+data['comment_title_new'] = data['comment_title_new'].apply(clean_text)
 data = data.dropna(how='any')
-
-list_translate = []
-for d in tqdm(data['new_content']):
-    list_translate.append(detect(d))
-data['translate'] = list_translate
 new_data = data.reset_index(drop=True)
-new_data.to_csv('new_temp.csv',encoding="utf-8-sig",sep=',')
+new_data.to_csv('new_kw2.csv',encoding="utf-8-sig",sep=',')

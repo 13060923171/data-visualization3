@@ -1,4 +1,11 @@
 from gensim import corpora, models, similarities
+import pyLDAvis
+import pyLDAvis.gensim
+import pandas as pd
+import nltk
+import re
+from collections import Counter
+from nltk.stem.snowball import SnowballStemmer  # 返回词语的原型，去掉ing等
 import itertools
 import matplotlib.pyplot as plt
 import numpy as np
@@ -7,17 +14,62 @@ import pandas as pd
 import os
 
 
-fr = open('C-class-fenci.txt', 'r',encoding='utf-8')
+df = pd.read_csv('new_kw2.csv')
+
+def is_all_chinese(strs):
+    for _char in strs:
+        if not '\u4e00' <= _char <= '\u9fa5':
+            return False
+    return True
+
+stop_words = []
+
+with open("常用英文停用词(NLP处理英文必备)stopwords.txt", 'r', encoding='utf-8') as f:
+    lines = f.readlines()
+    for line in lines:
+        stop_words.append(line.strip())
+
+
+def tokenize_only(text):  # 分词器，仅分词
+    # 首先分句，接着分词，而标点也会作为词例存在
+    tokens = [word.lower() for sent in nltk.sent_tokenize(text) for word in nltk.word_tokenize(sent)]
+    filtered_tokens = []
+    # 过滤所有不含字母的词例（例如：数字、纯标点）
+    for token in tokens:
+        if re.search('[a-zA-Z]', token):
+            filtered_tokens.append(token)
+    return ' '.join(filtered_tokens)
+
+
+df['comment_title_new'] = df['comment_title_new'].apply(tokenize_only)
+df['comment_title_new'].astype('str')
+f = open('kw2-class-fenci.txt', 'w', encoding='utf-8')
+for d in df['comment_title_new']:
+    c = Counter()
+    tokens = nltk.word_tokenize(d)
+    tagged = nltk.pos_tag(tokens)
+    for t in tagged:
+        if t[0] not in stop_words and t[0] != '\r\n' and len(t[0]) > 1:
+            c[t[0]] += 1
+    # Top20
+    output = ""
+    for (k, v) in c.most_common():
+        # print("%s:%d"%(k,v))
+        output += k + " "
+    f.write(output + "\n")
+
+else:
+    f.close()
+
+
+fr = open('kw2-class-fenci.txt', 'r', encoding='utf-8')
 train = []
 for line in fr.readlines():
     line = [word.strip() for word in line.split(' ')]
     train.append(line)
 
-
-
 dictionary = corpora.Dictionary(train)
 corpus = [dictionary.doc2bow(text) for text in train]
-
 
 # 构造主题数寻优函数
 def cos(vector1, vector2):  # 余弦相似度函数
@@ -34,7 +86,6 @@ def cos(vector1, vector2):  # 余弦相似度函数
         return (dot_product / ((normA * normB) ** 0.5))
 
     # 主题数寻优
-
 
 def lda_k(x_corpus, x_dict):
     # 初始化平均余弦相似度
@@ -75,43 +126,21 @@ def lda_k(x_corpus, x_dict):
         mean_similarity.append(sum(top_similarity) / l)
     return (mean_similarity)
 
-
-#计算主题平均余弦相似度
+# 计算主题平均余弦相似度
 word_k = lda_k(corpus, dictionary)
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
-plt.figure(figsize=(10,8),dpi=300)
+plt.figure(figsize=(10, 8), dpi=300)
 plt.plot(word_k)
-plt.title('LDA评论主题数寻优')
+plt.title('kw2-LDA评论主题数寻优')
 plt.xlabel('主题数')
 plt.ylabel('平均余弦相似度')
-plt.savefig('LDA评论主题数寻优.png')
+plt.savefig('kw2-LDA评论主题数寻优.png')
 plt.show()
 
 topic_lda = word_k.index(min(word_k)) + 1
 
 lda = models.LdaModel(corpus=corpus, id2word=dictionary, num_topics=topic_lda)
-topic_list = lda.print_topics(num_words=50)
-list_sum = []
-for topic in topic_list:
-    topic = str(topic)
-    str1 = topic.split('+')
-    for s in str1[1:]:
-        s = s.replace('"', '').replace(')', '').replace("'", '').strip(' ').split("*")
-        list_sum.append((s[1],float(s[0])))
 
-df = pd.DataFrame()
-df['word'] = ['word']
-df['values'] = ['values']
-df.to_csv('lda主题词.csv',mode='w',encoding='utf-8-sig',header=None,index=None)
-for key,values in list_sum:
-    df['word'] = [key]
-    df['values'] = [values]
-    df.to_csv('lda主题词.csv', mode='a+', encoding='utf-8-sig', header=None, index=None)
-
-
-df1 = pd.read_csv('lda主题词.csv')
-new_df = df1.sort_values("values", ascending=False).drop_duplicates("word", keep='first').reset_index(drop=True)
-new_df = new_df.dropna(how='any',axis=0)
-new_df.to_csv('new_lda主题词.csv')
-os.remove('lda主题词.csv')
+data = pyLDAvis.gensim.prepare(lda, corpus, dictionary)
+pyLDAvis.save_html(data, 'kw2-lda.html')
