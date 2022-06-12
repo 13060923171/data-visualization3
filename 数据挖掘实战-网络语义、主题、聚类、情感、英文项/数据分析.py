@@ -4,7 +4,7 @@ from IPython.display import Image
 import stylecloud
 
 
-df = pd.read_csv('聚类结果.csv')
+df = pd.read_csv('./数据集/聚类结果.csv')
 
 
 def main1():
@@ -35,7 +35,7 @@ def main1():
     plt.savefig('聚类1-情感占比分析.png')
     plt.show()
 
-    stop_words = []
+    stop_words = ['fashion','virtual','digital','daily','future']
     list_text = []
     for t in df1['comment']:
         # 把数据分开
@@ -46,15 +46,16 @@ def main1():
                 # 添加到列表里面
                 list_text.append(i)
     # 然后传入词云图中，筛选最多的100个词
-    stylecloud.gen_stylecloud(text=' '.join(list_text), max_words=100,
+    stylecloud.gen_stylecloud(text=' '.join(list_text), max_words=50,
                               # 不能有重复词
                               collocations=False,
+                              max_font_size=700,
                               # 字体样式
                               font_path='simhei.ttf',
                               # 图片形状
-                              icon_name='fas fa-socks',
+                              icon_name='fas fa-heart',
                               # 图片大小
-                              size=800,
+                              size=1200,
                               # palette='matplotlib.Inferno_9',
                               # 输出图片的名称和位置
                               output_name='聚类1-词云图.png')
@@ -90,7 +91,7 @@ def main0():
     plt.savefig('聚类0-情感占比分析.png')
     plt.show()
 
-    stop_words = []
+    stop_words = ['fashion','virtual','digital']
     list_text = []
     for t in df1['comment']:
         # 把数据分开
@@ -104,12 +105,13 @@ def main0():
     stylecloud.gen_stylecloud(text=' '.join(list_text), max_words=100,
                               # 不能有重复词
                               collocations=False,
+                              max_font_size=400,
                               # 字体样式
                               font_path='simhei.ttf',
                               # 图片形状
                               icon_name='fas fa-crown',
                               # 图片大小
-                              size=800,
+                              size=1200,
                               # palette='matplotlib.Inferno_9',
                               # 输出图片的名称和位置
                               output_name='聚类0-词云图.png')
@@ -117,5 +119,31 @@ def main0():
     Image(filename='聚类0-词云图.png')
 
 
-main1()
-main0()
+def main2():
+    list_text = []
+    for t in df['comment']:
+        # 把数据分开
+        t = str(t).split(" ")
+        for i in t:
+            # 再过滤一遍无效词
+                # 添加到列表里面
+            list_text.append(i)
+    d = {}
+    for text in list_text:
+        d[text] = d.get(text,0)+1
+    ls = list(d.items())
+    ls.sort(key=lambda x:x[1],reverse=True)
+    key_list = []
+    values_list = []
+    for key,values in ls:
+        key_list.append(key)
+        values_list.append(values)
+
+    df1 = pd.DataFrame()
+    df1['word'] = key_list
+    df1['values'] = values_list
+    df1.to_csv('高频词.csv')
+
+# main1()
+# main0()
+main2()
