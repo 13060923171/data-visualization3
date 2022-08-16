@@ -1,9 +1,6 @@
 import pandas as pd
 # 数据处理库
-import matplotlib
-import matplotlib.pyplot as plt
 import numpy as np
-from snownlp import SnowNLP
 import re
 import jieba
 import jieba.analyse
@@ -12,21 +9,20 @@ import matplotlib.pyplot as plt
 from IPython.display import Image
 import stylecloud
 from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
-from sklearn.decomposition import LatentDirichletAllocation
 from gensim import corpora, models
 import itertools
 import pyLDAvis
+import pyLDAvis.sklearn
 import pyLDAvis.gensim
-import gensim
-from tqdm import tqdm
 import os
+from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
+from sklearn.decomposition import LatentDirichletAllocation
 
 
 def wordclound_fx():
-    df = pd.read_csv('任职要求.csv')
-    df = df.dropna(subset=['任职要求'], axis=0)
-    content = df['任职要求'].drop_duplicates(keep='first')
+    df = pd.read_csv('数据集.csv')
+    df = df.dropna(subset=['内容'], axis=0)
+    content = df['内容'].drop_duplicates(keep='first')
     content = content.dropna(how='any')
     def is_all_chinese(strs):
         for _char in strs:
@@ -57,8 +53,8 @@ def wordclound_fx():
                               icon_name='fas fa-circle',
                               size=500,
                               # palette='matplotlib.Inferno_9',
-                              output_name='./data/任职要求词云图.png')
-    Image(filename='./data/任职要求词云图.png')
+                              output_name='./data/内容词云图.png')
+    Image(filename='./data/内容词云图.png')
 
     counts = {}
     for t in text3:
@@ -72,16 +68,29 @@ def wordclound_fx():
     for key, values in ls[:200]:
         x_data.append(key)
         y_data.append(values)
+    x_data1 = x_data[:20]
+    y_data1 = y_data[:20]
+    x_data1.reverse()
+    y_data1.reverse()
+    plt.figure(figsize=(12, 9))
+    plt.barh(x_data1,y_data1)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.title("TOP20词频")
+    plt.xlabel("词频")
+    plt.ylabel("数量")
+    plt.savefig('./data/TOP20词频.png')
+    plt.show()
 
     df1 = pd.DataFrame()
     df1['word'] = x_data
     df1['counts'] = y_data
-    df1.to_csv('./data/任职要求高频词.csv', encoding="utf-8-sig")
+    df1.to_csv('./data/内容高频词.csv', encoding="utf-8-sig")
+
 
 def lda_tfidf():
-    df = pd.read_csv('任职要求.csv')
-    df = df.dropna(subset=['任职要求'], axis=0)
-    content = df['任职要求'].drop_duplicates(keep='first')
+    df = pd.read_csv('数据集.csv')
+    df = df.dropna(subset=['内容'], axis=0)
+    content = df['内容'].drop_duplicates(keep='first')
     content = content.dropna(how='any')
     def is_all_chinese(strs):
         for _char in strs:
@@ -96,7 +105,7 @@ def lda_tfidf():
         for line in lines:
             stop_words.append(line.strip())
 
-    f = open('./data/任职要求-class-fenci.txt', 'w', encoding='utf-8-sig')
+    f = open('./data/内容-class-fenci.txt', 'w', encoding='utf-8-sig')
     for line in content:
         line = line.strip('\n')
         # 停用词过滤
@@ -114,7 +123,7 @@ def lda_tfidf():
         # Top50
         output = ""
         # print('\n词频统计结果：')
-        for (k, v) in c.most_common(10):
+        for (k, v) in c.most_common(30):
             # print("%s:%d"%(k,v))
             output += k + " "
 
@@ -125,7 +134,7 @@ def lda_tfidf():
     corpus = []
 
     # 读取预料 一行预料为一个文档
-    for line in open('./data/任职要求-class-fenci.txt', 'r', encoding='utf-8-sig').readlines():
+    for line in open('./data/内容-class-fenci.txt', 'r', encoding='utf-8-sig').readlines():
         corpus.append(line.strip())
 
     # 将文本中的词语转换为词频矩阵 矩阵元素a[i][j] 表示j词在i类文本下的词频
@@ -147,9 +156,9 @@ def lda_tfidf():
     df2 = pd.DataFrame(data)
     df2['tfidf'] = df2['tfidf'].astype('float64')
     df2 = df2.sort_values(by=['tfidf'], ascending=False)
-    df2.to_csv('./data/任职要求-tfidf.csv', encoding='utf-8-sig', index=False)
+    df2.to_csv('./data/内容-tfidf.csv', encoding='utf-8-sig', index=False)
 
-    fr = open('./data/任职要求-class-fenci.txt', 'r', encoding='utf-8-sig')
+    fr = open('./data/内容-class-fenci.txt', 'r', encoding='utf-8-sig')
     train = []
     for line in fr.readlines():
         line = [word.strip() for word in line.split(' ') if len(word) >= 2]
@@ -159,81 +168,103 @@ def lda_tfidf():
     print(dictionary)
     corpus = [dictionary.doc2bow(text) for text in train]
 
-    # # 构造主题数寻优函数
-    # def cos(vector1, vector2):  # 余弦相似度函数
-    #     dot_product = 0.0
-    #     normA = 0.0
-    #     normB = 0.0
-    #     for a, b in zip(vector1, vector2):
-    #         dot_product += a * b
-    #         normA += a ** 2
-    #         normB += b ** 2
-    #     if normA == 0.0 or normB == 0.0:
-    #         return (None)
-    #     else:
-    #         return (dot_product / ((normA * normB) ** 0.5))
-    #
-    #     # 主题数寻优
-    #
-    # def lda_k(x_corpus, x_dict):
-    #     # 初始化平均余弦相似度
-    #     mean_similarity = []
-    #     mean_similarity.append(1)
-    #
-    #     # 循环生成主题并计算主题间相似度
-    #     for i in np.arange(2, 11):
-    #         lda = models.LdaModel(x_corpus, num_topics=i, id2word=x_dict)  # LDA模型训练
-    #         for j in np.arange(i):
-    #             term = lda.show_topics(num_words=50)
-    #
-    #         # 提取各主题词
-    #         top_word = []
-    #         for k in np.arange(i):
-    #             top_word.append([''.join(re.findall('"(.*)"', i)) \
-    #                              for i in term[k][1].split('+')])  # 列出所有词
-    #
-    #         # 构造词频向量
-    #         word = sum(top_word, [])  # 列出所有的词
-    #         unique_word = set(word)  # 去除重复的词
-    #
-    #         # 构造主题词列表，行表示主题号，列表示各主题词
-    #         mat = []
-    #         for j in np.arange(i):
-    #             top_w = top_word[j]
-    #             mat.append(tuple([top_w.count(k) for k in unique_word]))
-    #
-    #         p = list(itertools.permutations(list(np.arange(i)), 2))
-    #         l = len(p)
-    #         top_similarity = [0]
-    #         for w in np.arange(l):
-    #             vector1 = mat[p[w][0]]
-    #             vector2 = mat[p[w][1]]
-    #             top_similarity.append(cos(vector1, vector2))
-    #
-    #         # 计算平均余弦相似度
-    #         mean_similarity.append(sum(top_similarity) / l)
-    #     return (mean_similarity)
-    #
-    # # 计算主题平均余弦相似度
-    # word_k = lda_k(corpus, dictionary)
-    # plt.rcParams['font.sans-serif'] = ['SimHei']
-    # plt.rcParams['axes.unicode_minus'] = False
-    # plt.figure(figsize=(10, 8), dpi=300)
-    # plt.plot(word_k)
-    # plt.title('LDA评论主题数寻优')
-    # plt.xlabel('主题数')
-    # plt.ylabel('平均余弦相似度')
-    # plt.savefig('./data/LDA评论主题数寻优.png')
-    # plt.show()
-    #
-    # topic_lda = word_k.index(min(word_k)) + 1
+    # 构造主题数寻优函数
+    def cos(vector1, vector2):  # 余弦相似度函数
+        dot_product = 0.0
+        normA = 0.0
+        normB = 0.0
+        for a, b in zip(vector1, vector2):
+            dot_product += a * b
+            normA += a ** 2
+            normB += b ** 2
+        if normA == 0.0 or normB == 0.0:
+            return (None)
+        else:
+            return (dot_product / ((normA * normB) ** 0.5))
 
-    lda = models.LdaModel(corpus=corpus, id2word=dictionary, num_topics=3)
+        # 主题数寻优
 
-    data = pyLDAvis.gensim.prepare(lda, corpus, dictionary)
-    pyLDAvis.save_html(data, './data-LDA/任职要求-lda.html')
+    def lda_k(x_corpus, x_dict):
+        # 初始化平均余弦相似度
+        mean_similarity = []
+        mean_similarity.append(1)
+
+        # 循环生成主题并计算主题间相似度
+        for i in np.arange(2, 11):
+            lda = models.LdaModel(x_corpus, num_topics=i, id2word=x_dict)  # LDA模型训练
+            for j in np.arange(i):
+                term = lda.show_topics(num_words=50)
+
+            # 提取各主题词
+            top_word = []
+            for k in np.arange(i):
+                top_word.append([''.join(re.findall('"(.*)"', i)) \
+                                 for i in term[k][1].split('+')])  # 列出所有词
+
+            # 构造词频向量
+            word = sum(top_word, [])  # 列出所有的词
+            unique_word = set(word)  # 去除重复的词
+
+            # 构造主题词列表，行表示主题号，列表示各主题词
+            mat = []
+            for j in np.arange(i):
+                top_w = top_word[j]
+                mat.append(tuple([top_w.count(k) for k in unique_word]))
+
+            p = list(itertools.permutations(list(np.arange(i)), 2))
+            l = len(p)
+            top_similarity = [0]
+            for w in np.arange(l):
+                vector1 = mat[p[w][0]]
+                vector2 = mat[p[w][1]]
+                top_similarity.append(cos(vector1, vector2))
+
+            # 计算平均余弦相似度
+            mean_similarity.append(sum(top_similarity) / l)
+        return (mean_similarity)
+
+    # 计算主题平均余弦相似度
+    word_k = lda_k(corpus, dictionary)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.rcParams['axes.unicode_minus'] = False
+    plt.figure(figsize=(10, 8), dpi=300)
+    plt.plot(word_k)
+    plt.title('LDA评论主题数寻优')
+    plt.xlabel('主题数')
+    plt.ylabel('平均余弦相似度')
+    plt.savefig('./data/LDA评论主题数寻优.png')
+    plt.show()
+
+    corpus = []
+    # 读取预料 一行预料为一个文档
+    for line in open('./data/内容-class-fenci.txt', 'r', encoding='utf-8-sig').readlines():
+        corpus.append(line.strip())
+
+    # -----------------------  第二步 计算TF-IDF值  -----------------------
+    # 设置特征数
+    n_features = 2000
+    tf_vectorizer = TfidfVectorizer(strip_accents='unicode',
+                                    max_features=n_features,
+                                    max_df=0.99,
+                                    min_df=0.002)  # 去除文档内出现几率过大或过小的词汇
+
+    tf = tf_vectorizer.fit_transform(corpus)
+
+    n_topics = 4
+    lda = LatentDirichletAllocation(n_components=n_topics,
+                                    max_iter=100,
+                                    learning_method='online',
+                                    learning_offset=50,
+                                    random_state=0)
+    lda.fit(tf)
+    data = pyLDAvis.sklearn.prepare(lda, tf,tf_vectorizer)
+    pyLDAvis.save_html(data, './data-LDA/lda.html')
 
 
 if __name__ == '__main__':
-    wordclound_fx()
+    if not os.path.exists("./data"):
+        os.mkdir("./data")
+    if not os.path.exists("./data-LDA"):
+        os.mkdir("./data-LDA")
+    # wordclound_fx()
     lda_tfidf()
