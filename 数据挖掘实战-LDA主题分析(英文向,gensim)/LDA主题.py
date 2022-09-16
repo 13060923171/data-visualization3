@@ -16,14 +16,9 @@ import os
 
 df = pd.read_csv('new_kw2.csv')
 
-def is_all_chinese(strs):
-    for _char in strs:
-        if not '\u4e00' <= _char <= '\u9fa5':
-            return False
-    return True
+
 
 stop_words = []
-
 with open("常用英文停用词(NLP处理英文必备)stopwords.txt", 'r', encoding='utf-8') as f:
     lines = f.readlines()
     for line in lines:
