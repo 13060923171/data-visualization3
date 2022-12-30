@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.css">
+<link rel="stylesheet" type="text/css" href="ldavis.v1.0.0.css">
 
 
 <div id="ldavis_el1846422477366321441218255327"></div>
@@ -23,17 +23,17 @@ if(typeof(LDAvis) !== "undefined"){
    }(LDAvis);
 }else if(typeof define === "function" && define.amd){
    // require.js is available: use it to load d3/LDAvis
-   require.config({paths: {d3: "https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min"}});
+   require.config({paths: {d3: "d3.min"}});
    require(["d3"], function(d3){
       window.d3 = d3;
-      LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function(){
+      LDAvis_load_lib("ldavis.v1.0.0.js", function(){
         new LDAvis("#" + "ldavis_el1846422477366321441218255327", ldavis_el1846422477366321441218255327_data);
       });
     });
 }else{
     // require.js not available: dynamically load d3 & LDAvis
-    LDAvis_load_lib("https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js", function(){
-         LDAvis_load_lib("https://cdn.rawgit.com/bmabey/pyLDAvis/files/ldavis.v1.0.0.js", function(){
+    LDAvis_load_lib("d3.min.js", function(){
+         LDAvis_load_lib("ldavis.v1.0.0.js", function(){
                  new LDAvis("#" + "ldavis_el1846422477366321441218255327", ldavis_el1846422477366321441218255327_data);
             })
          });
