@@ -5,18 +5,23 @@ from lxml import etree
 import pandas as pd
 from tqdm import tqdm
 import random
+import os
 
 
+#等把全部的ID获取好之后，直接运行这个代码就好了，这个代码是自动跑的，没有第一个那么麻烦
 def get_tid():
-    keyword = ['病毒','肺炎','口罩','新冠','疫情','病毒_all','肺炎_all','口罩_all','新冠_all','疫情_all']
-    for k in tqdm(keyword):
-        df = pd.read_csv('{}_id_data.csv'.format(k))
-        df = df.drop_duplicates(subset='id', keep='first',)
-        id = list(df['id'])
-        for i in tqdm(id):
-            tid = str(i).split(":")
-            tid = tid[1]
-            get_data(tid,k)
+    filePath = './数据/'
+    keyword = ['病毒', '肺炎', '口罩', '新冠', '疫情']
+    for i in os.listdir(filePath):
+        for k in tqdm(keyword):
+            if k in i:
+                df = pd.read_csv('./数据/{}'.format(i))
+                df = df.drop_duplicates(subset='id', keep='first')
+                id = list(df['id'])
+                for i in tqdm(id):
+                    tid = str(i).split(":")
+                    tid = tid[1]
+                    get_data(tid,k)
 
 
 def get_data(tid,keyword):
@@ -27,7 +32,6 @@ def get_data(tid,keyword):
     # driver.get('http://liuyan.people.com.cn/threads/content?tid=12544633&from=search')
     page = driver.page_source
     soup = etree.HTML(page)
-    # a = random.random()
     time.sleep(0.1)
     try:
         title = soup.xpath('//h1[@class="fl"]/text()')[0]
@@ -61,9 +65,9 @@ def get_data(tid,keyword):
     data['提问时间'] = [date_time]
     data['提问内容'] = [ask_questions]
     data['地方'] = [Message_object]
-    data['答复时间'] = [reply]
-    data['官方答复'] = [reply_time]
-    data.to_csv('data1.csv', encoding='utf-8-sig', mode='a+', header=False, index=False)
+    data['答复时间'] = [reply_time]
+    data['官方答复'] = [reply]
+    data.to_csv('data.csv', encoding='utf-8-sig', mode='a+', header=False, index=False)
     # 关闭当前窗口页面
     driver.close()
 
@@ -77,7 +81,7 @@ if __name__ == '__main__':
     data['地方'] = ['地方']
     data['答复时间'] = ['答复时间']
     data['官方答复'] = ['官方答复']
-    data.to_csv('data1.csv',encoding='utf-8-sig',mode='w',header=False,index=False)
+    data.to_csv('data.csv',encoding='utf-8-sig',mode='w',header=False,index=False)
     get_tid()
 
 
