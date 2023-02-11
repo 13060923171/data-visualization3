@@ -30,13 +30,16 @@ from sklearn.decomposition import PCA
 
 
 def data_processing():
-    df1 = pd.read_csv('all_data.csv')
-    df2 = pd.read_csv('data1.csv')
-    data = pd.concat([df1,df2],axis=0)
+    df1 = pd.read_csv('data1.csv',encoding='gbk')
+    df2 = pd.read_csv('data2.csv',encoding='gbk')
+    df3 = pd.read_csv('data3.csv', encoding='gbk')
+    data = pd.concat([df1,df2,df3],axis=0)
     data = data.drop_duplicates(subset=['提问内容'],keep='first')
-    data.to_csv('all_all_data.csv',encoding='utf-8-sig',index=False)
+    data = data.rename(columns={'问题领域':'提问类型','提问类型':'问题领域'})
+    data.to_csv('all_data.csv',encoding='utf-8-sig',index=False)
 
 
+#中文判断函数#
 def wordclound_fx(name=None):
     df = pd.read_csv('all_data.csv')
     df = df.dropna(subset=[name], axis=0)
@@ -97,16 +100,84 @@ def wordclound_fx(name=None):
 def snownlp():
     df = pd.read_csv('all_data.csv')
     df = df.dropna(subset=['提问内容','官方答复'], axis=0)
+
     senta = hub.Module(name="senta_bilstm")
-    texts = df['提问内容'].tolist()
+
+    def emjio_tihuan(x):
+        x1 = str(x)
+        x2 = re.sub('(\[.*?\])', "", x1)
+        x3 = re.sub(r'@[\w\u2E80-\u9FFF]+:?|\[\w+\]', '', x2)
+        x4 = re.sub(r'\n', '', x3)
+        return x4
+
+    def is_all_chinese(strs):
+        for _char in strs:
+            if not '\u4e00' <= _char <= '\u9fa5':
+                return False
+        return True
+
+    def get_cut_words(str1):
+        # 读入停用词表
+        stop_words = ['领导','期间','您好','尊敬','疫情','新冠','肺炎','感谢您','留言']
+
+        with open("stopwords_cn.txt", 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+            for line in lines:
+                stop_words.append(line.strip())
+
+        # 分词
+        word_num = jieba.lcut(str(str1), cut_all=False)
+
+        # 条件筛选
+        word_num_selected = [i for i in word_num if i not in stop_words and len(i) >= 2 and is_all_chinese(i) == True]
+
+        word_num_selected = " ".join(word_num_selected)
+
+        if len(word_num_selected) != 0:
+            return word_num_selected
+        else:
+            return np.NAN
+
+    def txt_len(x):
+        x1 = str(x)
+        return len(x1)
+
+    def date_time(x):
+        x1 = str(x)
+        x1 = x1.replace("?"," ")
+        return x1
+
+    def time_qx(x):
+        x1 = str(x)
+        x1 = x1.split("days")
+        x1 = x1[0]
+        return int(x1)
+
+    df['提问'] = df['提问内容'].apply(emjio_tihuan)
+    df = df.dropna(subset=['提问'], axis=0)
+    df['提问'] = df['提问'].apply(get_cut_words)
+    df = df.dropna(subset=['提问'], axis=0)
+
+    df['官方'] = df['官方答复'].apply(emjio_tihuan)
+    df = df.dropna(subset=['官方'], axis=0)
+    df['官方'] = df['官方'].apply(get_cut_words)
+    df = df.dropna(subset=['官方'], axis=0)
+    df['提问时间'] = df['提问时间'].apply(date_time)
+    df['答复时间'] = df['答复时间'].apply(date_time)
+    df['相差间隔'] = pd.to_datetime(df['答复时间'])-pd.to_datetime(df['提问时间'])
+    df['相差间隔'] = df['相差间隔'].apply(time_qx)
+
+    texts = df['提问'].tolist()
     input_data = {'text': texts}
     res = senta.sentiment_classify(data=input_data)
+    df['提问内容_长度'] = df['提问内容'].apply(txt_len)
     df['提问内容_positive_probs'] = [x['positive_probs'] for x in res]
     df['提问内容_negative_probs'] = [x['negative_probs'] for x in res]
 
-    texts1 = df['官方答复'].tolist()
+    texts1 = df['官方'].tolist()
     input_data1 = {'text': texts1}
     res1 = senta.sentiment_classify(data=input_data1)
+    df['官方答复_长度'] = df['官方答复'].apply(txt_len)
     df['官方答复_positive_probs'] = [x['positive_probs'] for x in res1]
     df['官方答复_negative_probs'] = [x['negative_probs'] for x in res1]
 
@@ -123,7 +194,7 @@ def nlp_picture():
     plt.figure(figsize=(20,9),dpi=300)
     plt.plot(df1,'^--',color='#b82410', label='提问内容')
     plt.plot(df3,'o--',color='#2614e8', label='官方答复')
-    plt.title('提问VS答复-正面情感月均值趋势')
+    plt.title('公民诉求VS政府回应-正面情感月均值趋势')
     plt.xlabel('月份')
     plt.ylabel('均值')
     plt.grid()
@@ -137,7 +208,7 @@ def nlp_picture():
     plt.figure(figsize=(20, 9), dpi=300)
     plt.plot(df2, '^--', color='#b82410', label='提问内容')
     plt.plot(df4, 'o--', color='#2614e8', label='官方答复')
-    plt.title('提问VS答复-负面情感月均值趋势')
+    plt.title('公民诉求VS政府回应-负面情感月均值趋势')
     plt.xlabel('月份')
     plt.ylabel('均值')
     plt.grid()
@@ -255,74 +326,113 @@ def lda(name=None):
     dictionary = corpora.Dictionary(train)
     corpus = [dictionary.doc2bow(text) for text in train]
 
-    # 构造主题数寻优函数
-    def cos(vector1, vector2):  # 余弦相似度函数
-        dot_product = 0.0
-        normA = 0.0
-        normB = 0.0
-        for a, b in zip(vector1, vector2):
-            dot_product += a * b
-            normA += a ** 2
-            normB += b ** 2
-        if normA == 0.0 or normB == 0.0:
-            return (None)
-        else:
-            return (dot_product / ((normA * normB) ** 0.5))
+    # # 构造主题数寻优函数
+    # def cos(vector1, vector2):  # 余弦相似度函数
+    #     dot_product = 0.0
+    #     normA = 0.0
+    #     normB = 0.0
+    #     for a, b in zip(vector1, vector2):
+    #         dot_product += a * b
+    #         normA += a ** 2
+    #         normB += b ** 2
+    #     if normA == 0.0 or normB == 0.0:
+    #         return (None)
+    #     else:
+    #         return (dot_product / ((normA * normB) ** 0.5))
+    #
+    #     # 主题数寻优
+    #
+    # def lda_k(x_corpus, x_dict):
+    #     # 初始化平均余弦相似度
+    #     mean_similarity = []
+    #     mean_similarity.append(1)
+    #
+    #     # 循环生成主题并计算主题间相似度
+    #     for i in np.arange(2, 11):
+    #         lda = models.LdaModel(x_corpus, num_topics=i, id2word=x_dict)  # LDA模型训练
+    #         for j in np.arange(i):
+    #             term = lda.show_topics(num_words=30)
+    #
+    #         # 提取各主题词
+    #         top_word = []
+    #         for k in np.arange(i):
+    #
+    #             top_word.append([''.join(re.findall('"(.*)"', i)) \
+    #                              for i in term[k][1].split('+')])  # 列出所有词
+    #
+    #         # 构造词频向量
+    #         word = sum(top_word, [])  # 列出所有的词
+    #         unique_word = set(word)  # 去除重复的词
+    #
+    #         # 构造主题词列表，行表示主题号，列表示各主题词
+    #         mat = []
+    #         for j in np.arange(i):
+    #             top_w = top_word[j]
+    #             mat.append(tuple([top_w.count(k) for k in unique_word]))
+    #
+    #         p = list(itertools.permutations(list(np.arange(i)), 2))
+    #         l = len(p)
+    #         top_similarity = [0]
+    #         for w in np.arange(l):
+    #             vector1 = mat[p[w][0]]
+    #             vector2 = mat[p[w][1]]
+    #             top_similarity.append(cos(vector1, vector2))
+    #
+    #         # 计算平均余弦相似度
+    #         mean_similarity.append(sum(top_similarity) / l)
+    #     return (mean_similarity)
+    #
+    # # 计算主题平均余弦相似度
+    # word_k = lda_k(corpus, dictionary)
+    # plt.rcParams['font.sans-serif'] = ['SimHei']
+    # plt.rcParams['axes.unicode_minus'] = False
+    # plt.figure(figsize=(10, 8), dpi=300)
+    # plt.plot(word_k)
+    # plt.title('{}-LDA评论主题数寻优'.format(name))
+    # plt.xlabel('主题数')
+    # plt.ylabel('平均余弦相似度')
+    # plt.savefig('./data/{}-主题数寻优.png'.format(name))
+    # plt.show()
+    # 困惑度模块
+    x_data = []
+    y_data = []
+    z_data = []
+    for i in tqdm(range(2, 15)):
+        x_data.append(i)
+        lda = models.LdaModel(corpus=corpus, id2word=dictionary, num_topics=i, random_state=111, iterations=400)
+        # 困惑度计算
+        _,perplexity = lda.log_perplexity(corpus)
+        y_data.append(perplexity)
+        # 一致性计算
+        coherencemodel = models.CoherenceModel(model=lda, texts=train, dictionary=dictionary, coherence='c_v')
+        z_data.append(coherencemodel.get_coherence())
 
-        # 主题数寻优
-
-    def lda_k(x_corpus, x_dict):
-        # 初始化平均余弦相似度
-        mean_similarity = []
-        mean_similarity.append(1)
-
-        # 循环生成主题并计算主题间相似度
-        for i in np.arange(2, 11):
-            lda = models.LdaModel(x_corpus, num_topics=i, id2word=x_dict)  # LDA模型训练
-            for j in np.arange(i):
-                term = lda.show_topics(num_words=30)
-
-            # 提取各主题词
-            top_word = []
-            for k in np.arange(i):
-
-                top_word.append([''.join(re.findall('"(.*)"', i)) \
-                                 for i in term[k][1].split('+')])  # 列出所有词
-
-            # 构造词频向量
-            word = sum(top_word, [])  # 列出所有的词
-            unique_word = set(word)  # 去除重复的词
-
-            # 构造主题词列表，行表示主题号，列表示各主题词
-            mat = []
-            for j in np.arange(i):
-                top_w = top_word[j]
-                mat.append(tuple([top_w.count(k) for k in unique_word]))
-
-            p = list(itertools.permutations(list(np.arange(i)), 2))
-            l = len(p)
-            top_similarity = [0]
-            for w in np.arange(l):
-                vector1 = mat[p[w][0]]
-                vector2 = mat[p[w][1]]
-                top_similarity.append(cos(vector1, vector2))
-
-            # 计算平均余弦相似度
-            mean_similarity.append(sum(top_similarity) / l)
-        return (mean_similarity)
-
-    # 计算主题平均余弦相似度
-    word_k = lda_k(corpus, dictionary)
+    # 绘制困惑度和一致性折线图
+    fig = plt.figure(figsize=(15, 5))
     plt.rcParams['font.sans-serif'] = ['SimHei']
-    plt.rcParams['axes.unicode_minus'] = False
-    plt.figure(figsize=(10, 8), dpi=300)
-    plt.plot(word_k)
-    plt.title('{}-LDA评论主题数寻优'.format(name))
-    plt.xlabel('主题数')
-    plt.ylabel('平均余弦相似度')
-    plt.savefig('./data/{}-主题数寻优.png'.format(name))
+    matplotlib.rcParams['axes.unicode_minus'] = False
+
+    # 绘制困惑度折线图
+    ax1 = fig.add_subplot(1, 2, 1)
+    plt.plot(x_data, y_data, marker="o")
+    plt.title("perplexity_values")
+    plt.xlabel('num topics')
+    plt.ylabel('perplexity score')
+
+    ax2 = fig.add_subplot(1, 2, 2)
+    plt.plot(x_data, z_data, marker="o")
+    plt.title("coherence_values")
+    plt.xlabel("num topics")
+    plt.ylabel("coherence score")
+
+    plt.savefig('./data/{}-困惑度和一致性.png'.format(name))
     plt.show()
 
+    df5 = pd.DataFrame()
+    df5['主题数'] = x_data
+    df5['困惑度'] = y_data
+    df5['一致性'] = z_data
+    df5.to_csv('./data/{}-困惑度和一致性.csv'.format(name),encoding='utf-8-sig',index=False)
     num_topics = input('请输入主题数:')
 
     #LDA可视化模块
@@ -403,11 +513,11 @@ def lda(name=None):
 
 
 if __name__ == '__main__':
-    data_processing()
+    # 官方答复 提问内容
+    # data_processing()
+    # wordclound_fx(name='官方答复')
     snownlp()
-    nlp_picture()
-
-    #官方答复 提问内容
-    wordclound_fx(name='官方答复')
-    nlp_kmeans(name='官方答复')
-    lda(name='官方答复')
+    # nlp_picture()
+    #
+    # nlp_kmeans(name='官方答复')
+    # lda(name='官方答复')
