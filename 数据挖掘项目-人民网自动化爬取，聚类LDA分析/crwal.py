@@ -6,9 +6,9 @@ import pandas as pd
 from urllib import parse
 from datetime import datetime
 
-list1 = ['肺炎','病毒','新冠','口罩']
+list1 = ['肺炎','病毒','新冠','发烧','疫情','核酸']
 
-keyword = '肺炎'
+keyword = '核酸'
 keywords = parse.quote(keyword)
 
 
@@ -16,8 +16,7 @@ def get_data():
     a = datetime.now().timestamp()
     driver = webdriver.Chrome('chromedriver.exe')
     driver.get('http://liuyan.people.com.cn/messageSearch?keywords={}'.format(keywords))
-    #这里是控制页面的停留时间，如果到时候不好选择省份，就加延迟就好了，这里1指的是1秒，5代表5秒
-    time.sleep(5)
+    time.sleep(9)
     # driver.find_element('xpath','//span[@class="el-checkbox__inner"]').click()
     driver.find_element('xpath','//button[@class="el-button fr el-button--danger el-button--default"]').click()
     for i in range(0,300001,5000):
@@ -49,7 +48,7 @@ def save_csv(data,a):
 if __name__ == '__main__':
     get_data()
 
-
+#这里是控制页面的停留时间，如果到时候不好选择省份，就加延迟就好了，这里1指的是1秒，5代表5秒
 
 
 

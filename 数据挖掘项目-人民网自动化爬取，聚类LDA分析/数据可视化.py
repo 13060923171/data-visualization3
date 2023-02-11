@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 from pyecharts import options as opts
-from pyecharts.charts import Bar
+from pyecharts.charts import Bar,Line,Pie
 from pyecharts.globals import ThemeType
 
 def plt_pie():
@@ -31,20 +31,21 @@ def plt_pie1():
 
 
 def month_number():
-    df = pd.read_csv('all_data.csv',parse_dates=['提问时间'], index_col="提问时间")
-    df5 = pd.read_csv('all_data.csv', parse_dates=['答复时间'], index_col="答复时间")
+    df = pd.read_csv('./data/nlp_all_data.csv',parse_dates=['提问时间'], index_col="提问时间")
+    df5 = pd.read_csv('./data/nlp_all_data.csv', parse_dates=['答复时间'], index_col="答复时间")
     df = df.dropna(subset=['提问内容'], axis=0)
     df5 = df5.dropna(subset=['官方答复'], axis=0)
     df['发布数据'] = 1
     df5['发布数据'] = 1
 
     df1 = df['发布数据'].resample('M').sum()
+
     x_data = [str(x).split(" ")[0] for x in df1.index]
     y_data = [int(y) for y in df1.values]
 
     df3 = df5['发布数据'].resample('M').sum()
-    x_data1 = [str(x).split(" ")[0] for x in df3.index]
-    y_data1 = [int(y) for y in df3.values]
+    x_data1 = [str(x).split(" ")[0] for x in df3.index][:-1]
+    y_data1 = [int(y) for y in df3.values][:-1]
 
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.figure(figsize=(20,9),dpi=300)
@@ -293,6 +294,255 @@ def lda_bar1():
     )
 
 
+def length_emotion():
+    df = pd.read_csv('./data/nlp_all_data.csv')
+    df1 = df.groupby('问题领域').agg('mean')
+    def sswr(x):
+        x1 = round(x)
+        return x1
+
+    def sswr1(x):
+        x1 = round(x,2)
+        return x1
+    df1['官方答复_positive_probs'] = df1['官方答复_positive_probs'].apply(sswr1)
+    df1['提问内容_positive_probs'] = df1['提问内容_positive_probs'].apply(sswr1)
+    df1['提问内容_长度'] = df1['提问内容_长度'].apply(sswr)
+    df1['官方答复_长度'] = df1['官方答复_长度'].apply(sswr)
+    x_data = list(df1.index)
+    y_data1 = [y for y in df1['提问内容_长度']]
+    y_data2 = [y for y in df1['官方答复_长度']]
+    y_data3 = [y for y in df1['提问内容_positive_probs']]
+    y_data4 = [y for y in df1['官方答复_positive_probs']]
+
+    bar = (
+        Bar(init_opts=opts.InitOpts(theme=ThemeType.ESSOS))
+            .add_xaxis(xaxis_data=x_data)
+            .add_yaxis(
+            series_name="提问内容_长度",
+            y_axis=y_data1,
+            label_opts=opts.LabelOpts(is_show=True),
+        )
+            .add_yaxis(
+            series_name="官方答复_长度",
+            y_axis=y_data2,
+            label_opts=opts.LabelOpts(is_show=True),
+        )
+            .extend_axis(
+            yaxis=opts.AxisOpts(
+                name="分值",
+                type_="value",
+                min_=0,
+                max_=0.5,
+                interval=0.1,
+                axislabel_opts=opts.LabelOpts(formatter="{value} "),
+            )
+        )
+            .set_global_opts(
+            tooltip_opts=opts.TooltipOpts(
+                is_show=True, trigger="axis", axis_pointer_type="cross"
+            ),
+            title_opts=opts.TitleOpts(title="公众政治诉求表达的文本长度和情感倾向", pos_left="center", pos_top="15"),
+            xaxis_opts=opts.AxisOpts(
+                type_="category",
+                axispointer_opts=opts.AxisPointerOpts(is_show=True, type_="shadow"),
+            ),
+            yaxis_opts=opts.AxisOpts(
+                name="长度",
+                type_="value",
+                min_=0,
+                max_=500,
+                interval=100,
+                axislabel_opts=opts.LabelOpts(formatter="{value}"),
+                axistick_opts=opts.AxisTickOpts(is_show=True),
+                splitline_opts=opts.SplitLineOpts(is_show=True),
+            ),
+        )
+    )
+
+    line = (
+        Line(init_opts=opts.InitOpts(theme=ThemeType.ESSOS))
+            .add_xaxis(xaxis_data=x_data)
+            .add_yaxis(
+            series_name="提问内容-正面走势",
+            yaxis_index=1,
+            y_axis=y_data3,
+            label_opts=opts.LabelOpts(is_show=True),
+        )
+            .add_yaxis(
+            series_name="官方答复-正面走势",
+            yaxis_index=1,
+            y_axis=y_data4,
+            label_opts=opts.LabelOpts(is_show=True),
+        )
+    )
+
+    bar.overlap(line).render("./data/公众政治诉求表达的文本长度和情感倾向.html")
+
+
+def days_pie():
+    df = pd.read_csv('./data/nlp_all_data.csv')
+    def main(x):
+        x1 = int(x)
+        if x1 <= 7:
+            return '7天内'
+        elif 7 < x1 <= 14:
+            return '14天内'
+        elif 14 < x1 <= 21:
+            return '21天内'
+        elif 21 < x1 <= 28:
+            return '28天内'
+        else:
+            return '超过1个月'
+    df['间隔类型'] = df['相差间隔'].apply(main)
+    new_df = df['间隔类型'].value_counts()
+    x_data = list(new_df.index)
+    y_data = list(new_df.values)
+
+    c = (
+        Pie(init_opts=opts.InitOpts(theme=ThemeType.ESSOS))
+            .add("", [(x,int(y)) for x,y in zip(x_data,y_data)])
+            .set_global_opts(title_opts=opts.TitleOpts(title="政府回应网络民意时效情况"))
+            .set_series_opts(label_opts=opts.LabelOpts(formatter="{b}: {d}%"))
+            .render("./data/政府回应网络民意时效情况.html")
+    )
+
+
+def tiwen_bar():
+    df = pd.read_csv('./data/nlp_all_data.csv')
+    df['数量'] = 1
+    df1 = df.groupby('提问类型').agg('mean')
+    df2 = df.groupby('提问类型').agg('sum')
+    def sswr(x):
+        x1 = round(x)
+        return x1
+
+    df1['相差间隔'] = df1['相差间隔'].apply(sswr)
+    x_data = list(df1.index)
+    y_data1 = [y for y in df1['相差间隔']]
+    y_data2 = [y for y in df2['数量']]
+
+    bar = (
+        Bar(init_opts=opts.InitOpts(theme=ThemeType.ESSOS))
+            .add_xaxis(xaxis_data=x_data)
+            .add_yaxis(
+            series_name="数量",
+            y_axis=y_data2,
+            label_opts=opts.LabelOpts(is_show=True),
+        )
+            .extend_axis(
+            yaxis=opts.AxisOpts(
+                name="时长",
+                type_="value",
+                min_=0,
+                max_=25,
+                interval=5,
+                axislabel_opts=opts.LabelOpts(formatter="{value} 天"),
+            )
+        )
+            .set_global_opts(
+            tooltip_opts=opts.TooltipOpts(
+                is_show=True, trigger="axis", axis_pointer_type="cross"
+            ),
+            title_opts=opts.TitleOpts(title="不同类别政府回应平均用时",pos_left="center",pos_top="15"),
+            xaxis_opts=opts.AxisOpts(
+                type_="category",
+                axispointer_opts=opts.AxisPointerOpts(is_show=True, type_="shadow"),
+            ),
+            yaxis_opts=opts.AxisOpts(
+                name="数量",
+                type_="value",
+                min_=0,
+                max_=5000,
+                interval=500,
+                axislabel_opts=opts.LabelOpts(formatter="{value}"),
+                axistick_opts=opts.AxisTickOpts(is_show=True),
+                splitline_opts=opts.SplitLineOpts(is_show=True),
+            ),
+        )
+    )
+
+    line = (
+        Line(init_opts=opts.InitOpts(theme=ThemeType.ESSOS))
+            .add_xaxis(xaxis_data=x_data)
+            .add_yaxis(
+            series_name="时长",
+            yaxis_index=1,
+            y_axis=y_data1,
+            label_opts=opts.LabelOpts(is_show=True),
+        )
+    )
+
+    bar.overlap(line).render("./data/不同类别政府回应平均用时.html")
+
+
+def lyu_bar():
+    df = pd.read_csv('./data/nlp_all_data.csv')
+    df['数量'] = 1
+    df1 = df.groupby('问题领域').agg('mean')
+    df2 = df.groupby('问题领域').agg('sum')
+    def sswr(x):
+        x1 = round(x)
+        return x1
+
+    df1['相差间隔'] = df1['相差间隔'].apply(sswr)
+    x_data = list(df1.index)
+    y_data1 = [y for y in df1['相差间隔']]
+    y_data2 = [y for y in df2['数量']]
+
+    bar = (
+        Bar(init_opts=opts.InitOpts(theme=ThemeType.ESSOS))
+            .add_xaxis(xaxis_data=x_data)
+            .add_yaxis(
+            series_name="数量",
+            y_axis=y_data2,
+            label_opts=opts.LabelOpts(is_show=True),
+        )
+            .extend_axis(
+            yaxis=opts.AxisOpts(
+                name="时长",
+                type_="value",
+                min_=0,
+                max_=30,
+                interval=5,
+                axislabel_opts=opts.LabelOpts(formatter="{value} 天"),
+            )
+        )
+            .set_global_opts(
+            tooltip_opts=opts.TooltipOpts(
+                is_show=True, trigger="axis", axis_pointer_type="cross"
+            ),
+            title_opts=opts.TitleOpts(title="不同类别政府回应平均用时",pos_left="center",pos_top="15"),
+            xaxis_opts=opts.AxisOpts(
+                type_="category",
+                axispointer_opts=opts.AxisPointerOpts(is_show=True, type_="shadow"),
+            ),
+            yaxis_opts=opts.AxisOpts(
+                name="数量",
+                type_="value",
+                min_=0,
+                max_=3000,
+                interval=500,
+                axislabel_opts=opts.LabelOpts(formatter="{value}"),
+                axistick_opts=opts.AxisTickOpts(is_show=True),
+                splitline_opts=opts.SplitLineOpts(is_show=True),
+            ),
+        )
+    )
+
+    line = (
+        Line(init_opts=opts.InitOpts(theme=ThemeType.ESSOS))
+            .add_xaxis(xaxis_data=x_data)
+            .add_yaxis(
+            series_name="时长",
+            yaxis_index=1,
+            y_axis=y_data1,
+            label_opts=opts.LabelOpts(is_show=True),
+        )
+    )
+
+    bar.overlap(line).render("./data/不同领域政府回应平均用时.html")
+
+
 if __name__ == '__main__':
     plt_pie()
     plt_pie1()
@@ -301,3 +551,7 @@ if __name__ == '__main__':
     emotion_bar1()
     lda_bar()
     lda_bar1()
+    length_emotion()
+    days_pie()
+    tiwen_bar()
+    lyu_bar()

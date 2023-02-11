@@ -11,7 +11,7 @@ import os
 #等把全部的ID获取好之后，直接运行这个代码就好了，这个代码是自动跑的，没有第一个那么麻烦
 def get_tid():
     filePath = './数据/'
-    keyword = ['病毒', '肺炎', '口罩', '新冠', '疫情']
+    keyword = ['肺炎','病毒','新冠','发烧','疫情','核酸']
     for i in os.listdir(filePath):
         for k in tqdm(keyword):
             if k in i:
@@ -59,6 +59,17 @@ def get_data(tid,keyword):
     except:
         reply_time = ''
 
+    try:
+        #投诉/求助
+        domain_name = soup.xpath('//p[@class="typeNameD"]/text()')[0]
+    except:
+        domain_name=''
+    try:
+        ask_type = soup.xpath('//p[@class="domainName"]/text()')[0]
+    except:
+        ask_type = ''
+
+
     data = pd.DataFrame()
     data['关键词'] = [keyword]
     data['标题'] = [title]
@@ -67,6 +78,8 @@ def get_data(tid,keyword):
     data['地方'] = [Message_object]
     data['答复时间'] = [reply_time]
     data['官方答复'] = [reply]
+    data['问题领域'] = [domain_name]
+    data['提问类型'] = [ask_type]
     data.to_csv('data.csv', encoding='utf-8-sig', mode='a+', header=False, index=False)
     # 关闭当前窗口页面
     driver.close()
@@ -81,6 +94,8 @@ if __name__ == '__main__':
     data['地方'] = ['地方']
     data['答复时间'] = ['答复时间']
     data['官方答复'] = ['官方答复']
+    data['问题领域'] = ['问题领域']
+    data['提问类型'] = ['提问类型']
     data.to_csv('data.csv',encoding='utf-8-sig',mode='w',header=False,index=False)
     get_tid()
 
