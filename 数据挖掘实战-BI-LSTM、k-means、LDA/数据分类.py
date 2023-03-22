@@ -104,9 +104,9 @@ def snownlp():
     def score_type(x):
         x1 = float(x)
         if x1 <= 0.4:
-            return 'negative'
+            return '0'
         else:
-            return 'positive'
+            return '1'
 
     #进分词处理
     def get_cut_words(str1):
