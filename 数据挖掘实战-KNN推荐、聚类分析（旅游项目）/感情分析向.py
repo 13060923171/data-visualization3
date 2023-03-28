@@ -13,6 +13,7 @@ import itertools
 from tqdm import tqdm
 import os
 import paddlehub as hub
+import jieba.posseg as posseg
 
 stop_words = []
 with open("stopwords_cn.txt", 'r', encoding='utf-8') as f:
@@ -125,7 +126,105 @@ def emotion_score():
     plt.savefig('./data/情感分布.png')
 
 
+def emotion_word():
+    data = pd.read_csv('./data/data_情感分析.csv')
+    list1 = []
+    for n in data['分词']:
+        n = str(n).split(" ")
+        for i in n:
+            list1.append(i)
+    counts = {}
+    for l in list1:
+        res = posseg.cut(l)
+        for word, flag in res:
+            if flag == 'Ag' or flag == 'a' or flag == 'ad' or flag == 'an':
+                if len(word) >=2:
+                    counts[word] = counts.get(word, 0) + 1
+
+    ls = list(counts.items())
+    ls.sort(key=lambda x: x[1], reverse=True)
+    x_data = []
+    y_data = []
+
+    for key, values in ls:
+        if values >=5:
+            x_data.append(key)
+            y_data.append(values)
+
+    df1 = pd.DataFrame()
+    df1['word'] = x_data
+    df1['counts'] = y_data
+
+    senta = hub.Module(name="senta_bilstm")
+    texts = df1['word'].tolist()
+    input_data = {'text': texts}
+    res = senta.sentiment_classify(data=input_data)
+    df1['情感分值'] = [x['positive_probs'] for x in res]
+
+    def main1(x):
+        x1 = float(x)
+        if x1 <= 0.45:
+            return '负面'
+        elif 0.45 < x1 <= 0.55:
+            return '中立'
+        else:
+            return '正面'
+
+    df1['emotion_type'] = df1['情感分值'].apply(main1)
+    def main2(x):
+        new_df = df1[df1['emotion_type'] == x]
+        new_df = new_df.sort_values(by=['counts'],ascending=False)
+        new_df = new_df.iloc[:10]
+        x_data = []
+        y_data = []
+        for j,k in zip(new_df['word'],new_df['counts']):
+            x_data.append(j)
+            y_data.append(k)
+        return x_data,y_data
+
+    x_data = []
+    y_data = []
+    z_data = ['负面','中立','正面']
+    for k in z_data:
+        x,y = main2(k)
+        x_data.append(x)
+        y_data.append(y)
+
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    # 创建画布
+    fig, ax = plt.subplots(figsize=(12, 6), nrows=1, ncols=3)
+
+    # 绘制第一个小图
+    ax[0].barh(np.arange(10), y_data[0][::-1], height=0.8, color='#5DADE2')
+    ax[0].set_yticks(np.arange(10))
+    ax[0].set_yticklabels(x_data[0][::-1], fontsize=8)
+    ax[0].set_xlabel('负面', fontsize=10)
+    ax[0].set_title('负面-TOP10分布状况', fontsize=12)
+
+    # 绘制第二个小图
+    ax[1].barh(np.arange(10), y_data[1][::-1], height=0.8, color='#48C9B0')
+    ax[1].set_yticks(np.arange(10))
+    ax[1].set_yticklabels(x_data[1][::-1], fontsize=8)
+    ax[1].set_xlabel('中立', fontsize=10)
+    ax[1].set_title('中立-TOP10分布状况', fontsize=12)
+
+    # 绘制第三个小图
+    ax[2].barh(np.arange(10), y_data[2][::-1], height=0.8, color='#F1948A')
+    ax[2].set_yticks(np.arange(10))
+    ax[2].set_yticklabels(x_data[2][::-1], fontsize=8)
+    ax[2].set_xlabel('正面', fontsize=10)
+    ax[2].set_title('正面-TOP10分布状况', fontsize=12)
+
+    # 调整子图间距
+    plt.subplots_adjust(wspace=0.5)
+    plt.savefig('./data/情感词TOP10分布状况.png')
+    plt.show()
+
+    df1.to_csv('./data/情感词表.csv', encoding="utf-8-sig", index=False)
+
+
 if __name__ == '__main__':
     snownlp_fx()
     wordclound_fx()
     emotion_score()
+    emotion_word()
