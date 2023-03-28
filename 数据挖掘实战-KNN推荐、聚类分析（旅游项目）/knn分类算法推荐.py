@@ -5,7 +5,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.feature_extraction.text import CountVectorizer,TfidfVectorizer
 from sklearn.pipeline import Pipeline
 import jieba
-from sklearn import metrics
 from sklearn.metrics import accuracy_score
 from sklearn import svm
 from tqdm import tqdm
@@ -13,6 +12,11 @@ import joblib
 import re
 import pickle
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.svm import SVC
+import matplotlib.pyplot as plt
+from sklearn import metrics
+from sklearn.metrics import roc_curve,auc
 
 df = pd.read_csv('./data/data_情感分析.csv')
 new_df = df.dropna(subset=['分词'],axis=0)
@@ -52,14 +56,55 @@ def main1():
     knn.fit(X_train, y_train)
     y_pred = knn.predict(X_test)
     accuracy = accuracy_score(y_test, y_pred)
-    print('Accuracy:', accuracy)
+    print('Knn Accuracy:', accuracy)
 
-    # 保存模型
-    joblib.dump(knn, 'knn_model.pkl')
-    joblib.dump(vectorizer, 'vectorizer.joblib')
-    # 保存LabelEncoder模型到文件中
-    with open("label_encoder.pkl", "wb") as f:
-        pickle.dump(le, f)
+    # 训练和预测 - Naive Bayes
+    clf_nb = MultinomialNB()
+    clf_nb.fit(X_train, y_train)
+    y_pred_nb = clf_nb.predict(X_test)
+    print('Naive Bayes accuracy:', accuracy_score(y_test, y_pred_nb))
+
+    # 训练和预测 - SVM
+    clf_svm = SVC(kernel='linear')
+    clf_svm.fit(X_train, y_train)
+    y_pred_svm = clf_svm.predict(X_test)
+    print('SVM accuracy:', accuracy_score(y_test, y_pred_svm))
+
+    accuracy1 = round(metrics.accuracy_score(y_test, y_pred), 4)
+    accuracy2 = round(metrics.accuracy_score(y_test, y_pred_nb), 4)
+    accuracy3 = round(metrics.accuracy_score(y_test, y_pred_svm), 4)
+
+    precision1 = round(metrics.precision_score(y_test, y_pred, average='micro'), 4)
+    precision2 = round(metrics.precision_score(y_test, y_pred_nb, average='micro'), 4)
+    precision3 = round(metrics.precision_score(y_test, y_pred_svm, average='micro'), 4)
+
+    recall1 = round(metrics.recall_score(y_test, y_pred, average='micro'), 4)
+    recall2 = round(metrics.recall_score(y_test, y_pred_nb, average='micro'), 4)
+    recall3 = round(metrics.recall_score(y_test, y_pred_svm, average='micro'), 4)
+
+    f1_1 = round(metrics.f1_score(y_test, y_pred, average='weighted'), 4)
+    f1_2 = round(metrics.f1_score(y_test, y_pred_nb, average='weighted'), 4)
+    f1_3 = round(metrics.f1_score(y_test, y_pred_svm, average='weighted'), 4)
+
+
+    data = pd.DataFrame()
+    data['准确率'] = ['KNN准确率', '贝叶斯准确率', 'SVM准确率']
+    data['准确率_score'] = [accuracy1, accuracy2, accuracy3]
+    data['精确率'] = ['KNN精确率', '贝叶斯精确率', 'SVM精确率']
+    data['精确率_score'] = [precision1, precision2, precision3]
+    data['召回率'] = ['KNN召回率', '贝叶斯召回率', 'SVM召回率']
+    data['召回率_score'] = [recall1, recall2, recall3]
+    data['F1值'] = ['KNNF1值', '贝叶斯F1值', 'SVMF1值']
+    data['F1值_score'] = [f1_1, f1_2, f1_3]
+    
+    data.to_csv('score.csv', encoding='utf-8-sig')
+    
+    # # 保存模型
+    # joblib.dump(knn, 'knn_model.pkl')
+    # joblib.dump(vectorizer, 'vectorizer.joblib')
+    # # 保存LabelEncoder模型到文件中
+    # with open("label_encoder.pkl", "wb") as f:
+    #     pickle.dump(le, f)
 
 
 def main2():
@@ -124,5 +169,5 @@ def main2():
 
 
 if __name__ == '__main__':
-    # main1()
-    main2()
+    main1()
+    # main2()
