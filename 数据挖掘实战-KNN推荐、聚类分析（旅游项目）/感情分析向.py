@@ -14,6 +14,9 @@ from tqdm import tqdm
 import os
 import paddlehub as hub
 import jieba.posseg as posseg
+import pyecharts.options as opts
+from pyecharts.charts import WordCloud
+
 
 stop_words = []
 with open("stopwords_cn.txt", 'r', encoding='utf-8') as f:
@@ -84,8 +87,13 @@ def snownlp_fx():
 
 def wordclound_fx():
     data = pd.read_csv('./data/data_情感分析.csv')
-    text1 = [x for x in data['分词']]
-    stylecloud.gen_stylecloud(text=' '.join(map(str,text1)), max_words=100,
+    text1 = []
+    for x in data['分词']:
+        x = str(x).split(" ")
+        for j in x:
+            text1.append(j)
+    text2 = ' '.join(text1)
+    stylecloud.gen_stylecloud(text=text2, max_words=200,
                               collocations=False,
                               font_path='simhei.ttf',
                               icon_name='fas fa-globe',
@@ -174,6 +182,21 @@ def emotion_word():
     def main2(x):
         new_df = df1[df1['emotion_type'] == x]
         new_df = new_df.sort_values(by=['counts'],ascending=False)
+        data = []
+        for j, k in zip(new_df['word'][:100], new_df['counts'][:100]):
+            data.append((j, str(k)))
+            c = (
+                WordCloud(init_opts=opts.InitOpts(width="1200px", height="800px"))
+                    .add(series_name="", data_pair=data, word_size_range=[12, 55])
+                    .set_global_opts(
+                    title_opts=opts.TitleOpts(
+                        title="{}-词云图".format(x), title_textstyle_opts=opts.TextStyleOpts(font_size=48)
+                    ),
+                    tooltip_opts=opts.TooltipOpts(is_show=True),
+                )
+                    .render("./data/{}-词云图.html".format(x))
+            )
+
         new_df = new_df.iloc[:10]
         x_data = []
         y_data = []
@@ -223,8 +246,27 @@ def emotion_word():
     df1.to_csv('./data/情感词表.csv', encoding="utf-8-sig", index=False)
 
 
+def wordclound_basic():
+    df = pd.read_csv('./data/高频词TOP100.csv')
+    data = []
+    for j,k in zip(df['word'],df['counts']):
+        data.append((j,str(k)))
+    c = (
+        WordCloud(init_opts=opts.InitOpts(width="1200px", height="800px"))
+            .add(series_name="", data_pair=data, word_size_range=[12, 55])
+            .set_global_opts(
+            title_opts=opts.TitleOpts(
+                title="Top100词云图", title_textstyle_opts=opts.TextStyleOpts(font_size=48)
+            ),
+            tooltip_opts=opts.TooltipOpts(is_show=True),
+        )
+            .render("./data/Top100词云图.html")
+    )
+
+
 if __name__ == '__main__':
     snownlp_fx()
     wordclound_fx()
     emotion_score()
     emotion_word()
+    wordclound_basic()
