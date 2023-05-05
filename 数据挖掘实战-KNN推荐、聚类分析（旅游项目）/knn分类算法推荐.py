@@ -17,7 +17,7 @@ from sklearn.svm import SVC
 import matplotlib.pyplot as plt
 from sklearn import metrics
 from sklearn.metrics import roc_curve,auc
-
+import numpy as np
 df = pd.read_csv('./data/data_情感分析.csv')
 new_df = df.dropna(subset=['分词'],axis=0)
 stop_words = []
@@ -26,6 +26,7 @@ with open("stopwords_cn.txt", 'r', encoding='utf-8-sig') as f:
     lines = f.readlines()
     for line in lines:
         stop_words.append(line.strip())
+
 
 def main1():
     # 创建LabelEncoder对象
@@ -40,13 +41,6 @@ def main1():
     # 将数据集分为训练集和测试集
     X_train, X_test, y_train, y_test = train_test_split(X_vectorized, y, test_size=0.3, random_state=42)
 
-    # score_list = []
-    # for i in tqdm(range(1, 1000)):
-    #     knn = KNeighborsClassifier(n_neighbors=i)
-    #     knn.fit(X_train, y_train)
-    #     score = knn.score(X_test, y_test)
-    #     score_list.append(score)
-    #
     # best_k = score_list.index(max(score_list)) + 1
     # #406
     # print('Best K:', best_k)
@@ -64,40 +58,82 @@ def main1():
     y_pred_nb = clf_nb.predict(X_test)
     print('Naive Bayes accuracy:', accuracy_score(y_test, y_pred_nb))
 
-    # 训练和预测 - SVM
-    clf_svm = SVC(kernel='linear')
-    clf_svm.fit(X_train, y_train)
-    y_pred_svm = clf_svm.predict(X_test)
-    print('SVM accuracy:', accuracy_score(y_test, y_pred_svm))
-
-    accuracy1 = round(metrics.accuracy_score(y_test, y_pred), 4)
-    accuracy2 = round(metrics.accuracy_score(y_test, y_pred_nb), 4)
-    accuracy3 = round(metrics.accuracy_score(y_test, y_pred_svm), 4)
-
-    precision1 = round(metrics.precision_score(y_test, y_pred, average='micro'), 4)
-    precision2 = round(metrics.precision_score(y_test, y_pred_nb, average='micro'), 4)
-    precision3 = round(metrics.precision_score(y_test, y_pred_svm, average='micro'), 4)
-
-    recall1 = round(metrics.recall_score(y_test, y_pred, average='micro'), 4)
-    recall2 = round(metrics.recall_score(y_test, y_pred_nb, average='micro'), 4)
-    recall3 = round(metrics.recall_score(y_test, y_pred_svm, average='micro'), 4)
-
-    f1_1 = round(metrics.f1_score(y_test, y_pred, average='weighted'), 4)
-    f1_2 = round(metrics.f1_score(y_test, y_pred_nb, average='weighted'), 4)
-    f1_3 = round(metrics.f1_score(y_test, y_pred_svm, average='weighted'), 4)
+    # # 训练和预测 - SVM
+    # clf_svm = SVC(kernel='linear')
+    # clf_svm.fit(X_train, y_train)
+    # y_pred_svm = clf_svm.predict(X_test)
+    # print('SVM accuracy:', accuracy_score(y_test, y_pred_svm))
 
 
-    data = pd.DataFrame()
-    data['准确率'] = ['KNN准确率', '贝叶斯准确率', 'SVM准确率']
-    data['准确率_score'] = [accuracy1, accuracy2, accuracy3]
-    data['精确率'] = ['KNN精确率', '贝叶斯精确率', 'SVM精确率']
-    data['精确率_score'] = [precision1, precision2, precision3]
-    data['召回率'] = ['KNN召回率', '贝叶斯召回率', 'SVM召回率']
-    data['召回率_score'] = [recall1, recall2, recall3]
-    data['F1值'] = ['KNNF1值', '贝叶斯F1值', 'SVMF1值']
-    data['F1值_score'] = [f1_1, f1_2, f1_3]
-    
-    data.to_csv('score.csv', encoding='utf-8-sig')
+    # score_list = []
+    # for i in tqdm(range(400, 410)):
+    #     knn = KNeighborsClassifier(n_neighbors=i)
+    #     knn.fit(X_train, y_train)
+    #     score = knn.score(X_test, y_test)
+    #     score_list.append(round(score,4))
+
+    # score_list1 = []
+    # for i in tqdm(np.arange(0.1, 1.1, 0.1)):
+    #     svm = SVC(C=i)
+    #     svm.fit(X_train, y_train)
+    #     score = svm.score(X_test, y_test)
+    #     score_list1.append(score)
+
+
+    # df = pd.DataFrame()
+    # df['分值1'] = score_list
+    # df['分值2'] = score_list1
+    # df.to_csv('data.csv',encoding='utf-8-sig')
+    # print(score_list)
+    df = pd.read_csv('data.csv')
+    x_data1 = list(df['分值1'])
+    x_data2 = list(df['分值2'])
+    y_data1 = [y for y in range(400, 410)]
+    y_data2 = [y for y in np.arange(0.1, 1.1, 0.1)]
+    fig = plt.figure(figsize=(20,12),dpi=500)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    ax1 = fig.add_subplot(221)
+    ax2 = fig.add_subplot(222)
+    ax1.plot(y_data1,x_data1, label='KNN',color='r')
+    ax2.plot(y_data2,x_data2, label='SVM', color='g')
+    ax1.legend()
+    ax2.legend()
+    ax1.set_xlabel('n_neighbors')
+    ax1.set_ylabel('准确率')
+    ax2.set_xlabel('惩罚系数')
+    plt.title('准确率曲线图')
+    plt.savefig('准确率曲线图.png')
+    plt.show()
+
+
+    # accuracy1 = round(metrics.accuracy_score(y_test, y_pred), 4)
+    # accuracy2 = round(metrics.accuracy_score(y_test, y_pred_nb), 4)
+    # accuracy3 = round(metrics.accuracy_score(y_test, y_pred_svm), 4)
+    #
+    # precision1 = round(metrics.precision_score(y_test, y_pred, average='micro'), 4)
+    # precision2 = round(metrics.precision_score(y_test, y_pred_nb, average='micro'), 4)
+    # precision3 = round(metrics.precision_score(y_test, y_pred_svm, average='micro'), 4)
+    #
+    # recall1 = round(metrics.recall_score(y_test, y_pred, average='micro'), 4)
+    # recall2 = round(metrics.recall_score(y_test, y_pred_nb, average='micro'), 4)
+    # recall3 = round(metrics.recall_score(y_test, y_pred_svm, average='micro'), 4)
+    #
+    # f1_1 = round(metrics.f1_score(y_test, y_pred, average='weighted'), 4)
+    # f1_2 = round(metrics.f1_score(y_test, y_pred_nb, average='weighted'), 4)
+    # f1_3 = round(metrics.f1_score(y_test, y_pred_svm, average='weighted'), 4)
+    #
+    #
+    # data = pd.DataFrame()
+    # data['准确率'] = ['KNN准确率', '贝叶斯准确率', 'SVM准确率']
+    # data['准确率_score'] = [accuracy1, accuracy2, accuracy3]
+    # data['精确率'] = ['KNN精确率', '贝叶斯精确率', 'SVM精确率']
+    # data['精确率_score'] = [precision1, precision2, precision3]
+    # data['召回率'] = ['KNN召回率', '贝叶斯召回率', 'SVM召回率']
+    # data['召回率_score'] = [recall1, recall2, recall3]
+    # data['F1值'] = ['KNNF1值', '贝叶斯F1值', 'SVMF1值']
+    # data['F1值_score'] = [f1_1, f1_2, f1_3]
+    #
+    # data.to_csv('score.csv', encoding='utf-8-sig')
     
     # # 保存模型
     # joblib.dump(knn, 'knn_model.pkl')
@@ -170,4 +206,4 @@ def main2():
 
 if __name__ == '__main__':
     main1()
-    # main2()
+    main2()
