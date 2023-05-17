@@ -24,6 +24,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics import r2_score  # 用于计算R2 Score
 from pyecharts import options as opts
 from pyecharts.charts import Bar
+import scikitplot as skplt
 
 stop_words = []
 with open("stopwords_cn.txt", 'r', encoding='utf-8') as f:
@@ -203,26 +204,60 @@ def learning():
     xgb = XGBRegressor()  # XGboost回归器
     lgb = LGBMRegressor()  # LightGBM回归器
 
-    # 分别训练三种回归模型
-    rf.fit(X_train, y_train)  # 使用全部数据作为训练集
-    xgb.fit(X_train, y_train)  # 使用全部数据作为训练集
-    lgb.fit(X_train, y_train)  # 使用全部数据作为训练集
+    ###########2.回归部分##########
+    def regression_method(model,name):
+        model.fit(X_train, y_train)
+        score = model.score(X_test, y_test)
+        result = model.predict(X_test)
+        ResidualSquare = (result - y_test) ** 2  # 计算残差平方
+        RSS = sum(ResidualSquare)  # 计算残差平方和
+        MSE = np.mean(ResidualSquare)  # 计算均方差
+        num_regress = len(result)  # 回归样本个数
+        print(f'n={num_regress}')
+        print(f'R^2={score}')
+        print(f'MSE={MSE}')
+        print(f'RSS={RSS}')
+        ############绘制折线图##########
+        plt.figure()
+        plt.plot(np.arange(len(result)), y_test, 'go-', label='true value')
+        plt.plot(np.arange(len(result)), result, 'ro-', label='predict value')
+        plt.title('{} R^2: {}'.format(name,score))
+        plt.legend()  # 将样例显示出来
+        plt.savefig('{}.png'.format(name))
+        plt.show()
 
+        data = pd.DataFrame()
+        model = ['回归样本个数','R2','均方差','残差平方和']
+        r2 = [num_regress, score, MSE,RSS]
+        data['指标'] = model
+        data['分值'] = r2
+        data.to_csv('{}_model.csv'.format(name), encoding='utf-8-sig')
+        return result
 
-    rf_pred = rf.predict(X_test)  # 随机森林的预测值
-    xgb_pred = xgb.predict(X_test)  # XGboost的预测值
-    lgb_pred = lgb.predict(X_test)  # LightGBM的预测值
-    # 计算预测结果的R2 Score 它是用来衡量模型对数据变动的解释程度的指标。它等于1减去残差平方和（RSS）除以总平方和（TSS）。它反映了模型拟合的优度，越接近1越好
-    rf_r2 = r2_score(y_test, rf_pred)
-    xgb_r2 = r2_score(y_test, xgb_pred)
-    lgb_r2 = r2_score(y_test, lgb_pred)
+    ##########3.绘制验证散点图########
+    def scatter_plot(TureValues, PredictValues,name):
+        # 设置参考的1：1虚线参数
+        xxx = [-0.5, 1.5]
+        yyy = [-0.5, 1.5]
+        # 绘图
+        plt.figure()
+        plt.plot(xxx, yyy, c='0', linewidth=1, linestyle=':', marker='.', alpha=0.3)  # 绘制虚线
+        plt.scatter(TureValues, PredictValues, s=20, c='r', edgecolors='k', marker='o',
+                    alpha=0.8)  # 绘制散点图，横轴是真实值，竖轴是预测值
+        plt.xlim((0, 1))  # 设置坐标轴范围
+        plt.ylim((0, 1))
+        plt.title('{}_ScatterPlot'.format(name))
+        plt.savefig('{}_ScatterPlot.png'.format(name))
+        plt.show()
 
-    data = pd.DataFrame()
-    model = ['随机森林','XGB','LGB']
-    r2 = [rf_r2,xgb_r2,lgb_r2]
-    data['模型名称'] = model
-    data['r2分值'] = r2
-    data.to_csv('score_model.csv',encoding='utf-8-sig')
+    y_pred = regression_method(rf,'rf')  # 括号内填上方法，并获取预测值
+    scatter_plot(y_test, y_pred,'rf')  # 生成散点图
+
+    y_pred = regression_method(xgb,'xgb')  # 括号内填上方法，并获取预测值
+    scatter_plot(y_test, y_pred,'xgb')  # 生成散点图
+
+    y_pred = regression_method(lgb,'lgb')  # 括号内填上方法，并获取预测值
+    scatter_plot(y_test, y_pred,'lgb')  # 生成散点图
 
 
 def type1_bar():
@@ -283,6 +318,6 @@ if __name__ == '__main__':
     # data_processing()
     # lda()
     # snownlp_type()
-    # learning()
-    type_bar()
-    type1_bar()
+    learning()
+    # type_bar()
+    # type1_bar()
