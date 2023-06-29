@@ -2,6 +2,8 @@ import pandas as pd
 import numpy as np
 import re
 import jieba
+import jieba.posseg as pseg
+
 
 df = pd.read_csv('data.csv')
 
@@ -14,6 +16,7 @@ def main1(x):
 
 
 df['物流信息'] = df['content'].apply(main1)
+df = df.f
 new_df = df.dropna(how='any',axis=0)
 
 stop_words = []
@@ -51,14 +54,22 @@ def yasuo(st):
 
 
 def get_cut_words(content_series):
-    # 读入停用词表
-    # 分词
-    word_num = jieba.lcut(content_series, cut_all=False)
+    # 对文本进行分词和词性标注
+    words = pseg.cut(content_series)
+    # 保存名词和形容词的列表
+    nouns_and_adjs = []
+    # 逐一检查每个词语的词性，并将名词和形容词保存到列表中
+    for word, flag in words:
+        if flag.startswith('n') or flag.startswith('a'):
+            if word not in stop_words and len(word) >= 2 and is_all_chinese(word) == True:
+                # 如果是名词或形容词，就将其保存到列表中
+                nouns_and_adjs.append(word)
+    if len(nouns_and_adjs) != 0:
+        return ' '.join(nouns_and_adjs)
+    else:
+        return np.NAN
 
-    # 条件筛选
-    word_num_selected = [i for i in word_num if i not in stop_words and len(i) >= 2 and is_all_chinese(i) == True]
 
-    return ' '.join(word_num_selected)
 
 
 new_df['物流信息'] = new_df['物流信息'].apply(emjio_tihuan)
