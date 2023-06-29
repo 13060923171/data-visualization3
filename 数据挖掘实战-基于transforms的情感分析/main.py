@@ -87,7 +87,7 @@ def lda():
 
     dictionary = corpora.Dictionary(train)
     corpus = [dictionary.doc2bow(text) for text in train]
-    num_topics = 6
+    num_topics = 7
     #LDA可视化模块
     lda = models.LdaModel(corpus=corpus, id2word=dictionary, num_topics=num_topics, random_state=111, iterations=400)
 
@@ -146,5 +146,5 @@ def main1():
 
 
 if __name__ == '__main__':
-    # lda()
+    lda()
     main1()
