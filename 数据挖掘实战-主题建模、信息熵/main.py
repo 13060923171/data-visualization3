@@ -21,6 +21,7 @@ from gensim.models import LdaModel
 import gensim
 import gensim.corpora as corpora
 from gensim.models import CoherenceModel
+import math
 
 df = pd.read_excel('BYDCompany发布.xlsx')
 lemmatizer = WordNetLemmatizer()
@@ -159,4 +160,72 @@ df2['主题数'] = x_data1
 df2['主题词'] = y_data1
 df2['信息熵'] = z_data1
 df2.to_csv('主题词与信息熵.csv',encoding='utf-8-sig',index=False)
+
+
+def entropy(prob_list):
+    # 初始化信息熵为0
+    ent = 0
+    # 遍历列表中的每个概率
+    for p in prob_list:
+        # 如果概率为0，跳过该项
+        if p == 0:
+            continue
+        # 否则，用公式累加信息熵
+        else:
+            ent -= p * math.log2(p)
+    # 返回信息熵
+    return ent
+
+def main1(text):
+    # 对文本进行分词，用空格分隔
+    words = text.split()
+
+    # 统计每个词的出现次数，用字典存储
+    word_count = {}
+    for word in words:
+        # 如果词已经在字典中，增加其计数
+        if word in word_count:
+            word_count[word] += 1
+        # 否则，初始化其计数为1
+        else:
+            word_count[word] = 1
+
+    # 计算每个词的概率，用列表存储
+    prob_list = []
+    # 获取文本的总词数
+    total_words = len(words)
+    # 遍历字典中的每个词和计数
+    for word, count in word_count.items():
+        # 计算词的概率，即计数除以总词数
+        prob = count / total_words
+        # 将概率添加到列表中
+        prob_list.append(prob)
+
+    # 调用之前定义的函数，计算信息熵
+    ent = entropy(prob_list)
+    return ent
+
+
+df['entropy_values'] = df['clearn_comment'].apply(main1)
+
+
+# 主题判断模块
+list3 = []
+list2 = []
+# 这里进行lda主题判断
+for i in lda.get_document_topics(corpus)[:]:
+    listj = []
+    list1 = []
+    for j in i:
+        list1.append(j)
+        listj.append(j[1])
+    list3.append(list1)
+    bz = listj.index(max(listj))
+    list2.append(i[bz][0])
+
+
+df['主题概率'] = list3
+df['主题类型'] = list2
+
+df.to_csv('new_data.csv', encoding='utf-8-sig', index=False)
 
