@@ -41,11 +41,11 @@ def emotion(df,name):
     plt.figure(figsize=(20,9),dpi=500)
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.plot(new_df, color='#A93226',linewidth=3)
-    plt.title('{}_情感走势'.format(name))
-    plt.xlabel('周')
-    plt.ylabel('数值')
+    plt.title('{}_emotional trend'.format(name))
+    plt.xlabel('week')
+    plt.ylabel('value')
     plt.grid()
-    plt.savefig('{}_情感趋势.png'.format(name))
+    plt.savefig('{}_emotional trend.png'.format(name))
     plt.show()
 
 
@@ -57,11 +57,11 @@ def line1(df,name):
     plt.figure(figsize=(20, 9), dpi=500)
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.plot(new_df, color='#F39C12',linewidth=3)
-    plt.title('{}_转发量走势'.format(name))
-    plt.xlabel('周')
-    plt.ylabel('份数')
+    plt.title('{}_Forwarding trend'.format(name))
+    plt.xlabel('week')
+    plt.ylabel('value')
     plt.grid()
-    plt.savefig('{}_转发量走势.png'.format(name))
+    plt.savefig('{}_Forwarding trend.png'.format(name))
     plt.show()
 
 
@@ -70,17 +70,17 @@ def line2(df,name):
     plt.figure(figsize=(20, 9), dpi=500)
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.plot(new_df, color='#3498DB',linewidth=3)
-    plt.title('{}_发帖走势'.format(name))
-    plt.xlabel('周')
-    plt.ylabel('数量')
+    plt.title('{}_Post trend'.format(name))
+    plt.xlabel('week')
+    plt.ylabel('value')
     plt.grid()
-    plt.savefig('{}_发帖走势.png'.format(name))
+    plt.savefig('{}_Post trend.png'.format(name))
     plt.show()
 
 
 if __name__ == '__main__':
     data = [df1,df2]
-    name1 = ['舆情爆发期','舆情平淡期']
+    name1 = ['Outbreak of public opinion','Flat period of public opinion']
     for d,n in zip(data,name1):
         emotion(d,n)
         line1(d,n)
