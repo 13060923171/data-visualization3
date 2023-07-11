@@ -35,9 +35,9 @@ def emotion():
     plt.figure(figsize=(20,9),dpi=500)
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.plot(new_df, color='#b82410',linewidth=3)
-    plt.title('情感走势')
-    plt.xlabel('年份')
-    plt.ylabel('数值')
+    plt.title('emotional trend')
+    plt.xlabel('years')
+    plt.ylabel('value')
     plt.grid()
     plt.savefig('情感趋势.png')
     plt.show()
@@ -51,9 +51,9 @@ def line1():
     plt.figure(figsize=(20, 9), dpi=500)
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.plot(new_df, color='#48C9B0',linewidth=3)
-    plt.title('转发量走势')
-    plt.xlabel('年份')
-    plt.ylabel('份数')
+    plt.title('Forwarding trend')
+    plt.xlabel('year')
+    plt.ylabel('value')
     plt.grid()
     plt.savefig('转发量走势.png')
     plt.show()
@@ -62,27 +62,26 @@ def bar1():
     def main3(x):
         x1 = int(x)
         if x1 <= 10000:
-            return '粉丝数一万以内'
+            return 'Less than 10,000 followers'
         elif 10000 < x1 <= 50000:
-            return '粉丝数在1万-5万区间'
+            return 'The number of followers is between 10,000 and 50,000'
         elif 50000 < x1 <= 100000:
-            return '粉丝数在5万-10万区间'
+            return 'The number of followers is between 50,000 and 100,000'
         else:
-            return '粉丝数大于10万'
+            return 'The number of fans is greater than 100,000'
 
     df['num_fans'] = df['num_fans'].apply(main3)
     new_df = df['num_fans'].value_counts()
     new_df = new_df.sort_index()
-    plt.figure(figsize=(12, 16),dpi=500)
+    plt.figure(figsize=(20, 9),dpi=500)
     x_data = [x for x in new_df.index]
     y_data = [int(y) for y in new_df.values]
 
     plt.bar(x_data,y_data, color='#EC7063')
     plt.rcParams['font.sans-serif'] = ['SimHei']
-    plt.title("粉丝分布状况")
-    plt.xlabel("粉丝数类别")
-    plt.ylabel("数量")
-    plt.xticks(rotation=65)
+    plt.title("Distribution of fans")
+    plt.xlabel("Number of fans category")
+    plt.ylabel("value")
     plt.savefig('粉丝分布状况.png')
     plt.show()
 
@@ -107,7 +106,7 @@ def pie1():
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.figure(figsize=(16,9),dpi=500)
     plt.pie(y_data, labels=x_data1, startangle=0, autopct='%1.2f%%')
-    plt.title("粉丝ToP20_发帖情况")
+    plt.title("Followers Top 20_Post Status")
     plt.savefig('粉丝ToP20_发帖情况.png')
     plt.show()
 
@@ -124,25 +123,25 @@ def line2():
     plt.figure(figsize=(20, 9),dpi=500)
 
     # 创建柱状图
-    plt.bar(df1['year'], df1['values'], color='lightblue', edgecolor='black', linewidth=1, width=0.5,label='月度微博数量')
+    plt.bar(df1['year'], df1['values'], color='lightblue', edgecolor='black', linewidth=1, width=0.5,label='Monthly Weibo Quantity')
 
     # 创建折线图
-    plt.plot(df1['year'], df1['growth'], color='red', marker='o', linestyle='-', linewidth=2, markersize=8,label='月度增长率')
+    plt.plot(df1['year'], df1['growth'], color='red', marker='o', linestyle='-', linewidth=2, markersize=8,label='monthly growth rate')
     # 添加数据点标签
     for i, value in enumerate(df1['growth']):
         if pd.notnull(value):
             plt.text(df1['year'][i], value, f'{value:.2f}', ha='center', va='bottom', fontsize=8)
     # 添加标题和轴标签
-    plt.title('月度发帖数量与增长趋势')
+    plt.title('Number of monthly posts and growth trend')
     plt.xlabel('Year')
-    plt.ylabel('数量/增长率')
+    plt.ylabel('Quantity/Growth')
     # 显示网格线
     plt.grid(axis='y', linestyle='dashed', alpha=0.5)
     # 自动旋转 x 轴标签
     plt.xticks(rotation=45)
 
     # 显示图例
-    plt.legend(['Growth'])
+    plt.legend()
     plt.tight_layout()
     # 展示图形
     plt.savefig('月度发帖数量与增长趋势.png')
@@ -153,8 +152,8 @@ def line2():
 
 
 if __name__ == '__main__':
-    # emotion()
-    # line1()
-    # bar1()
+    emotion()
+    line1()
+    bar1()
     pie1()
-    # line2()
+    line2()

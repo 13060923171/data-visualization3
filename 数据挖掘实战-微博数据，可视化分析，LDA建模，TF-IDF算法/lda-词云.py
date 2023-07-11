@@ -17,6 +17,17 @@ from gensim.models import CoherenceModel
 import matplotlib.pyplot as plt
 from IPython.display import Image
 import stylecloud
+from googletrans import Translator
+import time
+from tqdm import tqdm
+import pyecharts.options as opts
+from pyecharts.charts import WordCloud
+
+
+def translate_chinese_to_english(text):
+    translator = Translator(service_urls=['translate.google.com.hk'])
+    translation = translator.translate(text, src='zh-cn', dest='en')
+    return translation.text
 
 
 def tf_idf(df):
@@ -46,16 +57,18 @@ def tf_idf(df):
 
     x_data = list(df2['word'])[:30]
     y_data = list(df2['tfidf'])[:30]
-    x_data.reverse()
+    x_data1 = [translate_chinese_to_english(x) for x in x_data]
+    x_data1.reverse()
     y_data.reverse()
     plt.figure(figsize=(12, 9), dpi=500)
-    plt.barh(x_data, y_data)
+    plt.barh(x_data1, y_data)
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.title("TF-IDF TOP30")
-    plt.xlabel("数值")
+    plt.xlabel("value")
     plt.savefig('TFIDF.png')
     plt.show()
     df2.to_csv('tfidf.csv', encoding='utf-8-sig', index=False)
+
 
 def wordclound(df):
     str1 = ''
@@ -63,8 +76,9 @@ def wordclound(df):
     for i in df['new_content']:
         res = posseg.cut(i)
         for word, flag in res:
-            counts[word] = counts.get(word, 0) + 1
-            str1 += word + ' '
+            if len(word) >= 2:
+                counts[word] = counts.get(word, 0) + 1
+                str1 += word + ' '
 
     ls = list(counts.items())
     ls.sort(key=lambda x: x[1], reverse=True)
@@ -77,19 +91,41 @@ def wordclound(df):
 
     df1 = pd.DataFrame()
     df1['word'] = x_data[1:201]
+    x_data1 =[]
+    for i in tqdm(df1['word']):
+        i = translate_chinese_to_english(i)
+        x_data1.append(i)
+        time.sleep(0.1)
+    df1['translate'] = x_data1
     df1['counts'] = y_data[1:201]
     df1.to_csv('TOP200热词.csv', encoding="utf-8-sig")
 
-    str1 = str1.strip(' ')
-    stylecloud.gen_stylecloud(text=str1, max_words=200,
-                              collocations=False,
-                              background_color="#B3B6B7",
-                              font_path='simhei.ttf',
-                              icon_name='fas fa-tree',
-                              size=500,
-                              palette='matplotlib.Inferno_9',
-                              output_name='词云图.png')
-    Image(filename='词云图.png')
+    data = []
+    for x,y in zip(x_data1,y_data[1:201]):
+        data.append((x,y))
+
+    (
+        WordCloud()
+            .add(series_name="Hot spot analysis", data_pair=data, word_size_range=[6, 66])
+            .set_global_opts(
+            title_opts=opts.TitleOpts(
+                title="Hot spot analysis", title_textstyle_opts=opts.TextStyleOpts(font_size=23)
+            ),
+            tooltip_opts=opts.TooltipOpts(is_show=True),
+        )
+            .render("wordcloud.html")
+    )
+    # str1 = str1.strip(' ')
+    # # str1 = translate_chinese_to_english(str1)
+    # stylecloud.gen_stylecloud(text=str1, max_words=200,
+    #                           collocations=False,
+    #                           background_color="#B3B6B7",
+    #                           font_path='simhei.ttf',
+    #                           icon_name='fas fa-tree',
+    #                           size=500,
+    #                           palette='matplotlib.Inferno_9',
+    #                           output_name='词云图.png')
+    # Image(filename='词云图.png')
 
 
 def lda(df):
@@ -158,6 +194,6 @@ def lda(df):
 if __name__ == '__main__':
     df = pd.read_csv('new_data.csv')
     df.dropna(subset=['new_content'], axis=0,inplace=True)
-    tf_idf(df)
+    # tf_idf(df)
     wordclound(df)
-    lda(df)
+    # lda(df)
