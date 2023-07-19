@@ -1,31 +1,123 @@
-from gensim import corpora
-from gensim.models import LdaModel
-import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 
-# 准备一些英文文本数据
-texts = ["This is an example sentence about topic modeling.",
-         "Topic modeling can be used for text analysis.",
-         "LDA is a popular algorithm for topic modeling."]
 
-# 文本预处理
+def demo1():
+    df = pd.read_csv('./result1/new_data.csv')
+    def main1(x):
+        x1 = str(x).split(" ")
+        x2 = x1[0] + " "+ x1[1] + " "+ x1[2] + " " + x1[-1]
+        return x2
 
-# 文本特征提取
-dictionary = corpora.Dictionary([text.split() for text in texts])
-corpus = [dictionary.doc2bow(text.split()) for text in texts]
+    df['发文时间'] = df['发文时间'].apply(main1)
+    df['发文时间'] = pd.to_datetime(df['发文时间'])
+    new_df = df.groupby('发文时间').agg('mean')
+    df1 = pd.DataFrame()
+    df1['转发'] = new_df['转发']
+    df1['点赞'] = new_df['点赞']
+    df1['评论'] = new_df['评论']
+    df1['熵值'] = new_df['entropy_values']
 
-# LDA主题建模
-lda_model = LdaModel(corpus, num_topics=6, id2word=dictionary)
+    plt.figure(figsize=(20,9),dpi=500)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.plot(list(df1.index),df1['转发'], color='#A93226',linewidth=3)
+    plt.title('retweet trend')
+    plt.xlabel('DAY')
+    plt.ylabel('value')
+    plt.grid()
+    plt.savefig('./result1/retweet trend.png')
+    plt.show()
 
-# 计算主题的信息熵
-topic_entropies = []
-for topic in lda_model.show_topics():
-    topic_words = [word for word, prob in lda_model.show_topic(topic[0])]
-    word_probs = [prob for word, prob in lda_model.show_topic(topic[0])]
-    entropy = np.sum(-np.array(word_probs) * np.log2(word_probs))
-    topic_entropies.append((topic[0], topic_words, entropy))
 
-# 打印主题及其对应的信息熵
-for topic_entropy in topic_entropies:
-    print("Topic {}: {}".format(topic_entropy[0], topic_entropy[1]))
-    print("Entropy: {}".format(topic_entropy[2]))
-    print()
+    plt.figure(figsize=(20,9),dpi=500)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.plot(list(df1.index),df1['点赞'], color='#3498DB',linewidth=3)
+    plt.title('like trend')
+    plt.xlabel('DAY')
+    plt.ylabel('value')
+    plt.grid()
+    plt.savefig('./result1/like trend.png')
+    plt.show()
+
+    plt.figure(figsize=(20,9),dpi=500)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.plot(list(df1.index),df1['评论'], color='#F39C12',linewidth=3)
+    plt.title('comment trend')
+    plt.xlabel('DAY')
+    plt.ylabel('value')
+    plt.grid()
+    plt.savefig('./result1/comment trend.png')
+    plt.show()
+
+
+    plt.figure(figsize=(20,9),dpi=500)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.plot(list(df1.index),df1['熵值'], color='#2E4053',linewidth=3)
+    plt.title('entropy trend')
+    plt.xlabel('DAY')
+    plt.ylabel('value')
+    plt.grid()
+    plt.savefig('./result1/entropy trend.png')
+    plt.show()
+
+    df1.to_csv('./result1/时间数据.csv',encoding='utf-8-sig')
+
+
+def demo2():
+    df = pd.read_csv('./result2/new_data.csv')
+    df['发文时间'] = pd.to_datetime(df['发文时间'])
+    new_df = df.groupby('发文时间').agg('mean')
+    df1 = pd.DataFrame()
+    df1['转发'] = new_df['转发']
+    df1['点赞'] = new_df['点赞']
+    df1['评论'] = new_df['评论']
+    df1['熵值'] = new_df['entropy_values']
+
+    plt.figure(figsize=(20,9),dpi=500)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.plot(list(df1.index),df1['转发'], color='#A93226',linewidth=3)
+    plt.title('retweet trend')
+    plt.xlabel('DAY')
+    plt.ylabel('value')
+    plt.grid()
+    plt.savefig('./result2/retweet trend.png')
+    plt.show()
+
+
+    plt.figure(figsize=(20,9),dpi=500)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.plot(list(df1.index),df1['点赞'], color='#3498DB',linewidth=3)
+    plt.title('like trend')
+    plt.xlabel('DAY')
+    plt.ylabel('value')
+    plt.grid()
+    plt.savefig('./result2/like trend.png')
+    plt.show()
+
+    plt.figure(figsize=(20,9),dpi=500)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.plot(list(df1.index),df1['评论'], color='#F39C12',linewidth=3)
+    plt.title('comment trend')
+    plt.xlabel('DAY')
+    plt.ylabel('value')
+    plt.grid()
+    plt.savefig('./result2/comment trend.png')
+    plt.show()
+
+
+    plt.figure(figsize=(20,9),dpi=500)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.plot(list(df1.index),df1['熵值'], color='#2E4053',linewidth=3)
+    plt.title('entropy trend')
+    plt.xlabel('DAY')
+    plt.ylabel('value')
+    plt.grid()
+    plt.savefig('./result2/entropy trend.png')
+    plt.show()
+
+    df1.to_csv('./result2/时间数据.csv',encoding='utf-8-sig')
+
+
+if __name__ == '__main__':
+    # demo1()
+    demo2()
