@@ -22,10 +22,13 @@ import gensim
 import gensim.corpora as corpora
 from gensim.models import CoherenceModel
 import math
+from gensim.models import CoherenceModel
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+import nltk
 
-df = pd.read_excel('BYDCompany发布.xlsx')
+df = pd.read_excel('result2-1689328579.xlsx')
 lemmatizer = WordNetLemmatizer()
-
+sid = SentimentIntensityAnalyzer()
 
 stop_words = []
 with open('常用英文停用词(NLP处理英文必备)stopwords.txt','r',encoding='utf-8')as f:
@@ -115,11 +118,38 @@ def clean_text(text):
     else:
         return np.NAN
 
+def emotional_judgment(x):
+    neg = x['neg']
+    neu = x['neu']
+    pos = x['pos']
+    compound = x['compound']
+    if compound == 0 and neg == 0 and pos == 0 and neu == 1:
+        return 'neu'
+    if compound > 0:
+        if pos > neg:
+            return 'pos'
+        else:
+            return 'neg'
+    elif compound < 0:
+        if pos < neg:
+            return 'neg'
+        else:
+            return 'pos'
 
-df['clearn_comment'] = df['内容1'].apply(gettext)
+
+
+
+df['clearn_comment'] = df['全文'].apply(gettext)
 df['clearn_comment'] = df['clearn_comment'].apply(preprocess_word)
 df['clearn_comment'] = df['clearn_comment'].apply(clean_text)
 df.dropna(subset=['clearn_comment'],axis=0,inplace=True)
+df['scores'] = df['clearn_comment'].apply(lambda commentText: sid.polarity_scores(commentText))
+df['compound'] = df['scores'].apply(lambda score_dict: score_dict['compound'])
+df['Negtive'] = df['scores'].apply(lambda score_dict: score_dict['neg'])
+df['Postive'] = df['scores'].apply(lambda score_dict: score_dict['pos'])
+df['Neutral'] = df['scores'].apply(lambda score_dict: score_dict['neu'])
+df['comp_score'] = df['scores'].apply(emotional_judgment)
+
 
 dictionary = corpora.Dictionary([text.split() for text in df['clearn_comment']])
 corpus = [dictionary.doc2bow(text.split()) for text in df['clearn_comment']]
@@ -133,7 +163,7 @@ lda = gensim.models.ldamodel.LdaModel(corpus=corpus, id2word=dictionary, num_top
 #读取lda对应的数据
 data1 = pyLDAvis.gensim.prepare(lda, corpus, dictionary)
 #把数据进行可视化处理
-pyLDAvis.save_html(data1, 'lda.html')
+pyLDAvis.save_html(data1, './result2/lda.html')
 
 # 计算主题的信息熵
 topic_entropies = []
@@ -159,7 +189,7 @@ df2 = pd.DataFrame()
 df2['主题数'] = x_data1
 df2['主题词'] = y_data1
 df2['信息熵'] = z_data1
-df2.to_csv('主题词与信息熵.csv',encoding='utf-8-sig',index=False)
+df2.to_csv('./result2/主题词与信息熵.csv',encoding='utf-8-sig',index=False)
 
 
 def entropy(prob_list):
@@ -227,5 +257,5 @@ for i in lda.get_document_topics(corpus)[:]:
 df['主题概率'] = list3
 df['主题类型'] = list2
 
-df.to_csv('new_data.csv', encoding='utf-8-sig', index=False)
+df.to_csv('./result2/new_data.csv', encoding='utf-8-sig', index=False)
 
