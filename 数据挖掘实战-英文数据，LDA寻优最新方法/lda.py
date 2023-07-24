@@ -28,44 +28,46 @@ def demo(df1,time_name):
     dictionary = Dictionary(corpus)
     corpus_bow = [dictionary.doc2bow(text) for text in corpus]
 
-    # 定义评估指标函数
-    def compute_coherence_values(dictionary, corpus, texts, limit, start=2, step=1):
-        coherence_values = []
-        model_list = []
-        # 使用tqdm显示进度条
-        for num_topics in tqdm(range(start, limit, step)):
-            model = LdaModel(corpus=corpus, num_topics=num_topics, id2word=dictionary)
-            model_list.append(model)
-            #Coherence（一致性）是用来评估主题模型的一种指标，c_v方法使用了类似点互信息的计算，可以有效地衡量主题的连贯性
-            coherence_model = CoherenceModel(model=model, texts=texts, dictionary=dictionary, coherence='c_v')
-            coherence_values.append(coherence_model.get_coherence())
-
-        return model_list, coherence_values
-
-    # 调用评估函数来计算不同主题数下的模型评估指标
-    start = 2
-    limit = 16
-    step = 1
-    model_list, coherence_values = compute_coherence_values(dictionary=dictionary, corpus=corpus_bow, texts=corpus,start=start, limit=limit, step=step)
-
-    # 绘制评估指标随主题数变化的曲线
-    x = range(start, limit, step)
-    plt.plot(x, coherence_values)
-    plt.title('{}_coherence_values'.format(time_name))
-    plt.xlabel("Number of Topics")
-    plt.ylabel("Coherence Score")
-    plt.legend(("coherence_values"), loc='best')
-    plt.savefig('./{}/coherence_values.png'.format(time_name))
-    plt.show()
-    df = pd.DataFrame()
-    df['Topic number'] = x
-    df['coherence_values'] = coherence_values
-    df.to_csv('./{}/coherence_values.csv'.format(time_name),encoding='utf-8-sig')
+    # # 定义评估指标函数
+    # def compute_coherence_values(dictionary, corpus, texts, limit, start=2, step=1):
+    #     coherence_values = []
+    #     model_list = []
+    #     # 使用tqdm显示进度条
+    #     for num_topics in tqdm(range(start, limit, step)):
+    #         model = LdaModel(corpus=corpus, num_topics=num_topics, id2word=dictionary)
+    #         model_list.append(model)
+    #         #Coherence（一致性）是用来评估主题模型的一种指标，c_v方法使用了类似点互信息的计算，可以有效地衡量主题的连贯性
+    #         coherence_model = CoherenceModel(model=model, texts=texts, dictionary=dictionary, coherence='c_v')
+    #         coherence_values.append(coherence_model.get_coherence())
+    #
+    #     return model_list, coherence_values
+    #
+    # # 调用评估函数来计算不同主题数下的模型评估指标
+    # start = 2
+    # limit = 16
+    # step = 1
+    # model_list, coherence_values = compute_coherence_values(dictionary=dictionary, corpus=corpus_bow, texts=corpus,start=start, limit=limit, step=step)
+    #
+    # # 绘制评估指标随主题数变化的曲线
+    # x = range(start, limit, step)
+    # plt.plot(x, coherence_values)
+    # plt.title('{}_coherence_values'.format(time_name))
+    # plt.xlabel("Number of Topics")
+    # plt.ylabel("Coherence Score")
+    # plt.legend(("coherence_values"), loc='best')
+    # plt.savefig('./{}/coherence_values.png'.format(time_name))
+    # plt.show()
+    # df = pd.DataFrame()
+    # df['Topic number'] = x
+    # df['coherence_values'] = coherence_values
+    # df.to_csv('./{}/coherence_values.csv'.format(time_name),encoding='utf-8-sig')
     # 根据coherence值选择最优主题数
-    optimal_index = np.argmax(coherence_values)
-    optimal_model = model_list[optimal_index]
-    optimal_num_topics = start + optimal_index * step
-    print("Optimal number of topics:", optimal_num_topics)
+    # optimal_index = np.argmax(coherence_values)
+    # optimal_model = model_list[optimal_index]
+    # optimal_num_topics = start + optimal_index * step
+    # print("Optimal number of topics:", optimal_num_topics)
+
+    optimal_num_topics = 15
 
     # LDA可视化模块
     # 构建lda主题参数
@@ -163,7 +165,25 @@ if __name__ == '__main__':
     df4['clearn_comment'] = df3['clearn_comment']
     df4['情感类型'] = df3['情感类型']
     df4['情感得分'] = df3['情感得分']
-    data = pd.concat([df2, df4], axis=0)
+
+    df5 = pd.read_csv('new_data3.csv')
+    df6 = pd.DataFrame()
+    df6['time'] = df5['createdAt']
+    df6['content'] = df5['message']
+    df6['clearn_comment'] = df5['clearn_comment']
+    df6['情感类型'] = df5['情感类型']
+    df6['情感得分'] = df5['情感得分']
+
+    df7 = pd.read_csv('new_data4.csv')
+    df8 = pd.DataFrame()
+    df8['time'] = df7['created_at']
+    df8['content'] = df7['text']
+    df8['clearn_comment'] = df7['clearn_comment']
+    df8['情感类型'] = df7['情感类型']
+    df8['情感得分'] = df7['情感得分']
+
+    data = pd.concat([df2, df4,df6,df8], axis=0)
+    data = data.drop_duplicates(subset=['content'])
 
     def time_process(x):
         x1 = str(x).split(" ")
