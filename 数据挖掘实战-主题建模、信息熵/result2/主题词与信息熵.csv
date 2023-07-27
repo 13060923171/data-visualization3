@@ -1,5 +1,7 @@
 ﻿主题数,主题词,信息熵
-0,"['economy', 'amp', 'rate', 'growth', 'economic', 'time', 'country', 'challenge', 'crisis', 'global']",0.57930446
-1,"['amp', 'economy', 'policy', 'join', 'india', 'read', 'support', 'event', 'industry', 'people']",0.546429
-2,"['amp', 'economy', 'day', 'waste', 'circular', 'business', 'time', 'people', 'project', 'growth']",0.5490729
-3,"['circular', 'economy', 'amp', 'price', 'material', 'green', 'project', 'people', 'recycling', 'model']",0.54499114
+0,"['rate', 'economy', 'economic', 'growth', 'time', 'inflation', 'amp', 'policy', 'day', 'fed']",0.5172297358512878
+1,"['amp', 'economy', 'market', 'news', 'join', 'bank', 'event', 'read', 'india', 'growth']",0.5240644216537476
+2,"['economy', 'amp', 'waste', 'day', 'project', 'month', 'economic', 'business', 'time', 'billion']",0.5705217123031616
+3,"['economy', 'minister', 'price', 'war', 'morning', 'share', 'project', 'conference', 'business', 'press']",0.42983871698379517
+4,"['amp', 'economy', 'circular', 'join', 'support', 'solution', 'development', 'resource', 'people', 'opportunity']",0.7790119647979736
+5,"['economy', 'amp', 'country', 'growth', 'global', 'economic', 'current', 'policy', 'article', 'european']",0.5693787932395935
