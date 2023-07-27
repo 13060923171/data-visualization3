@@ -1,31 +1,17 @@
 import pandas as pd
 import re
 import numpy as np
-from tqdm import tqdm
-import time
 from nltk.stem import WordNetLemmatizer
 # 数据处理库
-import matplotlib
-import matplotlib.pyplot as plt
-import re
-from collections import Counter
-from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
-from sklearn.decomposition import LatentDirichletAllocation
-import itertools
 import pyLDAvis
 import pyLDAvis.gensim
-from tqdm import tqdm
-import os
-from gensim.models import LdaModel
 import gensim
 import gensim.corpora as corpora
-from gensim.models import CoherenceModel
 import math
-from gensim.models import CoherenceModel
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import nltk
-
+#nltk.download('wordnet')
+#在这里修改文件名
 df = pd.read_excel('result2-1689328579.xlsx')
 lemmatizer = WordNetLemmatizer()
 sid = SentimentIntensityAnalyzer()
@@ -138,7 +124,8 @@ def emotional_judgment(x):
 
 
 
-
+#df['全文']这个指的是要读取的那一列的列名，也就是文本数据那一行
+#如果Excel表格列名有改动，记得修改
 df['clearn_comment'] = df['全文'].apply(gettext)
 df['clearn_comment'] = df['clearn_comment'].apply(preprocess_word)
 df['clearn_comment'] = df['clearn_comment'].apply(clean_text)
@@ -154,7 +141,7 @@ df['comp_score'] = df['scores'].apply(emotional_judgment)
 dictionary = corpora.Dictionary([text.split() for text in df['clearn_comment']])
 corpus = [dictionary.doc2bow(text.split()) for text in df['clearn_comment']]
 
-
+#这里是主题数的输入，如果感觉主题数不满意，可以在这里重新运行，输入你需要的主题数
 num_topics = input('请输入主题数:')
 
 #LDA可视化模块
@@ -189,6 +176,7 @@ df2 = pd.DataFrame()
 df2['主题数'] = x_data1
 df2['主题词'] = y_data1
 df2['信息熵'] = z_data1
+#这里是文件保存路径，到时候运行不同文件，最好修改一下相对的路径，不然就是会覆盖
 df2.to_csv('./result2/主题词与信息熵.csv',encoding='utf-8-sig',index=False)
 
 
@@ -256,6 +244,6 @@ for i in lda.get_document_topics(corpus)[:]:
 
 df['主题概率'] = list3
 df['主题类型'] = list2
-
+#这里是文件保存路径，到时候运行不同文件，最好修改一下相对的路径，不然就是会覆盖
 df.to_csv('./result2/new_data.csv', encoding='utf-8-sig', index=False)
 
