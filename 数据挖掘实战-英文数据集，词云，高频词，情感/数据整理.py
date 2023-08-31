@@ -1,17 +1,17 @@
 import pandas as pd
 
-# df1 = pd.read_excel('google处理结果（已清洗）.xlsx')
-# df2 = pd.read_excel('meta检索结果.xlsx')
-#
-# df1['来源'] = 'google new'
-# df2['来源'] = 'meta'
-# df1['文本内容'] = df1['正文']
-# df2['文本内容'] = df2['评论时间']
-# df2['时间'] = df2['评论正文']
-# df1 = df1[['文本内容','来源','时间']]
-# df2 = df2[['文本内容','来源','时间']]
-# df3 = pd.concat([df1,df2],axis=0)
-# df3.to_excel('媒体数据.xlsx',encoding='utf-8-sig',index=False)
+df1 = pd.read_excel('google处理结果（已清洗）.xlsx')
+df2 = pd.read_excel('meta检索结果.xlsx')
+
+df1['来源'] = 'google new'
+df2['来源'] = 'meta'
+df1['文本内容'] = df1['正文']
+df2['文本内容'] = df2['评论时间']
+df2['时间'] = df2['评论正文']
+df1 = df1[['文本内容','来源','时间']]
+df2 = df2[['文本内容','来源','时间']]
+df3 = pd.concat([df1,df2],axis=0)
+df3.to_excel('媒体数据.xlsx',encoding='utf-8-sig',index=False)
 
 df1 = pd.read_excel('imdb检索结果.xlsx')
 df2 = pd.read_excel('youtube搜索结果（已清洗）.xlsx')
