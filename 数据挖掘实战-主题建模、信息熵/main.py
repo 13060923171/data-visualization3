@@ -10,6 +10,7 @@ import gensim.corpora as corpora
 import math
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import nltk
+
 #nltk.download('wordnet')
 #在这里修改文件名
 df = pd.read_excel('result2-1689328579.xlsx')
