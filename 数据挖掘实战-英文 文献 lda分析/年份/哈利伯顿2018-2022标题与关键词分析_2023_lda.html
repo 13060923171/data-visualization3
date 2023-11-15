@@ -1,0 +1,41 @@
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.4.0/pyLDAvis/js/ldavis.v1.0.0.css">
+
+
+<div id="ldavis_el2901625140679612169979887533" style="background-color:white;"></div>
+<script type="text/javascript">
+
+var ldavis_el2901625140679612169979887533_data = {"mdsDat": {"x": [0.0005456096299160825, -0.0005456096299160825], "y": [0.0, 0.0], "topics": [1, 2], "cluster": [1, 1], "Freq": [93.63483678880228, 6.365163211197721]}, "tinfo": {"Term": ["preliminary", "identification", "isotope", "study", "forgery", "analysisapplied", "radiation", "neutron", "hetian", "instrumental", "activation", "jade", "jade", "activation", "instrumental", "hetian", "neutron", "radiation", "analysisapplied", "forgery", "study", "isotope", "identification", "preliminary", "preliminary", "identification", "isotope", "study", "forgery", "analysisapplied", "radiation", "neutron", "hetian", "instrumental", "activation", "jade"], "Freq": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0034013139635647, 0.9941074077514394, 0.9766701889027622, 0.9397451262320615, 0.9326126013451805, 0.9303201206646285, 0.9275815170821389, 0.9243526722322919, 0.9166524687193949, 0.9133070911092744, 0.8987613413748825, 0.8786678955501159, 0.06928039084744864, 0.06731952896771554, 0.06590013337235323, 0.06557367494632449, 0.06482220879480671, 0.0645071663123431, 0.06423991030949883, 0.06401615553926265, 0.06332014150843213, 0.05971678371649536, 0.05801517643549259, 0.057108246302762344], "Total": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.060509560266327, 1.052122584186932, 1.0363869726192576, 1.0030652677404936, 0.9966287568844432, 0.9945600309741274, 0.992088683394482, 0.9891748810270986, 0.9822261436657194, 0.9792072244816277, 0.966080870342598, 0.9479482863975646, 0.9479482863975646, 0.966080870342598, 0.9792072244816277, 0.9822261436657194, 0.9891748810270986, 0.992088683394482, 0.9945600309741274, 0.9966287568844432, 1.0030652677404936, 1.0363869726192576, 1.052122584186932, 1.060509560266327], "Category": ["Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2"], "logprob": [12.0, 11.0, 10.0, 9.0, 8.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0, -2.4157, -2.425, -2.4427, -2.4813, -2.4889, -2.4914, -2.4943, -2.4978, -2.5062, -2.5098, -2.5259, -2.5485, -2.4002, -2.4289, -2.4502, -2.4552, -2.4667, -2.4716, -2.4757, -2.4792, -2.4901, -2.5487, -2.5776, -2.5934], "loglift": [12.0, 11.0, 10.0, 9.0, 8.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0, 0.0104, 0.009, 0.0064, 0.0006, -0.0006, -0.001, -0.0015, -0.002, -0.0033, -0.0039, -0.0065, -0.0101, 0.1382, 0.0905, 0.0557, 0.0477, 0.0291, 0.0213, 0.0147, 0.0091, -0.0083, -0.0996, -0.1435, -0.1672]}, "token.table": {"Topic": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "Freq": [0.9504595900037526, 1.0079744046454084, 1.0109435845779478, 0.9969440994129939, 1.0351100313634958, 0.9648905538369544, 1.0212342954571028, 0.9429429374958853, 1.0033826468404299, 1.0549098662335734, 1.0054697241558606, 1.0180954828466973], "Term": ["activation", "analysisapplied", "forgery", "hetian", "identification", "instrumental", "isotope", "jade", "neutron", "preliminary", "radiation", "study"]}, "R": 12, "lambda.step": 0.01, "plot.opts": {"xlab": "PC1", "ylab": "PC2"}, "topic.order": [2, 1]};
+
+function LDAvis_load_lib(url, callback){
+  var s = document.createElement('script');
+  s.src = url;
+  s.async = true;
+  s.onreadystatechange = s.onload = callback;
+  s.onerror = function(){console.warn("failed to load library " + url);};
+  document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+if(typeof(LDAvis) !== "undefined"){
+   // already loaded: just create the visualization
+   !function(LDAvis){
+       new LDAvis("#" + "ldavis_el2901625140679612169979887533", ldavis_el2901625140679612169979887533_data);
+   }(LDAvis);
+}else if(typeof define === "function" && define.amd){
+   // require.js is available: use it to load d3/LDAvis
+   require.config({paths: {d3: "https://d3js.org/d3.v5"}});
+   require(["d3"], function(d3){
+      window.d3 = d3;
+      LDAvis_load_lib("https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.4.0/pyLDAvis/js/ldavis.v3.0.0.js", function(){
+        new LDAvis("#" + "ldavis_el2901625140679612169979887533", ldavis_el2901625140679612169979887533_data);
+      });
+    });
+}else{
+    // require.js not available: dynamically load d3 & LDAvis
+    LDAvis_load_lib("https://d3js.org/d3.v5.js", function(){
+         LDAvis_load_lib("https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.4.0/pyLDAvis/js/ldavis.v3.0.0.js", function(){
+                 new LDAvis("#" + "ldavis_el2901625140679612169979887533", ldavis_el2901625140679612169979887533_data);
+            })
+         });
+}
+</script>

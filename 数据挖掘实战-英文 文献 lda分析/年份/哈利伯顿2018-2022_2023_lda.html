@@ -1,0 +1,41 @@
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.4.0/pyLDAvis/js/ldavis.v1.0.0.css">
+
+
+<div id="ldavis_el200282535661228656883726808" style="background-color:white;"></div>
+<script type="text/javascript">
+
+var ldavis_el200282535661228656883726808_data = {"mdsDat": {"x": [0.0005360640627531001, -0.0005360640627531001], "y": [0.0, 0.0], "topics": [1, 2], "cluster": [1, 1], "Freq": [93.30814967421477, 6.6918503257852215]}, "tinfo": {"Term": ["isotopesnephrite", "activation", "identification", "instrumental", "forgery", "preliminary", "jade", "radiation", "neutron", "tool", "hetian", "analysisapplied", "study", "study", "analysisapplied", "hetian", "tool", "neutron", "radiation", "jade", "preliminary", "forgery", "instrumental", "identification", "activation", "isotopesnephrite", "isotopesnephrite", "activation", "identification", "instrumental", "forgery", "preliminary", "jade", "radiation", "neutron", "tool", "hetian", "analysisapplied", "study"], "Freq": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.9887463088870438, 0.976152867825578, 0.9747693019336552, 0.966327281555805, 0.9557569972032414, 0.949549613329649, 0.9450523237670478, 0.913984766941554, 0.9106836938624259, 0.9031753477434727, 0.8930933648158264, 0.8840696846247673, 0.8686966398940887, 0.07284222195119011, 0.07142778961172142, 0.07059757284394974, 0.0696699706103241, 0.06897916575503515, 0.0686755045853008, 0.06581711639242233, 0.06540337237729271, 0.06483221067103528, 0.06385977547452698, 0.06308301214681505, 0.0629557466811217, 0.06179708973290288], "Total": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0505433986199466, 1.0391086145066997, 1.0378523140804703, 1.030187057030332, 1.0205892078742766, 1.0149529857069417, 1.0108694401594702, 0.9826602715268548, 0.979662859617461, 0.9728453183537968, 0.9636909376597761, 0.9554974742364888, 0.9415388618452789, 0.9415388618452789, 0.9554974742364888, 0.9636909376597761, 0.9728453183537968, 0.979662859617461, 0.9826602715268548, 1.0108694401594702, 1.0149529857069417, 1.0205892078742766, 1.030187057030332, 1.0378523140804703, 1.0391086145066997, 1.0505433986199466], "Category": ["Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Default", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic1", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2", "Topic2"], "logprob": [13.0, 12.0, 11.0, 10.0, 9.0, 8.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0, -2.507, -2.5198, -2.5212, -2.5299, -2.5409, -2.5475, -2.5522, -2.5856, -2.5892, -2.5975, -2.6088, -2.6189, -2.6364, -2.4801, -2.4997, -2.5114, -2.5247, -2.5346, -2.539, -2.5815, -2.5879, -2.5966, -2.6117, -2.624, -2.626, -2.6446], "loglift": [13.0, 12.0, 11.0, 10.0, 9.0, 8.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0, 0.0086, 0.0068, 0.0066, 0.0053, 0.0036, 0.0027, 0.0019, -0.0032, -0.0038, -0.005, -0.0068, -0.0084, -0.0113, 0.1451, 0.1107, 0.0905, 0.0678, 0.0509, 0.0434, -0.0274, -0.0377, -0.0521, -0.0765, -0.0962, -0.0994, -0.1289]}, "token.table": {"Topic": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "Freq": [1.046575241655214, 0.9623633045085803, 1.0207593257036203, 0.9635282269288891, 1.0376770818540608, 1.0279126405132453, 1.0620910517067195, 0.9892474342109348, 0.979826155601664, 1.017645700121979, 0.9852673119666459, 0.951888328757914, 0.9706974992314982], "Term": ["activation", "analysisapplied", "forgery", "hetian", "identification", "instrumental", "isotopesnephrite", "jade", "neutron", "preliminary", "radiation", "study", "tool"]}, "R": 13, "lambda.step": 0.01, "plot.opts": {"xlab": "PC1", "ylab": "PC2"}, "topic.order": [1, 2]};
+
+function LDAvis_load_lib(url, callback){
+  var s = document.createElement('script');
+  s.src = url;
+  s.async = true;
+  s.onreadystatechange = s.onload = callback;
+  s.onerror = function(){console.warn("failed to load library " + url);};
+  document.getElementsByTagName("head")[0].appendChild(s);
+}
+
+if(typeof(LDAvis) !== "undefined"){
+   // already loaded: just create the visualization
+   !function(LDAvis){
+       new LDAvis("#" + "ldavis_el200282535661228656883726808", ldavis_el200282535661228656883726808_data);
+   }(LDAvis);
+}else if(typeof define === "function" && define.amd){
+   // require.js is available: use it to load d3/LDAvis
+   require.config({paths: {d3: "https://d3js.org/d3.v5"}});
+   require(["d3"], function(d3){
+      window.d3 = d3;
+      LDAvis_load_lib("https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.4.0/pyLDAvis/js/ldavis.v3.0.0.js", function(){
+        new LDAvis("#" + "ldavis_el200282535661228656883726808", ldavis_el200282535661228656883726808_data);
+      });
+    });
+}else{
+    // require.js not available: dynamically load d3 & LDAvis
+    LDAvis_load_lib("https://d3js.org/d3.v5.js", function(){
+         LDAvis_load_lib("https://cdn.jsdelivr.net/gh/bmabey/pyLDAvis@3.4.0/pyLDAvis/js/ldavis.v3.0.0.js", function(){
+                 new LDAvis("#" + "ldavis_el200282535661228656883726808", ldavis_el200282535661228656883726808_data);
+            })
+         });
+}
+</script>
