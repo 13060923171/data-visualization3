@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/maps/world.js"></script>
+
+</head>
+<body>
+    <div id="f1fdd73ab92e4c348ba701e17e8bdddc" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_f1fdd73ab92e4c348ba701e17e8bdddc = echarts.init(
+            document.getElementById('f1fdd73ab92e4c348ba701e17e8bdddc'), 'white', {renderer: 'canvas'});
+        var option_f1fdd73ab92e4c348ba701e17e8bdddc = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "map",
+            "name": "2023-01",
+            "label": {
+                "show": false,
+                "position": "top",
+                "margin": 8
+            },
+            "mapType": "world",
+            "data": [
+                {
+                    "name": "China",
+                    "value": 379
+                },
+                {
+                    "name": "Canada",
+                    "value": 33
+                },
+                {
+                    "name": "Japan",
+                    "value": 28
+                },
+                {
+                    "name": "Singapore",
+                    "value": 9
+                },
+                {
+                    "name": "United States",
+                    "value": 9
+                },
+                {
+                    "name": "Germany",
+                    "value": 8
+                },
+                {
+                    "name": "Thailand",
+                    "value": 6
+                },
+                {
+                    "name": "Indonesia",
+                    "value": 4
+                },
+                {
+                    "name": "Chile",
+                    "value": 4
+                },
+                {
+                    "name": "Malaysia",
+                    "value": 4
+                },
+                {
+                    "name": "North Korea",
+                    "value": 4
+                },
+                {
+                    "name": "United Kingdom",
+                    "value": 3
+                },
+                {
+                    "name": "Australia",
+                    "value": 3
+                },
+                {
+                    "name": "Italy",
+                    "value": 2
+                },
+                {
+                    "name": "South Korea",
+                    "value": 2
+                },
+                {
+                    "name": "North Macedonia",
+                    "value": 1
+                },
+                {
+                    "name": "Turkey",
+                    "value": 1
+                },
+                {
+                    "name": "Honduras",
+                    "value": 1
+                },
+                {
+                    "name": "Dubai",
+                    "value": 1
+                },
+                {
+                    "name": "Brazil",
+                    "value": 1
+                },
+                {
+                    "name": "Cambodia",
+                    "value": 1
+                },
+                {
+                    "name": "Philippines",
+                    "value": 1
+                }
+            ],
+            "roam": true,
+            "aspectScale": 0.75,
+            "nameProperty": "name",
+            "selectedMode": false,
+            "zoom": 1,
+            "mapValueCalculation": "sum",
+            "showLegendSymbol": false,
+            "emphasis": {},
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "2023-01"
+            ],
+            "selected": {
+                "2023-01": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "Map-2023-01",
+            "left": "left",
+            "top": "top",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ],
+    "visualMap": {
+        "show": true,
+        "type": "continuous",
+        "min": 0,
+        "max": 429,
+        "inRange": {
+            "color": [
+                "lightskyblue",
+                "yellow",
+                "orangered"
+            ]
+        },
+        "calculable": true,
+        "inverse": false,
+        "splitNumber": 5,
+        "orient": "vertical",
+        "showLabel": true,
+        "itemWidth": 20,
+        "itemHeight": 140,
+        "borderWidth": 0
+    }
+};
+        chart_f1fdd73ab92e4c348ba701e17e8bdddc.setOption(option_f1fdd73ab92e4c348ba701e17e8bdddc);
+    </script>
+</body>
+</html>

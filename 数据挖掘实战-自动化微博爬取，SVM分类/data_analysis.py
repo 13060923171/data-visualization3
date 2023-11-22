@@ -163,6 +163,8 @@ def map():
     )
 
 
+
+
 def word1():
     df = data[data['用户特征'] == 1]
     d = {}
