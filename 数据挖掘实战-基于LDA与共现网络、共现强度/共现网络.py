@@ -261,16 +261,23 @@ def main3():
     df1 = pd.read_excel('Untitled spreadsheet.xlsx')
     df2 = pd.read_excel('20231019015915065.xlsx')
     df3 = pd.DataFrame()
+
+    def process(x):
+        x1 = str(x).split("-")
+        return x1[0]
+
     df3['公开(公告)号'] = df2['公开(公告)号']
-    df3['公开(公告)年'] = df2['公开(公告)年']
+    df3['申请年月'] = df2['申请年月']
+    df3['申请年月'] = df3['申请年月'].apply(process)
     df = pd.merge(df1, df3, on='公开(公告)号')
     df = df.drop_duplicates(subset=['摘要(译)(简体中文)'])
     df = df.drop_duplicates(subset=['标题(译)(简体中文)'])
-    new_df = df['公开(公告)年'].value_counts()
+
+    new_df = df['申请年月'].value_counts()
     new_df = new_df.sort_index()
     x_data = [str(x) for x in new_df.index]
     y_data = [int(y) for y in new_df.values]
-
+    print(sum(y_data))
     c = (
         Bar(init_opts=opts.InitOpts(width="1600px", height="900px", theme=ThemeType.MACARONS))
             .add_xaxis(x_data)
@@ -279,7 +286,7 @@ def main3():
             xaxis_opts=opts.AxisOpts(axislabel_opts=opts.LabelOpts(rotate=90)),
             title_opts=opts.TitleOpts(title="Number of patent applications"),
         )
-            .render("1986-2023 year Number of patent applications.html")
+            .render("1986-2022 Number of patent applications.html")
     )
 
 
@@ -360,7 +367,7 @@ def main4():
             d[key] = int(values)
 
         return d
-    date = [2018,2019,2020,2021,2022,2023]
+    date = [2016,2017,2018,2019,2020,2021]
     list_d = []
     for d in date:
         dic = time_date(d)
@@ -470,7 +477,7 @@ def main4():
                 is_on_zero=False,
             )),
         )
-            .render("2018-2023 top0-10 keyword evolution trends.html")
+            .render("2016-2021 top0-10 keyword evolution trends.html")
     )
 
 
@@ -486,11 +493,11 @@ def main5():
         x_data = [x for x in new_df.index]
         y_data = [x for x in new_df.values]
         plt.pie(y_data, labels=x_data, startangle=0, autopct='%1.2f%%')
-        plt.title('{} year theme strength'.format(time_number))
+        plt.title('{} theme strength'.format(time_number))
         plt.tight_layout()
-        plt.savefig('{} year theme strength.png'.format(time_number))
+        plt.savefig('{} theme strength.png'.format(time_number))
 
-    date = [2018, 2019, 2020, 2021, 2022, 2023]
+    date = [2016,2017,2018,2019,2020,2021]
     for d in date:
         plt_pie(d)
 
@@ -499,5 +506,5 @@ if __name__ == '__main__':
     # main()
     # main2()
     # main3()
-    # main4()
-    main5()
+    main4()
+    # main5()

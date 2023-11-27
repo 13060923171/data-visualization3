@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Awesome-pyecharts</title>
-            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
-        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/macarons.js"></script>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/themes/macarons.js"></script>
 
 </head>
-<body>
-    <div id="6deb4699d30c4645b7bbe85f6a4a4ac9" class="chart-container" style="width:1600px; height:900px;"></div>
+<body >
+    <div id="7b2a5f6c83de444ba848c2c7ac50f214" class="chart-container" style="width:1600px; height:900px; "></div>
     <script>
-        var chart_6deb4699d30c4645b7bbe85f6a4a4ac9 = echarts.init(
-            document.getElementById('6deb4699d30c4645b7bbe85f6a4a4ac9'), 'macarons', {renderer: 'canvas'});
-        var option_6deb4699d30c4645b7bbe85f6a4a4ac9 = {
+        var chart_7b2a5f6c83de444ba848c2c7ac50f214 = echarts.init(
+            document.getElementById('7b2a5f6c83de444ba848c2c7ac50f214'), 'macarons', {renderer: 'canvas'});
+        var option_7b2a5f6c83de444ba848c2c7ac50f214 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -21,6 +21,9 @@
     "animationDurationUpdate": 300,
     "animationEasingUpdate": "cubicOut",
     "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
     "series": [
         {
             "type": "bar",
@@ -29,37 +32,44 @@
                 2,
                 1,
                 1,
+                1,
                 2,
+                2,
+                2,
+                5,
                 3,
                 4,
                 6,
-                3,
-                6,
-                11,
-                18,
                 8,
+                16,
+                15,
                 11,
-                15,
-                15,
-                12,
-                13,
-                27,
+                11,
+                14,
+                18,
+                14,
+                22,
                 21,
-                21,
-                27,
-                66,
-                30,
-                56,
-                87,
-                137,
-                234,
-                244,
-                398,
-                629,
-                816,
-                804
+                16,
+                19,
+                29,
+                46,
+                55,
+                58,
+                80,
+                118,
+                277,
+                265,
+                416,
+                510,
+                652,
+                778,
+                230
             ],
+            "realtimeSort": false,
             "showBackground": false,
+            "stackStrategy": "samesign",
+            "cursor": "pointer",
             "barMinHeight": 0,
             "barCategoryGap": "20%",
             "barGap": "30%",
@@ -72,7 +82,6 @@
             "z": 2,
             "label": {
                 "show": true,
-                "position": "top",
                 "margin": 8
             }
         }
@@ -82,14 +91,27 @@
             "data": [
                 ""
             ],
-            "selected": {
-                "": true
-            },
+            "selected": {},
             "show": true,
             "padding": 5,
             "itemGap": 10,
             "itemWidth": 25,
-            "itemHeight": 14
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 1,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
         }
     ],
     "tooltip": {
@@ -103,11 +125,16 @@
         "alwaysShowContent": false,
         "showDelay": 0,
         "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
         "textStyle": {
             "fontSize": 14
         },
         "borderWidth": 0,
-        "padding": 5
+        "padding": 5,
+        "order": "seriesAsc"
     },
     "xAxis": [
         {
@@ -118,7 +145,6 @@
             "gridIndex": 0,
             "axisLabel": {
                 "show": true,
-                "position": "top",
                 "rotate": 90,
                 "margin": 8
             },
@@ -127,7 +153,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -137,10 +163,14 @@
                 }
             },
             "data": [
+                "1984",
                 "1986",
+                "1987",
                 "1988",
                 "1989",
+                "1993",
                 "1994",
+                "1995",
                 "1996",
                 "1997",
                 "1998",
@@ -184,7 +214,7 @@
             "splitNumber": 5,
             "minInterval": 0,
             "splitLine": {
-                "show": false,
+                "show": true,
                 "lineStyle": {
                     "show": true,
                     "width": 1,
@@ -197,13 +227,19 @@
     ],
     "title": [
         {
+            "show": true,
             "text": "Number of patent applications",
+            "target": "blank",
+            "subtarget": "blank",
             "padding": 5,
-            "itemGap": 10
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
         }
     ]
 };
-        chart_6deb4699d30c4645b7bbe85f6a4a4ac9.setOption(option_6deb4699d30c4645b7bbe85f6a4a4ac9);
+        chart_7b2a5f6c83de444ba848c2c7ac50f214.setOption(option_7b2a5f6c83de444ba848c2c7ac50f214);
     </script>
 </body>
 </html>

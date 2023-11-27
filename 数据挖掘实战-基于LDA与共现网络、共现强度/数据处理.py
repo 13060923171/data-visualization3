@@ -116,7 +116,7 @@ def main1():
     df2 = pd.read_excel('20231019015915065.xlsx')
     df3 = pd.DataFrame()
     df3['公开(公告)号'] = df2['公开(公告)号']
-    df3['公开(公告)年'] = df2['公开(公告)年']
+    df3['申请年月'] = df2['申请年月']
     df = pd.merge(df1,df3,on='公开(公告)号')
     df = df.drop_duplicates(subset=['摘要(译)(简体中文)'])
     df = df.drop_duplicates(subset=['标题(译)(简体中文)'])
@@ -251,8 +251,13 @@ def lda(df):
         bz = listj.index(max(listj))
         list2.append(i[bz][0])
 
+    def process(x):
+        x1 = str(x).split("-")
+        return x1[0]
+
     data = pd.DataFrame()
-    data['time_date'] = df['公开(公告)年']
+    data['time_date'] = df['申请年月']
+    data['time_date'] = data['time_date'].apply(process)
     data['content'] = df['summary_and_title']
     data['主题概率'] = list3
     data['主题类型'] = list2
@@ -318,7 +323,7 @@ def plt_pie():
     plt.figure(dpi=500)
 
     df = pd.read_csv('特征词.csv')
-    x_data = list(df['所属主题'])
+    x_data = [str(x).replace('Topic','') for x in df['所属主题']]
     y_data = list(df['文章数量'])
     plt.pie(y_data, labels=x_data, startangle=0, autopct='%1.2f%%')
     plt.title('theme strength')
@@ -327,8 +332,8 @@ def plt_pie():
 
 
 if __name__ == '__main__':
-    df = main1()
-    tf_idf(df)
-    lda(df)
+    # df = main1()
+    # tf_idf(df)
+    # lda(df)
     plt_pie()
 
