@@ -327,6 +327,8 @@ def plt_pie():
     y_data = list(df['文章数量'])
     plt.pie(y_data, labels=x_data, startangle=0, autopct='%1.2f%%')
     plt.title('theme strength')
+    # 添加图例
+    plt.legend(x_data,loc='lower right')
     plt.tight_layout()
     plt.savefig('theme strength.png')
 

@@ -494,6 +494,7 @@ def main5():
         y_data = [x for x in new_df.values]
         plt.pie(y_data, labels=x_data, startangle=0, autopct='%1.2f%%')
         plt.title('{} theme strength'.format(time_number))
+        plt.legend(x_data,loc='lower right')
         plt.tight_layout()
         plt.savefig('{} theme strength.png'.format(time_number))
 
@@ -506,5 +507,5 @@ if __name__ == '__main__':
     # main()
     # main2()
     # main3()
-    main4()
-    # main5()
+    # main4()
+    main5()
