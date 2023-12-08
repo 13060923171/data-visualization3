@@ -33,10 +33,12 @@ def kmeans():
     # 第一个fit_transform是计算tf-idf 第二个fit_transform是将文本转为词频矩阵
     tfidf = transformer.fit_transform(vectorizer.fit_transform(corpus))
     # 获取词袋模型中的所有词语
-    word = vectorizer.get_feature_names()
+    word = vectorizer.get_feature_names_out()
+
 
     # 将tf-idf矩阵抽取出来 元素w[i][j]表示j词在i类文本中的tf-idf权重
     weight = tfidf.toarray()
+
 
     n_clusters = 4
     # 打印特征向量文本内容
