@@ -8,9 +8,8 @@ import jieba.posseg as pseg
 # 去掉重复行以及空值
 df = pd.read_excel('豆瓣评论.xlsx')
 
-
-df = df.dropna(subset=['回复内容'],axis=0)
-
+#使用自定义词典
+jieba.load_userdict("custom_dict.txt")
 
 def date_process(x):
     x1 = str(x).split("-")
@@ -18,16 +17,16 @@ def date_process(x):
     return x1
 
 
-list_content = []
-for j,k in zip(df['内容'],df['回复内容']):
-    try:
-        content = str(j) + " " + str(k)
-        list_content.append(content)
-    except:
-        content = np.NAN
-        list_content.append(content)
-
-df['content'] = list_content
+# list_content = []
+# for j,k in zip(df['内容'],df['回复内容']):
+#     try:
+#         content = str(j) + " " + str(k)
+#         list_content.append(content)
+#     except:
+#         content = np.NAN
+#         list_content.append(content)
+#
+# df['content'] = list_content
 df['时间'] = df['时间'].apply(date_process)
 
 # 导入停用词列表
@@ -37,6 +36,16 @@ with open("stopwords_cn.txt", 'r', encoding='utf-8') as f:
     for line in lines:
         stop_words.append(line.strip())
 
+with open("stopwords.txt", 'r', encoding='utf-8') as f:
+    lines = f.readlines()
+    for line in lines:
+        stop_words.append(line.strip())
+
+keyword_words = []
+with open("custom_dict.txt", 'r', encoding='utf-8') as f:
+    lines = f.readlines()
+    for line in lines:
+        keyword_words.append(line.strip())
 
 #去掉标点符号，以及机械压缩
 def preprocess_word(word):
@@ -84,7 +93,7 @@ def get_cut_words(content_series):
         nouns_and_adjs = []
         # 逐一检查每个词语的词性，并将名词和形容词保存到列表中
         for word, flag in words:
-            if word not in stop_words and len(word) >= 2 and is_all_chinese(word) == True:
+            if word not in stop_words and word in keyword_words:
                 # 如果是名词或形容词，就将其保存到列表中
                 nouns_and_adjs.append(word)
         if len(nouns_and_adjs) != 0:
@@ -95,16 +104,16 @@ def get_cut_words(content_series):
         return np.NAN
 
 
-df.dropna(subset=['content'], axis=0,inplace=True)
 
-df['content'] = df['content'].apply(preprocess_word)
-df['content'] = df['content'].apply(emjio_tihuan)
-df.dropna(subset=['content'], axis=0,inplace=True)
-df['content'] = df['content'].apply(yasuo)
-df['分词'] = df['content'].apply(get_cut_words)
-df.drop_duplicates(subset=['分词'], inplace=True)
 
+# df['content'] = df['content'].apply(preprocess_word)
+# df['content'] = df['content'].apply(emjio_tihuan)
+# df.dropna(subset=['content'], axis=0,inplace=True)
+# df['content'] = df['content'].apply(yasuo)
+
+df = df.drop_duplicates(subset=['内容'])
+df['分词'] = df['内容'].apply(get_cut_words)
 new_df = df.dropna(subset=['分词'], axis=0)
 
-new_df.to_csv('new_data.csv', encoding='utf-8-sig', index=False)
+new_df.to_csv('content_data.csv', encoding='utf-8-sig', index=False)
 

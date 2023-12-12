@@ -9,30 +9,36 @@ import numpy as np
 
 
 def demo(time_data):
-    df1 = pd.read_csv('new_data.csv')
+    df1 = pd.read_csv('reply_data.csv')
     # df = df1[df1['时间'] == time_data]
     df = df1
-    d = {}
-    list_text = []
-    for t in df['分词']:
-        t1 = str(t).split(" ")
-        # 把数据分开
-        for i in t1:
-            # 添加到列表里面
-            list_text.append(i)
-            d[i] = d.get(i,0)+1
+    # d = {}
+    # list_text = []
+    # for t in df['分词']:
+    #     t1 = str(t).split(" ")
+    #     # 把数据分开
+    #     for i in t1:
+    #         # 添加到列表里面
+    #         list_text.append(i)
+    #         d[i] = d.get(i,0)+1
+    #
+    # ls = list(d.items())
+    # ls.sort(key=lambda x:x[1],reverse=True)
+    # x_data = []
+    # y_data = []
+    # for key,values in ls[:100]:
+    #     x_data.append(key)
+    #     y_data.append(values)
+    #
+    # data = pd.DataFrame()
+    # data['word'] = x_data
+    # data['counts'] = y_data
 
-    ls = list(d.items())
-    ls.sort(key=lambda x:x[1],reverse=True)
     x_data = []
-    y_data = []
-    for key,values in ls[:100]:
-        x_data.append(key)
-        y_data.append(values)
-
-    data = pd.DataFrame()
-    data['word'] = x_data
-    data['counts'] = y_data
+    with open("custom_dict.txt", 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+        for line in lines:
+            x_data.append(line.strip())
 
     # 导入停用词列表
 
@@ -146,7 +152,7 @@ def demo(time_data):
     data1['weight'] = data1['weight'].astype(int)
     data1 = data1.sort_values(by=['weight'], ascending=False)
     data1 = data1.dropna(how='any', axis=1)
-    new_data = data1.iloc[:300]
+    new_data = data1.iloc[:150]
 
     A = []
     B = []
@@ -172,7 +178,7 @@ def demo(time_data):
     nx.draw_networkx_edges(G, pos, width=0.5, alpha=0.8, edge_color='g')
     # 添加标签。其中font_family参数指定图像中使用sans-serif字体族，alpha参数设置节点标签的透明度，font_size参数设置归纳节点标签的字体大小。
     nx.draw_networkx_labels(G, pos, font_family='sans-serif', alpha=1, font_size='10')
-    plt.title("{}_co-occurrence semantics".format(time_data))
+    plt.title("{}_共现语义".format(time_data))
     plt.savefig('{}_共现语义.png'.format(time_data))
     plt.show()
 
@@ -181,4 +187,4 @@ if __name__ == '__main__':
     # list_data = [2020,2021,2022,2023]
     # for l in tqdm(list_data):
     #     demo(l)
-    demo('总体')
+    demo('评论')
