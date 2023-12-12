@@ -24,7 +24,7 @@ from gensim.models import CoherenceModel
 
 #LDA建模
 def lda(time_data):
-    df1 = pd.read_csv('new_data.csv')
+    df1 = pd.read_csv('reply_data.csv')
     # df = df1[df1['时间'] == time_data]
     df = df1
     train = []
@@ -36,7 +36,7 @@ def lda(time_data):
     dictionary = corpora.Dictionary(train)
     corpus = [dictionary.doc2bow(text) for text in train]
 
-    num_topics = 5
+    num_topics = 4
 
     #LDA可视化模块
     #构建lda主题参数
@@ -61,10 +61,14 @@ def lda(time_data):
         list2.append(i[bz][0])
 
     data = pd.DataFrame()
+    data['url'] = df['url']
+    data['时间'] = df['时间']
+    data['原始内容'] = df['内容']
     data['内容'] = df['分词']
     data['主题概率'] = list3
     data['主题类型'] = list2
 
+    data.to_csv('{}_主题结果.csv'.format(time_data),encoding='utf-8-sig',index=False)
 
     #获取对应主题出现的频次
     new_data = data['主题类型'].value_counts()
@@ -134,5 +138,5 @@ if __name__ == '__main__':
     # list_data = [2020,2021,2022,2023]
     # for l in tqdm(list_data):
     #     lda(l)
-    lda('总体')
+    lda('评论')
 
