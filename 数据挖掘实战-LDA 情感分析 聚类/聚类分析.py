@@ -19,6 +19,8 @@ sns.set_style(style="whitegrid")
 def kmeans():
     df = pd.read_csv('new_data.csv')
 
+    stop_word = ["不错", "手表", "收到", "儿童", "宝贝", "孩子", "手机", "喜欢", "真的", "购物", "购买"]
+
     corpus = []
 
     for i in df['分词']:
@@ -83,14 +85,15 @@ def kmeans():
     terms = vectorizer.get_feature_names_out()  # 获取所有词汇
     cluster_keywords = []
     for i in range(n_clusters):
-        cluster_keywords.append([terms[ind] for ind in order_centroids[i, :6]])  # 每个类别选择前6个作为聚类相关词汇
+        cluster_keywords.append([terms[ind] for ind in order_centroids[i, :20]])  # 每个类别选择前6个作为聚类相关词汇
 
     x_data = []
     y_data = []
     # 打印每个类的聚类相关词汇
     for i, keywords in enumerate(cluster_keywords):
         x1 = 'Cluster :' + str(i + 1)
-        y1 = ", ".join(keywords)
+        keywords1 = [x for x in keywords if x not in stop_word]
+        y1 = ", ".join(keywords1)
         x_data.append(x1)
         y_data.append(y1)
 
