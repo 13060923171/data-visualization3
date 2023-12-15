@@ -16,6 +16,7 @@ import pyLDAvis
 import pyLDAvis.gensim
 from tqdm import tqdm
 import os
+
 from gensim.models import LdaModel
 import gensim
 import gensim.corpora as corpora
@@ -26,8 +27,9 @@ from gensim.models import CoherenceModel
 def lda():
     df = pd.read_csv('new_data.csv')
     train = []
+    stop_word = ["不错","手表","收到","儿童","宝贝","孩子","手机","喜欢","真的","购物","购买"]
     for line in df['分词']:
-        line = [word.strip(' ') for word in line.split(' ') if len(word) >= 2]
+        line = [word.strip(' ') for word in line.split(' ') if len(word) >= 2 and word not in stop_word]
         train.append(line)
 
     #构建为字典的格式
@@ -35,48 +37,48 @@ def lda():
     corpus = [dictionary.doc2bow(text) for text in train]
 
 
-    # 困惑度模块
-    x_data = []
-    y_data = []
-    z_data = []
-    for i in tqdm(range(2, 15)):
-        x_data.append(i)
-        lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,id2word=dictionary,num_topics=i)
-        # 困惑度计算
-        perplexity = lda_model.log_perplexity(corpus)
-        y_data.append(perplexity)
-        # 一致性计算
-        coherence_model_lda = CoherenceModel(model=lda_model, texts=train, dictionary=dictionary, coherence='c_v')
-        coherence = coherence_model_lda.get_coherence()
-        z_data.append(coherence)
-
-    # 绘制困惑度和一致性折线图
-    fig = plt.figure(figsize=(15, 5))
-    plt.rcParams['font.sans-serif'] = ['SimHei']
-    matplotlib.rcParams['axes.unicode_minus'] = False
-
-    # 绘制困惑度折线图
-    ax1 = fig.add_subplot(1, 2, 1)
-    plt.plot(x_data, y_data, marker="o")
-    plt.title("perplexity_values")
-    plt.xlabel('num topics')
-    plt.ylabel('perplexity score')
-    #绘制一致性的折线图
-    ax2 = fig.add_subplot(1, 2, 2)
-    plt.plot(x_data, z_data, marker="o")
-    plt.title("coherence_values")
-    plt.xlabel("num topics")
-    plt.ylabel("coherence score")
-
-    plt.savefig('困惑度和一致性.png')
-    plt.show()
-    #将上面获取的数据进行保存
-    df5 = pd.DataFrame()
-    df5['主题数'] = x_data
-    df5['困惑度'] = y_data
-    df5['一致性'] = z_data
-    df5.to_csv('困惑度和一致性.csv',encoding='utf-8-sig',index=False)
-    num_topics = input('请输入主题数:')
+    # # 困惑度模块
+    # x_data = []
+    # y_data = []
+    # z_data = []
+    # for i in tqdm(range(2, 15)):
+    #     x_data.append(i)
+    #     lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,id2word=dictionary,num_topics=i)
+    #     # 困惑度计算
+    #     perplexity = lda_model.log_perplexity(corpus)
+    #     y_data.append(perplexity)
+    #     # 一致性计算
+    #     coherence_model_lda = CoherenceModel(model=lda_model, texts=train, dictionary=dictionary, coherence='c_v')
+    #     coherence = coherence_model_lda.get_coherence()
+    #     z_data.append(coherence)
+    #
+    # # 绘制困惑度和一致性折线图
+    # fig = plt.figure(figsize=(15, 5))
+    # plt.rcParams['font.sans-serif'] = ['SimHei']
+    # matplotlib.rcParams['axes.unicode_minus'] = False
+    #
+    # # 绘制困惑度折线图
+    # ax1 = fig.add_subplot(1, 2, 1)
+    # plt.plot(x_data, y_data, marker="o")
+    # plt.title("perplexity_values")
+    # plt.xlabel('num topics')
+    # plt.ylabel('perplexity score')
+    # #绘制一致性的折线图
+    # ax2 = fig.add_subplot(1, 2, 2)
+    # plt.plot(x_data, z_data, marker="o")
+    # plt.title("coherence_values")
+    # plt.xlabel("num topics")
+    # plt.ylabel("coherence score")
+    #
+    # plt.savefig('困惑度和一致性.png')
+    # plt.show()
+    # #将上面获取的数据进行保存
+    # df5 = pd.DataFrame()
+    # df5['主题数'] = x_data
+    # df5['困惑度'] = y_data
+    # df5['一致性'] = z_data
+    # df5.to_csv('困惑度和一致性.csv',encoding='utf-8-sig',index=False)
+    num_topics = 4
 
     #LDA可视化模块
     #构建lda主题参数
