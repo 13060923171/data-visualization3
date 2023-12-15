@@ -42,6 +42,27 @@ def emotion_type():
     plt.savefig('Sentiment classification.png')
 
 
+def lda_emotion_type():
+    df1 = pd.read_csv('new_data.csv')
+    df2 = pd.read_csv('lda_data.csv')
+    df = pd.concat([df1,df2],axis=1)
+    df3 = df.drop(['评论','分词'],axis=1)
+
+    def demo(x):
+        df4 = x
+        new_df = df4['情感分类'].value_counts()
+        x_data = [str(x) for x in new_df.index]
+        y_data = [int(x) for x in new_df.values]
+        d = {}
+        for x, y in zip(x_data,y_data):
+            d[x] = y
+        return d
+
+    new_df1 = df3.groupby('主题类型').apply(demo)
+    new_df1.to_csv('主题特征情感分类情况.csv',encoding='utf-8-sig')
+
+
 if __name__ == '__main__':
-    lda_strength()
-    emotion_type()
+    # lda_strength()
+    # emotion_type()
+    lda_emotion_type()
