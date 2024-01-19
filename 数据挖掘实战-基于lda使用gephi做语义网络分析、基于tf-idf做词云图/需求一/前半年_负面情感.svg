@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="1333.72"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-663.719971 -683.000000 1333.719971 1356.000000" height="1356.0"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <g id="edges">
+        <path stroke-linecap="round" fill="none" class="id_同事 id_确诊"
+              d="M 180.022842,-135.610825 A 679.835229,679.835229 0,0 1,195.372040,611.701111"
+              stroke="#68ad36" stroke-width="0.50714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_小区"
+              d="M 124.189835,-133.024933 A 710.112887,710.112887 0,0 1,-619.618225,170.570740"
+              stroke="#9d9482" stroke-width="0.7785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_社区"
+              d="M 100.745140,-183.176590 A 495.821920,495.821920 0,0 1,-282.083618,-549.839478"
+              stroke="#34b288" stroke-width="0.45714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_新增"
+              d="M 188.952225,-207.315079 A 188.370074,188.370074 0,0 1,334.895264,-229.085632"
+              stroke="#68ad36" stroke-width="0.4" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_本土"
+              d="M 114.628510,-140.584427 A 293.790755,293.790755 0,0 1,-151.138641,-83.030663"
+              stroke="#b3903a" stroke-width="0.2857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_新冠"
+              d="M 134.947220,-128.113754 A 572.994667,572.994667 0,0 1,-361.357819,245.088409"
+              stroke="#9d9482" stroke-width="0.55" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_肺炎"
+              d="M 199.974152,-180.355392 A 313.866717,313.866717 0,0 1,468.162262,-36.011330"
+              stroke="#b3903a" stroke-width="0.29285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_方舱"
+              d="M 195.286850,-154.144745 A 379.106685,379.106685 0,0 1,388.269714,162.883041"
+              stroke="#9d9482" stroke-width="0.29285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_医院"
+              d="M 100.394760,-171.193558 A 351.856726,351.856726 0,0 1,-209.365967,-343.747620"
+              stroke="#68ad36" stroke-width="0.40714285" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_抗原"
+              d="M 190.065933,-145.571991 A 612.912065,612.912065 0,0 1,391.060944,492.493469"
+              stroke="#b3903a" stroke-width="0.44285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_检测"
+              d="M 107.602524,-201.934723 A 283.499770,283.499770 0,0 1,-5.133894,-458.409576"
+              stroke="#9d9482" stroke-width="0.6142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_感觉"
+              d="M 107.728683,-149.329849 A 444.090457,444.090457 0,0 1,-353.556305,-170.907272"
+              stroke="#34b288" stroke-width="0.5857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_症状"
+              d="M 151.968414,-125.765968 A 742.412232,742.412232 0,0 1,-317.781738,566.198669"
+              stroke="#9d9482" stroke-width="0.5" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_晚上"
+              d="M 194.049698,-199.737717 A 411.063165,411.063165 0,0 1,626.985657,-147.906143"
+              stroke="#68ad36" stroke-width="0.71428573" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_病例"
+              d="M 170.131332,-129.883759 A 561.626717,561.626717 0,0 1,49.516312,461.261871"
+              stroke="#b3903a" stroke-width="0.30714285" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_无症状"
+              d="M 120.405937,-135.571854 A 507.721995,507.721995 0,0 1,-392.210480,35.586723"
+              stroke="#b3903a" stroke-width="0.39285713" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_感染者"
+              d="M 137.975922,-224.219955 A 185.388761,185.388761 0,0 1,181.760345,-365.846924"
+              stroke="#9d9482" stroke-width="0.35714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_工作"
+              d="M 178.168945,-217.171890 A 364.395280,364.395280 0,0 1,526.681702,-352.227997"
+              stroke="#68ad36" stroke-width="0.7785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_人员"
+              d="M 153.666565,-225.613129 A 335.643501,335.643501 0,0 1,358.635895,-487.998901"
+              stroke="#68ad36" stroke-width="0.5285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_昨天"
+              d="M 200.181808,-176.531326 A 482.703635,482.703635 0,0 1,623.418518,108.582199"
+              stroke="#68ad36" stroke-width="0.70714283" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_几天"
+              d="M 183.198608,-138.180176 A 470.942974,470.942974 0,0 1,242.214722,348.383942"
+              stroke="#34b288" stroke-width="0.5714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_发现"
+              d="M 165.191437,-128.038330 A 714.686760,714.686760 0,0 1,-83.274269,625.329712"
+              stroke="#9d9482" stroke-width="0.7285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_阳性"
+              d="M 107.528130,-201.813416 A 450.658806,450.658806 0,0 1,-80.491257,-649.617310"
+              stroke="#68ad36" stroke-width="0.79285717" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_出门"
+              d="M 176.656891,-133.314865 A 299.719379,299.719379 0,0 1,173.864304,145.794952"
+              stroke="#68ad36" stroke-width="0.33571428" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_病毒"
+              d="M 126.433449,-219.731018 A 384.049744,384.049744 0,0 1,180.469406,-625.634094"
+              stroke="#9d9482" stroke-width="0.7" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_有人"
+              d="M 136.076126,-127.767082 A 388.489975,388.489975 0,0 1,-162.050232,121.543076"
+              stroke="#34b288" stroke-width="0.39285713" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_明天"
+              d="M 194.168793,-151.949738 A 177.678050,177.678050 0,0 1,262.699341,-44.093323"
+              stroke="#34b288" stroke-width="0.4857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_防控"
+              d="M 101.041939,-166.533737 A 553.328429,553.328429 0,0 1,-446.841492,-423.642029"
+              stroke="#34b288" stroke-width="0.35714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_公司"
+              d="M 159.104996,-126.535797 A 413.747847,413.747847 0,0 1,-16.533279,262.916748"
+              stroke="#b3903a" stroke-width="0.98571426" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_阴性"
+              d="M 197.261429,-158.878784 A 557.751697,557.751697 0,0 1,543.351807,339.285034"
+              stroke="#9d9482" stroke-width="0.32142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_感冒"
+              d="M 143.421188,-126.194305 A 199.063166,199.063166 0,0 1,42.741619,-0.959804"
+              stroke="#68ad36" stroke-width="0.42142856" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_同事 id_发烧"
+              d="M 100.503151,-170.130692 A 171.151917,171.151917 0,0 1,-10.143767,-215.812637"
+              stroke="#9d9482" stroke-width="0.5" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_核酸"
+              d="M 144.746292,649.392029 A 617.265651,617.265651 0,0 1,-513.342224,423.584351"
+              stroke="#b3903a" stroke-width="0.87857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_新增"
+              d="M 163.921539,608.685608 A 730.444103,730.444103 0,0 1,342.590698,-187.646576"
+              stroke="#68ad36" stroke-width="1.0" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_新冠"
+              d="M 143.296356,639.970642 A 576.565681,576.565681 0,0 1,-381.813019,275.774231"
+              stroke="#9d9482" stroke-width="0.98571426" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_肺炎"
+              d="M 171.208847,606.577209 A 595.520301,595.520301 0,0 1,454.471680,12.774968"
+              stroke="#b3903a" stroke-width="0.37142858" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_方舱"
+              d="M 172.009903,606.451050 A 396.335891,396.335891 0,0 1,343.678436,238.278549"
+              stroke="#9d9482" stroke-width="0.5714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_抗原"
+              d="M 192.689545,610.094788 A 196.906324,196.906324 0,0 1,350.775696,520.909729"
+              stroke="#b3903a" stroke-width="0.67142856" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_感觉"
+              d="M 145.390137,627.965637 A 835.284136,835.284136 0,0 1,-383.545776,-156.294510"
+              stroke="#34b288" stroke-width="0.5285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_症状"
+              d="M 146.979980,654.915466 A 429.139031,429.139031 0,0 1,-321.293427,583.968689"
+              stroke="#9d9482" stroke-width="0.5642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_晚上"
+              d="M 174.116562,606.213135 A 753.163677,753.163677 0,0 1,623.928955,-127.818672"
+              stroke="#68ad36" stroke-width="0.6785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_病例"
+              d="M 144.223526,631.795593 A 180.567111,180.567111 0,0 1,32.311783,521.105774"
+              stroke="#b3903a" stroke-width="0.22142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_无症状"
+              d="M 143.806641,633.796021 A 715.616681,715.616681 0,0 1,-419.308716,59.703094"
+              stroke="#b3903a" stroke-width="0.29285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_感染者"
+              d="M 158.057755,611.847351 A 858.944566,858.944566 0,0 1,185.912720,-362.128479"
+              stroke="#9d9482" stroke-width="0.25714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_工作"
+              d="M 168.188599,607.234741 A 879.680548,879.680548 0,0 1,530.432190,-332.365173"
+              stroke="#68ad36" stroke-width="0.62857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_人员"
+              d="M 162.516510,609.309570 A 965.501162,965.501162 0,0 1,365.942902,-476.055054"
+              stroke="#68ad36" stroke-width="0.87857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_昨天"
+              d="M 181.139435,606.382507 A 565.735299,565.735299 0,0 1,603.286316,146.761871"
+              stroke="#68ad36" stroke-width="0.7214286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_几天"
+              d="M 164.276855,608.539856 A 216.128404,216.128404 0,0 1,196.723587,414.774231"
+              stroke="#34b288" stroke-width="0.60714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_发现"
+              d="M 148.832764,658.091370 A 235.974493,235.974493 0,0 1,-82.091133,658.226685"
+              stroke="#9d9482" stroke-width="0.7785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_出门"
+              d="M 156.280426,613.134399 A 380.439972,380.439972 0,0 1,126.764191,223.147690"
+              stroke="#68ad36" stroke-width="0.8428571" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_有人"
+              d="M 144.990051,629.106079 A 532.805918,532.805918 0,0 1,-203.141556,169.483963"
+              stroke="#34b288" stroke-width="0.4642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_明天"
+              d="M 161.539825,609.789917 A 535.298797,535.298797 0,0 1,233.680984,38.712360"
+              stroke="#34b288" stroke-width="0.37142858" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_上班"
+              d="M 143.339432,641.365234 A 389.996729,389.996729 0,0 1,-205.503220,432.373749"
+              stroke="#34b288" stroke-width="0.42857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_公司"
+              d="M 146.229874,625.913818 A 351.463126,351.463126 0,0 1,-46.286678,314.342255"
+              stroke="#b3903a" stroke-width="0.7" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_感冒"
+              d="M 150.970627,618.283081 A 540.710224,540.710224 0,0 1,-8.466503,52.240112"
+              stroke="#68ad36" stroke-width="0.47857141" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_确诊 id_发烧"
+              d="M 151.410995,617.760742 A 765.359721,765.359721 0,0 1,-57.590340,-208.434937"
+              stroke="#9d9482" stroke-width="0.45714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_核酸"
+              d="M -620.799438,173.524002 A 215.863054,215.863054 0,0 1,-522.101196,384.518158"
+              stroke="#e87886" stroke-width="0.17142858" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_新增"
+              d="M -623.997803,159.950104 A 894.118006,894.118006 0,0 1,333.580017,-224.965637"
+              stroke="#9d9482" stroke-width="0.53571427" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_本土"
+              d="M -625.577209,159.130447 A 425.656238,425.656238 0,0 1,-239.019547,-100.200241"
+              stroke="#e87886" stroke-width="0.6142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_肺炎"
+              d="M -622.352844,161.261917 A 940.430973,940.430973 0,0 1,453.796661,-21.016113"
+              stroke="#e87886" stroke-width="0.79285717" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_检测"
+              d="M -628.058838,158.468063 A 751.780722,751.780722 0,0 1,-23.514189,-476.214508"
+              stroke="#d27cce" stroke-width="0.8357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_感染者"
+              d="M -625.998718,158.968399 A 838.815427,838.815427 0,0 1,171.839218,-391.832825"
+              stroke="#d27cce" stroke-width="0.14285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_人员"
+              d="M -625.922424,158.996109 A 1015.587118,1015.587118 0,0 1,356.768646,-500.726013"
+              stroke="#9d9482" stroke-width="0.42142856" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_隔离"
+              d="M -635.526489,160.496445 A 190.647436,190.647436 0,0 1,-645.133484,-51.753967"
+              stroke="#d27cce" stroke-width="0.71428573" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_发现"
+              d="M -619.427002,169.394272 A 588.364031,588.364031 0,0 1,-112.486969,614.470520"
+              stroke="#d27cce" stroke-width="0.94285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_阳性"
+              d="M -629.906799,158.395111 A 834.014351,834.014351 0,0 1,-93.267487,-660.467468"
+              stroke="#9d9482" stroke-width="0.50714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_有人"
+              d="M -621.907654,161.730392 A 355.610541,355.610541 0,0 1,-242.685974,106.553177"
+              stroke="#6999d4" stroke-width="0.18571429" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_阴性"
+              d="M -620.467834,163.836533 A 991.202557,991.202557 0,0 1,525.075439,346.823883"
+              stroke="#d27cce" stroke-width="0.55714285" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_感冒"
+              d="M -622.951111,160.717682 A 544.077635,544.077635 0,0 1,-32.889568,-0.631101"
+              stroke="#9d9482" stroke-width="0.69285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_小区 id_发烧"
+              d="M -626.277710,158.872925 A 603.534115,603.534115 0,0 1,-87.831154,-252.000549"
+              stroke="#d27cce" stroke-width="0.42142856" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_本土"
+              d="M -267.474945,-557.976746 A 407.386687,407.386687 0,0 1,-176.397293,-140.183456"
+              stroke="#7f958c" stroke-width="0.32142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_新冠"
+              d="M -274.463074,-552.667786 A 692.553989,692.553989 0,0 1,-371.324310,223.608887"
+              stroke="#6999d4" stroke-width="0.15" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_方舱"
+              d="M -260.187469,-571.225952 A 866.429714,866.429714 0,0 1,382.149963,163.070160"
+              stroke="#6999d4" stroke-width="0.65" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_医院"
+              d="M -266.275513,-559.297363 A 180.399150,180.399150 0,0 1,-216.145981,-401.413025"
+              stroke="#34b288" stroke-width="0.12142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_检测"
+              d="M -260.319183,-585.309082 A 252.051102,252.051102 0,0 1,-15.077797,-497.410889"
+              stroke="#6999d4" stroke-width="0.12142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_感觉"
+              d="M -278.039459,-551.033630 A 330.994478,330.994478 0,0 1,-356.015472,-216.406296"
+              stroke="#00b7da" stroke-width="0.6357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_无症状"
+              d="M -277.141327,-551.389343 A 516.466603,516.466603 0,0 1,-399.702087,4.019823"
+              stroke="#7f958c" stroke-width="0.8214286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_感染者"
+              d="M -260.272034,-585.126587 A 441.766848,441.766848 0,0 1,187.243973,-420.117096"
+              stroke="#6999d4" stroke-width="0.15" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_人员"
+              d="M -262.941162,-591.886902 A 569.192686,569.192686 0,0 1,365.270050,-521.493103"
+              stroke="#34b288" stroke-width="0.3" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_隔离"
+              d="M -287.640076,-549.188049 A 521.567667,521.567667 0,0 1,-630.294128,-63.501717"
+              stroke="#6999d4" stroke-width="0.13571429" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_昨天"
+              d="M -259.392975,-577.098328 A 975.128542,975.128542 0,0 1,626.647400,107.457153"
+              stroke="#34b288" stroke-width="0.9142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_几天"
+              d="M -262.302002,-565.357971 A 908.584559,908.584559 0,0 1,229.197617,344.343231"
+              stroke="#00b7da" stroke-width="0.9" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_发现"
+              d="M -267.984619,-557.462402 A 1028.424743,1028.424743 0,0 1,-92.979088,617.083374"
+              stroke="#6999d4" stroke-width="0.15" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_阳性"
+              d="M -271.777679,-601.692200 A 190.583425,190.583425 0,0 1,-93.973305,-669.790894"
+              stroke="#34b288" stroke-width="0.4" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_病毒"
+              d="M -266.655609,-597.151306 A 400.103846,400.103846 0,0 1,177.741608,-641.016968"
+              stroke="#6999d4" stroke-width="0.75714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_有人"
+              d="M -268.828796,-556.664429 A 591.256894,591.256894 0,0 1,-184.516739,88.666573"
+              stroke="#00b7da" stroke-width="0.9357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_明天"
+              d="M -259.884796,-572.628357 A 669.236322,669.236322 0,0 1,258.458710,-43.631474"
+              stroke="#00b7da" stroke-width="0.65" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_防控"
+              d="M -297.617462,-550.763672 A 181.039956,181.039956 0,0 1,-436.239258,-444.354736"
+              stroke="#00b7da" stroke-width="0.2" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_上班"
+              d="M -269.783417,-555.835327 A 813.095010,813.095010 0,0 1,-201.190369,360.910278"
+              stroke="#00b7da" stroke-width="0.7" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_公司"
+              d="M -265.620087,-560.093994 A 743.879162,743.879162 0,0 1,-33.532822,249.287720"
+              stroke="#7f958c" stroke-width="0.7785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_感冒"
+              d="M -262.819275,-564.349548 A 550.486377,550.486377 0,0 1,10.925051,-26.204481"
+              stroke="#34b288" stroke-width="0.50714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_社区 id_发烧"
+              d="M -260.824463,-568.992004 A 340.826530,340.826530 0,0 1,-43.902267,-300.293640"
+              stroke="#6999d4" stroke-width="0.44285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_新增"
+              d="M -518.902344,385.365295 A 910.281234,910.281234 0,0 1,332.266113,-215.387192"
+              stroke="#b3903a" stroke-width="0.9785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_本土"
+              d="M -526.911194,384.172272 A 503.259308,503.259308 0,0 1,-235.661957,-81.144493"
+              stroke="#ff743e" stroke-width="0.75714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_新冠"
+              d="M -523.524902,384.303375 A 173.316491,173.316491 0,0 1,-422.096130,256.296417"
+              stroke="#e87886" stroke-width="0.12857144" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_方舱"
+              d="M -511.497101,389.743286 A 777.488322,777.488322 0,0 1,340.738800,193.254776"
+              stroke="#e87886" stroke-width="0.3" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_医院"
+              d="M -531.593811,384.871399 A 694.827802,694.827802 0,0 1,-250.136459,-354.191650"
+              stroke="#b3903a" stroke-width="0.8142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_抗原"
+              d="M -506.975647,395.452148 A 762.839020,762.839020 0,0 1,359.121246,501.036591"
+              stroke="#ff743e" stroke-width="0.41428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_感觉"
+              d="M -534.264648,385.762177 A 512.563609,512.563609 0,0 1,-409.285095,-168.320709"
+              stroke="#7f958c" stroke-width="0.34285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_病例"
+              d="M -506.701569,395.968048 A 463.054283,463.054283 0,0 1,-2.489179,461.800690"
+              stroke="#ff743e" stroke-width="0.75714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_无症状"
+              d="M -533.493530,385.465179 A 327.248776,327.248776 0,0 1,-449.781586,48.611649"
+              stroke="#ff743e" stroke-width="0.85" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_隔离"
+              d="M -542.487427,391.645660 A 399.784428,399.784428 0,0 1,-643.538452,-50.919701"
+              stroke="#e87886" stroke-width="0.2642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_几天"
+              d="M -508.791168,392.669861 A 625.171179,625.171179 0,0 1,189.951065,362.246002"
+              stroke="#7f958c" stroke-width="0.74285716" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_发现"
+              d="M -504.408051,403.684540 A 401.561670,401.561670 0,0 1,-118.858864,616.670776"
+              stroke="#e87886" stroke-width="0.37142858" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_阳性"
+              d="M -531.143982,384.758209 A 968.682925,968.682925 0,0 1,-91.895500,-657.601257"
+              stroke="#b3903a" stroke-width="0.40714285" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_病毒"
+              d="M -526.744202,384.166351 A 1052.160501,1052.160501 0,0 1,176.847946,-630.975281"
+              stroke="#e87886" stroke-width="0.4857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_明天"
+              d="M -516.167053,386.532654 A 740.170971,740.170971 0,0 1,218.558746,-3.241145"
+              stroke="#7f958c" stroke-width="0.44285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_上班"
+              d="M -508.533447,393.012634 A 253.161331,253.161331 0,0 1,-257.485260,375.008972"
+              stroke="#7f958c" stroke-width="0.5" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_公司"
+              d="M -512.048767,389.263275 A 414.316237,414.316237 0,0 1,-76.379639,269.386017"
+              stroke="#ff743e" stroke-width="0.82857144" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_核酸 id_感冒"
+              d="M -519.392578,385.201172 A 550.034260,550.034260 0,0 1,-35.580769,15.134638"
+              stroke="#b3903a" stroke-width="0.27857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_新增"
+              d="M -580.091736,-281.908875 A 805.926889,805.926889 0,0 1,341.278137,-240.208817"
+              stroke="#b3903a" stroke-width="0.5285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_本土"
+              d="M -578.060364,-276.977417 A 363.030661,363.030661 0,0 1,-218.390793,-136.364349"
+              stroke="#ff743e" stroke-width="0.34285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_医院"
+              d="M -583.062378,-285.256195 A 317.535210,317.535210 0,0 1,-253.474686,-381.536346"
+              stroke="#b3903a" stroke-width="0.37142858" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_抗原"
+              d="M -577.759583,-273.219849 A 1048.605305,1048.605305 0,0 1,373.995728,492.147827"
+              stroke="#ff743e" stroke-width="0.2857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_检测"
+              d="M -584.076050,-286.025085 A 521.074758,521.074758 0,0 1,-22.949205,-486.116211"
+              stroke="#e87886" stroke-width="0.17857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_晚上"
+              d="M -579.719788,-281.300598 A 1035.009419,1035.009419 0,0 1,627.552795,-148.547760"
+              stroke="#b3903a" stroke-width="0.35714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_病例"
+              d="M -578.218201,-270.223541 A 815.480874,815.480874 0,0 1,21.629593,450.436523"
+              stroke="#ff743e" stroke-width="0.50714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_无症状"
+              d="M -579.163757,-267.626953 A 286.880711,286.880711 0,0 1,-421.980865,-6.854951"
+              stroke="#ff743e" stroke-width="0.87857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_感染者"
+              d="M -581.966797,-284.250214 A 673.846256,673.846256 0,0 1,175.743362,-406.953796"
+              stroke="#e87886" stroke-width="0.70714283" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_人员"
+              d="M -582.853699,-285.079895 A 840.152504,840.152504 0,0 1,359.355316,-512.142639"
+              stroke="#b3903a" stroke-width="0.35" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_几天"
+              d="M -577.756226,-273.291962 A 873.995632,873.995632 0,0 1,212.951569,345.477509"
+              stroke="#7f958c" stroke-width="0.18571429" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_阳性"
+              d="M -588.243530,-288.026917 A 539.689106,539.689106 0,0 1,-94.315697,-665.970703"
+              stroke="#b3903a" stroke-width="0.31428573" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_出门"
+              d="M -577.789734,-275.116394 A 726.488008,726.488008 0,0 1,131.553787,142.307556"
+              stroke="#b3903a" stroke-width="0.3857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_有人"
+              d="M -577.963989,-271.390350 A 464.546185,464.546185 0,0 1,-212.043594,84.263031"
+              stroke="#7f958c" stroke-width="0.3642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_防控"
+              d="M -591.399292,-288.603333 A 179.646650,179.646650 0,0 1,-478.614868,-435.657898"
+              stroke="#7f958c" stroke-width="0.22857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_公司"
+              d="M -577.929443,-271.595673 A 649.584172,649.584172 0,0 1,-50.249191,247.748032"
+              stroke="#ff743e" stroke-width="0.8857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_疫情 id_发烧"
+              d="M -580.222351,-282.107727 A 460.551638,460.551638 0,0 1,-78.690323,-280.863037"
+              stroke="#e87886" stroke-width="0.95" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_本土"
+              d="M 344.684570,-185.473022 A 482.028332,482.028332 0,0 1,-151.939041,-80.964005"
+              stroke="#b3903a" stroke-width="0.96428573" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_新冠"
+              d="M 356.586487,-177.511627 A 744.636608,744.636608 0,0 1,-361.426727,248.986923"
+              stroke="#9d9482" stroke-width="0.20714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_方舱"
+              d="M 396.398956,-181.642441 A 356.487133,356.487133 0,0 1,412.478180,169.995850"
+              stroke="#9d9482" stroke-width="0.41428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_抗原"
+              d="M 396.522888,-181.731079 A 614.212978,614.212978 0,0 1,399.673889,496.671753"
+              stroke="#b3903a" stroke-width="0.34285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_感觉"
+              d="M 340.319519,-190.424789 A 629.709855,629.709855 0,0 1,-352.555054,-172.341217"
+              stroke="#34b288" stroke-width="0.3642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_晚上"
+              d="M 411.969025,-225.515823 A 233.679597,233.679597 0,0 1,629.573303,-150.443161"
+              stroke="#68ad36" stroke-width="0.41428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_病例"
+              d="M 378.927826,-174.569305 A 652.555567,652.555567 0,0 1,55.383484,469.281097"
+              stroke="#b3903a" stroke-width="0.22142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_感染者"
+              d="M 333.781189,-225.706406 A 201.086825,201.086825 0,0 1,214.816650,-355.467957"
+              stroke="#9d9482" stroke-width="0.67142856" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_工作"
+              d="M 388.757721,-252.040024 A 185.909162,185.909162 0,0 1,526.177002,-345.204773"
+              stroke="#68ad36" stroke-width="0.75714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_隔离"
+              d="M 343.742981,-186.410568 A 853.577745,853.577745 0,0 1,-630.878784,-55.489319"
+              stroke="#9d9482" stroke-width="0.42857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_昨天"
+              d="M 411.063995,-201.025528 A 367.832169,367.832169 0,0 1,634.677673,106.139679"
+              stroke="#68ad36" stroke-width="0.8428571" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_几天"
+              d="M 387.160217,-176.718369 A 514.602437,514.602437 0,0 1,254.276993,357.720856"
+              stroke="#34b288" stroke-width="0.54285717" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_发现"
+              d="M 377.265381,-174.352478 A 818.460356,818.460356 0,0 1,-80.193192,630.475891"
+              stroke="#9d9482" stroke-width="0.2642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_阳性"
+              d="M 332.929352,-222.039047 A 531.378509,531.378509 0,0 1,-74.607361,-649.516541"
+              stroke="#68ad36" stroke-width="0.7214286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_出门"
+              d="M 376.064758,-174.239075 A 380.810049,380.810049 0,0 1,189.682465,163.175537"
+              stroke="#68ad36" stroke-width="0.75" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_有人"
+              d="M 355.931976,-177.804749 A 559.031452,559.031452 0,0 1,-161.864227,129.633652"
+              stroke="#34b288" stroke-width="0.27857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_明天"
+              d="M 376.363281,-174.263916 A 202.529467,202.529467 0,0 1,305.357025,-23.003284"
+              stroke="#34b288" stroke-width="0.47857141" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_防控"
+              d="M 334.689575,-200.868546 A 717.830833,717.830833 0,0 1,-444.314087,-425.387299"
+              stroke="#34b288" stroke-width="0.8642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_上班"
+              d="M 366.457764,-174.617722 A 710.390597,710.390597 0,0 1,-182.531326,388.110229"
+              stroke="#34b288" stroke-width="0.35714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_公司"
+              d="M 369.019897,-174.292419 A 540.093718,540.093718 0,0 1,-12.448285,272.289398"
+              stroke="#b3903a" stroke-width="0.57857144" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_阴性"
+              d="M 404.370667,-189.130966 A 504.201488,504.201488 0,0 1,552.184570,340.722565"
+              stroke="#9d9482" stroke-width="0.29285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_感冒"
+              d="M 356.023438,-177.762955 A 360.939469,360.939469 0,0 1,45.558678,15.210465"
+              stroke="#68ad36" stroke-width="0.22142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新增 id_发烧"
+              d="M 337.089661,-195.497849 A 345.659903,345.659903 0,0 1,-2.740156,-223.334579"
+              stroke="#9d9482" stroke-width="0.21428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_新冠"
+              d="M -191.393784,-53.118568 A 331.673927,331.673927 0,0 1,-364.450195,232.885483"
+              stroke="#e87886" stroke-width="0.2642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_肺炎"
+              d="M -153.319016,-118.742424 A 571.633787,571.633787 0,0 1,459.502228,-29.184933"
+              stroke="#ff743e" stroke-width="0.51428574" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_方舱"
+              d="M -148.743408,-103.328087 A 548.881458,548.881458 0,0 1,363.613159,168.526901"
+              stroke="#e87886" stroke-width="0.2" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_医院"
+              d="M -221.349701,-134.274796 A 228.814383,228.814383 0,0 1,-238.018112,-343.384552"
+              stroke="#b3903a" stroke-width="0.4857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_抗原"
+              d="M -149.479095,-88.838890 A 705.444969,705.444969 0,0 1,377.990082,491.372467"
+              stroke="#ff743e" stroke-width="0.20714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_检测"
+              d="M -198.929855,-143.349152 A 355.872382,355.872382 0,0 1,-21.253172,-469.669464"
+              stroke="#e87886" stroke-width="0.5642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_感觉"
+              d="M -238.994125,-95.958725 A 175.612989,175.612989 0,0 1,-363.155579,-161.918182"
+              stroke="#7f958c" stroke-width="0.12857144" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_晚上"
+              d="M -157.850601,-125.952148 A 696.994194,696.994194 0,0 1,625.629395,-146.097977"
+              stroke="#b3903a" stroke-width="0.14285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_病例"
+              d="M -156.759048,-72.230782 A 519.805226,519.805226 0,0 1,32.742794,451.512695"
+              stroke="#ff743e" stroke-width="0.4642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_无症状"
+              d="M -216.848984,-59.381393 A 218.661134,218.661134 0,0 1,-391.061218,28.941772"
+              stroke="#ff743e" stroke-width="0.37857142" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_工作"
+              d="M -166.696945,-134.668350 A 655.531336,655.531336 0,0 1,527.324036,-354.707092"
+              stroke="#b3903a" stroke-width="0.6357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_人员"
+              d="M -177.628006,-140.673386 A 590.265378,590.265378 0,0 1,356.734222,-499.596985"
+              stroke="#b3903a" stroke-width="0.37142858" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_昨天"
+              d="M -150.953018,-113.144035 A 719.389874,719.389874 0,0 1,615.195496,113.386909"
+              stroke="#b3903a" stroke-width="0.21428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_几天"
+              d="M -149.955368,-86.842865 A 532.039367,532.039367 0,0 1,219.483536,344.223541"
+              stroke="#7f958c" stroke-width="0.12142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_发现"
+              d="M -163.743240,-64.433739 A 621.766587,621.766587 0,0 1,-92.438316,617.373352"
+              stroke="#e87886" stroke-width="0.76428574" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_阳性"
+              d="M -211.164261,-140.168854 A 483.201071,483.201071 0,0 1,-89.828354,-654.831726"
+              stroke="#b3903a" stroke-width="0.12857144" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_出门"
+              d="M -148.723419,-93.557510 A 370.301652,370.301652 0,0 1,136.029739,140.659271"
+              stroke="#b3903a" stroke-width="0.4857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_病毒"
+              d="M -193.005157,-143.638443 A 549.074533,549.074533 0,0 1,176.800552,-631.115723"
+              stroke="#e87886" stroke-width="0.55714285" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_有人"
+              d="M -173.090652,-58.049282 A 187.655950,187.655950 0,0 1,-181.256561,90.591278"
+              stroke="#7f958c" stroke-width="0.114285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_明天"
+              d="M -151.496445,-114.631859 A 392.199310,392.199310 0,0 1,232.562668,-30.748106"
+              stroke="#7f958c" stroke-width="0.14285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_上班"
+              d="M -170.845016,-59.282616 A 412.226902,412.226902 0,0 1,-197.806671,363.233521"
+              stroke="#7f958c" stroke-width="0.13571429" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_公司"
+              d="M -156.896439,-72.037224 A 339.482281,339.482281 0,0 1,-37.553406,248.121109"
+              stroke="#ff743e" stroke-width="0.19285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_感冒"
+              d="M -148.471298,-98.797958 A 190.236974,190.236974 0,0 1,-15.173175,-21.278164"
+              stroke="#b3903a" stroke-width="0.16428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_本土 id_发烧"
+              d="M -181.936005,-142.073364 A 181.499271,181.499271 0,0 1,-86.029808,-239.790833"
+              stroke="#e87886" stroke-width="0.1" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_方舱"
+              d="M -367.924316,227.307831 A 649.969304,649.969304 0,0 1,344.422821,186.219742"
+              stroke="#d27cce" stroke-width="0.71428573" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_医院"
+              d="M -403.136169,217.180634 A 533.582386,533.582386 0,0 1,-248.081985,-351.401459"
+              stroke="#9d9482" stroke-width="0.7785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_感觉"
+              d="M -409.535614,220.375320 A 365.635946,365.635946 0,0 1,-403.236786,-162.900330"
+              stroke="#6999d4" stroke-width="0.8" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_症状"
+              d="M -370.901276,268.967560 A 275.878387,275.878387 0,0 1,-326.545013,556.804260"
+              stroke="#d27cce" stroke-width="0.7714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_晚上"
+              d="M -375.142212,220.592163 A 918.793604,918.793604 0,0 1,623.150330,-140.724915"
+              stroke="#9d9482" stroke-width="0.69285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_感染者"
+              d="M -388.355042,215.588394 A 729.428224,729.428224 0,0 1,172.508621,-383.638367"
+              stroke="#d27cce" stroke-width="0.35" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_工作"
+              d="M -380.838867,217.575378 A 929.922041,929.922041 0,0 1,526.189087,-348.652069"
+              stroke="#9d9482" stroke-width="0.114285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_隔离"
+              d="M -422.320770,237.384674 A 328.242683,328.242683 0,0 1,-639.217834,-50.174564"
+              stroke="#d27cce" stroke-width="0.3642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_昨天"
+              d="M -369.248535,225.722168 A 861.740383,861.740383 0,0 1,606.962341,122.965263"
+              stroke="#9d9482" stroke-width="0.5642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_几天"
+              d="M -363.708862,234.534607 A 526.355519,526.355519 0,0 1,196.312836,354.753479"
+              stroke="#6999d4" stroke-width="0.6857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_发现"
+              d="M -363.110870,256.884033 A 407.245849,407.245849 0,0 1,-106.833832,613.809570"
+              stroke="#d27cce" stroke-width="0.4642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_阳性"
+              d="M -401.466187,216.627518 A 804.795500,804.795500 0,0 1,-91.288719,-656.659851"
+              stroke="#9d9482" stroke-width="0.47142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_出门"
+              d="M -369.149445,225.833679 A 454.603355,454.603355 0,0 1,109.220116,163.063232"
+              stroke="#9d9482" stroke-width="0.73571426" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_有人"
+              d="M -379.136597,218.321869 A 185.688342,185.688342 0,0 1,-247.601761,128.315643"
+              stroke="#6999d4" stroke-width="0.67142856" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_明天"
+              d="M -374.892395,220.761398 A 584.723233,584.723233 0,0 1,219.555710,-8.287446"
+              stroke="#6999d4" stroke-width="0.45" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_上班"
+              d="M -361.718781,251.418365 A 188.417860,188.417860 0,0 1,-235.045746,356.907440"
+              stroke="#6999d4" stroke-width="0.6571429" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_阴性"
+              d="M -365.097473,231.624481 A 786.372904,786.372904 0,0 1,524.270447,347.645599"
+              stroke="#d27cce" stroke-width="1.0" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_新冠 id_发烧"
+              d="M -392.452454,215.311279 A 509.222901,509.222901 0,0 1,-84.790199,-236.024643"
+              stroke="#d27cce" stroke-width="0.69285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_方舱"
+              d="M 490.298187,30.844198 A 199.243970,199.243970 0,0 1,427.254791,183.565262"
+              stroke="#e87886" stroke-width="0.54285717" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_医院"
+              d="M 450.250122,0.251697 A 665.714746,665.714746 0,0 1,-209.809906,-343.515289"
+              stroke="#b3903a" stroke-width="0.39285713" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_抗原"
+              d="M 500.046844,28.172146 A 447.657300,447.657300 0,0 1,404.355988,500.651794"
+              stroke="#ff743e" stroke-width="0.9285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_检测"
+              d="M 450.359894,-10.482943 A 567.538023,567.538023 0,0 1,1.698571,-458.522827"
+              stroke="#e87886" stroke-width="0.13571429" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_感觉"
+              d="M 452.825958,9.440781 A 740.203472,740.203472 0,0 1,-358.299927,-165.637299"
+              stroke="#7f958c" stroke-width="0.19285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_晚上"
+              d="M 497.622864,-38.625069 A 169.572035,169.572035 0,0 1,622.517273,-133.228333"
+              stroke="#b3903a" stroke-width="0.47857141" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_病例"
+              d="M 480.653137,30.761162 A 561.832151,561.832151 0,0 1,58.906200,478.976837"
+              stroke="#ff743e" stroke-width="0.9357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_无症状"
+              d="M 457.309357,17.084444 A 759.023407,759.023407 0,0 1,-396.590607,45.150101"
+              stroke="#ff743e" stroke-width="0.5" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_工作"
+              d="M 472.179504,-37.957024 A 290.455997,290.455997 0,0 1,533.778748,-328.219910"
+              stroke="#b3903a" stroke-width="0.8857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_人员"
+              d="M 460.252472,-29.967821 A 419.608112,419.608112 0,0 1,376.813080,-468.424530"
+              stroke="#b3903a" stroke-width="0.8857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_隔离"
+              d="M 455.673523,14.767402 A 939.053918,939.053918 0,0 1,-631.990784,-53.816902"
+              stroke="#e87886" stroke-width="0.8357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_昨天"
+              d="M 520.756042,3.268654 A 173.666248,173.666248 0,0 1,627.479126,107.225739"
+              stroke="#b3903a" stroke-width="0.27142859" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_几天"
+              d="M 485.974548,31.129051 A 391.035726,391.035726 0,0 1,261.430878,369.258881"
+              stroke="#7f958c" stroke-width="0.2" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_阳性"
+              d="M 450.988403,-13.525805 A 723.970461,723.970461 0,0 1,-76.011131,-649.354675"
+              stroke="#b3903a" stroke-width="0.67142856" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_出门"
+              d="M 469.469208,27.207249 A 321.388308,321.388308 0,0 1,194.629990,186.723984"
+              stroke="#b3903a" stroke-width="0.45" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_有人"
+              d="M 460.803192,21.007936 A 585.712664,585.712664 0,0 1,-165.467484,144.037033"
+              stroke="#7f958c" stroke-width="0.4" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_明天"
+              d="M 455.824005,14.997530 A 183.501859,183.501859 0,0 1,308.082703,25.290892"
+              stroke="#7f958c" stroke-width="0.27142859" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_上班"
+              d="M 470.518341,27.721369 A 677.913639,677.913639 0,0 1,-182.054306,399.508148"
+              stroke="#7f958c" stroke-width="0.3642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_公司"
+              d="M 469.553833,27.250296 A 502.185751,502.185751 0,0 1,-11.565708,284.735992"
+              stroke="#ff743e" stroke-width="0.9714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_阴性"
+              d="M 509.997955,21.725868 A 312.490069,312.490069 0,0 1,555.004944,341.877899"
+              stroke="#e87886" stroke-width="0.29285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_感冒"
+              d="M 456.949677,16.607315 A 400.962636,400.962636 0,0 1,39.507622,35.300369"
+              stroke="#b3903a" stroke-width="0.30714285" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_肺炎 id_发烧"
+              d="M 450.391571,1.169822 A 484.603252,484.603252 0,0 1,-15.864590,-211.822052"
+              stroke="#e87886" stroke-width="0.19285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_抗原"
+              d="M 412.048615,255.978195 A 257.898371,257.898371 0,0 1,399.488068,496.544037"
+              stroke="#e87886" stroke-width="0.55" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_检测"
+              d="M 341.792694,190.946350 A 662.050958,662.050958 0,0 1,-4.585598,-458.338806"
+              stroke="#d27cce" stroke-width="0.9" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_感觉"
+              d="M 337.120972,219.059814 A 724.431429,724.431429 0,0 1,-366.299591,-160.127029"
+              stroke="#6999d4" stroke-width="0.4" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_症状"
+              d="M 362.684296,256.695099 A 670.943780,670.943780 0,0 1,-316.900818,575.134094"
+              stroke="#d27cce" stroke-width="0.45" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_晚上"
+              d="M 389.645874,162.944290 A 359.716147,359.716147 0,0 1,623.396484,-129.229340"
+              stroke="#9d9482" stroke-width="0.60714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_病例"
+              d="M 369.693573,259.865723 A 378.675395,378.675395 0,0 1,59.608208,484.481018"
+              stroke="#e87886" stroke-width="0.35" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_无症状"
+              d="M 340.334167,231.486267 A 693.628919,693.628919 0,0 1,-402.253784,51.659065"
+              stroke="#e87886" stroke-width="0.4857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_感染者"
+              d="M 348.064178,181.164642 A 524.577819,524.577819 0,0 1,196.383514,-356.587250"
+              stroke="#d27cce" stroke-width="0.42857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_工作"
+              d="M 371.768646,165.151962 A 486.461976,486.461976 0,0 1,531.790161,-330.472687"
+              stroke="#9d9482" stroke-width="0.6857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_人员"
+              d="M 358.651550,171.491425 A 593.339464,593.339464 0,0 1,370.773438,-471.854065"
+              stroke="#9d9482" stroke-width="0.74285716" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_隔离"
+              d="M 339.857727,230.252472 A 885.120306,885.120306 0,0 1,-633.486816,-52.342262"
+              stroke="#d27cce" stroke-width="0.13571429" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_昨天"
+              d="M 421.085327,176.526871 A 216.537314,216.537314 0,0 1,603.830505,130.363480"
+              stroke="#9d9482" stroke-width="0.43571427" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_几天"
+              d="M 374.722870,261.395111 A 197.238406,197.238406 0,0 1,262.947296,373.698151"
+              stroke="#6999d4" stroke-width="0.44285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_发现"
+              d="M 374.061829,261.226715 A 545.062539,545.062539 0,0 1,-77.649551,639.755127"
+              stroke="#d27cce" stroke-width="0.55714285" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_出门"
+              d="M 340.611603,232.163086 A 199.224858,199.224858 0,0 1,185.455673,211.371735"
+              stroke="#9d9482" stroke-width="0.37142858" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_病毒"
+              d="M 349.546631,179.437607 A 725.596285,725.596285 0,0 1,183.656952,-623.644409"
+              stroke="#d27cce" stroke-width="0.87857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_有人"
+              d="M 341.678192,234.536209 A 498.077169,498.077169 0,0 1,-173.137970,155.691940"
+              stroke="#6999d4" stroke-width="0.5857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_明天"
+              d="M 343.536407,187.682571 A 201.540825,201.540825 0,0 1,265.682770,51.104122"
+              stroke="#6999d4" stroke-width="0.25714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_防控"
+              d="M 336.784210,210.642883 A 890.836960,890.836960 0,0 1,-451.904968,-421.460968"
+              stroke="#6999d4" stroke-width="0.70714283" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_上班"
+              d="M 355.170593,251.636871 A 529.970987,529.970987 0,0 1,-183.838516,408.023071"
+              stroke="#6999d4" stroke-width="0.34285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_公司"
+              d="M 349.510193,246.240784 A 364.103939,364.103939 0,0 1,-14.549865,295.161102"
+              stroke="#e87886" stroke-width="0.37857142" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_阴性"
+              d="M 434.969299,226.029755 A 182.529328,182.529328 0,0 1,537.614380,339.964447"
+              stroke="#d27cce" stroke-width="0.75" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_感冒"
+              d="M 336.952972,217.522614 A 358.716035,358.716035 0,0 1,24.575336,49.497787"
+              stroke="#9d9482" stroke-width="0.41428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_方舱 id_发烧"
+              d="M 338.083374,201.326218 A 526.450530,526.450530 0,0 1,-33.362267,-205.636139"
+              stroke="#d27cce" stroke-width="0.3642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_抗原"
+              d="M -194.742813,-360.600647 A 899.702825,899.702825 0,0 1,382.864502,491.137909"
+              stroke="#b3903a" stroke-width="0.87857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_感觉"
+              d="M -228.980606,-340.470306 A 199.256279,199.256279 0,0 1,-348.116333,-202.531952"
+              stroke="#34b288" stroke-width="0.7" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_晚上"
+              d="M -194.828690,-382.139160 A 747.839631,747.839631 0,0 1,629.690247,-150.537369"
+              stroke="#68ad36" stroke-width="0.95" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_工作"
+              d="M -198.102386,-388.546692 A 647.519912,647.519912 0,0 1,531.596619,-362.949951"
+              stroke="#68ad36" stroke-width="0.6142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_人员"
+              d="M -202.749359,-394.025146 A 522.894877,522.894877 0,0 1,359.459229,-512.386902"
+              stroke="#68ad36" stroke-width="0.87142855" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_昨天"
+              d="M -192.989273,-374.018311 A 833.655769,833.655769 0,0 1,622.642334,108.909332"
+              stroke="#68ad36" stroke-width="0.5928571" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_几天"
+              d="M -195.495804,-358.721863 A 732.140016,732.140016 0,0 1,227.121521,344.121155"
+              stroke="#34b288" stroke-width="0.6785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_阳性"
+              d="M -227.935226,-402.185822 A 274.668034,274.668034 0,0 1,-92.258018,-658.236938"
+              stroke="#68ad36" stroke-width="0.74285716" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_出门"
+              d="M -194.899048,-360.180389 A 557.588174,557.588174 0,0 1,149.907455,138.636658"
+              stroke="#68ad36" stroke-width="0.5857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_病毒"
+              d="M -211.996674,-400.008453 A 408.057082,408.057082 0,0 1,176.197067,-635.731812"
+              stroke="#9d9482" stroke-width="0.64285713" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_有人"
+              d="M -205.304916,-346.336182 A 415.166635,415.166635 0,0 1,-182.144470,90.028198"
+              stroke="#34b288" stroke-width="0.75" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_明天"
+              d="M -192.891251,-370.009338 A 513.895701,513.895701 0,0 1,250.717468,-41.762234"
+              stroke="#34b288" stroke-width="0.49285716" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_防控"
+              d="M -254.075974,-362.887512 A 203.706492,203.706492 0,0 1,-444.135712,-425.531616"
+              stroke="#34b288" stroke-width="0.45714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_上班"
+              d="M -205.898117,-345.900970 A 638.953679,638.953679 0,0 1,-199.203156,362.213287"
+              stroke="#34b288" stroke-width="0.80714285" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_公司"
+              d="M -199.934982,-351.485077 A 563.553241,563.553241 0,0 1,-33.509907,249.295959"
+              stroke="#b3903a" stroke-width="0.7214286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_感冒"
+              d="M -195.738739,-358.182434 A 373.455796,373.455796 0,0 1,7.128420,-26.584373"
+              stroke="#68ad36" stroke-width="0.87142855" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_医院 id_发烧"
+              d="M -192.869705,-370.800873 A 182.259858,182.259858 0,0 1,-62.446327,-294.921265"
+              stroke="#9d9482" stroke-width="0.8357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_检测"
+              d="M 355.823486,505.244751 A 894.416875,894.416875 0,0 1,-7.783788,-458.955750"
+              stroke="#e87886" stroke-width="0.9785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_感觉"
+              d="M 350.991943,518.381409 A 871.916571,871.916571 0,0 1,-375.471313,-156.966873"
+              stroke="#7f958c" stroke-width="0.74285716" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_病例"
+              d="M 354.430847,537.005737 A 299.967207,299.967207 0,0 1,51.581322,508.927856"
+              stroke="#ff743e" stroke-width="0.43571427" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_无症状"
+              d="M 350.826721,524.560669 A 788.839690,788.839690 0,0 1,-411.531219,57.495846"
+              stroke="#ff743e" stroke-width="0.41428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_感染者"
+              d="M 359.298767,500.847839 A 774.510671,774.510671 0,0 1,192.685730,-358.048523"
+              stroke="#e87886" stroke-width="0.4857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_昨天"
+              d="M 381.405701,491.127899 A 382.798472,382.798472 0,0 1,604.974182,152.229202"
+              stroke="#b3903a" stroke-width="0.8214286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_几天"
+              d="M 351.155579,517.255066 A 174.714132,174.714132 0,0 1,236.881836,423.014099"
+              stroke="#7f958c" stroke-width="0.57857144" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_发现"
+              d="M 361.296692,545.679688 A 419.049539,419.049539 0,0 1,-79.430237,652.983643"
+              stroke="#e87886" stroke-width="0.82857144" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_出门"
+              d="M 352.864075,511.001495 A 342.125002,342.125002 0,0 1,150.543854,229.208405"
+              stroke="#b3903a" stroke-width="0.5214286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_有人"
+              d="M 350.753357,523.035522 A 589.680508,589.680508 0,0 1,-189.158157,166.602402"
+              stroke="#7f958c" stroke-width="0.55" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_明天"
+              d="M 358.944214,501.228027 A 443.077782,443.077782 0,0 1,248.529205,47.890007"
+              stroke="#7f958c" stroke-width="0.43571427" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_上班"
+              d="M 353.283752,534.623779 A 514.604116,514.604116 0,0 1,-194.483444,424.911652"
+              stroke="#7f958c" stroke-width="0.5928571" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_公司"
+              d="M 350.872223,525.117371 A 408.631576,408.631576 0,0 1,-30.179329,310.983429"
+              stroke="#ff743e" stroke-width="0.50714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_感冒"
+              d="M 352.315918,512.527527 A 527.375162,527.375162 0,0 1,6.329791,54.513615"
+              stroke="#b3903a" stroke-width="0.8857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_抗原 id_发烧"
+              d="M 353.845734,508.744873 A 735.482250,735.482250 0,0 1,-45.535809,-205.445068"
+              stroke="#e87886" stroke-width="0.9285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_感觉"
+              d="M -8.650688,-459.210876 A 397.497772,397.497772 0,0 1,-346.628479,-193.930634"
+              stroke="#6999d4" stroke-width="0.78571427" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_病例"
+              d="M 11.214187,-462.720642 A 805.465514,805.465514 0,0 1,43.866772,456.528717"
+              stroke="#e87886" stroke-width="0.44285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_无症状"
+              d="M -3.626731,-458.248871 A 549.640023,549.640023 0,0 1,-392.128113,17.872210"
+              stroke="#e87886" stroke-width="0.25" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_感染者"
+              d="M 19.324827,-483.932861 A 189.999776,189.999776 0,0 1,186.872513,-419.855804"
+              stroke="#d27cce" stroke-width="0.95" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_工作"
+              d="M 18.097157,-488.133209 A 475.351900,475.351900 0,0 1,535.151062,-366.743683"
+              stroke="#9d9482" stroke-width="0.76428574" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_隔离"
+              d="M -9.785316,-459.605316 A 636.189448,636.189448 0,0 1,-629.734253,-59.628033"
+              stroke="#d27cce" stroke-width="0.5214286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_发现"
+              d="M 9.103338,-461.282654 A 939.514631,939.514631 0,0 1,-87.307098,620.973511"
+              stroke="#d27cce" stroke-width="0.6357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_病毒"
+              d="M 4.308218,-500.766052 A 204.745730,204.745730 0,0 1,176.205002,-634.138123"
+              stroke="#d27cce" stroke-width="0.6142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_明天"
+              d="M 17.570948,-470.588776 A 460.533022,460.533022 0,0 1,269.817993,-44.014507"
+              stroke="#6999d4" stroke-width="0.6642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_防控"
+              d="M -18.759642,-465.983582 A 381.155508,381.155508 0,0 1,-439.165131,-431.326324"
+              stroke="#6999d4" stroke-width="0.47857141" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_上班"
+              d="M 6.048347,-459.765717 A 752.297944,752.297944 0,0 1,-191.601151,369.104340"
+              stroke="#6999d4" stroke-width="0.8428571" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_检测 id_发烧"
+              d="M 6.811543,-460.089722 A 191.951973,191.951973 0,0 1,-10.034137,-289.680756"
+              stroke="#d27cce" stroke-width="0.7785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_病例"
+              d="M -349.630432,-177.693665 A 658.953373,658.953373 0,0 1,26.520376,450.478241"
+              stroke="#7f958c" stroke-width="0.21428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_无症状"
+              d="M -369.933685,-158.538406 A 185.619207,185.619207 0,0 1,-401.826172,1.885240"
+              stroke="#7f958c" stroke-width="0.2857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_感染者"
+              d="M -361.111664,-220.996155 A 518.874593,518.874593 0,0 1,173.261658,-400.709015"
+              stroke="#6999d4" stroke-width="0.21428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_工作"
+              d="M -357.077179,-217.515976 A 789.809183,789.809183 0,0 1,528.911377,-358.654053"
+              stroke="#34b288" stroke-width="0.78571427" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_人员"
+              d="M -362.951782,-222.271988 A 692.892378,692.892378 0,0 1,357.701355,-507.146851"
+              stroke="#34b288" stroke-width="0.50714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_发现"
+              d="M -353.522461,-170.953369 A 732.729463,732.729463 0,0 1,-97.691193,615.130005"
+              stroke="#6999d4" stroke-width="1.0" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_阳性"
+              d="M -383.666962,-228.022934 A 469.945863,469.945863 0,0 1,-93.143745,-660.142090"
+              stroke="#34b288" stroke-width="0.95" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_出门"
+              d="M -346.585266,-191.980606 A 542.850676,542.850676 0,0 1,133.739456,141.435730"
+              stroke="#34b288" stroke-width="0.70714283" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_有人"
+              d="M -350.599213,-175.668915 A 304.129398,304.129398 0,0 1,-201.946472,83.717873"
+              stroke="#00b7da" stroke-width="0.87857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_明天"
+              d="M -348.390625,-203.400467 A 564.228391,564.228391 0,0 1,235.904724,-33.698502"
+              stroke="#00b7da" stroke-width="0.8642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_防控"
+              d="M -409.516632,-215.737534 A 217.788433,217.788433 0,0 1,-464.359772,-421.591278"
+              stroke="#00b7da" stroke-width="0.3857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_上班"
+              d="M -354.948700,-169.132889 A 507.540619,507.540619 0,0 1,-208.997803,357.192963"
+              stroke="#00b7da" stroke-width="0.7214286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_公司"
+              d="M -348.692688,-180.043350 A 484.270102,484.270102 0,0 1,-45.237438,247.315491"
+              stroke="#7f958c" stroke-width="0.6642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感觉 id_阴性"
+              d="M -346.703461,-195.076462 A 900.936142,900.936142 0,0 1,533.275208,341.371094"
+              stroke="#6999d4" stroke-width="0.75714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_病例"
+              d="M -322.484070,559.444763 A 306.411731,306.411731 0,0 1,-9.952338,473.992645"
+              stroke="#e87886" stroke-width="0.2642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_无症状"
+              d="M -345.835419,560.272583 A 461.002077,461.002077 0,0 1,-438.857574,56.882462"
+              stroke="#e87886" stroke-width="0.5857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_感染者"
+              d="M -335.795715,555.349060 A 920.578577,920.578577 0,0 1,175.154541,-375.530640"
+              stroke="#d27cce" stroke-width="0.54285717" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_昨天"
+              d="M -325.283081,557.454285 A 884.916652,884.916652 0,0 1,603.223022,132.817871"
+              stroke="#9d9482" stroke-width="0.5714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_几天"
+              d="M -323.808136,558.396851 A 490.259176,490.259176 0,0 1,184.807114,373.463013"
+              stroke="#6999d4" stroke-width="0.9285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_发现"
+              d="M -317.424744,567.232422 A 198.352463,198.352463 0,0 1,-124.897804,620.582947"
+              stroke="#d27cce" stroke-width="0.9785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_阳性"
+              d="M -340.850037,556.784058 A 1054.099486,1054.099486 0,0 1,-89.959343,-654.976013"
+              stroke="#9d9482" stroke-width="0.8357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_出门"
+              d="M -329.222687,555.825562 A 516.561666,516.561666 0,0 1,104.263779,187.431046"
+              stroke="#9d9482" stroke-width="0.8" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_病毒"
+              d="M -337.565918,555.661560 A 1096.161557,1096.161557 0,0 1,177.836655,-628.808655"
+              stroke="#d27cce" stroke-width="0.8642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_有人"
+              d="M -339.402863,556.196899 A 386.674332,386.674332 0,0 1,-237.509537,154.269653"
+              stroke="#6999d4" stroke-width="0.47142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_明天"
+              d="M -330.657074,555.499329 A 688.649722,688.649722 0,0 1,218.622650,10.590942"
+              stroke="#6999d4" stroke-width="0.37142858" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_上班"
+              d="M -334.277313,555.231384 A 174.080206,174.080206 0,0 1,-258.400177,414.317535"
+              stroke="#6999d4" stroke-width="0.6857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_公司"
+              d="M -330.961395,555.446655 A 341.942074,341.942074 0,0 1,-77.759666,287.352997"
+              stroke="#e87886" stroke-width="0.54285717" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_症状 id_阴性"
+              d="M -322.632874,559.315979 A 751.065186,751.065186 0,0 1,519.141724,355.576508"
+              stroke="#d27cce" stroke-width="0.27142859" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_晚上 id_病例"
+              d="M 638.865295,-116.186935 A 730.485200,730.485200 0,0 1,59.138741,480.207153"
+              stroke="#b3903a" stroke-width="0.32857144" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_晚上 id_无症状"
+              d="M 628.056885,-121.674866 A 898.788315,898.788315 0,0 1,-394.676331,41.887146"
+              stroke="#b3903a" stroke-width="0.24285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_晚上 id_感染者"
+              d="M 622.474792,-133.652374 A 419.663959,419.663959 0,0 1,222.936554,-358.150299"
+              stroke="#9d9482" stroke-width="0.24285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_晚上 id_人员"
+              d="M 623.566040,-142.005173 A 368.557852,368.557852 0,0 1,390.495575,-465.610565"
+              stroke="#68ad36" stroke-width="0.9142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_晚上 id_隔离"
+              d="M 626.876587,-122.972122 A 1069.779315,1069.779315 0,0 1,-631.356445,-54.679993"
+              stroke="#9d9482" stroke-width="0.2642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_晚上 id_出门"
+              d="M 634.757202,-117.288857 A 489.046459,489.046459 0,0 1,194.705521,184.918777"
+              stroke="#68ad36" stroke-width="0.9142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_晚上 id_防控"
+              d="M 623.649963,-128.516434 A 951.477522,951.477522 0,0 1,-444.458405,-425.272797"
+              stroke="#34b288" stroke-width="0.6857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_晚上 id_上班"
+              d="M 634.466736,-117.404831 A 845.227475,845.227475 0,0 1,-181.950516,398.274139"
+              stroke="#34b288" stroke-width="0.87857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_晚上 id_公司"
+              d="M 634.306519,-117.471161 A 669.143142,669.143142 0,0 1,-11.429523,283.306030"
+              stroke="#b3903a" stroke-width="0.7285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_晚上 id_感冒"
+              d="M 629.086548,-120.713593 A 545.076781,545.076781 0,0 1,42.743744,28.849411"
+              stroke="#68ad36" stroke-width="0.87857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_感染者"
+              d="M 9.377469,453.385468 A 746.646139,746.646139 0,0 1,181.314529,-366.321960"
+              stroke="#e87886" stroke-width="0.60714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_昨天"
+              d="M 39.143543,453.832947 A 586.319404,586.319404 0,0 1,602.688232,136.300873"
+              stroke="#b3903a" stroke-width="0.40714285" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_几天"
+              d="M 42.622326,455.724304 A 187.023855,187.023855 0,0 1,183.340515,381.957123"
+              stroke="#7f958c" stroke-width="0.32857144" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_出门"
+              d="M 17.211716,450.977020 A 272.832453,272.832453 0,0 1,112.466469,210.116486"
+              stroke="#b3903a" stroke-width="0.5714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_病毒"
+              d="M 7.244387,454.404480 A 944.409753,944.409753 0,0 1,179.815460,-626.239380"
+              stroke="#e87886" stroke-width="0.10714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_有人"
+              d="M -9.110733,471.887726 A 355.091183,355.091183 0,0 1,-205.430725,169.505829"
+              stroke="#7f958c" stroke-width="0.34285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_明天"
+              d="M 18.796623,450.718933 A 450.030754,450.030754 0,0 1,224.281616,26.952946"
+              stroke="#7f958c" stroke-width="0.19285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_防控"
+              d="M -8.231886,470.024170 A 871.772528,871.772528 0,0 1,-461.220886,-420.867615"
+              stroke="#7f958c" stroke-width="0.25714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_上班"
+              d="M -11.337913,493.670990 A 218.675198,218.675198 0,0 1,-197.332504,427.377808"
+              stroke="#7f958c" stroke-width="0.33571428" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_公司"
+              d="M -3.573003,463.018860 A 180.480314,180.480314 0,0 1,-52.446785,313.504608"
+              stroke="#ff743e" stroke-width="0.42142856" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_阴性"
+              d="M 47.961067,459.753632 A 444.659864,444.659864 0,0 1,519.053711,355.790375"
+              stroke="#e87886" stroke-width="0.17857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_感冒"
+              d="M 2.407835,457.424255 A 393.900563,393.900563 0,0 1,-16.301510,48.502842"
+              stroke="#b3903a" stroke-width="0.2642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病例 id_发烧"
+              d="M 0.631632,458.829254 A 618.174109,618.174109 0,0 1,-63.808598,-211.409790"
+              stroke="#e87886" stroke-width="0.17142858" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_工作"
+              d="M -406.090576,-1.439538 A 871.689012,871.689012 0,0 1,527.038818,-353.724823"
+              stroke="#b3903a" stroke-width="0.6142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_昨天"
+              d="M -395.383759,9.964667 A 888.806320,888.806320 0,0 1,611.084412,117.260162"
+              stroke="#b3903a" stroke-width="0.3" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_几天"
+              d="M -391.187317,22.837349 A 617.185543,617.185543 0,0 1,205.982407,348.130127"
+              stroke="#7f958c" stroke-width="0.34285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_出门"
+              d="M -392.920868,15.331037 A 495.923544,495.923544 0,0 1,120.056618,149.443146"
+              stroke="#b3903a" stroke-width="0.60714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_病毒"
+              d="M -420.289124,-6.683877 A 751.616130,751.616130 0,0 1,176.393219,-632.685547"
+              stroke="#e87886" stroke-width="0.41428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_有人"
+              d="M -391.274780,22.126993 A 201.238077,201.238077 0,0 1,-229.199509,91.307281"
+              stroke="#7f958c" stroke-width="0.20714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_明天"
+              d="M -397.771576,6.344937 A 575.522540,575.522540 0,0 1,225.582794,-22.198957"
+              stroke="#7f958c" stroke-width="0.21428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_防控"
+              d="M -445.376221,0.335873 A 391.789306,391.789306 0,0 1,-469.190033,-423.763611"
+              stroke="#7f958c" stroke-width="0.3" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_上班"
+              d="M -394.675140,41.884819 A 350.520260,350.520260 0,0 1,-219.018661,355.046021"
+              stroke="#7f958c" stroke-width="0.27857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_公司"
+              d="M -390.979340,26.266562 A 380.766561,380.766561 0,0 1,-57.342533,249.720276"
+              stroke="#ff743e" stroke-width="0.34285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_感冒"
+              d="M -397.337128,6.932191 A 358.069240,358.069240 0,0 1,-29.454590,-7.522671"
+              stroke="#b3903a" stroke-width="0.34285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_无症状 id_发烧"
+              d="M -413.291595,-5.018791 A 395.940460,395.940460 0,0 1,-87.788887,-250.634857"
+              stroke="#e87886" stroke-width="0.2642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_人员"
+              d="M 224.671188,-422.253967 A 176.973501,176.973501 0,0 1,356.733673,-499.554382"
+              stroke="#9d9482" stroke-width="0.6142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_昨天"
+              d="M 242.192398,-380.741699 A 568.061145,568.061145 0,0 1,633.856812,106.183411"
+              stroke="#9d9482" stroke-width="0.31428573" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_几天"
+              d="M 229.031097,-361.783051 A 646.152267,646.152267 0,0 1,246.468582,350.879089"
+              stroke="#6999d4" stroke-width="0.29285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_阳性"
+              d="M 172.397461,-397.053131 A 330.436261,330.436261 0,0 1,-74.137352,-649.597290"
+              stroke="#9d9482" stroke-width="0.7785714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_出门"
+              d="M 225.065811,-359.236725 A 481.261781,481.261781 0,0 1,178.515244,149.212845"
+              stroke="#9d9482" stroke-width="0.5928571" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_病毒"
+              d="M 186.450119,-419.550049 A 204.258008,204.258008 0,0 1,182.230545,-624.369263"
+              stroke="#d27cce" stroke-width="0.94285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_有人"
+              d="M 205.472092,-354.824829 A 551.246570,551.246570 0,0 1,-163.586563,114.163086"
+              stroke="#6999d4" stroke-width="0.29285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_明天"
+              d="M 231.780640,-364.034332 A 331.953824,331.953824 0,0 1,285.398956,-39.941971"
+              stroke="#6999d4" stroke-width="0.20714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_上班"
+              d="M 211.954681,-355.008423 A 746.761852,746.761852 0,0 1,-185.963043,377.696014"
+              stroke="#6999d4" stroke-width="0.24285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_公司"
+              d="M 216.708313,-355.904236 A 597.842129,597.842129 0,0 1,-17.111761,262.033447"
+              stroke="#e87886" stroke-width="0.50714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_感冒"
+              d="M 212.404190,-355.064972 A 377.106359,377.106359 0,0 1,40.280491,-6.102269"
+              stroke="#9d9482" stroke-width="0.2642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_感染者 id_发烧"
+              d="M 190.631882,-359.075745 A 236.367560,236.367560 0,0 1,7.427150,-251.121918"
+              stroke="#d27cce" stroke-width="0.15714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_工作 id_人员"
+              d="M 526.561157,-351.612122 A 185.497683,185.497683 0,0 1,399.018707,-466.773834"
+              stroke="#68ad36" stroke-width="0.8857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_工作 id_昨天"
+              d="M 571.236267,-328.040131 A 411.319182,411.319182 0,0 1,650.114746,109.203667"
+              stroke="#68ad36" stroke-width="0.79285717" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_工作 id_几天"
+              d="M 557.889282,-320.899658 A 668.249739,668.249739 0,0 1,258.755737,363.874573"
+              stroke="#34b288" stroke-width="0.79285717" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_工作 id_发现"
+              d="M 553.725586,-320.389343 A 990.659242,990.659242 0,0 1,-79.296623,632.627686"
+              stroke="#9d9482" stroke-width="0.76428574" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_工作 id_阳性"
+              d="M 526.430054,-342.839966 A 588.561429,588.561429 0,0 1,-69.500648,-651.176392"
+              stroke="#68ad36" stroke-width="0.39285713" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_工作 id_出门"
+              d="M 551.804504,-320.377167 A 555.440601,555.440601 0,0 1,192.438980,169.746613"
+              stroke="#68ad36" stroke-width="0.7714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_工作 id_有人"
+              d="M 542.622009,-322.316772 A 744.240439,744.240439 0,0 1,-161.822067,128.972458"
+              stroke="#34b288" stroke-width="0.9285714" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_工作 id_明天"
+              d="M 550.541016,-320.445282 A 377.304469,377.304469 0,0 1,311.190613,-10.819293"
+              stroke="#34b288" stroke-width="0.65" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_工作 id_阴性"
+              d="M 567.730103,-325.117432 A 593.873064,593.873064 0,0 1,559.254944,344.426208"
+              stroke="#9d9482" stroke-width="0.12142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_工作 id_感冒"
+              d="M 543.050903,-322.146637 A 546.477538,546.477538 0,0 1,45.566845,14.913179"
+              stroke="#68ad36" stroke-width="0.57857144" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_工作 id_发烧"
+              d="M 533.674561,-328.325836 A 500.167979,500.167979 0,0 1,2.948183,-232.560623"
+              stroke="#9d9482" stroke-width="0.41428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_隔离"
+              d="M 372.953491,-470.421753 A 933.021000,933.021000 0,0 1,-629.995422,-57.831032"
+              stroke="#9d9482" stroke-width="0.12142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_昨天"
+              d="M 418.133118,-480.502167 A 570.363543,570.363543 0,0 1,644.241699,107.127403"
+              stroke="#68ad36" stroke-width="0.62857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_几天"
+              d="M 404.389923,-468.732239 A 749.374004,749.374004 0,0 1,253.032379,356.373108"
+              stroke="#34b288" stroke-width="0.70714283" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_发现"
+              d="M 397.482391,-466.396759 A 1037.570353,1037.570353 0,0 1,-81.473961,628.034180"
+              stroke="#9d9482" stroke-width="0.9714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_出门"
+              d="M 399.421661,-466.885559 A 603.568091,603.568091 0,0 1,186.131516,157.395447"
+              stroke="#68ad36" stroke-width="0.8" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_病毒"
+              d="M 356.748260,-500.211761 A 202.678507,202.678507 0,0 1,192.938477,-623.457642"
+              stroke="#9d9482" stroke-width="0.5928571" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_有人"
+              d="M 385.581360,-465.937836 A 719.512911,719.512911 0,0 1,-162.584839,118.169052"
+              stroke="#34b288" stroke-width="0.87857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_明天"
+              d="M 402.127289,-467.779938 A 431.494632,431.494632 0,0 1,300.929504,-28.658678"
+              stroke="#34b288" stroke-width="0.51428574" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_上班"
+              d="M 391.080139,-465.619781 A 903.606226,903.606226 0,0 1,-184.305313,381.600220"
+              stroke="#34b288" stroke-width="0.6857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_阴性"
+              d="M 414.220306,-475.683899 A 731.981376,731.981376 0,0 1,555.090454,341.919006"
+              stroke="#9d9482" stroke-width="0.41428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_感冒"
+              d="M 389.190186,-465.626831 A 534.693023,534.693023 0,0 1,43.502666,1.133950"
+              stroke="#68ad36" stroke-width="0.42857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_人员 id_发烧"
+              d="M 375.734772,-468.919556 A 413.299239,413.299239 0,0 1,7.352596,-249.647858"
+              stroke="#9d9482" stroke-width="0.33571428" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_隔离 id_发现"
+              d="M -630.123047,-57.351456 A 735.234295,735.234295 0,0 1,-107.059029,613.814392"
+              stroke="#d27cce" stroke-width="0.8428571" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_隔离 id_病毒"
+              d="M -636.512329,-69.633537 A 840.151029,840.151029 0,0 1,176.180496,-635.359985"
+              stroke="#d27cce" stroke-width="0.45" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_隔离 id_防控"
+              d="M -641.562744,-69.990692 A 352.711447,352.711447 0,0 1,-476.864746,-431.675598"
+              stroke="#6999d4" stroke-width="0.74285716" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_隔离 id_阴性"
+              d="M -630.146790,-63.052387 A 1048.013061,1048.013061 0,0 1,528.752930,343.824524"
+              stroke="#d27cce" stroke-width="0.85" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_隔离 id_发烧"
+              d="M -633.861328,-68.266060 A 524.762807,524.762807 0,0 1,-85.886070,-266.288452"
+              stroke="#d27cce" stroke-width="0.9357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_昨天 id_出门"
+              d="M 610.257202,161.063141 A 407.199716,407.199716 0,0 1,189.234421,205.527878"
+              stroke="#68ad36" stroke-width="0.8142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_昨天 id_病毒"
+              d="M 605.516846,125.788292 A 745.514141,745.514141 0,0 1,187.155548,-622.719971"
+              stroke="#9d9482" stroke-width="0.89285713" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_昨天 id_有人"
+              d="M 608.454346,158.684433 A 700.707014,700.707014 0,0 1,-169.957947,151.813934"
+              stroke="#34b288" stroke-width="0.95714283" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_昨天 id_防控"
+              d="M 602.841675,144.264114 A 1032.629862,1032.629862 0,0 1,-448.468964,-422.771240"
+              stroke="#34b288" stroke-width="0.47142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_昨天 id_上班"
+              d="M 615.490356,166.126572 A 746.505911,746.505911 0,0 1,-184.001373,408.514038"
+              stroke="#34b288" stroke-width="0.76428574" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_昨天 id_公司"
+              d="M 613.152832,164.133865 A 579.504626,579.504626 0,0 1,-14.119101,294.210968"
+              stroke="#b3903a" stroke-width="0.6642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_昨天 id_阴性"
+              d="M 641.817322,172.670776 A 203.576983,203.576983 0,0 1,565.362305,350.717926"
+              stroke="#9d9482" stroke-width="0.79285717" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_昨天 id_感冒"
+              d="M 605.375977,153.178879 A 536.213866,536.213866 0,0 1,33.202606,43.127270"
+              stroke="#68ad36" stroke-width="0.67142856" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_昨天 id_发烧"
+              d="M 602.663086,142.719604 A 651.550318,651.550318 0,0 1,-19.980030,-209.643097"
+              stroke="#9d9482" stroke-width="0.70714283" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_几天 id_发现"
+              d="M 210.997696,423.078461 A 349.210751,349.210751 0,0 1,-77.559883,640.866394"
+              stroke="#6999d4" stroke-width="0.9" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_几天 id_出门"
+              d="M 192.441650,358.861298 A 178.338196,178.338196 0,0 1,142.161758,228.636597"
+              stroke="#34b288" stroke-width="0.6357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_几天 id_有人"
+              d="M 183.312592,386.721588 A 416.844720,416.844720 0,0 1,-186.526459,165.478653"
+              stroke="#00b7da" stroke-width="0.95" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_几天 id_明天"
+              d="M 205.445160,348.398346 A 319.512316,319.512316 0,0 1,235.834061,40.555840"
+              stroke="#00b7da" stroke-width="0.94285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_几天 id_防控"
+              d="M 184.625961,374.120239 A 893.126287,893.126287 0,0 1,-456.649506,-420.651733"
+              stroke="#00b7da" stroke-width="0.45" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_几天 id_上班"
+              d="M 190.654587,407.940491 A 372.017197,372.017197 0,0 1,-188.151352,417.203125"
+              stroke="#00b7da" stroke-width="0.82857144" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_几天 id_公司"
+              d="M 183.989655,392.259766 A 240.033433,240.033433 0,0 1,-25.147718,307.959625"
+              stroke="#7f958c" stroke-width="0.64285713" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_几天 id_阴性"
+              d="M 256.731323,360.789520 A 266.905558,266.905558 0,0 1,520.806702,352.256775"
+              stroke="#6999d4" stroke-width="0.73571426" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_几天 id_感冒"
+              d="M 187.305481,366.903900 A 358.685060,358.685060 0,0 1,2.819989,54.477673"
+              stroke="#34b288" stroke-width="0.87142855" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_几天 id_发烧"
+              d="M 189.669876,362.678741 A 574.910968,574.910968 0,0 1,-50.091175,-206.184265"
+              stroke="#6999d4" stroke-width="0.75714284" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_发现 id_出门"
+              d="M -109.262642,613.954773 A 437.650841,437.650841 0,0 1,109.048439,204.458969"
+              stroke="#9d9482" stroke-width="0.9357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_发现 id_明天"
+              d="M -109.005104,613.929565 A 616.312079,616.312079 0,0 1,222.599670,23.700346"
+              stroke="#6999d4" stroke-width="0.6571429" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_发现 id_上班"
+              d="M -130.880386,627.527344 A 227.547497,227.547497 0,0 1,-227.099426,435.809784"
+              stroke="#6999d4" stroke-width="0.85714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_发现 id_阴性"
+              d="M -91.287292,618.041504 A 588.688484,588.688484 0,0 1,517.734802,360.022400"
+              stroke="#d27cce" stroke-width="0.5928571" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_发现 id_感冒"
+              d="M -118.636772,616.564758 A 532.050557,532.050557 0,0 1,-23.572094,42.785072"
+              stroke="#9d9482" stroke-width="0.6357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_发现 id_发烧"
+              d="M -121.407692,618.063599 A 748.216116,748.216116 0,0 1,-70.349861,-215.904175"
+              stroke="#d27cce" stroke-width="0.4857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_阳性 id_出门"
+              d="M -63.979790,-655.662476 A 733.327811,733.327811 0,0 1,165.041931,141.412506"
+              stroke="#68ad36" stroke-width="0.8857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_阳性 id_明天"
+              d="M -62.034222,-658.677795 A 627.113114,627.113114 0,0 1,272.015594,-43.773911"
+              stroke="#34b288" stroke-width="0.5714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_阳性 id_感冒"
+              d="M -65.647484,-653.872864 A 571.057717,571.057717 0,0 1,24.007320,-21.909863"
+              stroke="#68ad36" stroke-width="0.94285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_阳性 id_发烧"
+              d="M -66.164696,-653.411377 A 346.028581,346.028581 0,0 1,-17.968670,-294.939026"
+              stroke="#9d9482" stroke-width="0.8357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_出门 id_有人"
+              d="M 107.829781,201.862061 A 298.944436,298.944436 0,0 1,-172.760330,155.277283"
+              stroke="#34b288" stroke-width="0.7214286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_出门 id_明天"
+              d="M 151.952957,138.704819 A 178.920217,178.920217 0,0 1,223.655289,25.811926"
+              stroke="#34b288" stroke-width="0.69285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_出门 id_防控"
+              d="M 104.929848,175.443832 A 727.017793,727.017793 0,0 1,-454.844940,-420.832458"
+              stroke="#34b288" stroke-width="0.76428574" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_出门 id_上班"
+              d="M 128.763641,224.236725 A 356.528433,356.528433 0,0 1,-181.952301,398.299896"
+              stroke="#34b288" stroke-width="0.75" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_出门 id_公司"
+              d="M 124.218803,221.562515 A 180.933691,180.933691 0,0 1,-11.468707,283.790100"
+              stroke="#b3903a" stroke-width="0.39285713" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_出门 id_阴性"
+              d="M 194.216949,177.220642 A 361.727179,361.727179 0,0 1,530.157227,342.938110"
+              stroke="#9d9482" stroke-width="0.5642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_出门 id_感冒"
+              d="M 106.798859,168.604858 A 185.880183,185.880183 0,0 1,11.865466,53.949169"
+              stroke="#68ad36" stroke-width="0.49285716" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_出门 id_发烧"
+              d="M 111.406601,159.303635 A 396.755050,396.755050 0,0 1,-48.430202,-205.862137"
+              stroke="#9d9482" stroke-width="0.5714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病毒 id_明天"
+              d="M 196.969254,-625.977417 A 535.920389,535.920389 0,0 1,287.679810,-38.834335"
+              stroke="#6999d4" stroke-width="0.87857145" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_病毒 id_发烧"
+              d="M 189.608871,-622.690857 A 371.177659,371.177659 0,0 1,2.665915,-273.613403"
+              stroke="#d27cce" stroke-width="0.8142857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_有人 id_明天"
+              d="M -176.241470,94.410675 A 405.226399,405.226399 0,0 1,220.636642,-11.924519"
+              stroke="#00b7da" stroke-width="0.75" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_有人 id_防控"
+              d="M -241.305817,104.128357 A 518.962789,518.962789 0,0 1,-462.318970,-421.065338"
+              stroke="#00b7da" stroke-width="0.6357143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_有人 id_上班"
+              d="M -184.796051,164.622665 A 224.586300,224.586300 0,0 1,-198.895813,362.430054"
+              stroke="#00b7da" stroke-width="0.8214286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_有人 id_公司"
+              d="M -162.990326,136.797272 A 185.113938,185.113938 0,0 1,-53.172470,248.358063"
+              stroke="#7f958c" stroke-width="0.6642857" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_有人 id_阴性"
+              d="M -163.689499,113.827019 A 654.642461,654.642461 0,0 1,527.808838,344.493225"
+              stroke="#6999d4" stroke-width="0.69285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_有人 id_感冒"
+              d="M -182.512970,89.803329 A 198.347885,198.347885 0,0 1,-35.551159,11.995264"
+              stroke="#34b288" stroke-width="0.55" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_有人 id_发烧"
+              d="M -212.045044,84.263283 A 344.578818,344.578818 0,0 1,-79.853294,-226.388382"
+              stroke="#6999d4" stroke-width="0.37857142" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_明天 id_防控"
+              d="M 218.164841,6.204249 A 708.301516,708.301516 0,0 1,-449.629639,-422.253326"
+              stroke="#00b7da" stroke-width="0.42857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_明天 id_上班"
+              d="M 251.817291,49.026875 A 521.752502,521.752502 0,0 1,-181.960052,392.569458"
+              stroke="#00b7da" stroke-width="0.99285716" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_明天 id_公司"
+              d="M 253.160065,49.415466 A 347.026887,347.026887 0,0 1,-11.638586,276.370148"
+              stroke="#7f958c" stroke-width="0.51428574" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_明天 id_阴性"
+              d="M 310.719666,19.154551 A 380.475907,380.475907 0,0 1,542.372742,339.311493"
+              stroke="#6999d4" stroke-width="0.45714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_明天 id_感冒"
+              d="M 225.720108,29.326771 A 217.461209,217.461209 0,0 1,40.416603,33.755764"
+              stroke="#34b288" stroke-width="0.41428572" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_明天 id_发烧"
+              d="M 218.460083,-2.505199 A 332.553571,332.553571 0,0 1,-26.031254,-207.296814"
+              stroke="#6999d4" stroke-width="0.35714287" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_防控 id_上班"
+              d="M -440.831970,-428.892578 A 725.273612,725.273612 0,0 1,-208.848267,357.245789"
+              stroke="#00b7da" stroke-width="0.62142855" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_防控 id_感冒"
+              d="M -436.409821,-439.023193 A 541.676156,541.676156 0,0 1,-2.536841,-25.936712"
+              stroke="#34b288" stroke-width="0.44285715" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_防控 id_发烧"
+              d="M -436.536896,-446.468109 A 382.278122,382.278122 0,0 1,-65.645103,-293.069305"
+              stroke="#6999d4" stroke-width="0.20714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_上班 id_阴性"
+              d="M -190.144409,370.909088 A 638.831050,638.831050 0,0 1,521.493591,351.160065"
+              stroke="#6999d4" stroke-width="0.5714286" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_上班 id_感冒"
+              d="M -224.516602,354.954285 A 370.154074,370.154074 0,0 1,-31.652090,31.404720"
+              stroke="#34b288" stroke-width="0.5857143" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_上班 id_发烧"
+              d="M -235.720993,357.134583 A 561.176837,561.176837 0,0 1,-76.764709,-222.253174"
+              stroke="#6999d4" stroke-width="0.64285713" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_公司 id_阴性"
+              d="M -14.919324,265.767120 A 495.450267,495.450267 0,0 1,524.392151,347.516724"
+              stroke="#e87886" stroke-width="0.87142855" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_公司 id_感冒"
+              d="M -57.449993,249.763565 A 226.260367,226.260367 0,0 1,-22.329075,43.965279"
+              stroke="#b3903a" stroke-width="0.45" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_公司 id_发烧"
+              d="M -63.718155,253.113708 A 444.712252,444.712252 0,0 1,-67.041893,-213.430817"
+              stroke="#e87886" stroke-width="0.37142858" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_阴性 id_感冒"
+              d="M 517.128052,366.818146 A 536.089507,536.089507 0,0 1,20.291142,51.541149"
+              stroke="#9d9482" stroke-width="0.80714285" stroke-opacity="0.8"/>
+        <path stroke-linecap="round" fill="none" class="id_阴性 id_发烧"
+              d="M 517.580505,360.768707 A 708.766604,708.766604 0,0 1,-33.230679,-205.655380"
+              stroke="#d27cce" stroke-width="0.76428574" stroke-opacity="0.8"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#68ad36" r="49.5" cx="150.18816"
+                class="id_同事" cy="-175.73427" stroke="#487925"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#68ad36" r="33.02941" cx="176.82407"
+                class="id_确诊" cy="639.63306" stroke="#487925"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#d27cce" r="9.5" cx="-629.37555"
+                class="id_小区" cy="168.381" stroke="#935690" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#00b7da" r="28.32353" cx="-288.2022"
+                class="id_社区" cy="-578.0061" stroke="#008098"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#68ad36" r="40.088234" cx="372.8485"
+                class="id_新增" cy="-214.69968" stroke="#487925"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff743e" r="44.794117" cx="-193.76321"
+                class="id_本土" cy="-98.35067" stroke="#b2512b"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#d27cce" r="30.676472" cx="-392.50287"
+                class="id_新冠" cy="246.48772" stroke="#935690"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff743e" r="35.382355" cx="485.78177"
+                class="id_肺炎" cy="-4.752786" stroke="#b2512b"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#d27cce" r="49.5" cx="386.73505"
+                class="id_方舱" cy="212.85948" stroke="#935690"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#68ad36" r="30.676472" cx="-224.0429"
+                class="id_医院" cy="-371.25327" stroke="#487925"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff743e" r="30.676472" cx="381.92114"
+                class="id_抗原" cy="522.3001" stroke="#b2512b"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#d27cce" r="21.264706" cx="-2.0738573"
+                class="id_检测" cy="-479.9581" stroke="#935690"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#00b7da" r="35.382355" cx="-382.46716"
+                class="id_感觉" cy="-192.16064" stroke="#008098"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#d27cce" r="16.558823" cx="-333.71936"
+                class="id_症状" cy="572.28107" stroke="#935690"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#68ad36" r="18.911766" cx="641.81006"
+                class="id_晚上" cy="-135.37404" stroke="#487925"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff743e" r="35.382355" cx="23.769732"
+                class="id_病例" cy="486.255" stroke="#b2512b" stroke-opacity="1.0"
+                stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff743e" r="33.02941" cx="-424.5073"
+                class="id_无症状" cy="26.579142" stroke="#b2512b"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#d27cce" r="35.382355" cx="207.70168"
+                class="id_感染者" cy="-390.63785" stroke="#935690"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#68ad36" r="25.970589" cx="552.5973"
+                class="id_工作" cy="-346.83588" stroke="#487925"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#68ad36" r="33.02941" cx="390.2605"
+                class="id_人员" cy="-499.13916" stroke="#487925"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#68ad36" r="33.02941" cx="636.05084"
+                class="id_昨天" cy="139.64096" stroke="#487925"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#00b7da" r="40.088234" cx="223.84412"
+                class="id_几天" cy="384.57684" stroke="#008098"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#d27cce" r="28.32353" cx="-106.32949"
+                class="id_发现" cy="642.62866" stroke="#935690"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#68ad36" r="16.558823" cx="-77.26149"
+                class="id_阳性" cy="-666.3676" stroke="#487925"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#68ad36" r="44.794117" cx="149.42224"
+                class="id_出门" cy="183.92818" stroke="#487925"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#d27cce" r="11.8529415" cx="188.52809"
+                class="id_病毒" cy="-634.9964" stroke="#935690"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#00b7da" r="42.441177" cx="-204.69604"
+                class="id_有人" cy="126.57093" stroke="#008098"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#00b7da" r="47.14706" cx="265.73264"
+                class="id_明天" cy="3.4570863" stroke="#008098"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#00b7da" r="21.264706" cx="-457.91415"
+                class="id_防控" cy="-442.37967" stroke="#008098"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff743e" r="33.02941" cx="-44.868336"
+                class="id_公司" cy="280.84286" stroke="#b2512b"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#d27cce" r="25.970589" cx="543.5773"
+                class="id_阴性" cy="365.75467" stroke="#935690"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#68ad36" r="40.088234" cx="4.9901"
+                class="id_感冒" cy="13.9474945" stroke="#487925"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#d27cce" r="47.14706" cx="-40.190655"
+                class="id_发烧" cy="-252.79137" stroke="#935690"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff743e" r="21.264706" cx="-526.0576"
+                class="id_核酸" cy="405.92023" stroke="#b2512b"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#00b7da" r="40.088234" cx="-222.44312"
+                class="id_上班" cy="395.48953" stroke="#008098"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#d27cce" r="9.5" cx="-639.72"
+                class="id_隔离" cy="-60.16195" stroke="#935690"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+        <circle fill-opacity="1.0" fill="#ff743e" r="14.205883" cx="-592.44806"
+                class="id_疫情" cy="-273.9349" stroke="#b2512b"
+                stroke-opacity="1.0" stroke-width="1.0"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="24" x="150.18816" y="-170.01942" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_同事">
+            同事
+        </text>
+        <text font-size="24" x="176.82407" y="645.4885" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_确诊">
+            确诊
+        </text>
+        <text font-size="24" x="-629.37555" y="174.00209" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_小区">
+            小区
+        </text>
+        <text font-size="24" x="-288.2022" y="-572.2854" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_社区">
+            社区
+        </text>
+        <text font-size="24" x="372.8485" y="-208.86765" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_新增">
+            新增
+        </text>
+        <text font-size="24" x="-193.76321" y="-92.553795" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_本土">
+            本土
+        </text>
+        <text font-size="24" x="-392.50287" y="252.27873" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_新冠">
+            新冠
+        </text>
+        <text font-size="24" x="485.78177" y="0.99721384" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_肺炎">
+            肺炎
+        </text>
+        <text font-size="24" x="386.73505" y="218.69151" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_方舱">
+            方舱
+        </text>
+        <text font-size="24" x="-224.0429" y="-365.4388" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_医院">
+            医院
+        </text>
+        <text font-size="24" x="381.92114" y="528.138" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_抗原">
+            抗原
+        </text>
+        <text font-size="24" x="-2.0738573" y="-474.17294" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_检测">
+            检测
+        </text>
+        <text font-size="24" x="-382.46716" y="-186.29346" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_感觉">
+            感觉
+        </text>
+        <text font-size="24" x="-333.71936" y="578.10724" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_症状">
+            症状
+        </text>
+        <text font-size="24" x="641.81006" y="-129.55959" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_晚上">
+            晚上
+        </text>
+        <text font-size="24" x="23.769732" y="492.05774" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_病例">
+            病例
+        </text>
+        <text font-size="24" x="-424.5073" y="32.43461" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_无症状">
+            无症状
+        </text>
+        <text font-size="24" x="207.70168" y="-384.77652" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_感染者">
+            感染者
+        </text>
+        <text font-size="24" x="552.5973" y="-341.07416" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_工作">
+            工作
+        </text>
+        <text font-size="24" x="390.2605" y="-493.38916" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_人员">
+            人员
+        </text>
+        <text font-size="24" x="636.05084" y="145.4144" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_昨天">
+            昨天
+        </text>
+        <text font-size="24" x="223.84412" y="390.00458" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_几天">
+            几天
+        </text>
+        <text font-size="24" x="-106.32949" y="648.43726" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_发现">
+            发现
+        </text>
+        <text font-size="24" x="-77.26149" y="-660.5883" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_阳性">
+            阳性
+        </text>
+        <text font-size="24" x="149.42224" y="189.6899" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_出门">
+            出门
+        </text>
+        <text font-size="24" x="188.52809" y="-629.2171" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_病毒">
+            病毒
+        </text>
+        <text font-size="24" x="-204.69604" y="132.36194" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_有人">
+            有人
+        </text>
+        <text font-size="24" x="265.73264" y="8.978571" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_明天">
+            明天
+        </text>
+        <text font-size="24" x="-457.91415" y="-436.53006" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_防控">
+            防控
+        </text>
+        <text font-size="24" x="-44.868336" y="286.45224" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_公司">
+            公司
+        </text>
+        <text font-size="24" x="543.5773" y="371.56326" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_阴性">
+            阴性
+        </text>
+        <text font-size="24" x="4.9901" y="19.73851" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_感冒">
+            感冒
+        </text>
+        <text font-size="24" x="-40.190655" y="-246.97105" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_发烧">
+            发烧
+        </text>
+        <text font-size="24" x="-526.0576" y="411.76398" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_核酸">
+            核酸
+        </text>
+        <text font-size="24" x="-222.44312" y="401.18094" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_上班">
+            上班
+        </text>
+        <text font-size="24" x="-639.72" y="-54.329918" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_隔离">
+            隔离
+        </text>
+        <text font-size="24" x="-592.44806" y="-268.10287" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="微软雅黑" class="id_疫情">
+            疫情
+        </text>
+    </g>
+</svg>
