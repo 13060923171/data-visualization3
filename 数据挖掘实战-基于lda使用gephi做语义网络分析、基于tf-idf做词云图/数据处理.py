@@ -98,41 +98,58 @@ from snownlp import SnowNLP
 def main1():
     df = pd.read_csv("前半年数据.csv")
 
-    # def demo(x):
-    #     x1 = str(x)
-    #     if x1 == '无':
-    #         return np.NAN
-    #     else:
-    #         return x1
-
-    def demo(x):
-        s = SnowNLP(x)
+    def analyze_sentiment(text):
+        s = SnowNLP(text)
         sentiment = s.sentiments
-        return sentiment
+        sentiment = round(sentiment, 4)
+        if sentiment >= 0.6:
+            return '正面情感 {}'.format(sentiment)
+        elif sentiment <= 0.4:
+            return '负面情感 {}'.format(sentiment)
+        else:
+            return '中立情感 {}'.format(sentiment)
 
-    df['情感分值'] = df['分词'].apply(demo)
-    # df['发布地'] = df['发布地'].apply(demo)
-    # new_df = df.dropna(subset=['发布地'],axis=0)
+    def demo1(x):
+        x1 = str(x).split(" ")
+        return x1[0]
+
+    def demo2(x):
+        x1 = str(x).split(" ")
+        return x1[1]
+
+    df['情感属性'] = df['分词'].apply(analyze_sentiment)
+    df['情感分类'] = df['情感属性'].apply(demo1)
+    df['情感分值'] = df['情感属性'].apply(demo2)
+    df = df.drop(['情感属性'],axis=1)
     df.to_csv('前半年数据.csv', encoding='utf-8-sig', index=False)
 
 
 def main2():
     df = pd.read_csv("后半年数据.csv")
-    # def demo(x):
-    #     x1 = str(x)
-    #     if x1 == '无':
-    #         return np.NAN
-    #     else:
-    #         return x1
 
-    def demo(x):
-        s = SnowNLP(x)
+    def analyze_sentiment(text):
+        s = SnowNLP(text)
         sentiment = s.sentiments
-        return sentiment
+        sentiment = round(sentiment, 4)
+        if sentiment >= 0.6:
+            return '正面情感 {}'.format(sentiment)
+        elif sentiment <= 0.4:
+            return '负面情感 {}'.format(sentiment)
+        else:
+            return '中立情感 {}'.format(sentiment)
 
-    df['情感分值'] = df['分词'].apply(demo)
-    # df['发布地'] = df['发布地'].apply(demo)
-    # new_df = df.dropna(subset=['发布地'],axis=0)
+    def demo1(x):
+        x1 = str(x).split(" ")
+        return x1[0]
+
+    def demo2(x):
+        x1 = str(x).split(" ")
+        return x1[1]
+
+    df['情感属性'] = df['分词'].apply(analyze_sentiment)
+    df['情感分类'] = df['情感属性'].apply(demo1)
+    df['情感分值'] = df['情感属性'].apply(demo2)
+    df = df.drop(['情感属性'], axis=1)
     df.to_csv('后半年数据.csv', encoding='utf-8-sig', index=False)
 
 
