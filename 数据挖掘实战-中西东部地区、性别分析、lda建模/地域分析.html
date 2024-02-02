@@ -8,11 +8,11 @@
 
 </head>
 <body >
-    <div id="934641846c1a492ba36b3ba67d63b1d0" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="6fb6db33077e4c54b00cd86bdf191ded" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_934641846c1a492ba36b3ba67d63b1d0 = echarts.init(
-            document.getElementById('934641846c1a492ba36b3ba67d63b1d0'), 'white', {renderer: 'canvas'});
-        var option_934641846c1a492ba36b3ba67d63b1d0 = {
+        var chart_6fb6db33077e4c54b00cd86bdf191ded = echarts.init(
+            document.getElementById('6fb6db33077e4c54b00cd86bdf191ded'), 'white', {renderer: 'canvas'});
+        var option_6fb6db33077e4c54b00cd86bdf191ded = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -394,8 +394,8 @@
     "visualMap": {
         "show": true,
         "type": "piecewise",
-        "min": 8,
-        "max": 1105,
+        "min": 0,
+        "max": 100,
         "inRange": {
             "color": [
                 "#50a3ba",
@@ -412,7 +412,27 @@
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 14,
-        "borderWidth": 0
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "min": 0,
+                "max": 300,
+                "label": "0-300",
+                "color": "#000000"
+            },
+            {
+                "min": 300,
+                "max": 600,
+                "label": "300-600",
+                "color": "#808080"
+            },
+            {
+                "min": 600,
+                "max": 1200,
+                "label": "600-1200",
+                "color": "#FFFFFF"
+            }
+        ]
     },
     "geo": {
         "map": "china",
@@ -423,7 +443,7 @@
         "emphasis": {}
     }
 };
-        chart_934641846c1a492ba36b3ba67d63b1d0.setOption(option_934641846c1a492ba36b3ba67d63b1d0);
+        chart_6fb6db33077e4c54b00cd86bdf191ded.setOption(option_6fb6db33077e4c54b00cd86bdf191ded);
     </script>
 </body>
 </html>
