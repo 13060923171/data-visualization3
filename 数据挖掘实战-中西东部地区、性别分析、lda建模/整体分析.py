@@ -103,7 +103,14 @@ def map_analyze():
             .add(" ", data)
             .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
             .set_global_opts(
-            visualmap_opts=opts.VisualMapOpts(max_=data[0][1],min_=data[-1][1],is_piecewise=True),
+            visualmap_opts=opts.VisualMapOpts(
+                is_piecewise=True,
+                pieces=[
+                    {"min": 0, "max": 300, "label": "0-300", "color": "#000000"},
+                    {"min": 300, "max": 600, "label": "300-600", "color": "#808080"},
+                    {"min": 600, "max": 1200, "label": "600-1200", "color": "#FFFFFF"}
+                ]
+            ),
             title_opts=opts.TitleOpts(title="地域分析"),
         )
             .render("地域分析.html")
@@ -190,9 +197,9 @@ def emotion_analyze4(name):
     df2 = pd.read_csv('一级评论数据.csv')
     df3 = pd.read_csv('二级评论数据.csv')
 
-    central_area = ['河南', '湖北', '湖南', '江西', '安徽']
+    central_area = ['河南', '湖北', '湖南', '江西', '安徽', '山西']
     west_area = ['内蒙古', '新疆', '宁夏', '甘肃', '青海', '陕西', '四川', '重庆', '贵州', '云南', '西藏']
-    east_area = ['北京', '天津', '河北', '山东', '江苏', '上海', '浙江', '福建', '广东', '海南', '广西', '香港', '澳门', '台湾']
+    east_area = ['北京', '天津', '河北', '山东', '江苏', '上海', '浙江', '福建', '广东', '海南', '广西', '香港', '澳门', '台湾', '黑龙江', '辽宁', '吉林']
 
     def area(x):
         x1 = str(x)
@@ -273,9 +280,9 @@ def influence_analyze1():
 
 def area_influence_analyze1(name):
     df1 = pd.read_csv('博文数据.csv')
-    central_area = ['河南', '湖北', '湖南', '江西', '安徽']
+    central_area = ['河南', '湖北', '湖南', '江西', '安徽', '山西']
     west_area = ['内蒙古', '新疆', '宁夏', '甘肃', '青海', '陕西', '四川', '重庆', '贵州', '云南', '西藏']
-    east_area = ['北京', '天津', '河北', '山东', '江苏', '上海', '浙江', '福建', '广东', '海南', '广西', '香港', '澳门', '台湾']
+    east_area = ['北京', '天津', '河北', '山东', '江苏', '上海', '浙江', '福建', '广东', '海南', '广西', '香港', '澳门', '台湾', '黑龙江', '辽宁', '吉林']
 
     def area(x):
         x1 = str(x)
@@ -332,9 +339,9 @@ def area_influence_analyze1(name):
 
 def area_influence_analyze2(name):
     df1 = pd.read_csv('一级评论数据.csv')
-    central_area = ['河南', '湖北', '湖南', '江西', '安徽']
+    central_area = ['河南', '湖北', '湖南', '江西', '安徽', '山西']
     west_area = ['内蒙古', '新疆', '宁夏', '甘肃', '青海', '陕西', '四川', '重庆', '贵州', '云南', '西藏']
-    east_area = ['北京', '天津', '河北', '山东', '江苏', '上海', '浙江', '福建', '广东', '海南', '广西', '香港', '澳门', '台湾']
+    east_area = ['北京', '天津', '河北', '山东', '江苏', '上海', '浙江', '福建', '广东', '海南', '广西', '香港', '澳门', '台湾', '黑龙江', '辽宁', '吉林']
 
     def area(x):
         x1 = str(x)
@@ -428,9 +435,9 @@ def influence_analyze3():
 
 def area_influence_analyze3(name):
     df1 = pd.read_csv('二级评论数据.csv')
-    central_area = ['河南', '湖北', '湖南', '江西', '安徽']
+    central_area = ['河南', '湖北', '湖南', '江西', '安徽', '山西']
     west_area = ['内蒙古', '新疆', '宁夏', '甘肃', '青海', '陕西', '四川', '重庆', '贵州', '云南', '西藏']
-    east_area = ['北京', '天津', '河北', '山东', '江苏', '上海', '浙江', '福建', '广东', '海南', '广西', '香港', '澳门', '台湾']
+    east_area = ['北京', '天津', '河北', '山东', '江苏', '上海', '浙江', '福建', '广东', '海南', '广西', '香港', '澳门', '台湾', '黑龙江', '辽宁', '吉林']
 
     def area(x):
         x1 = str(x)
@@ -548,11 +555,11 @@ if __name__ == '__main__':
     # influence_analyze1()
     # influence_analyze2()
     # influence_analyze3()
-
+    #
     # list_area = ['东部地区', '西部地区', '中部地区']
     # for l in list_area:
     #     area_influence_analyze1(l)
-
+    #
     # list_area = ['东部地区', '西部地区', '中部地区']
     # for l in list_area:
     #     area_influence_analyze2(l)
@@ -589,9 +596,9 @@ if __name__ == '__main__':
     #     lda(list_text2, l)
 
 
-    central_area = ['河南', '湖北', '湖南', '江西', '安徽']
+    central_area = ['河南', '湖北', '湖南', '江西', '安徽', '山西']
     west_area = ['内蒙古', '新疆', '宁夏', '甘肃', '青海', '陕西', '四川', '重庆', '贵州', '云南', '西藏']
-    east_area = ['北京', '天津', '河北', '山东', '江苏', '上海', '浙江', '福建', '广东', '海南', '广西', '香港', '澳门', '台湾']
+    east_area = ['北京', '天津', '河北', '山东', '江苏', '上海', '浙江', '福建', '广东', '海南', '广西', '香港', '澳门', '台湾', '黑龙江', '辽宁', '吉林']
 
     def area(x):
         x1 = str(x)
