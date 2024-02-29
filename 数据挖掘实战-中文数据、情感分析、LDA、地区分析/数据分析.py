@@ -41,6 +41,7 @@ def emotion_analysis():
     data2 = df[df['情感分析'] == '消极态度']
     data2.to_excel('消极语句.xlsx', index=False)
 
+
 def map_analyze():
     df = pd.read_csv('数据.csv')
     df = df.dropna(subset=['评论ip属地'],axis=0)
@@ -78,11 +79,16 @@ def map_analyze():
 
     c = (
         Map()
-            .add("中国地图", data, "china")
+            .add("中国地图", data, "china",is_map_symbol_show=False)
             .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
             .set_global_opts(
             title_opts=opts.TitleOpts(title="地域分析"),
-            visualmap_opts=opts.VisualMapOpts(max_=200, is_piecewise=True),
+            visualmap_opts=opts.VisualMapOpts(is_piecewise=True,
+                                              pieces=[
+                                                  {"min": 0, "max": 69, "label": "0-70", "color": "#3498DB"},
+                                                  {"min": 70, "max": 850, "label": "70-850", "color": "#C0392B"}
+                                              ]
+                                              ),
         )
             .render("地域分析.html")
     )
@@ -169,7 +175,7 @@ def score(area):
     df1 = df[df['地区分布'] == area]
     new_df2 = df1['评分'].value_counts()
     new_df2 = new_df2.sort_index()
-    new_df2.to_excel('{}-评分统计.xlsx'.format(area),index=False)
+    new_df2.to_excel('{}-评分统计.xlsx'.format(area))
     x_data = [str(x) for x in new_df2.index]
     y_data = [int(x) for x in new_df2.values]
 
@@ -194,6 +200,7 @@ def score(area):
     plt.xticks(x_data, [f'{i}' for i in x_data], rotation=45)
     plt.title('{}-评分趋势'.format(area))
     plt.savefig('{}-评分趋势.png'.format(area))
+
 
 if __name__ == '__main__':
     # emotion_analysis()
