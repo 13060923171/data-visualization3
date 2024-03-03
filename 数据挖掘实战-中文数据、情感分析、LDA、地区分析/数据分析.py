@@ -85,10 +85,15 @@ def map_analyze():
             title_opts=opts.TitleOpts(title="地域分析"),
             visualmap_opts=opts.VisualMapOpts(is_piecewise=True,
                                               pieces=[
+<<<<<<< HEAD
                                                   {"min": 0, "max": 100, "label": "0-100", "color": "#3498DB"},
                                                   {"min": 101, "max": 200, "label": "100-200", "color": "#1ABC9C"},
                                                   {"min": 201, "max": 700, "label": "200-700", "color": "#F1C40F"},
                                                   {"min": 701, "max": 900, "label": "700-900", "color": "#C0392B"}
+=======
+                                                  {"min": 0, "max": 69, "label": "0-70", "color": "#3498DB"},
+                                                  {"min": 70, "max": 850, "label": "70-850", "color": "#C0392B"}
+>>>>>>> 7d09855ac2deafbdb06f4ed6a256db080ce5da9c
                                               ]
                                               ),
         )
