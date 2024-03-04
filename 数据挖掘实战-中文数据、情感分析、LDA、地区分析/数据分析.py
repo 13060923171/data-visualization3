@@ -8,7 +8,9 @@ from pyecharts.charts import Map
 
 
 def emotion_analysis():
-    df = pd.read_csv('数据.csv')
+    df1 = pd.read_excel('./data/消极.xlsx')
+    df2 = pd.read_excel('./data/积极.xlsx')
+    df = pd.concat([df1,df2],axis=0)
     new_df = df['情感分析'].value_counts()
     # 计算每行的占比
 
@@ -36,10 +38,6 @@ def emotion_analysis():
     data['占比'] = z_data
     data.to_excel('情感分析.xlsx',index=False)
 
-    data1 = df[df['情感分析'] == '积极态度']
-    data1.to_excel('积极语句.xlsx',index=False)
-    data2 = df[df['情感分析'] == '消极态度']
-    data2.to_excel('消极语句.xlsx', index=False)
 
 
 def map_analyze():
@@ -85,15 +83,11 @@ def map_analyze():
             title_opts=opts.TitleOpts(title="地域分析"),
             visualmap_opts=opts.VisualMapOpts(is_piecewise=True,
                                               pieces=[
-<<<<<<< HEAD
+
                                                   {"min": 0, "max": 100, "label": "0-100", "color": "#3498DB"},
                                                   {"min": 101, "max": 200, "label": "100-200", "color": "#1ABC9C"},
                                                   {"min": 201, "max": 700, "label": "200-700", "color": "#F1C40F"},
                                                   {"min": 701, "max": 900, "label": "700-900", "color": "#C0392B"}
-=======
-                                                  {"min": 0, "max": 69, "label": "0-70", "color": "#3498DB"},
-                                                  {"min": 70, "max": 850, "label": "70-850", "color": "#C0392B"}
->>>>>>> 7d09855ac2deafbdb06f4ed6a256db080ce5da9c
                                               ]
                                               ),
         )
@@ -211,28 +205,28 @@ def score(area):
 
 if __name__ == '__main__':
     emotion_analysis()
-    map_analyze()
-    process_time()
-    df = pd.DataFrame()
-    new_df3 = pd.DataFrame()
-    new_df3['地区分布'] = ['地区分布']
-    new_df3['产品线路'] = ['产品线路']
-    new_df3['出游总人数'] = ['出游总人数']
-    new_df3['平均单价'] = ['平均单价']
-    new_df3['整体好评率'] = ['整体好评率']
-    new_df3['好评占比'] =['好评占比']
-    new_df3['差评占比'] = ['差评占比']
-    new_df3.to_csv('区域分析.csv', encoding='utf-8-sig', index=False, header=False, mode='w')
-    new_df4 = pd.DataFrame()
-    new_df4['地区分布'] = ['地区分布']
-    new_df4['其他出游'] = ['其他出游']
-    new_df4['单独旅行'] = ['单独旅行']
-    new_df4['家庭亲子'] = ['家庭亲子']
-    new_df4['情侣夫妻'] = ['情侣夫妻']
-    new_df4['朋友出游'] = ['朋友出游']
-    new_df4.to_csv('出行类型分析.csv', encoding='utf-8-sig', index=False, header=False, mode='w')
-    list_area = ['东南亚','欧美','日韩']
-    for l in list_area:
-        myd_data(l)
-        travel_type(l)
-        score(l)
+    # map_analyze()
+    # process_time()
+    # df = pd.DataFrame()
+    # new_df3 = pd.DataFrame()
+    # new_df3['地区分布'] = ['地区分布']
+    # new_df3['产品线路'] = ['产品线路']
+    # new_df3['出游总人数'] = ['出游总人数']
+    # new_df3['平均单价'] = ['平均单价']
+    # new_df3['整体好评率'] = ['整体好评率']
+    # new_df3['好评占比'] =['好评占比']
+    # new_df3['差评占比'] = ['差评占比']
+    # new_df3.to_csv('区域分析.csv', encoding='utf-8-sig', index=False, header=False, mode='w')
+    # new_df4 = pd.DataFrame()
+    # new_df4['地区分布'] = ['地区分布']
+    # new_df4['其他出游'] = ['其他出游']
+    # new_df4['单独旅行'] = ['单独旅行']
+    # new_df4['家庭亲子'] = ['家庭亲子']
+    # new_df4['情侣夫妻'] = ['情侣夫妻']
+    # new_df4['朋友出游'] = ['朋友出游']
+    # new_df4.to_csv('出行类型分析.csv', encoding='utf-8-sig', index=False, header=False, mode='w')
+    # list_area = ['东南亚','欧美','日韩']
+    # for l in list_area:
+    #     myd_data(l)
+    #     travel_type(l)
+    #     score(l)
