@@ -16,7 +16,8 @@ import pyLDAvis
 import pyLDAvis.gensim
 from tqdm import tqdm
 import os
-
+import jieba
+import jieba.posseg as pseg
 from gensim.models import LdaModel
 import gensim
 import gensim.corpora as corpora
@@ -25,11 +26,31 @@ import os
 
 #LDA建模
 def lda(df,area,sentiment):
+    # 判断是否为中文
+    def is_all_chinese(strs):
+        for _char in strs:
+            if not '\u4e00' <= _char <= '\u9fa5':
+                return False
+        return True
     train = []
-    stop_word = []
-    for line in df['评论分词']:
-        line = [word.strip(' ') for word in line.split(' ') if len(word) >= 2 and word not in stop_word]
-        train.append(line)
+    stop_words = ["满意","好",'非常','没有','不错','携程','小时','特别','第一天','比较','真的','只能']
+    for line in df['评论文本']:
+        # 对文本进行分词和词性标注
+        words = pseg.cut(line)
+        # 保存名词和形容词的列表
+        nouns_and_adjs = []
+        # 逐一检查每个词语的词性，并将名词和形容词保存到列表中
+        for word, flag in words:
+            if word not in stop_words and len(word) >= 2 and is_all_chinese(word) == True:
+                if flag == 'Ag' or flag == 'a' or flag == 'ad' or flag == 'an' or flag == 'n' or flag == 'Ng' or flag == 'nr' or flag == 'ns' or flag == 'nt' or flag == 'nz':
+                    # 如果是名词或形容词，就将其保存到列表中
+                    nouns_and_adjs.append(word)
+        # line = [word.strip(' ') for word in line.split(' ') if len(word) >= 3 and word not in stop_word]
+        if len(nouns_and_adjs) != 0:
+            train.append(nouns_and_adjs)
+        else:
+            pass
+
 
     #构建为字典的格式
     dictionary = corpora.Dictionary(train)
@@ -39,53 +60,53 @@ def lda(df,area,sentiment):
     if not os.path.exists("./{}/{}".format(area,sentiment)):
         os.mkdir("./{}/{}".format(area,sentiment))
 
-    # 困惑度模块
-    x_data = []
-    y_data = []
-    z_data = []
-    for i in tqdm(range(2, 15)):
-        x_data.append(i)
-        lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,id2word=dictionary,num_topics=i)
-        # 困惑度计算
-        perplexity = lda_model.log_perplexity(corpus)
-        y_data.append(perplexity)
-        # 一致性计算
-        coherence_model_lda = CoherenceModel(model=lda_model, texts=train, dictionary=dictionary, coherence='c_v')
-        coherence = coherence_model_lda.get_coherence()
-        z_data.append(coherence)
+    # # 困惑度模块
+    # x_data = []
+    # y_data = []
+    # z_data = []
+    # for i in tqdm(range(2, 15)):
+    #     x_data.append(i)
+    #     lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,id2word=dictionary,num_topics=i)
+    #     # 困惑度计算
+    #     perplexity = lda_model.log_perplexity(corpus)
+    #     y_data.append(perplexity)
+    #     # 一致性计算
+    #     coherence_model_lda = CoherenceModel(model=lda_model, texts=train, dictionary=dictionary, coherence='c_v')
+    #     coherence = coherence_model_lda.get_coherence()
+    #     z_data.append(coherence)
+    #
+    # # 绘制困惑度和一致性折线图
+    # fig = plt.figure(figsize=(15, 5))
+    # plt.rcParams['font.sans-serif'] = ['SimHei']
+    # matplotlib.rcParams['axes.unicode_minus'] = False
+    #
+    # # 绘制困惑度折线图
+    # ax1 = fig.add_subplot(1, 2, 1)
+    # plt.plot(x_data, y_data, marker="o")
+    # plt.title("perplexity_values")
+    # plt.xlabel('num topics')
+    # plt.ylabel('perplexity score')
+    # #绘制一致性的折线图
+    # ax2 = fig.add_subplot(1, 2, 2)
+    # plt.plot(x_data, z_data, marker="o")
+    # plt.title("coherence_values")
+    # plt.xlabel("num topics")
+    # plt.ylabel("coherence score")
+    #
+    # plt.savefig('./{}/{}/困惑度和一致性.png'.format(area,sentiment))
+    #
+    # #将上面获取的数据进行保存
+    # df5 = pd.DataFrame()
+    # df5['主题数'] = x_data
+    # df5['困惑度'] = y_data
+    # df5['一致性'] = z_data
+    # df5.to_csv('./{}/{}/困惑度和一致性.csv'.format(area,sentiment),encoding='utf-8-sig',index=False)
+    #
+    # optimal_z = max(z_data)
+    # optimal_z_index = z_data.index(optimal_z)
+    # best_topic_number = x_data[optimal_z_index]
 
-    # 绘制困惑度和一致性折线图
-    fig = plt.figure(figsize=(15, 5))
-    plt.rcParams['font.sans-serif'] = ['SimHei']
-    matplotlib.rcParams['axes.unicode_minus'] = False
-
-    # 绘制困惑度折线图
-    ax1 = fig.add_subplot(1, 2, 1)
-    plt.plot(x_data, y_data, marker="o")
-    plt.title("perplexity_values")
-    plt.xlabel('num topics')
-    plt.ylabel('perplexity score')
-    #绘制一致性的折线图
-    ax2 = fig.add_subplot(1, 2, 2)
-    plt.plot(x_data, z_data, marker="o")
-    plt.title("coherence_values")
-    plt.xlabel("num topics")
-    plt.ylabel("coherence score")
-
-    plt.savefig('./{}/{}/困惑度和一致性.png'.format(area,sentiment))
-
-    #将上面获取的数据进行保存
-    df5 = pd.DataFrame()
-    df5['主题数'] = x_data
-    df5['困惑度'] = y_data
-    df5['一致性'] = z_data
-    df5.to_csv('./{}/{}/困惑度和一致性.csv'.format(area,sentiment),encoding='utf-8-sig',index=False)
-
-    optimal_z = max(z_data)
-    optimal_z_index = z_data.index(optimal_z)
-    best_topic_number = x_data[optimal_z_index]
-
-    num_topics = best_topic_number
+    num_topics = 5
 
     #LDA可视化模块
     #构建lda主题参数
@@ -110,11 +131,11 @@ def lda(df,area,sentiment):
         list2.append(i[bz][0])
 
     data = pd.DataFrame()
-    data['内容'] = df['评论分词']
-    data['主题概率'] = list3
+    # data['内容'] = df['评论分词']
+    # data['主题概率'] = list3
     data['主题类型'] = list2
 
-    data.to_csv('./{}/{}/lda_data.csv'.format(area,sentiment),encoding='utf-8-sig',index=False)
+    # data.to_csv('./{}/{}/lda_data.csv'.format(area,sentiment),encoding='utf-8-sig',index=False)
 
     #获取对应主题出现的频次
     new_data = data['主题类型'].value_counts()
@@ -122,7 +143,7 @@ def lda(df,area,sentiment):
     y_data1 = [y for y in new_data.values]
 
     #主题词模块
-    word = lda.print_topics(num_words=20)
+    word = lda.print_topics(num_words=100)
     topic = []
     quanzhong = []
     list_gailv = []
@@ -155,23 +176,24 @@ def lda(df,area,sentiment):
         df2['{}-权重'.format(j)] = k
     df2.to_csv('./{}/{}/主题词分布表.csv'.format(area,sentiment), encoding='utf-8-sig', index=False)
 
-    y_data2 = []
-    for y in y_data1:
-        number = float(y / sum(y_data1))
-        y_data2.append(float('{:0.5}'.format(number)))
-
-    df1 = pd.DataFrame()
-    df1['所属主题'] = topic
-    df1['文章数量'] = y_data1
-    df1['特征词'] = quanzhong
-    df1['主题强度'] = y_data2
-    df1.to_csv('./{}/{}/特征词.csv'.format(area,sentiment),encoding='utf-8-sig',index=False)
+    # y_data2 = []
+    # for y in y_data1:
+    #     number = float(y / sum(y_data1))
+    #     y_data2.append(float('{:0.5}'.format(number)))
+    #
+    # df1 = pd.DataFrame()
+    # df1['所属主题'] = topic
+    # df1['文章数量'] = y_data1
+    # df1['特征词'] = quanzhong
+    # df1['主题强度'] = y_data2
+    # df1.to_csv('./{}/{}/特征词.csv'.format(area,sentiment),encoding='utf-8-sig',index=False)
 
 
 if __name__ == '__main__':
-    list_area = ['东南亚','欧美','日韩']
-    list_sentiment = ['积极态度','消极态度']
-    df = pd.read_csv('数据.csv')
+    list_area = ['东南亚', '欧美', '日韩']
+    # list_area = ['东南亚']
+    list_sentiment = ['消极态度']
+    df = pd.read_excel('./data/消极.xlsx')
     for l in list_area:
         for s in list_sentiment:
             df1 = df[df['地区分布'] == l]
