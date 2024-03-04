@@ -27,14 +27,14 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-chinese')
 class Dataset(torch.utils.data.Dataset):
     def __init__(self, df):
         #将类别标签转化为数字
-        self.labels = [label for label in df['情感分类']]
+        self.labels = [label for label in df['评论类型']]
         #对每个文本进行分词并进行最大长度填充和截断
         self.texts = [tokenizer(text,
                                 padding='max_length',
                                 max_length =512,
                                 truncation=True,
                                 return_tensors="pt")
-                      for text in df['post_title']]
+                      for text in df['评价内容']]
     #返回所有的标签
     def classes(self):
         return self.labels
@@ -88,7 +88,6 @@ def train(model, train_data, val_data, learning_rate, epochs):
     train_dataloader = torch.utils.data.DataLoader(train, batch_size=32, shuffle=True)
     #val_dataloader是一个Pytorch的数据加载器对象，它按批次自动加载预处理后的数据，并返回包含多个输入文本和标签的元组。
     val_dataloader = torch.utils.data.DataLoader(val, batch_size=32)
-
     # 定义损失函数和优化器
     criterion = nn.CrossEntropyLoss()
     optimizer = Adam(params=model.parameters(), lr=learning_rate)
@@ -98,12 +97,12 @@ def train(model, train_data, val_data, learning_rate, epochs):
     val_acc_list = []  # 用于存储每个 epoch 结束后在验证集上的准确率
     x_data = []
     # 开始进入训练循环
-    for epoch_num in range(epochs):
+    for epoch_num in tqdm(range(epochs)):
         # 定义两个变量，用于存储训练集的准确率和损失
         total_acc_train = 0
         total_loss_train = 0
         # 进度条函数tqdm
-        for train_input, train_label in tqdm(train_dataloader):
+        for train_input, train_label in train_dataloader:
             # 将标签转移到cpu设备上
             train_label = train_label.to(device=device)
             # 将attention_mask转移到GPU设备上
@@ -134,7 +133,7 @@ def train(model, train_data, val_data, learning_rate, epochs):
         # 不需要计算梯度
         with torch.no_grad():
             # 循环获取数据集，并用训练好的模型进行验证
-            for val_input, val_label in tqdm(val_dataloader):
+            for val_input, val_label in val_dataloader:
                 # 如果有GPU，则使用GPU，接下来的操作同训练
                 val_label = val_label.to(device=device)
                 mask = val_input['attention_mask'].to(device=device)
@@ -147,68 +146,30 @@ def train(model, train_data, val_data, learning_rate, epochs):
                 acc = (output.argmax(dim=1) == val_label).sum().item()
                 total_acc_val += acc
                 # 计算验证集的准确率
-            # val_acc = total_acc_val / len(val_dataloader.dataset)  # 计算验证集上的准确率
-            val_acc = total_acc_val / len(val_data)  # 计算验证集上的准确率
+            val_acc = total_acc_val / len(val_dataloader.dataset)  # 计算验证集上的准确率
+            # val_acc = total_acc_val / len(val_data)  # 计算验证集上的准确率
             val_acc = round(val_acc,3)
             val_acc_list.append(val_acc)  # 将准确率添加到列表中
         x_data.append(epoch_num + 1)
         torch.cuda.empty_cache()
-    torch.save(model.state_dict(), "bert_model.pth")
+    #保存训练好的模型
+    # torch.save(model.state_dict(), "full_model.pkl")
 
     return val_acc_list,x_data  # 返回验证集准确率列表
 
 
-# 定义评估函数
-def evaluate(model, test_data):
-    # 创建测试数据集实例
-    test = Dataset(test_data)
-    # 创建测试数据加载器
-    test_dataloader = torch.utils.data.DataLoader(test, batch_size=32)
-    model.eval()
-    # 初始化测试准确率为0
-    total_acc_test = 0
-    all_predictions = []
-    # 在不进行梯度计算的情况下对测试数据进行测试
-    with torch.no_grad():
-        # 遍历测试数据集中的所有数据
-        for test_input, test_label in tqdm(test_dataloader):
-            # 将标签转移到GPU设备上
-            test_label = test_label.to(device=device)
-            # 将attention_mask转移到GPU设备上
-            mask = test_input['attention_mask'].to(device=device)
-            # 将input_ids转移到GPU设备上，并去除从test_input的第一维生成的空维度
-            input_id = test_input['input_ids'].squeeze(1).to(device=device)
-            # 运行模型
-            output = model(input_id, mask)
-            # 获取预测结果
-            predictions = output.argmax(dim=1).tolist()
-            # 将预测结果添加到预测结果列表
-            all_predictions.extend(predictions)
-            torch.cuda.empty_cache()
-    return all_predictions
-
-
 if __name__ == '__main__':
     # 从csv文件中读取数据
-    df = pd.read_excel('train_data.xlsx').iloc[:50]
-    df = df.dropna(subset=['post_title'],axis=0)
-    df['post_title'] = df['post_title'].astype('str')
-
-    def tidai(x):
-        x1 = str(x)
-        if x1 == '-1':
-            return 2
-        else:
-            return x1
-
-    df['情感分类'] = df['情感分类'].apply(tidai)
-    df['情感分类'] = df['情感分类'].astype('int')
+    df = pd.read_excel('train.xlsx').iloc[:50]
+    df = df.dropna(subset=['评价内容'],axis=0)
+    df['评价内容'] = df['评价内容'].astype('str')
+    df['评论类型'] = df['评论类型'].astype('int')
     # 将数据集划分为训练集、验证集、测试集
     ## random_state=42 表示设定随机种子，以确保结果可复现
     data_train, data_test = train_test_split(df, test_size=0.3, random_state=42)
 
-    data_val = pd.read_excel('test_data.xlsx').iloc[:50]
-    EPOCHS = 3
+    data_val = pd.read_excel('test.xlsx')
+    EPOCHS = 6
     model = BertClassifier()
     LR = 0.001
 
@@ -219,21 +180,8 @@ if __name__ == '__main__':
     plt.ylabel('Accuracy')
     plt.title('Accuracy Trend')
     plt.savefig('Accuracy Trend.png')
-    plt.show()
+
     df22 = pd.DataFrame()
     df22['Epoch'] = x_data
     df22['Accuracy'] = val_acc_list
     df22.to_excel('Accuracy.xlsx')
-    predictions = evaluate(model, data_val)
-    data_val['情感分类'] = predictions
-
-    def tidai2(x):
-        x1 = str(x)
-        if x1 == '2':
-            return -1
-        else:
-            return x1
-
-    data_val['情感分类'] = data_val['情感分类'].apply(tidai2)
-    data_val['情感分类'] = data_val['情感分类'].astype('str')
-    data_val.to_excel('new_test_data.xlsx')
