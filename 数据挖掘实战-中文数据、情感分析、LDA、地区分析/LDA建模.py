@@ -7,7 +7,6 @@ import re
 import jieba
 import jieba.analyse
 from collections import Counter
-import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
