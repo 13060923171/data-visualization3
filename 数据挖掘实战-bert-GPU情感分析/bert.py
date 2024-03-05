@@ -85,14 +85,15 @@ def train(model, train_data, val_data, learning_rate, epochs):
     # 通过Dataset类获取训练和验证集
     train, val = Dataset(train_data), Dataset(val_data)
     # DataLoader根据batch_size获取数据，训练时选择打乱样本
-    train_dataloader = torch.utils.data.DataLoader(train, batch_size=32, shuffle=True)
+    train_dataloader = torch.utils.data.DataLoader(train, batch_size=2, shuffle=True)
     #val_dataloader是一个Pytorch的数据加载器对象，它按批次自动加载预处理后的数据，并返回包含多个输入文本和标签的元组。
-    val_dataloader = torch.utils.data.DataLoader(val, batch_size=32)
+    val_dataloader = torch.utils.data.DataLoader(val, batch_size=2)
     # 定义损失函数和优化器
     criterion = nn.CrossEntropyLoss()
     optimizer = Adam(params=model.parameters(), lr=learning_rate)
     # 将模型移到GPU上
-    device = torch.device('cuda')
+    # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = torch.device("cpu")  # 如果没有可用的 GPU，则使用 CPU
     model.to(device=device)
     val_acc_list = []  # 用于存储每个 epoch 结束后在验证集上的准确率
     x_data = []
@@ -152,26 +153,24 @@ def train(model, train_data, val_data, learning_rate, epochs):
             val_acc_list.append(val_acc)  # 将准确率添加到列表中
         x_data.append(epoch_num + 1)
         torch.cuda.empty_cache()
-    #保存训练好的模型
-    # torch.save(model.state_dict(), "full_model.pkl")
+    # 保存训练好的模型
+    torch.save(model.state_dict(), "full_model.pkl")
 
     return val_acc_list,x_data  # 返回验证集准确率列表
 
 
 if __name__ == '__main__':
     # 从csv文件中读取数据
-    df = pd.read_excel('train.xlsx').iloc[:50]
+    df = pd.read_excel('train.xlsx')
     df = df.dropna(subset=['评价内容'],axis=0)
     df['评价内容'] = df['评价内容'].astype('str')
     df['评论类型'] = df['评论类型'].astype('int')
     # 将数据集划分为训练集、验证集、测试集
     ## random_state=42 表示设定随机种子，以确保结果可复现
     data_train, data_test = train_test_split(df, test_size=0.3, random_state=42)
-
-    data_val = pd.read_excel('test.xlsx')
-    EPOCHS = 6
+    EPOCHS = 5
     model = BertClassifier()
-    LR = 0.001
+    LR = 1e-6
 
     val_acc_list,x_data = train(model, data_train, data_test, LR, EPOCHS)
     #绘制准确率折线图
