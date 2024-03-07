@@ -8,11 +8,11 @@
 
 </head>
 <body >
-    <div id="816bdf9566024ef0a0f940b78d395e86" class="chart-container" style="width:900px; height:500px; "></div>
+    <div id="1a773c0ce84d4a09b5806199925df750" class="chart-container" style="width:900px; height:500px; "></div>
     <script>
-        var chart_816bdf9566024ef0a0f940b78d395e86 = echarts.init(
-            document.getElementById('816bdf9566024ef0a0f940b78d395e86'), 'white', {renderer: 'canvas'});
-        var option_816bdf9566024ef0a0f940b78d395e86 = {
+        var chart_1a773c0ce84d4a09b5806199925df750 = echarts.init(
+            document.getElementById('1a773c0ce84d4a09b5806199925df750'), 'white', {renderer: 'canvas'});
+        var option_1a773c0ce84d4a09b5806199925df750 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -59,11 +59,11 @@
                 },
                 {
                     "name": "\u6d59\u6c5f\u7701",
-                    "value": 91
+                    "value": 170
                 },
                 {
                     "name": "\u5e7f\u4e1c\u7701",
-                    "value": 76
+                    "value": 130
                 },
                 {
                     "name": "\u56db\u5ddd\u7701",
@@ -150,11 +150,11 @@
                     "value": 3
                 },
                 {
-                    "name": "\u5e7f\u897f\u7701",
+                    "name": "\u5e7f\u897f\u58ee\u65cf\u81ea\u6cbb\u533a",
                     "value": 2
                 },
                 {
-                    "name": "\u5b81\u590f\u7701",
+                    "name": "\u5b81\u590f\u56de\u65cf\u81ea\u6cbb\u533a",
                     "value": 2
                 },
                 {
@@ -172,7 +172,7 @@
             "seriesLayoutBy": "column",
             "datasetIndex": 0,
             "mapValueCalculation": "sum",
-            "showLegendSymbol": true,
+            "showLegendSymbol": false,
             "emphasis": {},
             "rippleEffect": {
                 "show": true,
@@ -249,7 +249,7 @@
         "show": true,
         "type": "piecewise",
         "min": 0,
-        "max": 200,
+        "max": 100,
         "inRange": {
             "color": [
                 "#50a3ba",
@@ -266,10 +266,30 @@
         "showLabel": true,
         "itemWidth": 20,
         "itemHeight": 14,
-        "borderWidth": 0
+        "borderWidth": 0,
+        "pieces": [
+            {
+                "min": 0,
+                "max": 100,
+                "label": "0-100",
+                "color": "#3498DB"
+            },
+            {
+                "min": 101,
+                "max": 500,
+                "label": "200-700",
+                "color": "#F1C40F"
+            },
+            {
+                "min": 501,
+                "max": 900,
+                "label": "700-900",
+                "color": "#C0392B"
+            }
+        ]
     }
 };
-        chart_816bdf9566024ef0a0f940b78d395e86.setOption(option_816bdf9566024ef0a0f940b78d395e86);
+        chart_1a773c0ce84d4a09b5806199925df750.setOption(option_1a773c0ce84d4a09b5806199925df750);
     </script>
 </body>
 </html>

@@ -11,6 +11,7 @@ def emotion_analysis():
     df1 = pd.read_excel('./data/消极.xlsx')
     df2 = pd.read_excel('./data/积极.xlsx')
     df = pd.concat([df1,df2],axis=0)
+    df = df.drop_duplicates(subset=['评论文本'])
     new_df = df['情感分析'].value_counts()
     # 计算每行的占比
 
@@ -41,53 +42,55 @@ def emotion_analysis():
 
 
 def map_analyze():
-    df = pd.read_csv('数据.csv')
-    df = df.dropna(subset=['评论ip属地'],axis=0)
-    new_df1 = df['评论ip属地'].value_counts()
-    d1 = {}
-    for x,y in zip(new_df1.index,new_df1.values):
-        d1[x] = y
-
-
-    ls = list(d1.items())
-    ls.sort(key=lambda x:x[1],reverse=True)
-    print(ls)
+    # df = pd.read_csv('数据.csv')
+    # df = df.dropna(subset=['评论ip属地'],axis=0)
+    # new_df1 = df['评论ip属地'].value_counts()
+    # d1 = {}
+    # for x,y in zip(new_df1.index,new_df1.values):
+    #     d1[x] = y
+    #
+    #
+    # ls = list(d1.items())
+    # ls.sort(key=lambda x:x[1],reverse=True)
+    # print(ls)
+    # data = []
+    # provinces = ['安徽', '澳门', '北京', '重庆', '福建', '甘肃', '广东', '广西', '贵州', '海南', '河北', '黑龙江', '河南', '湖北', '湖南', '江苏', '江西',
+    #              '吉林', '辽宁', '内蒙古', '宁夏', '青海', '山东', '上海', '山西', '陕西', '四川', '台湾', '天津', '西藏', '香港', '新疆', '云南', '浙江']
+    # x_data = []
+    # y_data = []
+    # for key,values in ls:
+    #     if key in provinces:
+    #         if '北京' == key or '重庆' == key or '上海' == key or '天津' == key:
+    #             key = str(key) + '市'
+    #         elif '广西' != key or '新疆' != key or '宁夏' != key or '西藏' != key:
+    #             key = str(key) + '省'
+    #         else:
+    #             key = str(key).replace('广西','广西壮族自治区').replace('新疆','新疆维吾尔自治区').replace('宁夏','宁夏回族自治区').replace('西藏','西藏自治区')
+    #         data.append((key,int(values)))
+    #         x_data.append(key)
+    #         y_data.append(values)
+    #
+    # df = pd.DataFrame()
+    # df['area'] = x_data
+    # df['values'] = y_data
+    #
+    # df.to_csv('地区分析.csv',encoding='utf-8-sig')
+    df = pd.read_csv('./data/地区分析.csv')
     data = []
-    provinces = ['安徽', '澳门', '北京', '重庆', '福建', '甘肃', '广东', '广西', '贵州', '海南', '河北', '黑龙江', '河南', '湖北', '湖南', '江苏', '江西',
-                 '吉林', '辽宁', '内蒙古', '宁夏', '青海', '山东', '上海', '山西', '陕西', '四川', '台湾', '天津', '西藏', '香港', '新疆', '云南', '浙江']
-    x_data = []
-    y_data = []
-    for key,values in ls:
-        if key in provinces:
-            if '北京' == key or '重庆' == key or '上海' == key or '天津' == key:
-                key = str(key) + '市'
-            elif '广西' != key or '新疆' != key or '宁夏' != key or '西藏' != key:
-                key = str(key) + '省'
-            else:
-                key = str(key).replace('广西','广西壮族自治区').replace('新疆','新疆维吾尔自治区').replace('宁夏','宁夏回族自治区').replace('西藏','西藏自治区')
-            data.append((key,int(values)))
-            x_data.append(key)
-            y_data.append(values)
-
-    df = pd.DataFrame()
-    df['area'] = x_data
-    df['values'] = y_data
-
-    df.to_csv('地区分析.csv',encoding='utf-8-sig')
+    for i,j in zip(df['area'],df['values']):
+        data.append((i, int(j)))
 
     c = (
         Map()
-            .add("中国地图", data, "china",is_map_symbol_show=False)
+            .add("中国地图", data, "china", is_map_symbol_show=False)
             .set_series_opts(label_opts=opts.LabelOpts(is_show=False))
             .set_global_opts(
             title_opts=opts.TitleOpts(title="地域分析"),
             visualmap_opts=opts.VisualMapOpts(is_piecewise=True,
                                               pieces=[
-
                                                   {"min": 0, "max": 100, "label": "0-100", "color": "#3498DB"},
-                                                  {"min": 101, "max": 200, "label": "100-200", "color": "#1ABC9C"},
-                                                  {"min": 201, "max": 700, "label": "200-700", "color": "#F1C40F"},
-                                                  {"min": 701, "max": 900, "label": "700-900", "color": "#C0392B"}
+                                                  {"min": 101, "max": 500, "label": "200-700", "color": "#F1C40F"},
+                                                  {"min": 501, "max": 900, "label": "700-900", "color": "#C0392B"}
                                               ]
                                               ),
         )
@@ -205,7 +208,7 @@ def score(area):
 
 if __name__ == '__main__':
     emotion_analysis()
-    # map_analyze()
+    map_analyze()
     # process_time()
     # df = pd.DataFrame()
     # new_df3 = pd.DataFrame()
