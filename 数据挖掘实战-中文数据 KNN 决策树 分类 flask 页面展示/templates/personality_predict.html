@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>MBTI人格预测系统</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<style type="text/css">
+	body{
+		background-image: url('../static/images/bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		height: 100vh;
+		color: #fff;
+		font-family: 'Lato', sans-serif;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin: 0;
+		overflow: hidden;
+
+	}
+	img{
+		width: 100px;
+		margin-bottom: -120px;
+		margin-right: 400px;
+	}
+
+</style>
+
+<body>
+<div class="box">
+	<div class="login-box">
+		<div class="login-title text-center">
+			<h1>
+				<small>MBTI人格预测</small>
+			</h1>
+		</div>
+		<div class="login-content ">
+			<div class="form">
+				<i class="layui-icon layui-icon-face-smile" style="font-size: 30px; color: #1E9FFF;"></i>
+				<form id="modifyPassword" class="form-horizontal" method="post">
+					<!-- 用户名输入 -->
+					<div class="form-group">
+						<div class="col-xs-10 col-xs-offset-1">
+							<div class="input-group">
+									<span class="input-group-addon"><span
+											class="glyphicon glyphicon-user"></span></span>
+								<input type="text" id="comment" name="comment" class="form-control" placeholder="请输入评论内容">
+							</div>
+						</div>
+					</div>
+					<br />
+
+					<style type="text/css">
+						button {
+							width: 200px;
+							padding:8px;
+							background-color: #F06292;
+							color: aliceblue;
+							-moz-border-radius: 10px;
+							-webkit-border-radius: 10px;
+							border-radius: 10px; /* future proofing */
+							-khtml-border-radius: 10px; /* for old Konqueror browsers */
+							text-align: center;
+							vertical-align: middle;
+							border: 1px solid transparent;
+							font-weight: 900;
+							font-size:125%  }
+					</style>
+
+					<body>
+					<div style="text-align:center">
+						<button>
+							开始预测
+
+						</button>
+					</div>
+
+					</body>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

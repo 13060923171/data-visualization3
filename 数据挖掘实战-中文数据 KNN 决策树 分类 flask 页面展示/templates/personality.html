@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>MBTI人格预测系统</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	</head>
+    <style type="text/css">
+     body{
+        background-image: url('../static/images/bg.png');
+  		background-repeat: no-repeat;
+  		background-size: cover;
+  		background-position: center center;
+  		height: 100vh;
+  		color: #fff;
+  		font-family: 'Lato', sans-serif;
+  		display: flex;
+  		flex-direction: column;
+  		align-items: center;
+  		justify-content: center;
+  		text-align: center;
+  		margin: 0;
+  		overflow: hidden;
+
+	 }
+	 img{
+		 width: 100px;
+		 margin-bottom: -120px;
+		 margin-right: 400px;
+	 }
+
+ </style>
+
+	<body>
+	<div class="box">
+		<div class="login-box">
+			<div class="login-title text-center">
+				<h1>
+					<small>MBTI人格预测</small>
+				</h1>
+			</div>
+						<br />
+						<div class="form-group">
+							<div class="col-xs-10 col-xs-offset-1">
+								<div class="input-group">
+									{% if personality %}
+									<a>预测人格:{{ personality }} </a>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
