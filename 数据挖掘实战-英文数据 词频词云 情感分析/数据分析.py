@@ -105,23 +105,23 @@ def demo1(df,name1,name2):
 
 def demo2():
     data = []
-    df1 = pd.read_excel('./facebook/finall.xlsx')
+    df1 = pd.read_excel('./facebook/评论统计.xlsx')
     for d in df1['clearn_text']:
         data.append(d)
-    df2 = pd.read_excel('./facebook/all_post.xlsx')
-    for d in df2['clearn_text']:
-        data.append(d)
+    # df2 = pd.read_excel('./facebook/all_post.xlsx')
+    # for d in df2['clearn_text']:
+    #     data.append(d)
 
     df3 = pd.read_excel('./ins/comment.xlsx')
     for d in df3['clearn_text']:
         data.append(d)
-    df4 = pd.read_excel('./ins/post_data.xlsx')
-    for d in df4['clearn_text']:
-        data.append(d)
+    # df4 = pd.read_excel('./ins/post_data.xlsx')
+    # for d in df4['clearn_text']:
+    #     data.append(d)
 
-    df5 = pd.read_excel('./twitter/博文表.xlsx')
-    for d in df5['clearn_text']:
-        data.append(d)
+    # df5 = pd.read_excel('./twitter/博文表.xlsx')
+    # for d in df5['clearn_text']:
+    #     data.append(d)
     df6 = pd.read_excel('./twitter/评论表.xlsx')
     for d in df6['clearn_text']:
         data.append(d)
@@ -129,9 +129,9 @@ def demo2():
     df7 = pd.read_excel('./youtube/comment_list.xlsx')
     for d in df7['clearn_text']:
         data.append(d)
-    df8 = pd.read_excel('./youtube/post_detail.xlsx')
-    for d in df8['clearn_text']:
-        data.append(d)
+    # df8 = pd.read_excel('./youtube/post_detail.xlsx')
+    # for d in df8['clearn_text']:
+    #     data.append(d)
 
     stop_words = []
     with open('常用英文停用词(NLP处理英文必备)stopwords.txt', 'r', encoding='utf-8') as f:
