@@ -10,6 +10,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from keras.utils import to_categorical
 import matplotlib.pyplot as plt
+from keras.callbacks import EarlyStopping
+from keras.callbacks import ModelCheckpoint
 
 df = pd.read_excel("train.xlsx")
 data = list(df['分词'])
@@ -45,9 +47,14 @@ model.add(Dense(num_classes, activation='softmax'))
 
 # 编译模型
 model.compile(loss='categorical_crossentropy', optimizer=Adam(), metrics=['accuracy'])
+# 实例化一个EarlyStopping回调并添加到model的训练中
+early_stop = EarlyStopping(monitor='val_loss', patience=10)
+
+# # 保存在验证集上性能最好的模型
+# checkpoint = ModelCheckpoint('best_model.h5', save_best_only=True, monitor='val_loss', mode='min')
 
 # 保存模型历史记录以便于后续的可视化
-history = model.fit(X_train, y_train, batch_size=64, epochs=100, validation_data=(X_test, y_test))
+history = model.fit(X_train, y_train, batch_size=64, epochs=100, validation_data=(X_test, y_test), callbacks=[early_stop])
 
 # 可视化训练历史
 fig, axes = plt.subplots(2, 1, figsize=(12, 8))
