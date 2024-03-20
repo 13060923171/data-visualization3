@@ -92,8 +92,7 @@ def train(model, train_data, val_data, learning_rate, epochs):
     criterion = nn.CrossEntropyLoss()
     optimizer = Adam(params=model.parameters(), lr=learning_rate)
     # 将模型移到GPU上
-    # device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    device = torch.device("cpu")  # 如果没有可用的 GPU，则使用 CPU
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model.to(device=device)
     val_acc_list = []  # 用于存储每个 epoch 结束后在验证集上的准确率
     x_data = []
@@ -161,10 +160,7 @@ def train(model, train_data, val_data, learning_rate, epochs):
 
 if __name__ == '__main__':
     # 从csv文件中读取数据
-    df = pd.read_excel('train.xlsx')
-    df = df.dropna(subset=['评价内容'],axis=0)
-    df['评价内容'] = df['评价内容'].astype('str')
-    df['评论类型'] = df['评论类型'].astype('int')
+    df = pd.read_excel('new_data.xlsx').iloc[:50]
     # 将数据集划分为训练集、验证集、测试集
     ## random_state=42 表示设定随机种子，以确保结果可复现
     data_train, data_test = train_test_split(df, test_size=0.3, random_state=42)
