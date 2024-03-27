@@ -32,7 +32,7 @@ def lda(df):
         for line in lines:
             stop_word.append(line.strip())
     for line in df['fenci']:
-        line = [word.strip(' ') for word in line.split(' ') if len(word) >= 2 and word not in stop_word]
+        line = [str(word).strip(' ') for word in line.split(' ') if len(word) >= 2 and word not in stop_word]
         train.append(line)
 
     #构建为字典的格式
