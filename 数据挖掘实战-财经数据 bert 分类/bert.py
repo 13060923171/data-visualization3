@@ -20,6 +20,7 @@ from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 import random
 from sklearn.metrics import recall_score, f1_score
+import copy
 
 ## 导入BertTokenizer,做分词处理
 tokenizer = BertTokenizer.from_pretrained('bert-base-chinese')
@@ -81,7 +82,7 @@ class BertClassifier(nn.Module):
         return final_layer
 
 
-def train(model, train_data, val_data, learning_rate, epochs):
+def train(model, train_data, val_data, learning_rate, epochs, patience):
     train, val = Dataset(train_data), Dataset(val_data)
     train_dataloader = torch.utils.data.DataLoader(train, batch_size=2, shuffle=True)
     val_dataloader = torch.utils.data.DataLoader(val, batch_size=2)
@@ -91,7 +92,9 @@ def train(model, train_data, val_data, learning_rate, epochs):
     model.to(device=device)
 
     x_data = []
-
+    best_model = None  # 用于存储最佳模型的状态
+    early_stopping_counter = 0
+    min_loss_val = np.inf
     train_loss_list = []  # 添加用于存储训练集损失的列表
     train_acc_list = []  # 添加用于存储训练集准确率的列表
     val_loss_list = []  # 添加用于存储验证集损失的列表
@@ -134,7 +137,11 @@ def train(model, train_data, val_data, learning_rate, epochs):
 
         train_loss_list.append(total_loss_train / len(train_data))  # 平均训练损失
         train_acc_list.append(total_acc_train / len(train_data))  # 平均训练准确率
-
+        print('epoch:',epoch_num)
+        print('train_loss:',round(total_loss_train / len(train_data),4))
+        print('train_acc:', round(total_acc_train / len(train_data), 4))
+        print('recall:', round(recall,4))
+        print('f1 score:', round(f1,4))
         # 将这一周期的召回率和F1分数添加到相应的列表中
         train_recall_list.append(recall)  # 平均训练召回率
         train_f1_list.append(f1)  # 平均训练F1分数
@@ -171,7 +178,21 @@ def train(model, train_data, val_data, learning_rate, epochs):
         x_data.append(epoch_num + 1)
         torch.cuda.empty_cache()
 
-    torch.save(model.state_dict(), "full_model.pkl")
+        if total_loss_val < min_loss_val:
+            min_loss_val = total_loss_val
+            early_stopping_counter = 0  # reset early stopping counter
+            best_model = copy.deepcopy(model.state_dict())  # 更新最佳模型状态
+        else:
+            early_stopping_counter += 1  # increase early stopping counter
+
+        if early_stopping_counter >= patience:
+            print("Early stopping!")
+            break
+
+    if best_model is not None:  # 如果最佳模型存在，我们保存它
+        torch.save(best_model, "best_model.pkl")
+    else:  # 否则，可能所有的模型都没有得到训练，我们就保存最后的模型
+        torch.save(model.state_dict(), "full_model.pkl")
 
 
     # 返回数据，便于后续可视化
@@ -205,7 +226,8 @@ if __name__ == '__main__':
     EPOCHS = 10
     model = BertClassifier()
     LR = 1e-6
-    x_data,train_loss_list, train_acc_list,train_recall_list,train_f1_list, val_loss_list, val_acc_list,val_recall_list,val_f1_list = train(model, data_train, data_test, LR, EPOCHS)
+    patience = 5
+    x_data,train_loss_list, train_acc_list,train_recall_list,train_f1_list, val_loss_list, val_acc_list,val_recall_list,val_f1_list = train(model, data_train, data_test, LR, EPOCHS, patience)
 
     # 可视化训练历史
     fig, axes = plt.subplots(2, 2, figsize=(12, 8))
