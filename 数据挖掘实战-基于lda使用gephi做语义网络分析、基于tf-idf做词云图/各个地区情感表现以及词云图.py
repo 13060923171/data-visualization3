@@ -14,17 +14,13 @@ import jieba.posseg as pseg
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 
-from pyecharts import options as opts
-from pyecharts.charts import WordCloud
-from pyecharts.globals import SymbolType
-
-# from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
-# from PIL import Image
-# from matplotlib import pyplot as plt
-# from matplotlib.pyplot import imread
+from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
+from PIL import Image
+from matplotlib import pyplot as plt
+from matplotlib.pyplot import imread
 
 
-def tf_idf(df,area,name,date_time):
+def tf_idf(df):
     corpus = []
     for i in df['分词']:
         corpus.append(i.strip())
@@ -49,98 +45,26 @@ def tf_idf(df,area,name,date_time):
     df2 = pd.DataFrame(data)
     df2['tfidf'] = df2['tfidf'].astype('float64')
     df2 = df2.sort_values(by=['tfidf'],ascending=False)
-    df2.to_csv('./需求二/{}_{}_{}_tfidf.csv'.format(date_time,area,name),encoding='utf-8-sig',index=False)
+    df2.to_csv('./爱奇艺/TF-IDF相关数据.xlsx'.format(date_time,area,name),encoding='utf-8-sig',index=False)
 
-    # df2 = pd.read_csv('./需求二/{}_{}_tfidf.csv'.format(area,name))
-    # df2['tfidf'] = df2['tfidf'].astype('float64')
-    # df2 = df2.sort_values(by=['tfidf'], ascending=False)
-    df2 = df2.iloc[:100]
-    # 导入停用词列表
-    stop_words = ['肖战', '北京', '真的','肖明','河南','链接','有限公司','哈哈哈','许凯','一种','两个','只能','秦施','杨幂','工作室','二八','视频','小说','微博','孩子','室友','姐姐','刘耀文']
+    df3 = df2.iloc[:30]
+    x_data = list(df3['word'])
+    y_data = list(df3['tfidf'])
+    x_data.reverse()
+    y_data.reverse()
+    plt.figure(figsize=(12, 9))
+    plt.barh(x_data, y_data)
+    plt.rcParams['font.sans-serif'] = ['SimHei']
 
-    list_word = []
-    for i, j in zip(df2['word'], df2['tfidf']):
-        if i not in stop_words:
-            list_word.append((i, int(j)))
-    c = (
-        WordCloud()
-            .add("{}".format(name),list_word, word_size_range=[20, 100], shape=SymbolType.DIAMOND)
-            .set_global_opts(title_opts=opts.TitleOpts(title="{}_{}_{}_tf-idf".format(date_time,area,name)))
-            .render("./需求二/{}_{}_{}_tf-idf.html".format(date_time,area,name))
-    )
+    plt.title("tf-idf 权重最高的top30词汇")
+    plt.xlabel("权重")
+    plt.savefig('./爱奇艺/tf-idf top30.png')
 
-    # # 将词频数据转换为使用空格隔开的词汇，词频越高的词汇出现次数越多
-    # text = ' '.join(word for word, freq in list_word for _ in range(freq))
-    #
-    # # 设置中文字体
-    # font_path = 'C:\Windows\Fonts\simhei.ttf'  # 思源黑体
-    # # 读取背景图片
-    # background_Image = np.array(Image.open('中国地图.jpg'))
-    # # 提取背景图片颜色
-    # img_colors = ImageColorGenerator(background_Image)
-    #
-    # wc = WordCloud(
-    #     stopwords=STOPWORDS.add("一个"),
-    #     collocations=False,
-    #     font_path=font_path,  # 中文需设置路径
-    #     margin=1,  # 页面边缘
-    #     mask=background_Image,
-    #     scale=10,
-    #     max_words=100,  # 最多词个数
-    #     min_font_size=4,
-    #
-    #     random_state=42,
-    #     width=600,
-    #     height=900,
-    #     background_color='SlateGray',  # 背景颜色
-    #     # background_color = '#C3481A', # 背景颜色
-    #     max_font_size=100,
-    #
-    # )
-    # # 生成词云
-    # wc.generate_from_text(text)
-    #
-    # # 获取文本词排序，可调整 stopwords
-    # process_word = WordCloud.process_text(wc, text)
-    # sort = sorted(process_word.items(), key=lambda e: e[1], reverse=True)
-    #
-    # # 设置为背景色，若不想要背景图片颜色，就注释掉
-    # wc.recolor(color_func=img_colors)
-    #
-    # # 存储图像
-    # wc.to_file("./需求二/{}_{}_{}_tf-idf.png".format(date_time,area,name))
-
-
-def main1(df_name):
-    df3 = pd.read_csv("{}数据.csv".format(df_name))
-    provinces = ['安徽', '澳门', '北京', '重庆', '福建', '甘肃', '广东', '广西', '贵州', '海南', '河北', '黑龙江', '河南', '湖北', '湖南', '江苏', '江西',
-                 '吉林', '辽宁', '内蒙古', '宁夏', '青海', '山东', '上海', '山西', '陕西', '四川', '台湾', '天津', '西藏', '香港', '新疆', '云南', '浙江']
-    list_emotion = ['正面情感', '负面情感']
-
-    def area(x):
-        x1 = str(x)
-        for p in provinces:
-            if x1 in p:
-                return p
-
-    df3['IP属地'] = df3['IP属地'].apply(area)
-
-    df3 = df3.dropna(subset=['IP属地'], axis=0)
-
-    for p in tqdm(provinces):
-        for l in list_emotion:
-            df4 = df3[df3['IP属地'] == p]
-            df = df4[df4['情感分类'] == l]
-            try:
-                tf_idf(df, p, l,df_name)
-            except:
-                pass
 
 
 if __name__ == '__main__':
-    list_time = ['前半年',"后半年"]
-    for t in list_time:
-        main1(t)
+    df = pd.read_excel('./爱奇艺/新_评论表.xlsx')
+    tf_idf(df)
 
 
 
