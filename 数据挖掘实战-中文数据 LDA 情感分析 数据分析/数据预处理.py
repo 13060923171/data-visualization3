@@ -62,7 +62,7 @@ def get_cut_words(content_series):
         nouns_and_adjs = []
         # 逐一检查每个词语的词性，并将名词和形容词保存到列表中
         for word, flag in words:
-            if 'A' in flag or 'a' in flag or 'n' in flag or 'N' in flag:
+            if 'an' == flag or 'Ng' == flag or 'n' == flag or 'nz' == flag or 'vn' == flag:
                 if word not in stop_words and len(word) >= 2 and is_all_chinese(word) == True:
                     # 如果是名词或形容词，就将其保存到列表中
                     nouns_and_adjs.append(word)
