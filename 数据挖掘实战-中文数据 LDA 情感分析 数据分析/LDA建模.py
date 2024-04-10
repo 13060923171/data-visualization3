@@ -26,7 +26,7 @@ import os
 #LDA建模
 def lda(df):
     train = []
-    stop_word = ['微博','干嘛']
+    stop_word = ['微博','干嘛','国家','公园','武夷山','大熊猫','东北','虎豹','海南','热带雨林','三江源','早安']
     with open("stopwords_cn.txt", 'r', encoding='utf-8') as f:
         lines = f.readlines()
         for line in lines:
@@ -89,7 +89,7 @@ def lda(df):
     # optimal_z_index = z_data.index(optimal_z)
     # best_topic_number = x_data[optimal_z_index]
 
-    num_topics = 5
+    num_topics = 4
 
     #LDA可视化模块
     #构建lda主题参数
