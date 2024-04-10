@@ -62,10 +62,9 @@ def get_cut_words(content_series):
         nouns_and_adjs = []
         # 逐一检查每个词语的词性，并将名词和形容词保存到列表中
         for word, flag in words:
-            if 'A' in flag or 'a' in flag or 'n' in flag or 'N' in flag:
-                if word not in stop_words and len(word) >= 2 and is_all_chinese(word) == True:
-                    # 如果是名词或形容词，就将其保存到列表中
-                    nouns_and_adjs.append(word)
+            if word not in stop_words and len(word) >= 2 and is_all_chinese(word) == True:
+                # 如果是名词或形容词，就将其保存到列表中
+                nouns_and_adjs.append(word)
         if len(nouns_and_adjs) != 0:
             return ' '.join(nouns_and_adjs)
         else:
@@ -73,16 +72,41 @@ def get_cut_words(content_series):
     except:
         return np.NAN
 
+def emotion_type(x):
+    if x == 1:
+        return 1
+    elif x == -1:
+        return 2
+    elif x == 0:
+        return 0
+    else:
+        return np.NAN
+
+def test_data(x):
+    if x == 1 or x == 2 or x == 0:
+        return '训练集'
+    else:
+        return '测试集'
 
 # 去掉重复行以及空值
-df = pd.read_excel('./爱奇艺/评论表.xlsx')
+df = pd.read_excel('./豆瓣/评论表.xlsx')
 df = df.drop_duplicates(subset=['评论内容'])
 df['评论内容'] = df['评论内容'].apply(preprocess_word)
 df['评论内容'] = df['评论内容'].apply(emjio_tihuan)
 df = df.dropna(subset=['评论内容'], axis=0)
 df['评论内容'] = df['评论内容'].apply(yasuo)
 df['fenci'] = df['评论内容'].apply(get_cut_words)
-new_df = df.dropna(subset=['fenci'], axis=0)
-new_df.to_excel('./爱奇艺/新_评论表.xlsx',index=False)
+df = df.dropna(subset=['fenci'], axis=0)
+df['情感标签'] = df['情感标签'].apply(emotion_type)
+df['数据标签'] = df['情感标签'].apply(test_data)
+
+df1 = df[df['数据标签'] == '训练集']
+df1.to_csv('./豆瓣/train_data.csv',encoding='utf-8-sig',index=False)
+df2 = df[df['数据标签'] == '测试集']
+df2.to_csv('./豆瓣/test_data.csv',encoding='utf-8-sig',index=False)
+
+
+
+
 
 
