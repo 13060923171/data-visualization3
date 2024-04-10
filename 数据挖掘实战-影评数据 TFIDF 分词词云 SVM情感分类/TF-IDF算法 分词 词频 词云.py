@@ -20,7 +20,7 @@ from matplotlib import pyplot as plt
 from matplotlib.pyplot import imread
 import random
 
-def tf_idf(df):
+def tf_idf(df,name):
     corpus = []
     for i in df['fenci']:
         corpus.append(i.strip())
@@ -45,7 +45,7 @@ def tf_idf(df):
     df2 = pd.DataFrame(data)
     df2['tfidf'] = df2['tfidf'].astype('float64')
     df2 = df2.sort_values(by=['tfidf'],ascending=False)
-    df2.to_csv('./爱奇艺/TF-IDF相关数据.xlsx',encoding='utf-8-sig',index=False)
+    df2.to_csv('./豆瓣/{}-TF-IDF相关数据.xlsx'.format(name),encoding='utf-8-sig',index=False)
 
     df3 = df2.iloc[:30]
     x_data = list(df3['word'])
@@ -58,10 +58,10 @@ def tf_idf(df):
 
     plt.title("tf-idf 权重最高的top30词汇")
     plt.xlabel("权重")
-    plt.savefig('./爱奇艺/tf-idf top30.png')
+    plt.savefig('./豆瓣/{}-tf-idf top30.png'.format(name))
 
 
-def word(df):
+def word(df,name):
     d = {}
     list_text = []
     for t in df['fenci']:
@@ -84,7 +84,7 @@ def word(df):
     data['word'] = x_data
     data['counts'] = y_data
 
-    data.to_csv('./爱奇艺/高频词Top100.csv',encoding='utf-8-sig',index=False)
+    data.to_csv('./豆瓣/{}-高频词Top100.csv'.format(name),encoding='utf-8-sig',index=False)
 
     def color_func(word, font_size, position, orientation, random_state=None,
                    **kwargs):
@@ -114,12 +114,16 @@ def word(df):
     # 生成词云
     wc.generate_from_text(text)
     # 存储图像
-    wc.to_file("./爱奇艺/top100-词云图.png")
+    wc.to_file("./豆瓣/{}-top100-词云图.png".format(name))
 
 if __name__ == '__main__':
-    df = pd.read_excel('./爱奇艺/新_评论表.xlsx')
-    # tf_idf(df)
-    word(df)
+    df = pd.read_csv('./豆瓣/new_data.csv')
+    new_df = df['情感标签'].value_counts()
+    x_data = [x for x in new_df.index]
+    for x in x_data:
+        df1 = df[df['情感标签'] == x]
+        tf_idf(df1,x)
+        word(df1,x)
 
 
 
