@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>二手车定价预测系统</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<style type="text/css">
+	body{
+		background-image: url('../static/images/bg.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		height: 100vh;
+		color: #fff;
+		font-family: 'Lato', sans-serif;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		margin: 0;
+		overflow: hidden;
+
+	}
+	img{
+		width: 100px;
+		margin-bottom: -120px;
+		margin-right: 400px;
+	}
+	.container {
+		width: auto; /* 根据需要调整宽度 */
+		margin: 0 auto; /* 居中 */
+	}
+
+	.input-group {
+		display: flex; /* 使用Flexbox进行排列 */
+		gap: 20px; /* 输入框之间的间隙 */
+	}
+
+	.spacing {
+		margin: 30px 0; /* 上下间距20px，提供一定的空间 */
+	}
+	.input-group input {
+    text-align: center; /* 让文本内容居中显示 */
+}
+
+/* 可以添加更多样式，以符合设计需求 */
+
+</style>
+
+<body>
+<div class="box">
+	<div class="login-box">
+		<div class="login-title text-center">
+			<h1>
+				<small>二手车定价预测</small>
+			</h1>
+		</div>
+		<div class="login-content ">
+			<div class="form">
+				<i class="layui-icon layui-icon-face-smile" style="font-size: 30px; color: #1E9FFF;"></i>
+				<form id="modifyPassword" class="form-horizontal" method="post">
+					<div class="form-group">
+						<div class="container">
+							<!-- 顶部分组的输入框 -->
+							<div class="input-group top-group">
+								<input type="text" id="brand" name="brand" class="form-control" placeholder="请输入品牌">
+								<input type="text" id="mileage" name="mileage" class="form-control" placeholder="请输入表现里程">
+								<input type="text" id="company" name="company" class="form-control" placeholder="请输入厂商">
+								<input type="text" id="price" name="price" class="form-control" placeholder="请输入厂商指导价">
+								<input type="text" id="form" name="form" class="form-control" placeholder="请输入能源形式">
+							</div>
+
+							<!-- 间隙 -->
+							<div class="spacing"></div>
+
+							<!-- 底部分组的输入框 -->
+							<div class="input-group bottom-group">
+								<input type="text" id="genre" name="genre" class="form-control" placeholder="请输入变速箱类型">
+								<input type="text" id="body" name="body" class="form-control" placeholder="请输入车身形式">
+								<input type="text" id="warranty" name="warranty" class="form-control" placeholder="请输入整车质保">
+								<input type="text" id="power" name="power" class="form-control" placeholder="请输入功率（KW）">
+								<input type="text" id="transfer" name="transfer" class="form-control" placeholder="请输入过户次数">
+								<input type="text" id="production" name="production" class="form-control" placeholder="请输入生产方式">
+							</div>
+						</div>
+					</div>
+					<br />
+
+					<style type="text/css">
+						button {
+							width: 200px;
+							padding:8px;
+							background-color: #FDFEFE;
+							color: #85C1E9;
+							-moz-border-radius: 10px;
+							-webkit-border-radius: 10px;
+							border-radius: 10px; /* future proofing */
+							-khtml-border-radius: 10px; /* for old Konqueror browsers */
+							text-align: center;
+							vertical-align: middle;
+							border: 1px solid transparent;
+							font-weight: 900;
+							font-size:125%  }
+					</style>
+
+					<body>
+					<div style="text-align:center">
+						<button>
+							开始预测
+
+						</button>
+					</div>
+
+					</body>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
