@@ -7,7 +7,10 @@ import os
 from tqdm import tqdm
 
 
-df = pd.read_excel('data.xlsx')
+df1 = pd.read_excel('data.xlsx')
+df2 = pd.read_excel('data1.xlsx')
+
+df = pd.concat([df1,df2],axis=0)
 
 def haoping(x):
     x1 = str(x)
