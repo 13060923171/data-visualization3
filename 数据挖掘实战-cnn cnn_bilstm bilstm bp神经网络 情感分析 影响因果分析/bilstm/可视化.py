@@ -29,7 +29,7 @@ def word(df,emotion):
     ls.sort(key=lambda x:x[1],reverse=True)
     x_data = []
     y_data = []
-    for key,values in ls[:20]:
+    for key,values in ls:
         x_data.append(key)
         y_data.append(values)
 
@@ -37,31 +37,31 @@ def word(df,emotion):
     data['word'] = x_data
     data['counts'] = y_data
 
-    data.to_csv('{}-高频词Top20.csv'.format(emotion),encoding='utf-8-sig',index=False)
+    data.to_csv('{}-高频词.csv'.format(emotion),encoding='utf-8-sig',index=False)
     x_data.reverse()
     y_data.reverse()
 
     plt.figure(figsize=(12, 9),dpi=500)
-    plt.barh(x_data, y_data)
+    plt.barh(x_data[:20], y_data[:20])
     plt.rcParams['font.sans-serif'] = ['SimHei']
     plt.title("{}-高频词Top20".format(emotion))
     plt.xlabel("频次")
     plt.savefig('{}-高频词Top20'.format(emotion))
-
-    def color_func(word, font_size, position, orientation, random_state=None,
-                   **kwargs):
-        return "hsl(0, 100%%, %d%%)" % random.randint(20, 50)
+    stopwords = ['车子','感觉','特别','款车']
+    def color_func(word, font_size, position, orientation, random_state=None, **kwargs):
+        return "hsl(191, 0%, 99%)"
 
     # 读取背景图片
     background_Image = np.array(Image.open('../image.png'))
     text = ' '.join(list_text)
     wc = WordCloud(
+        stopwords=stopwords,
         collocations=False,
         font_path='simhei.ttf',  # 中文需设置路径
         margin=1,  # 页面边缘
         mask=background_Image,
         scale=10,
-        max_words=100,  # 最多词个数
+        # max_words=100,  # 最多词个数
         random_state=42,
         width=900,
         height=600,
