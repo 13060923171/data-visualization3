@@ -7,10 +7,7 @@ import os
 from tqdm import tqdm
 
 
-df1 = pd.read_excel('data.xlsx')
-df2 = pd.read_excel('data1.xlsx')
-
-df = pd.concat([df1,df2],axis=0)
+df = pd.read_excel('data.xlsx')
 
 def haoping(x):
     x1 = str(x)
@@ -88,21 +85,22 @@ def get_cut_words(content_series):
         nouns_and_adjs = []
         # 逐一检查每个词语的词性，并将名词和形容词保存到列表中
         for word, flag in words:
-            if word not in stop_words and len(word) >= 2 and is_all_chinese(word) == True:
+            word = str(word).strip(" ")
+            if len(word) >= 2 and is_all_chinese(word) and word not in stop_words:
                 # 如果是名词或形容词，就将其保存到列表中
                 nouns_and_adjs.append(word)
         if len(nouns_and_adjs) != 0:
             return ' '.join(nouns_and_adjs)
         else:
             return np.NAN
-    except:
+    except Exception as e:
+        print(f"Exception occurred: {str(e)}")
         return np.NAN
-
-
 
 
 df['好评内容'] = df['好评内容'].apply(preprocess_word)
 df['好评内容'] = df['好评内容'].apply(emjio_tihuan)
+df['好评内容'] = df['好评内容'].apply(yasuo)
 df['fenci_好评'] = df['好评内容'].apply(get_cut_words)
 
 data = pd.DataFrame()
@@ -112,6 +110,7 @@ data['type'] = 'pos'
 
 df['差评内容'] = df['差评内容'].apply(preprocess_word)
 df['差评内容'] = df['差评内容'].apply(emjio_tihuan)
+df['差评内容'] = df['差评内容'].apply(yasuo)
 df['fenci_差评'] = df['差评内容'].apply(get_cut_words)
 df = df.dropna(subset=['fenci_差评'], axis=0)
 
