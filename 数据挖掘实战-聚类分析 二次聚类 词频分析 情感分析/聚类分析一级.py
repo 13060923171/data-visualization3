@@ -72,7 +72,7 @@ def kmeans(df):
     # plt.savefig('./聚类/轮廓系数图.png')
     # plt.show()
 
-    n_clusters = 3
+    n_clusters = 5
 
     clf = KMeans(n_clusters=n_clusters, random_state=111)
     pre = clf.fit_predict(weight)
