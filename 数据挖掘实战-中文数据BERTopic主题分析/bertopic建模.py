@@ -19,7 +19,7 @@ tokenizer = BertTokenizer.from_pretrained('bert-base-chinese')
 model = BertModel.from_pretrained('bert-base-chinese').to(device)  # 将模型移动到GPU
 
 # 读取数据并进行预处理
-df = pd.read_excel('data.xlsx')
+df = pd.read_excel('data_v6.xlsx')
 
 def data_process(x):
     x1 = str(x).strip(" ").strip("\n").split(" ")
