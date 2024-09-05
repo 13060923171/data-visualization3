@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 matplotlib.use('Agg')  # 使用Agg后端
 sns.set_style(style="whitegrid")
 
+
 def prepare_data(df, time_step=1):
     X, y = [], []
     for i in range(len(df) - time_step - 1):
