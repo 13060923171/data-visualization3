@@ -1,602 +1,602 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
-<svg contentScriptType="text/ecmascript" width="1418.3308"
+<svg contentScriptType="text/ecmascript" width="1449.246"
      xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
      contentStyleType="text/css"
-     viewBox="-713.716614 -699.260803 1418.330811 1423.665527"
-     height="1423.6655" preserveAspectRatio="xMidYMid meet"
+     viewBox="-732.278931 -694.826050 1449.245972 1409.867920"
+     height="1409.8679" preserveAspectRatio="xMidYMid meet"
      xmlns="http://www.w3.org/2000/svg" version="1.1">
     <g id="edges">
         <path stroke-linecap="round" fill="none" class="id_新闻 id_社区"
-              d="M -225.490387,-421.058014 A 396.477696,396.477696 0,0 1,-636.576660,-244.158005"
-              stroke="#c98694" stroke-width="9.6" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="19.2"
-              d="M -212.909698,-442.356781 C -163.436005,-491.830475 -163.436005,-392.883087 -212.909698,-442.356781"
-              class="id_新闻" stroke-opacity="0.2" stroke="#9a96e5"/>
+              d="M -194.688583,117.344185 A 338.555284,338.555284 0,0 1,180.313278,164.456589"
+              stroke="#bbe4da" stroke-width="4.8" stroke-opacity="0.2"/>
+        <path fill="none" stroke-width="9.6"
+              d="M -216.352524,129.285080 C -166.878845,79.811394 -166.878845,178.758759 -216.352524,129.285080"
+              class="id_新闻" stroke-opacity="0.2" stroke="#89d0ba"/>
         <path stroke-linecap="round" fill="none" class="id_新闻 id_旗下"
-              d="M -192.186783,-455.865021 A 364.054704,364.054704 0,0 1,215.844437,-434.590790"
-              stroke="#c98694" stroke-width="9.6" stroke-opacity="0.2"/>
+              d="M -196.521408,114.498650 A 743.293733,743.293733 0,0 1,667.393005,111.115448"
+              stroke="#bbe4da" stroke-width="4.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_新闻 id_兴趣"
-              d="M -220.243912,-465.981354 A 202.839970,202.839970 0,0 1,-153.133408,-669.972473"
-              stroke="#c98694" stroke-width="9.6" stroke-opacity="0.2"/>
+              d="M -223.633560,105.644058 A 708.153251,708.153251 0,0 1,48.604847,-669.690552"
+              stroke="#bbe4da" stroke-width="4.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_新闻 id_小伙伴"
-              d="M -233.148804,-428.133911 A 265.465154,265.465154 0,0 1,-523.226501,-431.644287"
-              stroke="#c98694" stroke-width="9.6" stroke-opacity="0.2"/>
+              d="M -200.839554,148.553162 A 458.513064,458.513064 0,0 1,-177.222931,670.054260"
+              stroke="#bbe4da" stroke-width="4.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_新闻 id_交流"
-              d="M -237.179611,-447.140381 A 179.933477,179.933477 0,0 1,-366.177155,-582.732056"
-              stroke="#c98694" stroke-width="9.6" stroke-opacity="0.2"/>
+              d="M -195.911560,115.353867 A 547.070647,547.070647 0,0 1,432.045502,138.056137"
+              stroke="#bbe4da" stroke-width="4.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_新闻 id_无限"
-              d="M -192.726563,-428.054596 A 191.343465,191.343465 0,0 1,-122.726837,-261.356995"
-              stroke="#61a4a7" stroke-width="11.2" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="30.0"
-              d="M 454.946960,-71.203125 C 517.052246,-133.308380 517.052246,-9.097862 454.946960,-71.203125"
-              class="id_人工智能" stroke-opacity="0.2" stroke="#9a96e5"/>
+              d="M -232.038605,110.157661 A 174.535465,174.535465 0,0 1,-254.183121,-48.708309"
+              stroke="#6fc2a5" stroke-width="5.6" stroke-opacity="0.2"/>
+        <path fill="none" stroke-width="15.0"
+              d="M -89.448761,-233.457901 C -27.343498,-295.563171 -27.343498,-171.352631 -89.448761,-233.457901"
+              class="id_人工智能" stroke-opacity="0.2" stroke="#60bd9d"/>
         <path stroke-linecap="round" fill="none" class="id_人工智能 id_智能"
-              d="M 470.742218,-44.467831 A 170.523853,170.523853 0,0 1,457.036102,125.326431"
-              stroke="#c98694" stroke-width="25.6" stroke-opacity="0.2"/>
+              d="M -60.037907,-243.421204 A 492.103099,492.103099 0,0 1,471.132843,-75.196541"
+              stroke="#a6dacc" stroke-width="12.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_人工智能 id_科技"
-              d="M 431.780273,-50.525330 A 380.683884,380.683884 0,0 1,29.337545,0.447726"
-              stroke="#61a4a7" stroke-width="17.2" stroke-opacity="0.2"/>
+              d="M -68.411133,-210.617493 A 387.230057,387.230057 0,0 1,-10.319808,198.819763"
+              stroke="#60bd9d" stroke-width="8.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_人工智能 id_技术"
-              d="M 455.370667,-102.252869 A 237.717454,237.717454 0,0 1,600.805664,-302.876495"
-              stroke="#c98694" stroke-width="19.2" stroke-opacity="0.2"/>
+              d="M -119.528206,-225.744736 A 220.409639,220.409639 0,0 1,-331.889557,-305.736633"
+              stroke="#98d4c2" stroke-width="9.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_人工智能 id_行业"
-              d="M 465.114716,-41.862324 A 584.400256,584.400256 0,0 1,273.449219,590.824829"
-              stroke="#9a96e5" stroke-width="13.2" stroke-opacity="0.2"/>
+              d="M -90.049873,-264.504700 A 204.148170,204.148170 0,0 1,21.396315,-434.975800"
+              stroke="#8acfb9" stroke-width="6.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_人工智能 id_人类"
-              d="M 466.876465,-42.533405 A 343.609326,343.609326 0,0 1,389.359436,315.549469"
-              stroke="#9a96e5" stroke-width="36.0" stroke-opacity="0.2"/>
+              d="M -59.893574,-223.931259 A 594.449388,594.449388 0,0 1,337.000336,313.294586"
+              stroke="#74c6ab" stroke-width="18.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_人工智能 id_创新"
-              d="M 427.840118,-56.054337 A 189.217814,189.217814 0,0 1,248.179993,-68.375313"
-              stroke="#61a4a7" stroke-width="14.0" stroke-opacity="0.2"/>
+              d="M -109.674309,-209.895355 A 316.322874,316.322874 0,0 1,-432.237366,-125.098419"
+              stroke="#74c6ab" stroke-width="7.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_人工智能 id_模型"
-              d="M 437.480682,-45.528332 A 579.979683,579.979683 0,0 1,-154.885773,182.587997"
-              stroke="#9a96e5" stroke-width="16.0" stroke-opacity="0.2"/>
+              d="M -61.607651,-247.210663 A 185.280309,185.280309 0,0 1,96.361862,-236.686234"
+              stroke="#40a277" stroke-width="8.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_人工智能 id_时代"
-              d="M 455.573059,-40.156807 A 440.360802,440.360802 0,0 1,196.473816,354.540680"
-              stroke="#9a96e5" stroke-width="19.6" stroke-opacity="0.2"/>
+              d="M -58.440990,-235.126465 A 321.218783,321.218783 0,0 1,224.835083,-68.562607"
+              stroke="#50af8a" stroke-width="9.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_人工智能 id_产业"
-              d="M 446.025299,-41.459728 A 266.028025,266.028025 0,0 1,230.054993,131.220169"
-              stroke="#9a96e5" stroke-width="12.8" stroke-opacity="0.2"/>
+              d="M -76.605949,-205.185516 A 512.514221,512.514221 0,0 1,-188.806107,356.709625"
+              stroke="#82ccb5" stroke-width="6.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_社会 id_人类"
-              d="M 676.489258,130.239548 A 311.768176,311.768176 0,0 1,396.154266,332.631897"
-              stroke="#c98694" stroke-width="9.6" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="12.8"
-              d="M 606.452515,337.930542 C 634.873596,309.509491 634.873596,366.351593 606.452515,337.930542"
-              class="id_机器人" stroke-opacity="0.2" stroke="#f97743"/>
+              d="M 609.850708,-311.295807 A 593.470690,593.470690 0,0 1,358.434631,324.900330"
+              stroke="#bbe4da" stroke-width="4.8" stroke-opacity="0.2"/>
+        <path fill="none" stroke-width="6.4"
+              d="M -48.124969,514.936584 C -19.703917,486.515533 -19.703917,543.357666 -48.124969,514.936584"
+              class="id_机器人" stroke-opacity="0.2" stroke="#d0ece8"/>
         <path stroke-linecap="round" fill="none" class="id_机器人 id_人类"
-              d="M 594.600769,345.771179 A 195.913294,195.913294 0,0 1,391.790375,346.609344"
-              stroke="#c98694" stroke-width="10.400001" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="14.8"
-              d="M -8.185387,227.932053 C 91.814613,127.932053 91.814613,327.932068 -8.185387,227.932053"
-              class="id_AI" stroke-opacity="0.2" stroke="#28b36a"/>
+              d="M -41.098011,502.585022 A 353.532650,353.532650 0,0 1,313.123535,333.638245"
+              stroke="#acded1" stroke-width="5.2000003" stroke-opacity="0.2"/>
+        <path fill="none" stroke-width="7.4"
+              d="M -2.425686,-7.476218 C 97.574310,-107.476219 97.574310,92.523781 -2.425686,-7.476218"
+              class="id_AI" stroke-opacity="0.2" stroke="#006d2c"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_科技"
-              d="M -31.190777,183.538895 A 201.614346,201.614346 0,0 1,-15.977774,11.695763"
-              stroke="#28b36a" stroke-width="20.0" stroke-opacity="0.2"/>
+              d="M 18.094826,38.118832 A 195.912442,195.912442 0,0 1,-5.213350,202.018616"
+              stroke="#309564" stroke-width="10.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_感受"
-              d="M -58.168877,226.647247 A 470.892112,470.892112 0,0 1,-464.811218,-85.129723"
-              stroke="#28b36a" stroke-width="8.8" stroke-opacity="0.2"/>
+              d="M -50.642044,5.759441 A 571.490100,571.490100 0,0 1,-642.685059,-219.226883"
+              stroke="#68ac8a" stroke-width="4.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_行业"
-              d="M 38.382107,246.138336 A 383.101334,383.101334 0,0 1,258.885254,583.693848"
-              stroke="#61a4a7" stroke-width="13.2" stroke-opacity="0.2"/>
+              d="M -25.591238,-51.786007 A 364.146765,364.146765 0,0 1,26.157860,-428.606781"
+              stroke="#5aa781" stroke-width="6.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_人类"
-              d="M 39.607277,213.239838 A 328.135795,328.135795 0,0 1,355.557281,313.595490"
-              stroke="#61a4a7" stroke-width="10.8" stroke-opacity="0.2"/>
+              d="M 46.454712,3.045495 A 403.887491,403.887491 0,0 1,333.420959,313.623474"
+              stroke="#449e73" stroke-width="5.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_创新"
-              d="M -4.016089,178.106186 A 325.446103,325.446103 0,0 1,204.671387,-75.276390"
-              stroke="#28b36a" stroke-width="20.800001" stroke-opacity="0.2"/>
+              d="M -50.059750,7.722334 A 391.912038,391.912038 0,0 1,-439.871399,-114.176659"
+              stroke="#449e73" stroke-width="10.400001" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_视频"
-              d="M -50.827930,254.039780 A 536.996846,536.996846 0,0 1,-642.438782,204.909607"
-              stroke="#61a4a7" stroke-width="8.0" stroke-opacity="0.2"/>
+              d="M -0.922960,42.501194 A 560.377734,560.377734 0,0 1,-353.342377,554.723389"
+              stroke="#6faf8e" stroke-width="4.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_无限"
-              d="M -45.349476,194.483124 A 393.591166,393.591166 0,0 1,-139.866241,-197.519669"
-              stroke="#28b36a" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M -51.097290,3.972575 A 206.895680,206.895680 0,0 1,-218.469666,-53.779167"
+              stroke="#2a905e" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_模型"
-              d="M -57.166687,237.973587 A 164.324093,164.324093 0,0 1,-166.747009,203.115921"
-              stroke="#61a4a7" stroke-width="27.2" stroke-opacity="0.2"/>
+              d="M 0.698929,-57.378490 A 203.208394,203.208394 0,0 1,92.467651,-191.995438"
+              stroke="#107a3e" stroke-width="13.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_时代"
-              d="M 40.972652,237.069183 A 183.789055,183.789055 0,0 1,149.392075,333.208801"
-              stroke="#61a4a7" stroke-width="25.6" stroke-opacity="0.2"/>
+              d="M 37.899734,-37.037346 A 204.039744,204.039744 0,0 1,207.079666,-50.732243"
+              stroke="#208751" stroke-width="12.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_产业"
-              d="M 21.797312,187.919083 A 197.971107,197.971107 0,0 1,189.418808,129.361267"
-              stroke="#61a4a7" stroke-width="13.2" stroke-opacity="0.2"/>
+              d="M 1.797510,42.345108 A 357.109386,357.109386 0,0 1,-185.350296,361.613953"
+              stroke="#52a47c" stroke-width="6.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_赋能"
-              d="M -55.755798,243.328674 A 372.028794,372.028794 0,0 1,-428.906952,124.393570"
-              stroke="#61a4a7" stroke-width="13.2" stroke-opacity="0.2"/>
+              d="M 40.404724,18.322153 A 563.745654,563.745654 0,0 1,282.523499,591.577698"
+              stroke="#61a985" stroke-width="6.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_人工"
-              d="M -38.969074,267.332123 A 492.770061,492.770061 0,0 1,-560.952087,414.158752"
-              stroke="#61a4a7" stroke-width="8.0" stroke-opacity="0.2"/>
+              d="M -4.372151,-57.438316 A 408.350890,408.350890 0,0 1,241.673004,-423.077911"
+              stroke="#76b293" stroke-width="4.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_加速"
-              d="M -20.587231,276.369568 A 424.599236,424.599236 0,0 1,-371.846100,568.275879"
-              stroke="#61a4a7" stroke-width="10.8" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_AI id_景应势"
-              d="M 25.276117,265.084808 A 399.602137,399.602137 0,0 1,71.031082,689.258545"
-              stroke="#61a4a7" stroke-width="10.8" stroke-opacity="0.2"/>
+              d="M 46.308617,3.702671 A 584.662859,584.662859 0,0 1,471.416016,494.336334"
+              stroke="#68ac8a" stroke-width="5.4" stroke-opacity="0.2"/>
+        <path stroke-linecap="round" fill="none" class="id_AI id_消费"
+              d="M 36.493977,23.912632 A 372.038509,372.038509 0,0 1,140.566528,403.346191"
+              stroke="#68ac8a" stroke-width="5.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_百业"
-              d="M -19.270750,276.687714 A 223.023902,223.023902 0,0 1,-177.621887,420.002289"
-              stroke="#61a4a7" stroke-width="12.8" stroke-opacity="0.2"/>
+              d="M -52.330471,-10.560448 A 564.337034,564.337034 0,0 1,-533.120544,-409.507416"
+              stroke="#68ac8a" stroke-width="6.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_拥抱"
-              d="M -55.836136,212.785889 A 296.699385,296.699385 0,0 1,-237.414551,-29.325863"
-              stroke="#61a4a7" stroke-width="13.2" stroke-opacity="0.2"/>
+              d="M 5.837265,-56.788727 A 571.351194,571.351194 0,0 1,458.768372,-499.254395"
+              stroke="#68ac8a" stroke-width="6.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_致力"
-              d="M 18.814768,270.015198 A 227.840618,227.840618 0,0 1,9.630705,489.232727"
-              stroke="#61a4a7" stroke-width="12.8" stroke-opacity="0.2"/>
+              d="M 17.809446,-53.198635 A 383.199905,383.199905 0,0 1,369.042725,-258.607635"
+              stroke="#68ac8a" stroke-width="6.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_AI id_引擎"
-              d="M -42.713497,264.095703 A 320.369174,320.369174 0,0 1,-368.113983,325.735535"
-              stroke="#61a4a7" stroke-width="13.2" stroke-opacity="0.2"/>
+              d="M -48.620628,-26.608057 A 567.273588,567.273588 0,0 1,-375.500275,-563.161865"
+              stroke="#68ac8a" stroke-width="6.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_科技 id_改变"
-              d="M 12.702807,-42.856979 A 382.412679,382.412679 0,0 1,368.582153,-275.914093"
-              stroke="#61a4a7" stroke-width="13.2" stroke-opacity="0.2"/>
+              d="M -49.726582,244.254944 A 525.641916,525.641916 0,0 1,-646.915588,226.535141"
+              stroke="#a6dacc" stroke-width="6.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_科技 id_感受"
-              d="M -26.523851,-0.955181 A 398.902114,398.902114 0,0 1,-459.504089,-88.359283"
-              stroke="#28b36a" stroke-width="9.6" stroke-opacity="0.2"/>
+              d="M -55.224514,226.264084 A 646.556167,646.556167 0,0 1,-646.498169,-217.348297"
+              stroke="#98d4c2" stroke-width="4.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_科技 id_带来"
-              d="M 7.166450,-44.377281 A 563.503090,563.503090 0,0 1,472.844513,-487.644897"
-              stroke="#61a4a7" stroke-width="8.0" stroke-opacity="0.2"/>
+              d="M -45.867062,204.391968 A 761.049876,761.049876 0,0 1,-165.628967,-667.509216"
+              stroke="#a6dacc" stroke-width="4.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_科技 id_创新"
-              d="M 21.981440,-37.356178 A 197.303065,197.303065 0,0 1,204.446335,-89.886459"
-              stroke="#28b36a" stroke-width="21.2" stroke-opacity="0.2"/>
+              d="M -55.114491,223.976166 A 468.179506,468.179506 0,0 1,-449.257935,-109.370216"
+              stroke="#74c6ab" stroke-width="10.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_科技 id_无限"
-              d="M -26.132948,-27.474903 A 209.525189,209.525189 0,0 1,-129.327469,-195.590240"
-              stroke="#28b36a" stroke-width="16.0" stroke-opacity="0.2"/>
+              d="M -53.220596,215.631073 A 311.753350,311.753350 0,0 1,-239.394699,-45.643902"
+              stroke="#5ab897" stroke-width="8.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_科技 id_模型"
-              d="M -5.788584,16.323196 A 226.756201,226.756201 0,0 1,-154.439972,162.981018"
-              stroke="#61a4a7" stroke-width="14.8" stroke-opacity="0.2"/>
+              d="M -32.191437,196.610901 A 387.203379,387.203379 0,0 1,96.759430,-184.946350"
+              stroke="#40a277" stroke-width="7.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_科技 id_时代"
-              d="M 27.793392,3.106056 A 345.344072,345.344072 0,0 1,168.956512,331.783539"
-              stroke="#61a4a7" stroke-width="14.8" stroke-opacity="0.2"/>
+              d="M -18.039116,196.169998 A 310.246977,310.246977 0,0 1,204.232117,-27.569054"
+              stroke="#50af8a" stroke-width="7.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_科技 id_产业"
-              d="M 32.768501,-12.409305 A 212.088017,212.088017 0,0 1,202.367447,113.846146"
-              stroke="#61a4a7" stroke-width="8.0" stroke-opacity="0.2"/>
+              d="M -34.276283,255.973969 A 191.899877,191.899877 0,0 1,-183.228378,369.075958"
+              stroke="#82ccb5" stroke-width="4.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_科技 id_赋能"
-              d="M -18.031931,10.137394 A 382.098704,382.098704 0,0 1,-423.886261,117.282608"
-              stroke="#61a4a7" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M 5.556236,235.576675 A 405.877059,405.877059 0,0 1,278.486664,591.273804"
+              stroke="#91d1be" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_举办 id_无限"
-              d="M 4.170458,-460.651978 A 229.453141,229.453141 0,0 1,-99.622864,-244.671219"
-              stroke="#61a4a7" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M 592.501404,327.375763 A 778.776774,778.776774 0,0 1,-224.305893,-49.711506"
+              stroke="#a1d6c6" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_感受 id_无限"
-              d="M -461.510498,-110.432137 A 303.898583,303.898583 0,0 1,-161.033707,-236.106979"
-              stroke="#28b36a" stroke-width="14.0" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="11.2"
-              d="M 614.078003,-307.954285 C 642.499084,-336.375336 642.499084,-279.533234 614.078003,-307.954285"
-              class="id_技术" stroke-opacity="0.2" stroke="#f97743"/>
+              d="M -637.102661,-234.671555 A 364.860088,364.860088 0,0 1,-259.448547,-105.816841"
+              stroke="#92d0bc" stroke-width="7.0" stroke-opacity="0.2"/>
+        <path fill="none" stroke-width="5.6"
+              d="M -340.348145,-317.155548 C -311.927094,-345.576599 -311.927094,-288.734497 -340.348145,-317.155548"
+              class="id_技术" stroke-opacity="0.2" stroke="#d0ece8"/>
         <path stroke-linecap="round" fill="none" class="id_行业 id_模型"
-              d="M 240.628891,599.719482 A 522.545247,522.545247 0,0 1,-187.994171,214.515472"
-              stroke="#9a96e5" stroke-width="12.0" stroke-opacity="0.2"/>
+              d="M 53.516426,-432.352356 A 208.061464,208.061464 0,0 1,138.466721,-254.252960"
+              stroke="#6ab493" stroke-width="6.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_行业 id_时代"
-              d="M 243.456177,592.063904 A 210.856887,210.856887 0,0 1,155.806747,405.344757"
-              stroke="#9a96e5" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M 54.434753,-433.888519 A 379.458679,379.458679 0,0 1,245.841415,-71.858116"
+              stroke="#7ac1a6" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_行业 id_产业"
-              d="M 246.681366,588.323669 A 393.037297,393.037297 0,0 1,199.541718,150.939133"
-              stroke="#9a96e5" stroke-width="10.8" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="28.0"
-              d="M 371.417480,332.578796 C 420.891174,283.105103 420.891174,382.052490 371.417480,332.578796"
-              class="id_人类" stroke-opacity="0.2" stroke="#9a96e5"/>
+              d="M 44.351662,-425.203827 A 707.179232,707.179232 0,0 1,-187.371307,358.390259"
+              stroke="#acded1" stroke-width="5.4" stroke-opacity="0.2"/>
+        <path fill="none" stroke-width="14.0"
+              d="M 337.467957,338.027008 C 386.941650,288.553314 386.941650,387.500702 337.467957,338.027008"
+              class="id_人类" stroke-opacity="0.2" stroke="#89d0ba"/>
         <path stroke-linecap="round" fill="none" class="id_人类 id_创造"
-              d="M 371.542969,307.842285 A 443.051181,443.051181 0,0 1,671.115295,-96.801071"
-              stroke="#c98694" stroke-width="8.0" stroke-opacity="0.2"/>
+              d="M 313.955597,345.713348 A 701.136599,701.136599 0,0 1,-457.968414,89.550209"
+              stroke="#bbe4da" stroke-width="4.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_人类 id_超越"
-              d="M 392.055603,346.216217 A 182.032082,182.032082 0,0 1,460.796234,523.002319"
-              stroke="#c98694" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M 337.109253,362.761261 A 368.270885,368.270885 0,0 1,88.613586,693.452271"
+              stroke="#bbe4da" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_创新 id_无限"
-              d="M 204.033585,-77.615517 A 321.270968,321.270968 0,0 1,-110.226097,-201.210266"
-              stroke="#28b36a" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M -432.168213,-141.272720 A 185.108737,185.108737 0,0 1,-263.299255,-102.615730"
+              stroke="#6fc2a5" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_创新 id_模型"
-              d="M 218.155807,-60.334831 A 413.217401,413.217401 0,0 1,-153.593918,174.045349"
-              stroke="#61a4a7" stroke-width="14.400001" stroke-opacity="0.2"/>
+              d="M -437.482849,-150.149719 A 493.724905,493.724905 0,0 1,92.763466,-230.775269"
+              stroke="#54ab85" stroke-width="7.2000003" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_创新 id_时代"
-              d="M 239.280350,-60.834274 A 380.217753,380.217753 0,0 1,187.001740,340.873291"
-              stroke="#61a4a7" stroke-width="12.8" stroke-opacity="0.2"/>
+              d="M -433.660950,-144.751266 A 586.163866,586.163866 0,0 1,213.601181,-60.347389"
+              stroke="#64b998" stroke-width="6.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_创新 id_精彩"
-              d="M 204.527512,-90.158325 A 179.084733,179.084733 0,0 1,90.756859,-235.182495"
-              stroke="#61a4a7" stroke-width="8.8" stroke-opacity="0.2"/>
+              d="M -439.109619,-114.829224 A 354.641328,354.641328 0,0 1,-398.768921,278.638763"
+              stroke="#b3e1d5" stroke-width="4.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_创新 id_成果"
-              d="M 216.659348,-104.830772 A 457.356854,457.356854 0,0 1,291.833130,-618.271484"
-              stroke="#61a4a7" stroke-width="9.6" stroke-opacity="0.2"/>
+              d="M -453.050507,-157.892685 A 356.142437,356.142437 0,0 1,-188.393143,-454.255585"
+              stroke="#b3e1d5" stroke-width="4.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_魅力 id_无限"
-              d="M -684.240845,-27.320389 A 499.128856,499.128856 0,0 1,-160.811096,-237.023758"
-              stroke="#61a4a7" stroke-width="12.400001" stroke-opacity="0.2"/>
+              d="M 273.867889,-632.208374 A 636.156591,636.156591 0,0 1,-207.826599,-85.788414"
+              stroke="#a1d6c6" stroke-width="6.2000003" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_视频 id_无限"
-              d="M -648.804199,185.584946 A 562.235695,562.235695 0,0 1,-161.782028,-226.441696"
-              stroke="#61a4a7" stroke-width="11.6" stroke-opacity="0.2"/>
+              d="M -369.784760,548.139099 A 541.583027,541.583027 0,0 1,-264.149963,-55.820381"
+              stroke="#99d3c1" stroke-width="5.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_无限 id_精彩"
-              d="M -102.050758,-248.466599 A 182.620613,182.620613 0,0 1,79.189018,-253.314102"
-              stroke="#61a4a7" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M -234.497604,-46.133820 A 335.890006,335.890006 0,0 1,-394.167053,283.155243"
+              stroke="#99d3c1" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_无限 id_成果"
-              d="M -121.698723,-261.151703 A 487.754599,487.754599 0,0 1,288.166748,-625.613525"
-              stroke="#61a4a7" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M -253.908646,-108.999565 A 319.644890,319.644890 0,0 1,-185.224487,-448.541809"
+              stroke="#99d3c1" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_无限 id_博览会"
-              d="M -160.062332,-217.967133 A 203.976738,203.976738 0,0 1,-360.366852,-277.307037"
-              stroke="#61a4a7" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M -264.310730,-55.988930 A 379.792491,379.792491 0,0 1,-681.371765,-2.329361"
+              stroke="#a1d6c6" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_无限 id_亮相"
-              d="M -134.327026,-261.419922 A 417.496525,417.496525 0,0 1,72.934723,-678.576965"
-              stroke="#61a4a7" stroke-width="11.2" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="16.0"
-              d="M -197.221252,171.816864 C -109.852829,84.448441 -109.852829,259.185303 -197.221252,171.816864"
-              class="id_模型" stroke-opacity="0.2" stroke="#9a96e5"/>
+              d="M -238.011978,-45.707973 A 502.988312,502.988312 0,0 1,-543.064941,434.027405"
+              stroke="#a1d6c6" stroke-width="5.6" stroke-opacity="0.2"/>
+        <path fill="none" stroke-width="8.0"
+              d="M 131.759277,-211.086761 C 219.127701,-298.455200 219.127701,-123.718338 131.759277,-211.086761"
+              class="id_模型" stroke-opacity="0.2" stroke="#208751"/>
         <path stroke-linecap="round" fill="none" class="id_模型 id_时代"
-              d="M -153.670990,168.398560 A 341.117693,341.117693 0,0 1,144.505112,335.330811"
-              stroke="#9a96e5" stroke-width="23.2" stroke-opacity="0.2"/>
+              d="M 170.102036,-190.154892 A 172.763284,172.763284 0,0 1,240.172256,-72.180634"
+              stroke="#309464" stroke-width="11.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_模型 id_产业"
-              d="M -163.098114,144.541931 A 340.562095,340.562095 0,0 1,191.780777,122.882103"
-              stroke="#9a96e5" stroke-width="12.0" stroke-opacity="0.2"/>
+              d="M 135.319077,-167.547836 A 559.747903,559.747903 0,0 1,-184.957855,362.436981"
+              stroke="#62b18f" stroke-width="6.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_模型 id_赋能"
-              d="M -239.018478,184.517349 A 207.799089,207.799089 0,0 1,-428.442505,123.998627"
-              stroke="#9a96e5" stroke-width="12.0" stroke-opacity="0.2"/>
+              d="M 162.799240,-180.348663 A 693.203047,693.203047 0,0 1,286.437134,592.902771"
+              stroke="#71b698" stroke-width="6.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_模型 id_开源"
-              d="M -171.666016,207.246231 A 414.845590,414.845590 0,0 1,-174.647186,661.074890"
-              stroke="#c98694" stroke-width="14.400001" stroke-opacity="0.2"/>
+              d="M 171.660110,-228.869736 A 471.788566,471.788566 0,0 1,682.078125,-118.129990"
+              stroke="#86bfa6" stroke-width="7.2000003" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_模型 id_加速"
-              d="M -191.076584,215.066757 A 367.076096,367.076096 0,0 1,-373.527832,562.958313"
-              stroke="#9a96e5" stroke-width="11.2" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_模型 id_景应势"
-              d="M -159.159073,193.254700 A 492.668132,492.668132 0,0 1,66.961220,687.901184"
-              stroke="#9a96e5" stroke-width="10.8" stroke-opacity="0.2"/>
+              d="M 169.726547,-189.481277 A 663.639805,663.639805 0,0 1,475.704620,494.500885"
+              stroke="#78b99c" stroke-width="5.6" stroke-opacity="0.2"/>
+        <path stroke-linecap="round" fill="none" class="id_模型 id_消费"
+              d="M 156.745316,-175.253693 A 523.323700,523.323700 0,0 1,144.539917,405.342896"
+              stroke="#78b99c" stroke-width="5.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_模型 id_百业"
-              d="M -173.958344,208.791809 A 209.278798,209.278798 0,0 1,-183.666916,411.054565"
-              stroke="#9a96e5" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M 90.013969,-198.216660 A 584.678627,584.678627 0,0 1,-528.634460,-411.705902"
+              stroke="#78b99c" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_模型 id_拥抱"
-              d="M -225.814896,138.790909 A 182.704282,182.704282 0,0 1,-244.337051,-30.479729"
-              stroke="#9a96e5" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M 143.832443,-253.069489 A 373.375000,373.375000 0,0 1,458.600830,-500.559662"
+              stroke="#78b99c" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_模型 id_致力"
-              d="M -157.917450,190.883102 A 320.710742,320.710742 0,0 1,2.998353,486.987000"
-              stroke="#9a96e5" stroke-width="11.6" stroke-opacity="0.2"/>
+              d="M 164.458466,-240.053513 A 213.165860,213.165860 0,0 1,370.296143,-263.784363"
+              stroke="#78b99c" stroke-width="5.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_模型 id_引擎"
-              d="M -212.567169,212.716904 A 197.195223,197.195223 0,0 1,-367.146545,319.468140"
-              stroke="#9a96e5" stroke-width="11.6" stroke-opacity="0.2"/>
+              d="M 88.088188,-212.157333 A 520.890584,520.890584 0,0 1,-370.357269,-563.841125"
+              stroke="#78b99c" stroke-width="5.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_时代 id_产业"
-              d="M 148.993591,333.351532 A 200.178558,200.178558 0,0 1,194.992065,147.461380"
-              stroke="#9a96e5" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M 232.558167,1.608506 A 501.535472,501.535472 0,0 1,-183.290375,368.469116"
+              stroke="#72bea2" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_时代 id_赋能"
-              d="M 125.212479,376.086487 A 544.629444,544.629444 0,0 1,-430.872528,125.774132"
-              stroke="#9a96e5" stroke-width="11.6" stroke-opacity="0.2"/>
+              d="M 264.047638,-5.490875 A 536.279632,536.279632 0,0 1,288.074951,593.821106"
+              stroke="#81c4ab" stroke-width="5.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_时代 id_加速"
-              d="M 140.281372,399.013947 A 486.337108,486.337108 0,0 1,-372.302338,573.699829"
-              stroke="#9a96e5" stroke-width="11.2" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_时代 id_景应势"
-              d="M 172.663925,404.211731 A 289.447341,289.447341 0,0 1,75.707100,693.102722"
-              stroke="#9a96e5" stroke-width="10.8" stroke-opacity="0.2"/>
+              d="M 272.522186,-14.923518 A 492.324810,492.324810 0,0 1,476.195892,494.604340"
+              stroke="#88c7af" stroke-width="5.6" stroke-opacity="0.2"/>
+        <path stroke-linecap="round" fill="none" class="id_时代 id_消费"
+              d="M 254.315903,0.054333 A 386.388687,386.388687 0,0 1,146.952927,407.536316"
+              stroke="#88c7af" stroke-width="5.4" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_时代 id_百业"
-              d="M 134.037720,393.478668 A 297.915180,297.915180 0,0 1,-178.846375,429.282349"
-              stroke="#9a96e5" stroke-width="11.6" stroke-opacity="0.2"/>
+              d="M 203.968292,-29.061481 A 724.559908,724.559908 0,0 1,-530.546265,-410.525299"
+              stroke="#88c7af" stroke-width="5.8" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_时代 id_拥抱"
-              d="M 125.135010,361.213287 A 478.730653,478.730653 0,0 1,-236.593063,-29.419453"
-              stroke="#9a96e5" stroke-width="12.0" stroke-opacity="0.2"/>
+              d="M 235.693344,-71.824371 A 434.418928,434.418928 0,0 1,460.177490,-495.118073"
+              stroke="#88c7af" stroke-width="6.0" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_时代 id_致力"
-              d="M 149.236862,403.654480 A 173.155167,173.155167 0,0 1,16.050169,499.874146"
-              stroke="#9a96e5" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M 241.236481,-72.185936 A 220.530209,220.530209 0,0 1,370.101318,-252.487656"
+              stroke="#88c7af" stroke-width="5.6" stroke-opacity="0.2"/>
         <path stroke-linecap="round" fill="none" class="id_时代 id_引擎"
-              d="M 129.259323,386.840668 A 454.357434,454.357434 0,0 1,-370.599030,329.815582"
-              stroke="#9a96e5" stroke-width="11.2" stroke-opacity="0.2"/>
+              d="M 203.732513,-38.779362 A 683.824181,683.824181 0,0 1,-371.721771,-563.470703"
+              stroke="#88c7af" stroke-width="5.6" stroke-opacity="0.2"/>
     </g>
     <g id="nodes">
-        <circle fill-opacity="1.0" fill="#9a96e5" r="22.757896" cx="-212.9097"
-                class="id_新闻" cy="-442.35678" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#89d0ba" r="22.757896" cx="-216.35252"
+                class="id_新闻" cy="129.28508" stroke="#5f9182"
                 stroke-opacity="1.0" stroke-width="3.9578948"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="9.2" cx="-646.36536"
-                class="id_社区" cy="-246.20277" stroke="#ae532e"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="187.75209"
+                class="id_社区" cy="171.13971" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="9.2" cx="223.73447"
-                class="id_旗下" cy="-428.4469" stroke="#ae532e"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="675.51465"
+                class="id_旗下" cy="116.94974" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="9.2" cx="-145.29814"
-                class="id_兴趣" cy="-676.18604" stroke="#ae532e"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="56.817986"
+                class="id_兴趣" cy="-675.3953" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="9.2" cx="-531.4288"
-                class="id_小伙伴" cy="-437.36472" stroke="#ae532e"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="-182.62993"
+                class="id_小伙伴" cy="678.46643" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="9.2" cx="-368.02423"
-                class="id_交流" cy="-592.56" stroke="#ae532e" stroke-opacity="1.0"
-                stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#28b36a" r="30.505262" cx="-128.70404"
-                class="id_无限" cy="-228.74228" stroke="#1c7d4a"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="439.96362"
+                class="id_交流" cy="144.1638" stroke="#a5adaf"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#55b491" r="30.505262" cx="-240.23776"
+                class="id_无限" cy="-78.79108" stroke="#3b7d65"
                 stroke-opacity="1.0" stroke-width="5.305263"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="28.56842" cx="454.94696"
-                class="id_人工智能" cy="-71.203125" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#60bd9d" r="28.56842" cx="-89.44876"
+                class="id_人工智能" cy="-233.4579" stroke="#43846d"
                 stroke-opacity="1.0" stroke-width="4.968421"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="9.2" cx="451.1215"
-                class="id_智能" cy="133.38976" stroke="#ae532e"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="477.20172"
+                class="id_智能" cy="-67.24867" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#28b36a" r="28.56842" cx="1.7470797"
-                class="id_科技" cy="-13.801208" stroke="#1c7d4a"
+        <circle fill-opacity="1.0" fill="#60bd9d" r="28.56842" cx="-24.173815"
+                class="id_科技" cy="226.61063" stroke="#43846d"
                 stroke-opacity="1.0" stroke-width="4.968421"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="13.073685" cx="614.078"
-                class="id_技术" cy="-307.95428" stroke="#ae532e"
+        <circle fill-opacity="1.0" fill="#d0ece8" r="13.073685" cx="-340.34814"
+                class="id_技术" cy="-317.15555" stroke="#91a5a2"
                 stroke-opacity="1.0" stroke-width="2.2736843"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="16.947369" cx="258.89352"
-                class="id_行业" cy="602.1149" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#b4e1d6" r="16.947369" cx="38.183064"
+                class="id_行业" cy="-442.56134" stroke="#7d9d95"
                 stroke-opacity="1.0" stroke-width="2.9473684"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="22.757896" cx="371.41748"
-                class="id_人类" cy="332.5788" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#89d0ba" r="22.757896" cx="337.46796"
+                class="id_人类" cy="338.027" stroke="#5f9182" stroke-opacity="1.0"
+                stroke-width="3.9578948"/>
+        <circle fill-opacity="1.0" fill="#89d0ba" r="22.757896" cx="-455.58008"
+                class="id_创新" cy="-133.28552" stroke="#5f9182"
                 stroke-opacity="1.0" stroke-width="3.9578948"/>
-        <circle fill-opacity="1.0" fill="#28b36a" r="22.757896" cx="228.1894"
-                class="id_创新" cy="-82.94541" stroke="#1c7d4a"
-                stroke-opacity="1.0" stroke-width="3.9578948"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="40.189476" cx="-197.22125"
-                class="id_模型" cy="171.81686" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#208751" r="40.189476" cx="131.75928"
+                class="id_模型" cy="-211.08676" stroke="#165e38"
                 stroke-opacity="1.0" stroke-width="6.989474"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="34.37895" cx="161.7942"
-                class="id_时代" cy="368.45914" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#40a277" r="34.37895" cx="240.89049"
+                class="id_时代" cy="-34.819115" stroke="#2c7153"
                 stroke-opacity="1.0" stroke-width="5.9789476"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="18.88421" cx="209.61058"
-                class="id_产业" cy="133.05205" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#a5dbcd" r="18.88421" cx="-203.67719"
+                class="id_产业" cy="370.85815" stroke="#73998f"
                 stroke-opacity="1.0" stroke-width="3.2842104"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="9.2" cx="679.8398"
-                class="id_社会" cy="120.81756" stroke="#ae532e"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="607.4125"
+                class="id_社会" cy="-320.994" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="13.073685" cx="606.4525"
-                class="id_机器人" cy="337.93054" stroke="#ae532e"
+        <circle fill-opacity="1.0" fill="#d0ece8" r="13.073685" cx="-48.12497"
+                class="id_机器人" cy="514.9366" stroke="#91a5a2"
                 stroke-opacity="1.0" stroke-width="2.2736843"/>
-        <circle fill-opacity="1.0" fill="#28b36a" r="46.0" cx="-8.185387"
-                class="id_AI" cy="227.93205" stroke="#1c7d4a"
+        <circle fill-opacity="1.0" fill="#006d2c" r="46.0" cx="-2.4256864"
+                class="id_AI" cy="-7.476218" stroke="#004c1e"
                 stroke-opacity="1.0" stroke-width="8.0"/>
-        <circle fill-opacity="1.0" fill="#28b36a" r="13.073685" cx="-469.36627"
-                class="id_感受" cy="-98.59042" stroke="#1c7d4a"
+        <circle fill-opacity="1.0" fill="#d0ece8" r="13.073685" cx="-650.8013"
+                class="id_感受" cy="-230.89165" stroke="#91a5a2"
                 stroke-opacity="1.0" stroke-width="2.2736843"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="11.136842" cx="-651.85315"
-                class="id_视频" cy="197.29994" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#def2f1" r="11.136842" cx="-364.6316"
+                class="id_视频" cy="559.0927" stroke="#9ba9a8"
                 stroke-opacity="1.0" stroke-width="1.936842"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="15.010525" cx="-439.24207"
-                class="id_赋能" cy="111.76857" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#c2e6df" r="15.010525" cx="279.2899"
+                class="id_赋能" cy="607.5698" stroke="#87a19c"
                 stroke-opacity="1.0" stroke-width="2.610526"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="9.2" cx="-570.44904"
-                class="id_人工" cy="411.02692" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="250.8982"
+                class="id_人工" cy="-426.9374" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="13.073685" cx="-385.97263"
-                class="id_加速" cy="569.8188" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#d0ece8" r="13.073685" cx="473.02173"
+                class="id_加速" cy="508.45584" stroke="#91a5a2"
                 stroke-opacity="1.0" stroke-width="2.2736843"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="13.073685" cx="64.55172"
-                class="id_景应势" cy="701.90594" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#d0ece8" r="13.073685" cx="136.25108"
+                class="id_消费" cy="416.88562" stroke="#91a5a2"
                 stroke-opacity="1.0" stroke-width="2.2736843"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="13.073685" cx="-191.53651"
-                class="id_百业" cy="422.8871" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#d0ece8" r="13.073685" cx="-537.0337"
+                class="id_百业" cy="-423.16855" stroke="#91a5a2"
                 stroke-opacity="1.0" stroke-width="2.2736843"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="13.073685" cx="-238.61172"
-                class="id_拥抱" cy="-43.48587" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#d0ece8" r="13.073685" cx="472.76437"
+                class="id_拥抱" cy="-501.71426" stroke="#91a5a2"
                 stroke-opacity="1.0" stroke-width="2.2736843"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="13.073685" cx="1.8974679"
-                class="id_致力" cy="501.15482" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#d0ece8" r="13.073685" cx="383.23618"
+                class="id_致力" cy="-257.91116" stroke="#91a5a2"
                 stroke-opacity="1.0" stroke-width="2.2736843"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="13.073685" cx="-381.32037"
-                class="id_引擎" cy="320.48862" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#d0ece8" r="13.073685" cx="-374.75818"
+                class="id_引擎" cy="-577.353" stroke="#91a5a2"
                 stroke-opacity="1.0" stroke-width="2.2736843"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="9.2" cx="378.5795"
-                class="id_改变" cy="-275.6832" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="-654.91486"
+                class="id_改变" cy="220.53416" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="9.2" cx="482.73987"
-                class="id_带来" cy="-489.08786" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="-160.95277"
+                class="id_带来" cy="-676.3485" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="9.2" cx="2.9415457"
-                class="id_举办" cy="-470.57617" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="602.322"
+                class="id_举办" cy="325.49008" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="9.2" cx="680.61414"
-                class="id_创造" cy="-99.927055" stroke="#ae532e"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="-463.81552"
+                class="id_创造" cy="81.43778" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="9.2" cx="458.76392"
-                class="id_超越" cy="532.79364" stroke="#ae532e"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="79.11016"
+                class="id_超越" cy="696.56433" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="11.136842" cx="89.65881"
-                class="id_精彩" cy="-247.23785" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#def2f1" r="11.136842" cx="-404.6409"
+                class="id_精彩" cy="289.2245" stroke="#9ba9a8"
                 stroke-opacity="1.0" stroke-width="1.936842"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="11.136842" cx="300.18878"
-                class="id_成果" cy="-627.0305" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#def2f1" r="11.136842" cx="-176.61523"
+                class="id_成果" cy="-457.0517" stroke="#9ba9a8"
                 stroke-opacity="1.0" stroke-width="1.936842"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="9.2" cx="-689.7166"
-                class="id_魅力" cy="-18.95283" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="274.91684"
+                class="id_魅力" cy="-642.1532" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="9.2" cx="-366.9656"
-                class="id_博览会" cy="-284.8208" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="-690.27893"
+                class="id_博览会" cy="-6.8749456" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#9a96e5" r="9.2" cx="81.68212"
-                class="id_亮相" cy="-683.4229" stroke="#6b69a0"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="-552.2992"
+                class="id_亮相" cy="437.86514" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#f97743" r="9.2" cx="-180.2721"
-                class="id_开源" cy="669.34296" stroke="#ae532e"
+        <circle fill-opacity="1.0" fill="#edf8fb" r="9.2" cx="688.96704"
+                class="id_开源" cy="-110.881355" stroke="#a5adaf"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
     </g>
     <g id="node-labels">
-        <text font-size="59" x="-212.9097" y="-428.13495" fill="#000000"
+        <text font-size="28" x="-216.35252" y="136.03442" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_新闻">
             新闻
         </text>
-        <text font-size="24" x="-646.36536" y="-240.48207" fill="#000000"
+        <text font-size="28" x="187.75209" y="177.81387" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_社区">
             社区
         </text>
-        <text font-size="24" x="223.73447" y="-422.62073" fill="#000000"
+        <text font-size="28" x="675.51465" y="123.74693" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_旗下">
             旗下
         </text>
-        <text font-size="24" x="-145.29814" y="-670.41846" fill="#000000"
+        <text font-size="28" x="56.817986" y="-668.6665" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_兴趣">
             兴趣
         </text>
-        <text font-size="24" x="-531.4288" y="-431.56784" fill="#000000"
+        <text font-size="28" x="-182.62993" y="685.2295" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_小伙伴">
             小伙伴
         </text>
-        <text font-size="24" x="-368.02423" y="-586.6635" fill="#000000"
+        <text font-size="28" x="439.96362" y="151.04303" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_交流">
             交流
         </text>
-        <text font-size="80" x="-128.70404" y="-210.3178" fill="#000000"
+        <text font-size="28" x="-240.23776" y="-72.342514" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_无限">
             无限
         </text>
-        <text font-size="75" x="454.94696" y="-52.886475" fill="#000000"
+        <text font-size="28" x="-89.44876" y="-226.61969" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_人工智能">
             人工智能
         </text>
-        <text font-size="24" x="451.1215" y="139.25108" fill="#000000"
+        <text font-size="28" x="477.20172" y="-60.410458" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_智能">
             智能
         </text>
-        <text font-size="75" x="1.7470797" y="4.350648" fill="#000000"
+        <text font-size="28" x="-24.173815" y="233.38733" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_科技">
             科技
         </text>
-        <text font-size="34" x="614.078" y="-299.69226" fill="#000000"
+        <text font-size="28" x="-340.34814" y="-310.3515" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_技术">
             技术
         </text>
-        <text font-size="44" x="258.89352" y="612.6996" fill="#000000"
+        <text font-size="28" x="38.183064" y="-435.82568" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_行业">
             行业
         </text>
-        <text font-size="59" x="371.41748" y="346.87268" fill="#000000"
+        <text font-size="28" x="337.46796" y="344.81055" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_人类">
             人类
         </text>
-        <text font-size="59" x="228.1894" y="-68.72357" fill="#000000"
+        <text font-size="28" x="-455.58008" y="-126.53617" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_创新">
             创新
         </text>
-        <text font-size="105" x="-197.22125" y="197.07565" fill="#000000"
+        <text font-size="28" x="131.75928" y="-204.35107" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_模型">
             模型
         </text>
-        <text font-size="90" x="161.7942" y="390.1315" fill="#000000"
+        <text font-size="28" x="240.89049" y="-28.076601" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_时代">
             时代
         </text>
-        <text font-size="49" x="209.61058" y="144.93518" fill="#000000"
+        <text font-size="28" x="-203.67719" y="377.6485" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_产业">
             产业
         </text>
-        <text font-size="24" x="679.8398" y="126.63787" fill="#000000"
+        <text font-size="28" x="607.4125" y="-314.2036" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_社会">
             社会
         </text>
-        <text font-size="34" x="606.4525" y="346.15106" fill="#000000"
+        <text font-size="28" x="-48.12497" y="521.7064" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_机器人">
             机器人
         </text>
-        <text font-size="120" x="-8.185387" y="250.62737" fill="#000000"
+        <text font-size="28" x="-2.4256864" y="-2.180645" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_AI">
             AI
         </text>
-        <text font-size="34" x="-469.36627" y="-90.30348" fill="#000000"
+        <text font-size="28" x="-650.8013" y="-224.06711" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_感受">
             感受
         </text>
-        <text font-size="29" x="-651.85315" y="204.33282" fill="#000000"
+        <text font-size="28" x="-364.6316" y="565.88306" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_视频">
             视频
         </text>
-        <text font-size="39" x="-439.24207" y="121.24562" fill="#000000"
+        <text font-size="28" x="279.2899" y="614.3739" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_赋能">
             赋能
         </text>
-        <text font-size="24" x="-570.44904" y="416.65387" fill="#000000"
+        <text font-size="28" x="250.8982" y="-420.37262" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_人工">
             人工
         </text>
-        <text font-size="34" x="-385.97263" y="578.0144" fill="#000000"
+        <text font-size="28" x="473.02173" y="515.2052" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_加速">
             加速
         </text>
-        <text font-size="34" x="64.55172" y="710.1846" fill="#000000"
+        <text font-size="28" x="136.25108" y="423.6828" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="微软雅黑" class="id_景应势">
-            景应势
+              font-family="微软雅黑" class="id_消费">
+            消费
         </text>
-        <text font-size="34" x="-191.53651" y="430.85028" fill="#000000"
+        <text font-size="28" x="-537.0337" y="-416.6106" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_百业">
             百业
         </text>
-        <text font-size="34" x="-238.61172" y="-35.323437" fill="#000000"
+        <text font-size="28" x="472.76437" y="-494.99225" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_拥抱">
             拥抱
         </text>
-        <text font-size="34" x="1.8974679" y="509.44177" fill="#000000"
+        <text font-size="28" x="383.23618" y="-251.08662" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_致力">
             致力
         </text>
-        <text font-size="34" x="-381.32037" y="328.61786" fill="#000000"
+        <text font-size="28" x="-374.75818" y="-570.6583" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_引擎">
             引擎
         </text>
-        <text font-size="24" x="378.5795" y="-269.8453" fill="#000000"
+        <text font-size="28" x="-654.91486" y="227.34503" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_改变">
             改变
         </text>
-        <text font-size="24" x="482.73987" y="-483.291" fill="#000000"
+        <text font-size="28" x="-160.95277" y="-669.58545" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_带来">
             带来
         </text>
-        <text font-size="24" x="2.9415457" y="-464.76758" fill="#000000"
+        <text font-size="28" x="602.322" y="332.26678" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_举办">
             举办
         </text>
-        <text font-size="24" x="680.61414" y="-94.22979" fill="#000000"
+        <text font-size="28" x="-463.81552" y="88.084595" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_创造">
             创造
         </text>
-        <text font-size="24" x="458.76392" y="538.58466" fill="#000000"
+        <text font-size="28" x="79.11016" y="703.32056" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_超越">
             超越
         </text>
-        <text font-size="29" x="89.65881" y="-240.24745" fill="#000000"
+        <text font-size="28" x="-404.6409" y="295.97382" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_精彩">
             精彩
         </text>
-        <text font-size="29" x="300.18878" y="-620.0331" fill="#000000"
+        <text font-size="28" x="-176.61523" y="-450.29553" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_成果">
             成果
         </text>
-        <text font-size="24" x="-689.7166" y="-13.132517" fill="#000000"
+        <text font-size="28" x="274.91684" y="-635.3628" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_魅力">
             魅力
         </text>
-        <text font-size="24" x="-366.9656" y="-278.9712" fill="#000000"
+        <text font-size="28" x="-690.27893" y="-0.05040121" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_博览会">
             博览会
         </text>
-        <text font-size="24" x="81.68212" y="-677.585" fill="#000000"
+        <text font-size="28" x="-552.2992" y="444.67603" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_亮相">
             亮相
         </text>
-        <text font-size="24" x="-180.2721" y="675.06366" fill="#000000"
+        <text font-size="28" x="688.96704" y="-104.2072" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
               font-family="微软雅黑" class="id_开源">
             开源

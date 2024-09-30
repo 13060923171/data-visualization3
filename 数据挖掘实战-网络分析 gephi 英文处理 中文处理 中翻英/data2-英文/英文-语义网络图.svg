@@ -1,656 +1,672 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
     "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
-<svg contentScriptType="text/ecmascript" width="1451.9971"
+<svg contentScriptType="text/ecmascript" width="1504.6737"
      xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
      contentStyleType="text/css"
-     viewBox="-736.629211 -708.554016 1451.997070 1415.489746"
-     height="1415.4897" preserveAspectRatio="xMidYMid meet"
+     viewBox="-764.052979 -714.097351 1504.673706 1415.553711"
+     height="1415.5537" preserveAspectRatio="xMidYMid meet"
      xmlns="http://www.w3.org/2000/svg" version="1.1">
     <g id="edges">
-        <path fill="none" stroke-width="10.200001"
-              d="M 254.961411,-326.800079 C 291.803528,-363.642181 291.803528,-289.957977 254.961411,-326.800079"
-              class="id_community" stroke-opacity="0.2" stroke="#ff5c81"/>
-        <path stroke-linecap="round" fill="none" class="id_community id_partner"
-              d="M 237.643448,-333.078888 A 372.593776,372.593776 0,0 1,0.697328,-684.758545"
-              stroke="#f4714b" stroke-width="9.3" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_community id_super"
-              d="M 242.153854,-313.559937 A 778.725453,778.725453 0,0 1,-657.055908,-163.900024"
-              stroke="#f4714b" stroke-width="11.1" stroke-opacity="0.2"/>
+        <path fill="none" stroke-width="6.8"
+              d="M 174.007431,-188.672653 C 210.849533,-225.514755 210.849533,-151.830551 174.007431,-188.672653"
+              class="id_Community" stroke-opacity="0.29803923" stroke="#ff5c81"/>
+        <path stroke-linecap="round" fill="none" class="id_Community id_Partner"
+              d="M 165.228470,-172.478058 A 776.450622,776.450622 0,0 1,-658.218445,212.153214"
+              stroke="#f4714b" stroke-width="6.2000003"
+              stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Community id_Super"
+              d="M 184.813324,-203.591354 A 376.719727,376.719727 0,0 1,592.884949,-335.977997"
+              stroke="#f4714b" stroke-width="7.4" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_community id_exchange"
-              d="M 273.217316,-329.261200 A 187.261091,187.261091 0,0 1,451.548309,-235.786087"
-              stroke="#f4714b" stroke-width="8.1" stroke-opacity="0.2"/>
+              class="id_Community id_Exchange"
+              d="M 155.587219,-188.496078 A 555.273059,555.273059 0,0 1,-366.199463,-564.885681"
+              stroke="#f4714b" stroke-width="5.4" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_economic id_technology"
-              d="M 311.726715,611.346252 A 369.377910,369.377910 0,0 1,58.589260,309.668060"
-              stroke="#92a67e" stroke-width="6.0" stroke-opacity="0.2"/>
+              class="id_Economic id_Technology"
+              d="M -529.898010,-432.079010 A 576.741870,576.741870 0,0 1,-5.574983,-59.595848"
+              stroke="#92a67e" stroke-width="4.0" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_beautiful id_technology"
-              d="M -681.974121,61.067966 A 642.912826,642.912826 0,0 1,22.567041,221.887466"
-              stroke="#92a67e" stroke-width="6.3" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="6.3"
-              d="M -135.822540,177.675919 C -65.296227,107.149605 -65.296227,248.202240 -135.822540,177.675919"
-              class="id_model" stroke-opacity="0.2" stroke="#5fc613"/>
-        <path stroke-linecap="round" fill="none" class="id_model id_artificial"
-              d="M -168.783905,165.144409 A 390.066411,390.066411 0,0 1,-403.154510,-168.833984"
-              stroke="#5fc613" stroke-width="13.8" stroke-opacity="0.2"/>
+              class="id_Beautiful id_Technology"
+              d="M -161.874573,-669.280457 A 572.768023,572.768023 0,0 1,26.519999,-59.324425"
+              stroke="#92a67e" stroke-width="4.2000003"
+              stroke-opacity="0.29803923"/>
+        <path fill="none" stroke-width="4.2000003"
+              d="M -397.077179,-16.028820 C -326.550873,-86.555130 -326.550873,54.497494 -397.077179,-16.028820"
+              class="id_Model" stroke-opacity="0.29803923" stroke="#5fc613"/>
+        <path stroke-linecap="round" fill="none" class="id_Model id_Artificial"
+              d="M -362.377258,-9.751393 A 544.307738,544.307738 0,0 1,56.239761,411.165863"
+              stroke="#5fc613" stroke-width="9.2" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_model id_intelligence"
-              d="M -157.624664,149.960251 A 307.016233,307.016233 0,0 1,-183.431961,-156.794525"
-              stroke="#5fc613" stroke-width="13.8" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_model id_science"
-              d="M -164.309891,198.459595 A 242.991654,242.991654 0,0 1,-407.457428,206.580109"
-              stroke="#92a67e" stroke-width="6.3" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_model id_technology"
-              d="M -100.882935,172.909988 A 173.255405,173.255405 0,0 1,24.287140,220.472488"
-              stroke="#5fc613" stroke-width="14.1" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_model id_industry"
-              d="M -170.956650,180.689957 A 327.240486,327.240486 0,0 1,-463.484314,19.351694"
-              stroke="#5fc613" stroke-width="18.0" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_model id_era"
-              d="M -141.894897,212.412308 A 180.991954,180.991954 0,0 1,-249.151688,332.100647"
-              stroke="#5fc613" stroke-width="15.000001" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_model id_intelligent"
-              d="M -130.791443,142.773514 A 191.946607,191.946607 0,0 1,-21.797626,11.964460"
-              stroke="#5fc613" stroke-width="20.400002" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_model id_innovation"
-              d="M -167.841537,162.901825 A 171.825084,171.825084 0,0 1,-251.217438,31.970413"
-              stroke="#5fc613" stroke-width="11.1" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_model id_engine"
-              d="M -142.801254,143.110214 A 375.912969,375.912969 0,0 1,24.849812,-229.721893"
-              stroke="#92a67e" stroke-width="8.700001" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_model id_jingyingshi"
-              d="M -160.116608,203.235428 A 421.117461,421.117461 0,0 1,-615.219421,289.179688"
-              stroke="#92a67e" stroke-width="7.2000003" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_model id_embrace"
-              d="M -134.365051,142.442902 A 720.165529,720.165529 0,0 1,378.589966,-500.361633"
-              stroke="#92a67e" stroke-width="8.400001" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="6.0"
-              d="M -336.214020,583.732666 C -303.582458,551.101074 -303.582458,616.364258 -336.214020,583.732666"
-              class="id_air" stroke-opacity="0.2" stroke="#ff5c81"/>
-        <path stroke-linecap="round" fill="none" class="id_air id_conditioner"
-              d="M -321.002777,577.831543 A 366.800497,366.800497 0,0 1,83.770004,685.422729"
-              stroke="#f4714b" stroke-width="6.9" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_air id_installation"
-              d="M -344.619659,569.748718 A 1027.438415,1027.438415 0,0 1,-226.765808,-636.279419"
-              stroke="#f4714b" stroke-width="13.8" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="28.500002"
-              d="M -403.663361,-206.198944 C -328.926514,-280.935791 -328.926514,-131.462097 -403.663361,-206.198944"
-              class="id_artificial" stroke-opacity="0.2" stroke="#5fc613"/>
+              class="id_Model id_Intelligence"
+              d="M -362.010895,-12.307755 A 356.557552,356.557552 0,0 1,-80.082054,223.617020"
+              stroke="#5fc613" stroke-width="9.2" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Model id_Science"
+              d="M -366.280212,1.147819 A 456.269513,456.269513 0,0 1,-151.748566,452.926636"
+              stroke="#92a67e" stroke-width="4.2000003"
+              stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Model id_Technology"
+              d="M -367.617310,-35.409370 A 339.306754,339.306754 0,0 1,-31.767891,-39.482735"
+              stroke="#5fc613" stroke-width="9.400001"
+              stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Model id_Industry"
+              d="M -361.817169,-15.557732 A 191.375827,191.375827 0,0 1,-218.562775,75.176033"
+              stroke="#5fc613" stroke-width="12.0" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Model id_Era"
+              d="M -362.850037,-24.513668 A 473.639101,473.639101 0,0 1,116.746658,160.244598"
+              stroke="#5fc613" stroke-width="10.0" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Model id_Intelligent"
+              d="M -383.544220,-48.591820 A 364.280457,364.280457 0,0 1,-67.129890,-256.728912"
+              stroke="#5fc613" stroke-width="13.6" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Model id_Innovation"
+              d="M -367.261963,-34.858116 A 546.849649,546.849649 0,0 1,238.980621,0.099371"
+              stroke="#5fc613" stroke-width="7.4" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Model id_Engine"
+              d="M -423.085388,-39.841923 A 172.778466,172.778466 0,0 1,-460.945801,-199.267242"
+              stroke="#92a67e" stroke-width="5.8" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Model id_Jingyingshi"
+              d="M -380.174500,-46.977001 A 653.127365,653.127365 0,0 1,291.080719,-362.905304"
+              stroke="#92a67e" stroke-width="4.8" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Model id_Embrace"
+              d="M -398.458679,-51.264904 A 446.259595,446.259595 0,0 1,-125.596260,-462.311157"
+              stroke="#92a67e" stroke-width="5.6" stroke-opacity="0.29803923"/>
+        <path fill="none" stroke-width="4.0"
+              d="M 435.204559,-178.863281 C 467.836121,-211.494858 467.836121,-146.231705 435.204559,-178.863281"
+              class="id_Air" stroke-opacity="0.29803923" stroke="#ff5c81"/>
+        <path stroke-linecap="round" fill="none" class="id_Air id_Conditioner"
+              d="M 447.403534,-168.028625 A 180.452963,180.452963 0,0 1,491.609528,21.821127"
+              stroke="#f4714b" stroke-width="4.6" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Air id_Installation"
+              d="M 448.504486,-169.412537 A 443.813713,443.813713 0,0 1,609.711487,315.800598"
+              stroke="#f4714b" stroke-width="9.2" stroke-opacity="0.29803923"/>
+        <path fill="none" stroke-width="19.0"
+              d="M 62.619118,447.985748 C 137.355957,373.248901 137.355957,522.722595 62.619118,447.985748"
+              class="id_Artificial" stroke-opacity="0.29803923" stroke="#5fc613"/>
         <path stroke-linecap="round" fill="none"
-              class="id_artificial id_intelligence"
-              d="M -370.512512,-223.444839 A 198.997426,198.997426 0,0 1,-195.877213,-211.239960"
-              stroke="#5fc613" stroke-width="24.300001" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_artificial id_human"
-              d="M -369.105133,-220.416138 A 719.372632,719.372632 0,0 1,422.541779,-28.802805"
-              stroke="#92a67e" stroke-width="23.400002" stroke-opacity="0.2"/>
+              class="id_Artificial id_Intelligence"
+              d="M 28.384430,433.006256 A 191.917603,191.917603 0,0 1,-67.278252,296.816620"
+              stroke="#5fc613" stroke-width="16.2" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Artificial id_Human"
+              d="M 30.501614,428.884308 A 523.460062,523.460062 0,0 1,-201.608704,-101.706635"
+              stroke="#92a67e" stroke-width="15.6" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_artificial id_science"
-              d="M -384.777832,-173.954010 A 334.886919,334.886919 0,0 1,-412.887390,177.219666"
-              stroke="#92a67e" stroke-width="7.5000005" stroke-opacity="0.2"/>
+              class="id_Artificial id_Science"
+              d="M 33.230587,471.066345 A 183.089224,183.089224 0,0 1,-135.080688,485.253693"
+              stroke="#92a67e" stroke-width="5.0" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_artificial id_technology"
-              d="M -366.925079,-199.365402 A 544.977548,544.977548 0,0 1,46.228645,210.592621"
-              stroke="#5fc613" stroke-width="32.100002" stroke-opacity="0.2"/>
+              class="id_Artificial id_Technology"
+              d="M 38.295647,419.617310 A 385.903254,385.903254 0,0 1,-12.347109,32.584858"
+              stroke="#5fc613" stroke-width="21.4" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_artificial id_industry"
-              d="M -397.608765,-169.324280 A 173.810443,173.810443 0,0 1,-451.732971,-33.477154"
-              stroke="#5fc613" stroke-width="17.1" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_artificial id_humans"
-              d="M -426.878998,-235.480911 A 291.047377,291.047377 0,0 1,-441.570862,-543.573120"
-              stroke="#92a67e" stroke-width="7.2000003" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_artificial id_era"
-              d="M -376.145294,-180.917419 A 467.792391,467.792391 0,0 1,-267.175812,312.338440"
-              stroke="#5fc613" stroke-width="13.500001" stroke-opacity="0.2"/>
+              class="id_Artificial id_Industry"
+              d="M 27.118073,436.320648 A 360.325227,360.325227 0,0 1,-200.701080,142.035889"
+              stroke="#5fc613" stroke-width="11.400001"
+              stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Artificial id_Humans"
+              d="M 39.024101,476.962891 A 383.493968,383.493968 0,0 1,-366.574402,584.731018"
+              stroke="#92a67e" stroke-width="4.8" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Artificial id_Era"
+              d="M 51.782101,412.223236 A 226.380428,226.380428 0,0 1,111.044312,206.620865"
+              stroke="#5fc613" stroke-width="9.0" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_artificial id_intelligent"
-              d="M -366.624512,-211.151077 A 386.650579,386.650579 0,0 1,-5.611175,-30.046444"
-              stroke="#5fc613" stroke-width="19.2" stroke-opacity="0.2"/>
+              class="id_Artificial id_Intelligent"
+              d="M 37.275734,420.524658 A 592.131782,592.131782 0,0 1,-48.164463,-224.989365"
+              stroke="#5fc613" stroke-width="12.8" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_artificial id_innovation"
-              d="M -369.169800,-191.825623 A 218.261354,218.261354 0,0 1,-252.644867,-17.482517"
-              stroke="#5fc613" stroke-width="9.6" stroke-opacity="0.2"/>
+              class="id_Artificial id_Innovation"
+              d="M 56.250957,411.163940 A 395.655680,395.655680 0,0 1,237.088943,28.019365"
+              stroke="#5fc613" stroke-width="6.4" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_artificial id_powerful"
-              d="M -440.243378,-213.834534 A 199.566604,199.566604 0,0 1,-575.554199,-358.543945"
-              stroke="#92a67e" stroke-width="6.6000004" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_artificial id_health"
-              d="M -405.039795,-243.542007 A 178.915805,178.915805 0,0 1,-311.199249,-389.040619"
-              stroke="#92a67e" stroke-width="6.0" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="27.900002"
-              d="M -165.447479,-189.550552 C -90.710632,-264.287415 -90.710632,-114.813705 -165.447479,-189.550552"
-              class="id_intelligence" stroke-opacity="0.2" stroke="#5fc613"/>
+              class="id_Artificial id_Powerful"
+              d="M 77.610298,413.756165 A 333.522885,333.522885 0,0 1,387.365387,231.162262"
+              stroke="#92a67e" stroke-width="4.4" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Artificial id_Health"
+              d="M 56.428059,484.837738 A 267.900609,267.900609 0,0 1,-142.345963,682.837219"
+              stroke="#92a67e" stroke-width="4.0" stroke-opacity="0.29803923"/>
+        <path fill="none" stroke-width="18.6"
+              d="M -69.756157,259.530457 C 4.980690,184.793610 4.980690,334.267303 -69.756157,259.530457"
+              class="id_Intelligence" stroke-opacity="0.29803923"
+              stroke="#5fc613"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligence id_human"
-              d="M -129.987549,-201.340057 A 523.767272,523.767272 0,0 1,423.480438,-29.575821"
-              stroke="#92a67e" stroke-width="27.6" stroke-opacity="0.2"/>
+              class="id_Intelligence id_Human"
+              d="M -99.233459,236.563354 A 336.722450,336.722450 0,0 1,-203.663254,-102.214203"
+              stroke="#92a67e" stroke-width="18.4" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligence id_science"
-              d="M -165.516281,-152.182190 A 387.504588,387.504588 0,0 1,-405.712219,187.033432"
-              stroke="#92a67e" stroke-width="7.5000005" stroke-opacity="0.2"/>
+              class="id_Intelligence id_Science"
+              d="M -63.474899,296.367188 A 193.422450,193.422450 0,0 1,-136.811829,462.336456"
+              stroke="#92a67e" stroke-width="5.0" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligence id_technology"
-              d="M -132.938263,-171.123672 A 417.149489,417.149489 0,0 1,61.521454,210.187485"
-              stroke="#5fc613" stroke-width="32.4" stroke-opacity="0.2"/>
+              class="id_Intelligence id_Technology"
+              d="M -80.025520,223.600815 A 235.937185,235.937185 0,0 1,-26.593252,21.887718"
+              stroke="#5fc613" stroke-width="21.6" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligence id_industry"
-              d="M -182.540100,-156.320419 A 300.781441,300.781441 0,0 1,-444.504272,-9.489271"
-              stroke="#5fc613" stroke-width="17.7" stroke-opacity="0.2"/>
+              class="id_Intelligence id_Industry"
+              d="M -105.223373,247.762878 A 168.906828,168.906828 0,0 1,-196.793793,141.552841"
+              stroke="#5fc613" stroke-width="11.8" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligence id_humans"
-              d="M -200.687119,-201.983047 A 377.971583,377.971583 0,0 1,-435.312256,-541.903076"
-              stroke="#92a67e" stroke-width="7.5000005" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_intelligence id_era"
-              d="M -151.185211,-155.010910 A 452.201317,452.201317 0,0 1,-256.171906,319.914001"
-              stroke="#5fc613" stroke-width="13.8" stroke-opacity="0.2"/>
+              class="id_Intelligence id_Humans"
+              d="M -76.140076,296.349548 A 370.997681,370.997681 0,0 1,-366.094238,578.597412"
+              stroke="#92a67e" stroke-width="5.0" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Intelligence id_Era"
+              d="M -46.126934,230.581207 A 180.690555,180.690555 0,0 1,103.835533,179.421280"
+              stroke="#5fc613" stroke-width="9.2" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligence id_intelligent"
-              d="M -129.375458,-179.793091 A 216.596722,216.596722 0,0 1,5.051500,-33.927422"
-              stroke="#5fc613" stroke-width="18.6" stroke-opacity="0.2"/>
+              class="id_Intelligence id_Intelligent"
+              d="M -88.544327,227.228699 A 430.984938,430.984938 0,0 1,-53.930466,-228.751633"
+              stroke="#5fc613" stroke-width="12.400001"
+              stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligence id_innovation"
-              d="M -160.781113,-152.474625 A 179.110393,179.110393 0,0 1,-231.212631,-6.368241"
-              stroke="#5fc613" stroke-width="10.200001" stroke-opacity="0.2"/>
+              class="id_Intelligence id_Innovation"
+              d="M -57.203175,224.333557 A 340.811144,340.811144 0,0 1,233.663620,16.238590"
+              stroke="#5fc613" stroke-width="6.8" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligence id_powerful"
-              d="M -202.208511,-182.840408 A 375.364645,375.364645 0,0 1,-571.861755,-359.959900"
-              stroke="#92a67e" stroke-width="6.6000004" stroke-opacity="0.2"/>
+              class="id_Intelligence id_Powerful"
+              d="M -40.115730,236.774261 A 391.688217,391.688217 0,0 1,389.254974,225.302444"
+              stroke="#92a67e" stroke-width="4.4" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligence id_health"
-              d="M -199.312225,-205.348587 A 204.401720,204.401720 0,0 1,-300.729248,-382.305634"
-              stroke="#92a67e" stroke-width="6.0" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="18.900002"
-              d="M 437.393005,-11.725644 C 482.656158,-56.988800 482.656158,33.537514 437.393005,-11.725644"
-              class="id_human" stroke-opacity="0.2" stroke="#c686e9"/>
-        <path stroke-linecap="round" fill="none" class="id_human id_technology"
-              d="M 429.875305,9.620842 A 390.691691,390.691691 0,0 1,105.147148,257.875488"
-              stroke="#92a67e" stroke-width="7.8" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_human id_creation"
-              d="M 427.037354,8.397697 A 875.636155,875.636155 0,0 1,-491.973969,461.134521"
-              stroke="#63a8f4" stroke-width="8.400001" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_human id_brain"
-              d="M 431.725830,-33.636173 A 346.977500,346.977500 0,0 1,574.861389,-396.219666"
-              stroke="#63a8f4" stroke-width="6.9" stroke-opacity="0.2"/>
+              class="id_Intelligence id_Health"
+              d="M -55.338661,294.005585 A 361.763800,361.763800 0,0 1,-145.314575,677.121399"
+              stroke="#92a67e" stroke-width="4.0" stroke-opacity="0.29803923"/>
+        <path fill="none" stroke-width="12.6"
+              d="M -197.214005,-123.907417 C -151.950851,-169.170578 -151.950851,-78.644257 -197.214005,-123.907417"
+              class="id_Human" stroke-opacity="0.29803923" stroke="#c686e9"/>
+        <path stroke-linecap="round" fill="none" class="id_Human id_Technology"
+              d="M -174.676437,-125.968124 A 196.261563,196.261563 0,0 1,-16.503845,-54.459564"
+              stroke="#92a67e" stroke-width="5.2000003"
+              stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Human id_Creation"
+              d="M -176.056412,-131.941391 A 760.913513,760.913513 0,0 1,677.639343,108.030502"
+              stroke="#63a8f4" stroke-width="5.6" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Human id_Brain"
+              d="M -189.478546,-102.638870 A 403.287109,403.287109 0,0 1,-316.895325,336.705414"
+              stroke="#63a8f4" stroke-width="4.6" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_science id_technology"
-              d="M -406.844513,184.502533 A 405.346536,405.346536 0,0 1,17.441536,226.988800"
-              stroke="#92a67e" stroke-width="35.100002" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_science id_industry"
-              d="M -443.592133,179.712753 A 177.991555,177.991555 0,0 1,-489.917938,21.771923"
-              stroke="#92a67e" stroke-width="6.0" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_science id_fiction"
-              d="M -430.164001,172.598465 A 601.810635,601.810635 0,0 1,-102.473961,-441.211456"
-              stroke="#63a8f4" stroke-width="7.8" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_science id_era"
-              d="M -404.720642,199.505188 A 173.326969,173.326969 0,0 1,-286.194458,310.928345"
-              stroke="#92a67e" stroke-width="6.9" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="30.900002"
-              d="M 55.183594,259.784180 C 155.183594,159.784180 155.183594,359.784180 55.183594,259.784180"
-              class="id_technology" stroke-opacity="0.2" stroke="#5fc613"/>
+              class="id_Science id_Technology"
+              d="M -161.855881,453.575989 A 428.909641,428.909641 0,0 1,-29.478710,18.482607"
+              stroke="#92a67e" stroke-width="23.4" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Science id_Industry"
+              d="M -170.575272,458.484619 A 309.569944,309.569944 0,0 1,-218.653137,138.484024"
+              stroke="#92a67e" stroke-width="4.0" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Science id_Fiction"
+              d="M -133.638580,469.006683 A 388.541346,388.541346 0,0 1,279.362274,620.003052"
+              stroke="#63a8f4" stroke-width="5.2000003"
+              stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Science id_Era"
+              d="M -151.436340,452.979767 A 341.132545,341.132545 0,0 1,103.687241,191.701965"
+              stroke="#92a67e" stroke-width="4.6" stroke-opacity="0.29803923"/>
+        <path fill="none" stroke-width="20.6"
+              d="M 10.072052,-12.107214 C 110.072052,-112.107216 110.072052,87.892784 10.072052,-12.107214"
+              class="id_Technology" stroke-opacity="0.29803923" stroke="#5fc613"/>
         <path stroke-linecap="round" fill="none"
-              class="id_technology id_industry"
-              d="M 5.563677,265.937531 A 499.951762,499.951762 0,0 1,-463.007233,19.100388"
-              stroke="#5fc613" stroke-width="17.7" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_technology id_charm"
-              d="M 30.095154,216.534088 A 626.928991,626.928991 0,0 1,107.238098,-482.684235"
-              stroke="#92a67e" stroke-width="6.0" stroke-opacity="0.2"/>
+              class="id_Technology id_Industry"
+              d="M -15.696860,30.740927 A 203.407979,203.407979 0,0 1,-167.844162,108.531792"
+              stroke="#5fc613" stroke-width="11.8" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Technology id_Charm"
+              d="M 58.665539,-0.331260 A 574.072395,574.072395 0,0 1,470.079926,489.853119"
+              stroke="#92a67e" stroke-width="4.0" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_technology id_national"
-              d="M 104.672958,252.656586 A 414.458017,414.458017 0,0 1,500.351410,462.893127"
-              stroke="#92a67e" stroke-width="6.0" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_technology id_video"
-              d="M 97.566055,233.256332 A 489.665203,489.665203 0,0 1,632.927734,271.805969"
-              stroke="#92a67e" stroke-width="6.0" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_technology id_era"
-              d="M 20.166628,295.474670 A 286.507938,286.507938 0,0 1,-249.705460,351.767090"
-              stroke="#5fc613" stroke-width="13.200001" stroke-opacity="0.2"/>
+              class="id_Technology id_National"
+              d="M 41.934410,26.425760 A 578.199236,578.199236 0,0 1,78.073906,670.326294"
+              stroke="#92a67e" stroke-width="4.0" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Technology id_Video"
+              d="M -30.981283,16.434399 A 558.282042,558.282042 0,0 1,-650.015320,0.868207"
+              stroke="#92a67e" stroke-width="4.0" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Technology id_Era"
+              d="M 54.043732,11.693866 A 194.768008,194.768008 0,0 1,134.317078,154.876770"
+              stroke="#5fc613" stroke-width="8.8" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_technology id_intelligent"
-              d="M 23.139887,221.401886 A 218.919084,218.919084 0,0 1,-1.987617,33.248035"
-              stroke="#5fc613" stroke-width="17.400002" stroke-opacity="0.2"/>
+              class="id_Technology id_Intelligent"
+              d="M -21.840631,-50.598518 A 206.442520,206.442520 0,0 1,-45.206860,-223.618225"
+              stroke="#5fc613" stroke-width="11.6" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_technology id_industrial"
-              d="M 48.730324,309.365997 A 213.207974,213.207974 0,0 1,-91.183846,459.711945"
-              stroke="#92a67e" stroke-width="8.1" stroke-opacity="0.2"/>
+              class="id_Technology id_Industrial"
+              d="M 0.639684,-61.209457 A 560.821460,560.821460 0,0 1,269.147064,-624.521057"
+              stroke="#92a67e" stroke-width="5.4" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_technology id_transformation"
-              d="M 62.430157,309.256256 A 386.461624,386.461624 0,0 1,-130.799072,675.821106"
-              stroke="#92a67e" stroke-width="6.3" stroke-opacity="0.2"/>
+              class="id_Technology id_Transformation"
+              d="M 17.295784,-61.582638 A 563.407774,563.407774 0,0 1,458.175873,-507.597626"
+              stroke="#92a67e" stroke-width="4.2000003"
+              stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_technology id_innovation"
-              d="M 5.545105,253.782471 A 331.304791,331.304791 0,0 1,-245.119431,31.040468"
-              stroke="#5fc613" stroke-width="13.8" stroke-opacity="0.2"/>
+              class="id_Technology id_Innovation"
+              d="M 55.875011,-32.159367 A 208.198819,208.198819 0,0 1,239.380966,-0.393984"
+              stroke="#5fc613" stroke-width="9.2" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_technology id_infinite"
-              d="M 104.779556,253.440659 A 224.148551,224.148551 0,0 1,297.267914,357.097687"
-              stroke="#92a67e" stroke-width="8.700001" stroke-opacity="0.2"/>
+              class="id_Technology id_Infinite"
+              d="M -7.147896,-59.048382 A 382.714447,382.714447 0,0 1,105.662979,-453.083649"
+              stroke="#92a67e" stroke-width="5.8" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_technology id_backward"
-              d="M 90.835060,294.840881 A 192.029106,192.029106 0,0 1,123.603622,467.725830"
-              stroke="#92a67e" stroke-width="21.0" stroke-opacity="0.2"/>
+              class="id_Technology id_Backward"
+              d="M -15.138849,-55.286034 A 562.708565,562.708565 0,0 1,48.522594,-674.820801"
+              stroke="#92a67e" stroke-width="14.0" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_technological id_scientific"
-              d="M 255.384796,-653.439758 A 470.394879,470.394879 0,0 1,236.122452,-110.579056"
-              stroke="#63a8f4" stroke-width="11.1" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="9.3"
-              d="M -479.679901,-11.972302 C -409.153595,-82.498619 -409.153595,58.554012 -479.679901,-11.972302"
-              class="id_industry" stroke-opacity="0.2" stroke="#5fc613"/>
-        <path stroke-linecap="round" fill="none" class="id_industry id_era"
-              d="M -448.118195,3.755021 A 338.489265,338.489265 0,0 1,-276.373260,310.152771"
-              stroke="#5fc613" stroke-width="14.700001" stroke-opacity="0.2"/>
+              class="id_Technological id_Scientific"
+              d="M -660.930908,-215.826263 A 378.778493,378.778493 0,0 1,-454.241760,164.897781"
+              stroke="#63a8f4" stroke-width="7.4" stroke-opacity="0.29803923"/>
+        <path fill="none" stroke-width="6.2000003"
+              d="M -203.067291,106.852211 C -132.540985,36.325897 -132.540985,177.378525 -203.067291,106.852211"
+              class="id_Industry" stroke-opacity="0.29803923" stroke="#5fc613"/>
+        <path stroke-linecap="round" fill="none" class="id_Industry id_Era"
+              d="M -169.967285,94.691635 A 288.676848,288.676848 0,0 1,113.013695,163.225266"
+              stroke="#5fc613" stroke-width="9.8" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_industry id_intelligent"
-              d="M -450.079926,-31.138195 A 409.556436,409.556436 0,0 1,-16.947105,-19.950605"
-              stroke="#5fc613" stroke-width="19.5" stroke-opacity="0.2"/>
+              class="id_Industry id_Intelligent"
+              d="M -208.344223,71.986122 A 334.539960,334.539960 0,0 1,-62.125141,-238.148254"
+              stroke="#5fc613" stroke-width="13.0" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_industry id_innovation"
-              d="M -448.187500,-27.837971 A 190.516808,190.516808 0,0 1,-271.369781,-7.976743"
-              stroke="#5fc613" stroke-width="10.5" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_industry id_engine"
-              d="M -461.154480,-41.977283 A 471.387361,471.387361 0,0 1,22.803947,-241.747437"
-              stroke="#92a67e" stroke-width="9.6" stroke-opacity="0.2"/>
+              class="id_Industry id_Innovation"
+              d="M -178.349808,81.701935 A 392.018468,392.018468 0,0 1,235.764191,5.433508"
+              stroke="#5fc613" stroke-width="7.0" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Industry id_Engine"
+              d="M -236.620575,96.004738 A 340.998750,340.998750 0,0 1,-455.235138,-198.516708"
+              stroke="#92a67e" stroke-width="6.4" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_industry id_jingyingshi"
-              d="M -475.905609,23.088287 A 275.649785,275.649785 0,0 1,-615.713562,275.000397"
-              stroke="#92a67e" stroke-width="7.2000003" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_industry id_embrace"
-              d="M -464.823090,-43.953003 A 836.130490,836.130490 0,0 1,378.080170,-506.800629"
-              stroke="#92a67e" stroke-width="9.0" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_video id_intelligent"
-              d="M 630.637756,281.877106 A 574.663673,574.663673 0,0 1,29.819582,30.923944"
-              stroke="#92a67e" stroke-width="6.0" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_era id_intelligent"
-              d="M -275.627258,310.222015 A 372.911006,372.911006 0,0 1,-22.379295,10.059557"
-              stroke="#5fc613" stroke-width="15.3" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_era id_innovation"
-              d="M -293.952026,313.960693 A 279.127339,279.127339 0,0 1,-267.420563,26.478760"
-              stroke="#5fc613" stroke-width="9.0" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_era id_engine"
-              d="M -282.397552,310.253204 A 550.604480,550.604480 0,0 1,23.988230,-231.313568"
-              stroke="#92a67e" stroke-width="7.2000003" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_era id_jingyingshi"
-              d="M -307.145874,353.940491 A 296.765456,296.765456 0,0 1,-618.563232,294.088318"
-              stroke="#92a67e" stroke-width="6.3" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_era id_embrace"
-              d="M -277.446381,310.084900 A 900.908879,900.908879 0,0 1,378.528564,-500.582428"
-              stroke="#92a67e" stroke-width="7.8" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="8.1"
-              d="M 11.623972,0.717819 C 82.150284,-69.808495 82.150284,71.244133 11.623972,0.717819"
-              class="id_intelligent" stroke-opacity="0.2" stroke="#5fc613"/>
+              class="id_Industry id_Jingyingshi"
+              d="M -195.481995,72.414536 A 576.327848,576.327848 0,0 1,290.928711,-358.219330"
+              stroke="#92a67e" stroke-width="4.8" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Industry id_Embrace"
+              d="M -218.327332,75.061935 A 485.529715,485.529715 0,0 1,-121.996971,-456.848755"
+              stroke="#92a67e" stroke-width="6.0" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Video id_Intelligent"
+              d="M -653.419617,-16.465343 A 563.271920,563.271920 0,0 1,-66.178154,-264.412354"
+              stroke="#92a67e" stroke-width="4.0" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Era id_Intelligent"
+              d="M 108.701775,168.204056 A 393.622523,393.622523 0,0 1,-40.232555,-222.004776"
+              stroke="#5fc613" stroke-width="10.2" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Era id_Innovation"
+              d="M 136.509613,154.962662 A 175.772139,175.772139 0,0 1,235.308380,24.341419"
+              stroke="#5fc613" stroke-width="6.0" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Era id_Engine"
+              d="M 103.152702,186.577759 A 594.492876,594.492876 0,0 1,-450.487183,-199.457657"
+              stroke="#92a67e" stroke-width="4.8" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Era id_Jingyingshi"
+              d="M 124.897484,156.302231 A 477.253908,477.253908 0,0 1,294.032776,-350.326202"
+              stroke="#92a67e" stroke-width="4.2000003"
+              stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Era id_Embrace"
+              d="M 108.502563,168.494110 A 582.121508,582.121508 0,0 1,-114.827400,-452.657501"
+              stroke="#92a67e" stroke-width="5.2000003"
+              stroke-opacity="0.29803923"/>
+        <path fill="none" stroke-width="5.4"
+              d="M -31.869825,-256.261963 C 38.656487,-326.788269 38.656487,-185.735657 -31.869825,-256.261963"
+              class="id_Intelligent" stroke-opacity="0.29803923"
+              stroke="#5fc613"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligent id_innovation"
-              d="M -17.718813,20.275204 A 219.644436,219.644436 0,0 1,-230.941833,20.432365"
-              stroke="#5fc613" stroke-width="13.8" stroke-opacity="0.2"/>
+              class="id_Intelligent id_Innovation"
+              d="M 2.930889,-250.569824 A 331.317202,331.317202 0,0 1,253.176529,-8.743411"
+              stroke="#5fc613" stroke-width="9.2" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligent id_engine"
-              d="M -3.473215,-31.150114 A 200.437093,200.437093 0,0 1,28.038805,-225.961212"
-              stroke="#92a67e" stroke-width="9.6" stroke-opacity="0.2"/>
+              class="id_Intelligent id_Engine"
+              d="M -59.038403,-233.781784 A 355.123658,355.123658 0,0 1,-441.863983,-206.663635"
+              stroke="#92a67e" stroke-width="6.4" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligent id_jingyingshi"
-              d="M -6.615644,30.897392 A 584.126208,584.126208 0,0 1,-614.212646,286.093475"
-              stroke="#92a67e" stroke-width="7.2000003" stroke-opacity="0.2"/>
+              class="id_Intelligent id_Jingyingshi"
+              d="M -9.424862,-283.459656 A 295.450606,295.450606 0,0 1,291.649200,-365.153046"
+              stroke="#92a67e" stroke-width="4.8" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_intelligent id_embrace"
-              d="M 12.955561,-34.520187 A 528.372934,528.372934 0,0 1,378.666382,-500.102203"
-              stroke="#92a67e" stroke-width="9.6" stroke-opacity="0.2"/>
+              class="id_Intelligent id_Embrace"
+              d="M -59.593212,-278.054260 A 188.500270,188.500270 0,0 1,-114.413345,-452.548004"
+              stroke="#92a67e" stroke-width="6.4" stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_scientific id_innovation"
-              d="M 215.119308,-85.626236 A 407.735936,407.735936 0,0 1,-229.054199,16.803244"
-              stroke="#92a67e" stroke-width="6.3" stroke-opacity="0.2"/>
+              class="id_Scientific id_Innovation"
+              d="M -445.732880,168.727631 A 611.442440,611.442440 0,0 1,235.560928,5.906374"
+              stroke="#92a67e" stroke-width="4.2000003"
+              stroke-opacity="0.29803923"/>
         <path stroke-linecap="round" fill="none"
-              class="id_scientific id_professor"
-              d="M 235.372574,-84.410156 A 189.784322,189.784322 0,0 1,237.489655,116.397163"
-              stroke="#63a8f4" stroke-width="11.700001" stroke-opacity="0.2"/>
-        <path stroke-linecap="round" fill="none" class="id_scientific id_chief"
-              d="M 241.566299,-92.847794 A 312.515424,312.515424 0,0 1,451.712402,189.414536"
-              stroke="#63a8f4" stroke-width="6.3" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="8.400001"
-              d="M 678.694092,52.409054 C 702.904602,28.198528 702.904602,76.619583 678.694092,52.409054"
-              class="id_master" stroke-opacity="0.2" stroke="#2e9072"/>
-        <path fill="none" stroke-width="6.6000004"
-              d="M 228.412720,129.954971 C 261.044312,97.323395 261.044312,162.586548 228.412720,129.954971"
-              class="id_professor" stroke-opacity="0.2" stroke="#00caff"/>
-        <path stroke-linecap="round" fill="none" class="id_professor id_chief"
-              d="M 244.037811,125.258034 A 195.622182,195.622182 0,0 1,444.674622,191.868652"
-              stroke="#00caff" stroke-width="9.3" stroke-opacity="0.2"/>
-        <path fill="none" stroke-width="6.6000004"
-              d="M 119.057671,481.189606 C 147.478729,452.768555 147.478729,509.610657 119.057671,481.189606"
-              class="id_backward" stroke-opacity="0.2" stroke="#c686e9"/>
-        <path fill="none" stroke-width="6.3"
-              d="M 673.446716,-165.278992 C 697.657227,-189.489517 697.657227,-141.068466 673.446716,-165.278992"
-              class="id_signs" stroke-opacity="0.2" stroke="#2e9072"/>
+              class="id_Scientific id_Professor"
+              d="M -461.539307,165.582932 A 463.321464,463.321464 0,0 1,-302.154205,-339.401123"
+              stroke="#63a8f4" stroke-width="7.8" stroke-opacity="0.29803923"/>
+        <path stroke-linecap="round" fill="none" class="id_Scientific id_Chief"
+              d="M -441.060638,175.522049 A 623.092677,623.092677 0,0 1,254.104553,380.591309"
+              stroke="#63a8f4" stroke-width="4.2000003"
+              stroke-opacity="0.29803923"/>
+        <path fill="none" stroke-width="5.6"
+              d="M -551.445557,421.675873 C -527.235046,397.465332 -527.235046,445.886414 -551.445557,421.675873"
+              class="id_Master" stroke-opacity="0.29803923" stroke="#2e9072"/>
+        <path fill="none" stroke-width="4.4"
+              d="M -289.059357,-349.134033 C -256.427795,-381.765625 -256.427795,-316.502441 -289.059357,-349.134033"
+              class="id_Professor" stroke-opacity="0.29803923" stroke="#00caff"/>
+        <path stroke-linecap="round" fill="none" class="id_Professor id_Chief"
+              d="M -273.462036,-344.345612 A 768.157267,768.157267 0,0 1,261.410889,378.097046"
+              stroke="#00caff" stroke-width="6.2000003"
+              stroke-opacity="0.29803923"/>
+        <path fill="none" stroke-width="4.4"
+              d="M 57.693081,-685.676270 C 86.114136,-714.097351 86.114136,-657.255188 57.693081,-685.676270"
+              class="id_Backward" stroke-opacity="0.29803923" stroke="#c686e9"/>
+        <path fill="none" stroke-width="4.2000003"
+              d="M 682.140015,-120.246704 C 706.350525,-144.457230 706.350525,-96.036179 682.140015,-120.246704"
+              class="id_Signs" stroke-opacity="0.29803923" stroke="#2e9072"/>
     </g>
     <g id="nodes">
-        <circle fill-opacity="1.0" fill="#ff5c81" r="16.947369" cx="254.96141"
-                class="id_community" cy="-326.80008" stroke="#b2405a"
+        <circle fill-opacity="1.0" fill="#ff5c81" r="16.947369" cx="174.00743"
+                class="id_Community" cy="-188.67265" stroke="#b2405a"
                 stroke-opacity="1.0" stroke-width="2.9473684"/>
-        <circle fill-opacity="1.0" fill="#ea8615" r="9.2" cx="0.95614254"
-                class="id_partner" cy="-694.7552" stroke="#a35d0e"
+        <circle fill-opacity="1.0" fill="#ea8615" r="9.2" cx="-668.0296"
+                class="id_Partner" cy="210.21892" stroke="#a35d0e"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#ea8615" r="9.2" cx="-665.98627"
-                class="id_super" cy="-168.39989" stroke="#a35d0e"
+        <circle fill-opacity="1.0" fill="#ea8615" r="9.2" cx="602.42236"
+                class="id_Super" cy="-332.9718" stroke="#a35d0e"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#ea8615" r="9.2" cx="456.28723"
-                class="id_exchange" cy="-226.98027" stroke="#a35d0e"
+        <circle fill-opacity="1.0" fill="#ea8615" r="9.2" cx="-369.3354"
+                class="id_Exchange" cy="-574.3813" stroke="#a35d0e"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="321.2892"
-                class="id_economic" cy="614.2718" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="-539.8965"
+                class="id_Economic" cy="-432.25436" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#5fc613" r="46.0" cx="55.183594"
-                class="id_technology" cy="259.78418" stroke="#428a0d"
+        <circle fill-opacity="1.0" fill="#5fc613" r="46.0" cx="10.072052"
+                class="id_Technology" cy="-12.107214" stroke="#428a0d"
                 stroke-opacity="1.0" stroke-width="8.0"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="-691.2601"
-                class="id_beautiful" cy="64.77893" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="-169.70416"
+                class="id_Beautiful" cy="-675.5012" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#5fc613" r="32.442104" cx="-135.82254"
-                class="id_model" cy="177.67592" stroke="#428a0d"
+        <circle fill-opacity="1.0" fill="#5fc613" r="32.442104" cx="-397.07718"
+                class="id_Model" cy="-16.02882" stroke="#428a0d"
                 stroke-opacity="1.0" stroke-width="5.642105"/>
-        <circle fill-opacity="1.0" fill="#5fc613" r="34.37895" cx="-403.66336"
-                class="id_artificial" cy="-206.19894" stroke="#428a0d"
+        <circle fill-opacity="1.0" fill="#5fc613" r="34.37895" cx="62.619118"
+                class="id_Artificial" cy="447.98575" stroke="#428a0d"
                 stroke-opacity="1.0" stroke-width="5.9789476"/>
-        <circle fill-opacity="1.0" fill="#5fc613" r="34.37895" cx="-165.44748"
-                class="id_intelligence" cy="-189.55055" stroke="#428a0d"
+        <circle fill-opacity="1.0" fill="#5fc613" r="34.37895" cx="-69.75616"
+                class="id_Intelligence" cy="259.53046" stroke="#428a0d"
                 stroke-opacity="1.0" stroke-width="5.9789476"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="20.821053" cx="-426.89786"
-                class="id_science" cy="194.99312" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="20.821053" cx="-155.38803"
+                class="id_Science" cy="475.26367" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="3.6210525"/>
-        <circle fill-opacity="1.0" fill="#5fc613" r="32.442104" cx="-479.6799"
-                class="id_industry" cy="-11.972302" stroke="#428a0d"
+        <circle fill-opacity="1.0" fill="#5fc613" r="32.442104" cx="-203.06729"
+                class="id_Industry" cy="106.85221" stroke="#428a0d"
                 stroke-opacity="1.0" stroke-width="5.642105"/>
-        <circle fill-opacity="1.0" fill="#5fc613" r="28.56842" cx="-278.8702"
-                class="id_era" cy="341.10486" stroke="#428a0d"
+        <circle fill-opacity="1.0" fill="#5fc613" r="28.56842" cx="134.19856"
+                class="id_Era" cy="185.92917" stroke="#428a0d"
                 stroke-opacity="1.0" stroke-width="4.968421"/>
-        <circle fill-opacity="1.0" fill="#5fc613" r="32.442104" cx="11.623972"
-                class="id_intelligent" cy="0.7178194" stroke="#428a0d"
+        <circle fill-opacity="1.0" fill="#5fc613" r="32.442104" cx="-31.869825"
+                class="id_Intelligent" cy="-256.26196" stroke="#428a0d"
                 stroke-opacity="1.0" stroke-width="5.642105"/>
-        <circle fill-opacity="1.0" fill="#5fc613" r="22.757896" cx="-251.86859"
-                class="id_innovation" cy="7.2421427" stroke="#428a0d"
+        <circle fill-opacity="1.0" fill="#5fc613" r="22.757896" cx="258.3875"
+                class="id_Innovation" cy="15.438339" stroke="#428a0d"
                 stroke-opacity="1.0" stroke-width="3.9578948"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="15.010525" cx="38.74544"
-                class="id_engine" cy="-238.2727" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="15.010525" cx="-455.99783"
+                class="id_Engine" cy="-214.81467" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="2.610526"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="15.010525" cx="-630.15045"
-                class="id_jingyingshi" cy="282.60175" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="15.010525" cx="307.14273"
+                class="id_Jingyingshi" cy="-360.0388" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="2.610526"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="15.010525" cx="394.27814"
-                class="id_embrace" cy="-504.84335" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="15.010525" cx="-110.44911"
+                class="id_Embrace" cy="-468.37488" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="2.610526"/>
-        <circle fill-opacity="1.0" fill="#ff5c81" r="15.010525" cx="-336.21402"
-                class="id_air" cy="583.73267" stroke="#b2405a"
+        <circle fill-opacity="1.0" fill="#ff5c81" r="15.010525" cx="435.20456"
+                class="id_Air" cy="-178.86328" stroke="#b2405a"
                 stroke-opacity="1.0" stroke-width="2.610526"/>
-        <circle fill-opacity="1.0" fill="#ea8615" r="9.2" cx="90.13336"
-                class="id_conditioner" cy="693.13684" stroke="#a35d0e"
+        <circle fill-opacity="1.0" fill="#ea8615" r="9.2" cx="487.998"
+                class="id_Conditioner" cy="31.146183" stroke="#a35d0e"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#ea8615" r="9.2" cx="-220.075"
-                class="id_installation" cy="-643.7113" stroke="#a35d0e"
+        <circle fill-opacity="1.0" fill="#ea8615" r="9.2" cx="606.7147"
+                class="id_Installation" cy="325.341" stroke="#a35d0e"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="20.821053" cx="437.393"
-                class="id_human" cy="-11.725644" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="20.821053" cx="-197.214"
+                class="id_Human" cy="-123.90742" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="3.6210525"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="11.136842" cx="-435.43445"
-                class="id_humans" cy="-554.00775" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="11.136842" cx="-378.0065"
+                class="id_Humans" cy="580.7505" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="1.936842"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="11.136842" cx="-577.98413"
-                class="id_powerful" cy="-370.4028" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="11.136842" cx="399.45248"
+                class="id_Powerful" cy="231.82535" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="1.936842"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="11.136842" cx="-300.34744"
-                class="id_health" cy="-394.40488" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="11.136842" cx="-154.18593"
+                class="id_Health" cy="685.35767" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="1.936842"/>
-        <circle fill-opacity="1.0" fill="#00caff" r="9.2" cx="-501.82498"
-                class="id_creation" cy="459.4147" stroke="#008db2"
+        <circle fill-opacity="1.0" fill="#00caff" r="9.2" cx="683.8346"
+                class="id_Creation" cy="115.88025" stroke="#008db2"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#00caff" r="9.2" cx="583.2044"
-                class="id_brain" cy="-401.73273" stroke="#008db2"
+        <circle fill-opacity="1.0" fill="#00caff" r="9.2" cx="-324.71436"
+                class="id_Brain" cy="342.93942" stroke="#008db2"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#00caff" r="9.2" cx="-93.49456"
-                class="id_fiction" cy="-445.61264" stroke="#008db2"
+        <circle fill-opacity="1.0" fill="#00caff" r="9.2" cx="285.0574"
+                class="id_Fiction" cy="628.2229" stroke="#008db2"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="113.78291"
-                class="id_charm" cy="-490.24503" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="471.0615"
+                class="id_Charm" cy="499.80484" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="505.13913"
-                class="id_national" cy="471.67252" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="72.89671"
+                class="id_National" cy="678.8818" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="11.136842" cx="642.45874"
-                class="id_video" cy="279.269" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="11.136842" cx="-659.8404"
+                class="id_Video" cy="-6.203221" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="1.936842"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="-100.750854"
-                class="id_industrial" cy="462.62268" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="277.78983"
+                class="id_Industrial" cy="-629.5512" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="-139.54156"
-                class="id_transformation" cy="680.6759" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="467.99197"
+                class="id_Transformation" cy="-509.5066" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="302.4528"
-                class="id_infinite" cy="365.64853" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="9.2" cx="113.221596"
+                class="id_Infinite" cy="-459.63095" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="13.073685" cx="119.05767"
-                class="id_backward" cy="481.1896" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="13.073685" cx="57.69308"
+                class="id_Backward" cy="-685.6763" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="2.2736843"/>
-        <circle fill-opacity="1.0" fill="#00caff" r="9.2" cx="249.81544"
-                class="id_technological" cy="-661.7453" stroke="#008db2"
+        <circle fill-opacity="1.0" fill="#00caff" r="9.2" cx="-669.92896"
+                class="id_Technological" cy="-220.18915" stroke="#008db2"
                 stroke-opacity="1.0" stroke-width="1.5999999"/>
-        <circle fill-opacity="1.0" fill="#c686e9" r="15.010525" cx="226.01183"
-                class="id_scientific" cy="-97.77358" stroke="#8a5da3"
+        <circle fill-opacity="1.0" fill="#c686e9" r="15.010525" cx="-456.40436"
+                class="id_Scientific" cy="181.06961" stroke="#8a5da3"
                 stroke-opacity="1.0" stroke-width="2.610526"/>
-        <circle fill-opacity="1.0" fill="#00caff" r="15.010525" cx="228.41272"
-                class="id_professor" cy="129.95497" stroke="#008db2"
+        <circle fill-opacity="1.0" fill="#00caff" r="15.010525" cx="-289.05936"
+                class="id_Professor" cy="-349.13403" stroke="#008db2"
                 stroke-opacity="1.0" stroke-width="2.610526"/>
-        <circle fill-opacity="1.0" fill="#00caff" r="11.136842" cx="451.98575"
-                class="id_chief" cy="201.51671" stroke="#008db2"
+        <circle fill-opacity="1.0" fill="#00caff" r="11.136842" cx="261.46448"
+                class="id_Chief" cy="390.20218" stroke="#008db2"
                 stroke-opacity="1.0" stroke-width="1.936842"/>
-        <circle fill-opacity="1.0" fill="#2e9072" r="11.136842" cx="678.6941"
-                class="id_master" cy="52.409054" stroke="#20644f"
+        <circle fill-opacity="1.0" fill="#2e9072" r="11.136842" cx="-551.44556"
+                class="id_Master" cy="421.67587" stroke="#20644f"
                 stroke-opacity="1.0" stroke-width="1.936842"/>
-        <circle fill-opacity="1.0" fill="#2e9072" r="11.136842" cx="673.4467"
-                class="id_signs" cy="-165.27899" stroke="#20644f"
+        <circle fill-opacity="1.0" fill="#2e9072" r="11.136842" cx="682.14"
+                class="id_Signs" cy="-120.246704" stroke="#20644f"
                 stroke-opacity="1.0" stroke-width="1.936842"/>
     </g>
     <g id="node-labels">
-        <text font-size="24" x="254.96141" y="-321.2415" fill="#000000"
+        <text font-size="28" x="174.00743" y="-182.10104" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_community">
-            community
+              font-family="Arial" class="id_Community">
+            Community
         </text>
-        <text font-size="24" x="0.95614254" y="-689.3626" fill="#000000"
+        <text font-size="28" x="-668.0296" y="215.31169" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_partner">
-            partner
+              font-family="Arial" class="id_Partner">
+            Partner
         </text>
-        <text font-size="24" x="-665.98627" y="-164.02489" fill="#000000"
+        <text font-size="28" x="602.42236" y="-326.48224" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_super">
-            super
+              font-family="Arial" class="id_Super">
+            Super
         </text>
-        <text font-size="24" x="456.28723" y="-221.42168" fill="#000000"
+        <text font-size="28" x="-369.3354" y="-567.89624" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_exchange">
-            exchange
+              font-family="Arial" class="id_Exchange">
+            Exchange
         </text>
-        <text font-size="24" x="321.2892" y="618.637" fill="#000000"
+        <text font-size="28" x="-539.8965" y="-427.1616" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_economic">
-            economic
+              font-family="Arial" class="id_Economic">
+            Economic
         </text>
-        <text font-size="24" x="55.183594" y="265.34277" fill="#000000"
+        <text font-size="28" x="10.072052" y="-5.6221876" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_technology">
-            technology
+              font-family="Arial" class="id_Technology">
+            Technology
         </text>
-        <text font-size="24" x="-691.2601" y="69.21838" fill="#000000"
+        <text font-size="28" x="-169.70416" y="-670.32184" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_beautiful">
-            beautiful
+              font-family="Arial" class="id_Beautiful">
+            Beautiful
         </text>
-        <text font-size="24" x="-135.82254" y="182.04115" fill="#000000"
+        <text font-size="28" x="-397.07718" y="-10.936047" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_model">
-            model
+              font-family="Arial" class="id_Model">
+            Model
         </text>
-        <text font-size="24" x="-403.66336" y="-201.75949" fill="#000000"
+        <text font-size="28" x="62.619118" y="453.1651" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_artificial">
-            artificial
+              font-family="Arial" class="id_Artificial">
+            Artificial
         </text>
-        <text font-size="24" x="-165.44748" y="-183.99196" fill="#000000"
+        <text font-size="28" x="-69.75616" y="266.01547" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_intelligence">
-            intelligence
+              font-family="Arial" class="id_Intelligence">
+            Intelligence
         </text>
-        <text font-size="24" x="-426.89786" y="199.35835" fill="#000000"
+        <text font-size="28" x="-155.38803" y="480.44757" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_science">
-            science
+              font-family="Arial" class="id_Science">
+            Science
         </text>
-        <text font-size="24" x="-479.6799" y="-6.4137087" fill="#000000"
+        <text font-size="28" x="-203.06729" y="113.337234" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_industry">
-            industry
+              font-family="Arial" class="id_Industry">
+            Industry
         </text>
-        <text font-size="24" x="-278.8702" y="344.3568" fill="#000000"
+        <text font-size="28" x="134.19856" y="191.02194" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_era">
-            era
+              font-family="Arial" class="id_Era">
+            Era
         </text>
-        <text font-size="24" x="11.623972" y="6.276413" fill="#000000"
+        <text font-size="28" x="-31.869825" y="-249.77693" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_intelligent">
-            intelligent
+              font-family="Arial" class="id_Intelligent">
+            Intelligent
         </text>
-        <text font-size="24" x="-251.86859" y="11.607377" fill="#000000"
+        <text font-size="28" x="258.3875" y="20.531113" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_innovation">
-            innovation
+              font-family="Arial" class="id_Innovation">
+            Innovation
         </text>
-        <text font-size="24" x="38.74544" y="-232.71411" fill="#000000"
+        <text font-size="28" x="-455.99783" y="-208.32964" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_engine">
-            engine
+              font-family="Arial" class="id_Engine">
+            Engine
         </text>
-        <text font-size="24" x="-630.15045" y="288.16034" fill="#000000"
+        <text font-size="28" x="307.14273" y="-353.55377" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_jingyingshi">
-            jingyingshi
+              font-family="Arial" class="id_Jingyingshi">
+            Jingyingshi
         </text>
-        <text font-size="24" x="394.27814" y="-500.47812" fill="#000000"
+        <text font-size="28" x="-110.44911" y="-463.2821" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_embrace">
-            embrace
+              font-family="Arial" class="id_Embrace">
+            Embrace
         </text>
-        <text font-size="24" x="-336.21402" y="588.0979" fill="#000000"
+        <text font-size="28" x="435.20456" y="-173.85254" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_air">
-            air
+              font-family="Arial" class="id_Air">
+            Air
         </text>
-        <text font-size="24" x="90.13336" y="697.5021" fill="#000000"
+        <text font-size="28" x="487.998" y="36.3301" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_conditioner">
-            conditioner
+              font-family="Arial" class="id_Conditioner">
+            Conditioner
         </text>
-        <text font-size="24" x="-220.075" y="-639.34607" fill="#000000"
+        <text font-size="28" x="606.7147" y="330.43378" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_installation">
-            installation
+              font-family="Arial" class="id_Installation">
+            Installation
         </text>
-        <text font-size="24" x="437.393" y="-7.3604097" fill="#000000"
+        <text font-size="28" x="-197.214" y="-118.814644" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_human">
-            human
+              font-family="Arial" class="id_Human">
+            Human
         </text>
-        <text font-size="24" x="-435.43445" y="-549.6425" fill="#000000"
+        <text font-size="28" x="-378.0065" y="585.84326" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_humans">
-            humans
+              font-family="Arial" class="id_Humans">
+            Humans
         </text>
-        <text font-size="24" x="-577.98413" y="-364.8403" fill="#000000"
+        <text font-size="28" x="399.45248" y="237.00471" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_powerful">
-            powerful
+              font-family="Arial" class="id_Powerful">
+            Powerful
         </text>
-        <text font-size="24" x="-300.34744" y="-390.03964" fill="#000000"
+        <text font-size="28" x="-154.18593" y="690.45044" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_health">
-            health
+              font-family="Arial" class="id_Health">
+            Health
         </text>
-        <text font-size="24" x="-501.82498" y="463.77994" fill="#000000"
+        <text font-size="28" x="683.8346" y="121.06416" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_creation">
-            creation
+              font-family="Arial" class="id_Creation">
+            Creation
         </text>
-        <text font-size="24" x="583.2044" y="-397.3675" fill="#000000"
+        <text font-size="28" x="-324.71436" y="348.0322" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_brain">
-            brain
+              font-family="Arial" class="id_Brain">
+            Brain
         </text>
-        <text font-size="24" x="-93.49456" y="-441.1732" fill="#000000"
+        <text font-size="28" x="285.0574" y="633.3157" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_fiction">
-            fiction
+              font-family="Arial" class="id_Fiction">
+            Fiction
         </text>
-        <text font-size="24" x="113.78291" y="-485.8798" fill="#000000"
+        <text font-size="28" x="471.0615" y="504.98877" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_charm">
-            charm
+              font-family="Arial" class="id_Charm">
+            Charm
         </text>
-        <text font-size="24" x="505.13913" y="476.03775" fill="#000000"
+        <text font-size="28" x="72.89671" y="683.97455" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_national">
-            national
+              font-family="Arial" class="id_National">
+            National
         </text>
-        <text font-size="24" x="642.45874" y="283.63425" fill="#000000"
+        <text font-size="28" x="-659.8404" y="-1.1104474" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_video">
-            video
+              font-family="Arial" class="id_Video">
+            Video
         </text>
-        <text font-size="24" x="-100.750854" y="466.9879" fill="#000000"
+        <text font-size="28" x="277.78983" y="-624.45844" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_industrial">
-            industrial
+              font-family="Arial" class="id_Industrial">
+            Industrial
         </text>
-        <text font-size="24" x="-139.54156" y="685.11536" fill="#000000"
+        <text font-size="28" x="467.99197" y="-504.3272" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_transformation">
-            transformation
+              font-family="Arial" class="id_Transformation">
+            Transformation
         </text>
-        <text font-size="24" x="302.4528" y="370.08798" fill="#000000"
+        <text font-size="28" x="113.221596" y="-454.4516" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_infinite">
-            infinite
+              font-family="Arial" class="id_Infinite">
+            Infinite
         </text>
-        <text font-size="24" x="119.05767" y="485.55484" fill="#000000"
+        <text font-size="28" x="57.69308" y="-680.5835" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_backward">
-            backward
+              font-family="Arial" class="id_Backward">
+            Backward
         </text>
-        <text font-size="24" x="249.81544" y="-656.1867" fill="#000000"
+        <text font-size="28" x="-669.92896" y="-213.70412" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_technological">
-            technological
+              font-family="Arial" class="id_Technological">
+            Technological
         </text>
-        <text font-size="24" x="226.01183" y="-93.33413" fill="#000000"
+        <text font-size="28" x="-456.40436" y="186.25354" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_scientific">
-            scientific
+              font-family="Arial" class="id_Scientific">
+            Scientific
         </text>
-        <text font-size="24" x="228.41272" y="135.51747" fill="#000000"
+        <text font-size="28" x="-289.05936" y="-343.95468" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_professor">
-            professor
+              font-family="Arial" class="id_Professor">
+            Professor
         </text>
-        <text font-size="24" x="451.98575" y="205.95616" fill="#000000"
+        <text font-size="28" x="261.46448" y="395.3861" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_chief">
-            chief
+              font-family="Arial" class="id_Chief">
+            Chief
         </text>
-        <text font-size="24" x="678.6941" y="56.678585" fill="#000000"
+        <text font-size="28" x="-551.44556" y="426.76865" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_master">
-            master
+              font-family="Arial" class="id_Master">
+            Master
         </text>
-        <text font-size="24" x="673.4467" y="-159.7204" fill="#000000"
+        <text font-size="28" x="682.14" y="-113.67509" fill="#000000"
               style="text-anchor: middle; dominant-baseline: central;"
-              font-family="Arial" class="id_signs">
-            signs
+              font-family="Arial" class="id_Signs">
+            Signs
         </text>
     </g>
 </svg>
