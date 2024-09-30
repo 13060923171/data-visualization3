@@ -1,0 +1,220 @@
+﻿Pre-Theme,Theme,Sim,Theme,Next-Theme,Sim,Theme,Next-Theme,Sim
+Q1 Topic 0,Q2 Topic 0,0.71,Q2 Topic 0,Q3 Topic 0,0.81,Q3 Topic 0,Q4 Topic 0,0.8
+Q1 Topic 0,Q2 Topic 1,0.61,Q2 Topic 0,Q3 Topic 1,0.55,Q3 Topic 0,Q4 Topic 1,0.61
+Q1 Topic 0,Q2 Topic 2,0.62,Q2 Topic 0,Q3 Topic 2,0.64,Q3 Topic 0,Q4 Topic 2,0.7
+Q1 Topic 0,Q2 Topic 4,0.57,Q2 Topic 0,Q3 Topic 3,0.6,Q3 Topic 0,Q4 Topic 4,0.64
+Q1 Topic 0,Q2 Topic 5,0.58,Q2 Topic 0,Q3 Topic 4,0.62,Q3 Topic 0,Q4 Topic 5,0.72
+Q1 Topic 0,Q2 Topic 6,0.64,Q2 Topic 0,Q3 Topic 5,0.64,Q3 Topic 0,Q4 Topic 6,0.74
+Q1 Topic 0,Q2 Topic 7,0.66,Q2 Topic 0,Q3 Topic 6,0.71,Q3 Topic 0,Q4 Topic 7,0.73
+Q1 Topic 0,Q2 Topic 8,0.63,Q2 Topic 0,Q3 Topic 7,0.7,Q3 Topic 0,Q4 Topic 8,0.68
+Q1 Topic 0,Q2 Topic 9,0.61,Q2 Topic 0,Q3 Topic 8,0.6,Q3 Topic 0,Q4 Topic 9,0.71
+Q1 Topic 0,Q2 Topic 10,0.7,Q2 Topic 0,Q3 Topic 9,0.59,Q3 Topic 0,Q4 Topic 10,0.78
+Q1 Topic 0,Q2 Topic 11,0.7,Q2 Topic 0,Q3 Topic 10,0.76,Q3 Topic 0,Q4 Topic 11,0.69
+Q1 Topic 0,Q2 Topic 12,0.57,Q2 Topic 0,Q3 Topic 11,0.63,Q3 Topic 0,Q4 Topic 12,0.63
+Q1 Topic 1,Q2 Topic 1,0.64,Q2 Topic 0,Q3 Topic 12,0.64,Q3 Topic 0,Q4 Topic 13,0.7
+Q1 Topic 1,Q2 Topic 2,0.53,Q2 Topic 0,Q3 Topic 13,0.75,Q3 Topic 0,Q4 Topic 14,0.57
+Q1 Topic 1,Q2 Topic 5,0.53,Q2 Topic 1,Q3 Topic 0,0.62,Q3 Topic 0,Q4 Topic 15,0.68
+Q1 Topic 1,Q2 Topic 6,0.55,Q2 Topic 1,Q3 Topic 1,0.75,Q3 Topic 1,Q4 Topic 0,0.6
+Q1 Topic 1,Q2 Topic 7,0.53,Q2 Topic 1,Q3 Topic 2,0.64,Q3 Topic 1,Q4 Topic 1,0.75
+Q1 Topic 1,Q2 Topic 8,0.53,Q2 Topic 1,Q3 Topic 3,0.55,Q3 Topic 1,Q4 Topic 2,0.62
+Q1 Topic 1,Q2 Topic 9,0.59,Q2 Topic 1,Q3 Topic 4,0.57,Q3 Topic 1,Q4 Topic 4,0.59
+Q1 Topic 1,Q2 Topic 10,0.55,Q2 Topic 1,Q3 Topic 5,0.7,Q3 Topic 1,Q4 Topic 5,0.69
+Q1 Topic 1,Q2 Topic 11,0.62,Q2 Topic 1,Q3 Topic 6,0.68,Q3 Topic 1,Q4 Topic 6,0.67
+Q1 Topic 2,Q2 Topic 0,0.53,Q2 Topic 1,Q3 Topic 7,0.64,Q3 Topic 1,Q4 Topic 7,0.65
+Q1 Topic 2,Q2 Topic 1,0.59,Q2 Topic 1,Q3 Topic 8,0.68,Q3 Topic 1,Q4 Topic 8,0.6
+Q1 Topic 2,Q2 Topic 2,0.67,Q2 Topic 1,Q3 Topic 9,0.64,Q3 Topic 1,Q4 Topic 9,0.71
+Q1 Topic 2,Q2 Topic 4,0.56,Q2 Topic 1,Q3 Topic 10,0.66,Q3 Topic 1,Q4 Topic 10,0.68
+Q1 Topic 2,Q2 Topic 5,0.54,Q2 Topic 1,Q3 Topic 11,0.71,Q3 Topic 1,Q4 Topic 11,0.69
+Q1 Topic 2,Q2 Topic 6,0.58,Q2 Topic 1,Q3 Topic 12,0.51,Q3 Topic 1,Q4 Topic 12,0.51
+Q1 Topic 2,Q2 Topic 7,0.62,Q2 Topic 1,Q3 Topic 13,0.54,Q3 Topic 1,Q4 Topic 13,0.54
+Q1 Topic 2,Q2 Topic 8,0.62,Q2 Topic 2,Q3 Topic 0,0.67,Q3 Topic 1,Q4 Topic 14,0.6
+Q1 Topic 2,Q2 Topic 9,0.62,Q2 Topic 2,Q3 Topic 1,0.58,Q3 Topic 1,Q4 Topic 15,0.63
+Q1 Topic 2,Q2 Topic 10,0.67,Q2 Topic 2,Q3 Topic 2,0.82,Q3 Topic 2,Q4 Topic 0,0.69
+Q1 Topic 2,Q2 Topic 11,0.6,Q2 Topic 2,Q3 Topic 3,0.7,Q3 Topic 2,Q4 Topic 1,0.67
+Q1 Topic 2,Q2 Topic 12,0.52,Q2 Topic 2,Q3 Topic 4,0.68,Q3 Topic 2,Q4 Topic 2,0.87
+Q1 Topic 3,Q2 Topic 0,0.51,Q2 Topic 2,Q3 Topic 5,0.65,Q3 Topic 2,Q4 Topic 3,0.59
+Q1 Topic 3,Q2 Topic 1,0.52,Q2 Topic 2,Q3 Topic 6,0.76,Q3 Topic 2,Q4 Topic 4,0.73
+Q1 Topic 3,Q2 Topic 2,0.62,Q2 Topic 2,Q3 Topic 7,0.71,Q3 Topic 2,Q4 Topic 5,0.75
+Q1 Topic 3,Q2 Topic 3,0.74,Q2 Topic 2,Q3 Topic 8,0.62,Q3 Topic 2,Q4 Topic 6,0.82
+Q1 Topic 3,Q2 Topic 6,0.54,Q2 Topic 2,Q3 Topic 9,0.72,Q3 Topic 2,Q4 Topic 7,0.76
+Q1 Topic 3,Q2 Topic 7,0.5,Q2 Topic 2,Q3 Topic 10,0.74,Q3 Topic 2,Q4 Topic 8,0.65
+Q1 Topic 3,Q2 Topic 11,0.61,Q2 Topic 2,Q3 Topic 11,0.73,Q3 Topic 2,Q4 Topic 9,0.76
+Q1 Topic 4,Q2 Topic 0,0.6,Q2 Topic 2,Q3 Topic 12,0.62,Q3 Topic 2,Q4 Topic 10,0.79
+Q1 Topic 4,Q2 Topic 1,0.51,Q2 Topic 2,Q3 Topic 13,0.76,Q3 Topic 2,Q4 Topic 11,0.76
+Q1 Topic 4,Q2 Topic 2,0.66,Q2 Topic 3,Q3 Topic 2,0.56,Q3 Topic 2,Q4 Topic 12,0.64
+Q1 Topic 4,Q2 Topic 4,0.86,Q2 Topic 3,Q3 Topic 3,0.8,Q3 Topic 2,Q4 Topic 13,0.66
+Q1 Topic 4,Q2 Topic 5,0.71,Q2 Topic 3,Q3 Topic 5,0.55,Q3 Topic 2,Q4 Topic 14,0.69
+Q1 Topic 4,Q2 Topic 6,0.82,Q2 Topic 3,Q3 Topic 6,0.63,Q3 Topic 2,Q4 Topic 15,0.78
+Q1 Topic 4,Q2 Topic 7,0.78,Q2 Topic 3,Q3 Topic 7,0.52,Q3 Topic 3,Q4 Topic 0,0.54
+Q1 Topic 4,Q2 Topic 8,0.55,Q2 Topic 3,Q3 Topic 10,0.51,Q3 Topic 3,Q4 Topic 1,0.51
+Q1 Topic 4,Q2 Topic 9,0.52,Q2 Topic 3,Q3 Topic 11,0.64,Q3 Topic 3,Q4 Topic 2,0.69
+Q1 Topic 4,Q2 Topic 10,0.65,Q2 Topic 3,Q3 Topic 13,0.51,Q3 Topic 3,Q4 Topic 3,0.88
+Q1 Topic 4,Q2 Topic 11,0.69,Q2 Topic 4,Q3 Topic 0,0.71,Q3 Topic 3,Q4 Topic 4,0.6
+Q1 Topic 4,Q2 Topic 12,0.66,Q2 Topic 4,Q3 Topic 1,0.61,Q3 Topic 3,Q4 Topic 5,0.65
+Q1 Topic 5,Q2 Topic 0,0.53,Q2 Topic 4,Q3 Topic 2,0.77,Q3 Topic 3,Q4 Topic 6,0.69
+Q1 Topic 5,Q2 Topic 1,0.58,Q2 Topic 4,Q3 Topic 3,0.62,Q3 Topic 3,Q4 Topic 7,0.63
+Q1 Topic 5,Q2 Topic 2,0.62,Q2 Topic 4,Q3 Topic 4,0.92,Q3 Topic 3,Q4 Topic 8,0.52
+Q1 Topic 5,Q2 Topic 4,0.56,Q2 Topic 4,Q3 Topic 5,0.74,Q3 Topic 3,Q4 Topic 9,0.53
+Q1 Topic 5,Q2 Topic 5,0.62,Q2 Topic 4,Q3 Topic 6,0.88,Q3 Topic 3,Q4 Topic 10,0.61
+Q1 Topic 5,Q2 Topic 6,0.56,Q2 Topic 4,Q3 Topic 7,0.85,Q3 Topic 3,Q4 Topic 11,0.73
+Q1 Topic 5,Q2 Topic 7,0.55,Q2 Topic 4,Q3 Topic 8,0.74,Q3 Topic 3,Q4 Topic 12,0.52
+Q1 Topic 5,Q2 Topic 9,0.55,Q2 Topic 4,Q3 Topic 9,0.7,Q3 Topic 3,Q4 Topic 13,0.59
+Q1 Topic 5,Q2 Topic 10,0.57,Q2 Topic 4,Q3 Topic 10,0.87,Q3 Topic 3,Q4 Topic 14,0.69
+Q1 Topic 5,Q2 Topic 11,0.55,Q2 Topic 4,Q3 Topic 11,0.78,Q3 Topic 3,Q4 Topic 15,0.72
+Q1 Topic 6,Q2 Topic 0,0.71,Q2 Topic 4,Q3 Topic 12,0.76,Q3 Topic 4,Q4 Topic 0,0.66
+Q1 Topic 6,Q2 Topic 1,0.67,Q2 Topic 4,Q3 Topic 13,0.73,Q3 Topic 4,Q4 Topic 1,0.62
+Q1 Topic 6,Q2 Topic 2,0.76,Q2 Topic 5,Q3 Topic 0,0.67,Q3 Topic 4,Q4 Topic 2,0.78
+Q1 Topic 6,Q2 Topic 3,0.57,Q2 Topic 5,Q3 Topic 1,0.66,Q3 Topic 4,Q4 Topic 3,0.53
+Q1 Topic 6,Q2 Topic 4,0.87,Q2 Topic 5,Q3 Topic 2,0.69,Q3 Topic 4,Q4 Topic 4,0.96
+Q1 Topic 6,Q2 Topic 5,0.76,Q2 Topic 5,Q3 Topic 3,0.54,Q3 Topic 4,Q4 Topic 5,0.8
+Q1 Topic 6,Q2 Topic 6,0.93,Q2 Topic 5,Q3 Topic 4,0.75,Q3 Topic 4,Q4 Topic 6,0.91
+Q1 Topic 6,Q2 Topic 7,0.87,Q2 Topic 5,Q3 Topic 5,0.84,Q3 Topic 4,Q4 Topic 7,0.86
+Q1 Topic 6,Q2 Topic 8,0.68,Q2 Topic 5,Q3 Topic 6,0.78,Q3 Topic 4,Q4 Topic 8,0.68
+Q1 Topic 6,Q2 Topic 9,0.66,Q2 Topic 5,Q3 Topic 7,0.76,Q3 Topic 4,Q4 Topic 9,0.69
+Q1 Topic 6,Q2 Topic 10,0.83,Q2 Topic 5,Q3 Topic 8,0.78,Q3 Topic 4,Q4 Topic 10,0.76
+Q1 Topic 6,Q2 Topic 11,0.77,Q2 Topic 5,Q3 Topic 9,0.67,Q3 Topic 4,Q4 Topic 11,0.8
+Q1 Topic 6,Q2 Topic 12,0.7,Q2 Topic 5,Q3 Topic 10,0.77,Q3 Topic 4,Q4 Topic 12,0.71
+Q1 Topic 7,Q2 Topic 0,0.68,Q2 Topic 5,Q3 Topic 11,0.77,Q3 Topic 4,Q4 Topic 13,0.61
+Q1 Topic 7,Q2 Topic 1,0.58,Q2 Topic 5,Q3 Topic 12,0.67,Q3 Topic 4,Q4 Topic 14,0.73
+Q1 Topic 7,Q2 Topic 2,0.7,Q2 Topic 5,Q3 Topic 13,0.6,Q3 Topic 4,Q4 Topic 15,0.85
+Q1 Topic 7,Q2 Topic 3,0.53,Q2 Topic 6,Q3 Topic 0,0.74,Q3 Topic 5,Q4 Topic 0,0.64
+Q1 Topic 7,Q2 Topic 4,0.81,Q2 Topic 6,Q3 Topic 1,0.66,Q3 Topic 5,Q4 Topic 1,0.72
+Q1 Topic 7,Q2 Topic 5,0.7,Q2 Topic 6,Q3 Topic 2,0.82,Q3 Topic 5,Q4 Topic 2,0.71
+Q1 Topic 7,Q2 Topic 6,0.81,Q2 Topic 6,Q3 Topic 3,0.74,Q3 Topic 5,Q4 Topic 3,0.56
+Q1 Topic 7,Q2 Topic 7,0.85,Q2 Topic 6,Q3 Topic 4,0.9,Q3 Topic 5,Q4 Topic 4,0.76
+Q1 Topic 7,Q2 Topic 8,0.66,Q2 Topic 6,Q3 Topic 5,0.81,Q3 Topic 5,Q4 Topic 5,0.87
+Q1 Topic 7,Q2 Topic 9,0.62,Q2 Topic 6,Q3 Topic 6,0.97,Q3 Topic 5,Q4 Topic 6,0.83
+Q1 Topic 7,Q2 Topic 10,0.74,Q2 Topic 6,Q3 Topic 7,0.87,Q3 Topic 5,Q4 Topic 7,0.76
+Q1 Topic 7,Q2 Topic 11,0.78,Q2 Topic 6,Q3 Topic 8,0.75,Q3 Topic 5,Q4 Topic 8,0.66
+Q1 Topic 7,Q2 Topic 12,0.69,Q2 Topic 6,Q3 Topic 9,0.69,Q3 Topic 5,Q4 Topic 9,0.68
+Q1 Topic 8,Q2 Topic 0,0.57,Q2 Topic 6,Q3 Topic 10,0.9,Q3 Topic 5,Q4 Topic 10,0.77
+Q1 Topic 8,Q2 Topic 1,0.58,Q2 Topic 6,Q3 Topic 11,0.83,Q3 Topic 5,Q4 Topic 11,0.73
+Q1 Topic 8,Q2 Topic 2,0.62,Q2 Topic 6,Q3 Topic 12,0.82,Q3 Topic 5,Q4 Topic 12,0.65
+Q1 Topic 8,Q2 Topic 4,0.64,Q2 Topic 6,Q3 Topic 13,0.76,Q3 Topic 5,Q4 Topic 13,0.59
+Q1 Topic 8,Q2 Topic 5,0.64,Q2 Topic 7,Q3 Topic 0,0.73,Q3 Topic 5,Q4 Topic 14,0.84
+Q1 Topic 8,Q2 Topic 6,0.65,Q2 Topic 7,Q3 Topic 1,0.63,Q3 Topic 5,Q4 Topic 15,0.77
+Q1 Topic 8,Q2 Topic 7,0.75,Q2 Topic 7,Q3 Topic 2,0.77,Q3 Topic 6,Q4 Topic 0,0.74
+Q1 Topic 8,Q2 Topic 8,0.79,Q2 Topic 7,Q3 Topic 3,0.62,Q3 Topic 6,Q4 Topic 1,0.71
+Q1 Topic 8,Q2 Topic 9,0.64,Q2 Topic 7,Q3 Topic 4,0.82,Q3 Topic 6,Q4 Topic 2,0.84
+Q1 Topic 8,Q2 Topic 10,0.74,Q2 Topic 7,Q3 Topic 5,0.73,Q3 Topic 6,Q4 Topic 3,0.66
+Q1 Topic 8,Q2 Topic 11,0.75,Q2 Topic 7,Q3 Topic 6,0.85,Q3 Topic 6,Q4 Topic 4,0.88
+Q1 Topic 8,Q2 Topic 12,0.67,Q2 Topic 7,Q3 Topic 7,0.91,Q3 Topic 6,Q4 Topic 5,0.85
+Q1 Topic 9,Q2 Topic 0,0.57,Q2 Topic 7,Q3 Topic 8,0.8,Q3 Topic 6,Q4 Topic 6,0.96
+Q1 Topic 9,Q2 Topic 1,0.57,Q2 Topic 7,Q3 Topic 9,0.72,Q3 Topic 6,Q4 Topic 7,0.87
+Q1 Topic 9,Q2 Topic 2,0.65,Q2 Topic 7,Q3 Topic 10,0.88,Q3 Topic 6,Q4 Topic 8,0.72
+Q1 Topic 9,Q2 Topic 4,0.64,Q2 Topic 7,Q3 Topic 11,0.82,Q3 Topic 6,Q4 Topic 9,0.74
+Q1 Topic 9,Q2 Topic 5,0.54,Q2 Topic 7,Q3 Topic 12,0.79,Q3 Topic 6,Q4 Topic 10,0.86
+Q1 Topic 9,Q2 Topic 6,0.63,Q2 Topic 7,Q3 Topic 13,0.75,Q3 Topic 6,Q4 Topic 11,0.85
+Q1 Topic 9,Q2 Topic 7,0.64,Q2 Topic 8,Q3 Topic 0,0.63,Q3 Topic 6,Q4 Topic 12,0.75
+Q1 Topic 9,Q2 Topic 8,0.65,Q2 Topic 8,Q3 Topic 1,0.59,Q3 Topic 6,Q4 Topic 13,0.67
+Q1 Topic 9,Q2 Topic 9,0.73,Q2 Topic 8,Q3 Topic 2,0.6,Q3 Topic 6,Q4 Topic 14,0.78
+Q1 Topic 9,Q2 Topic 10,0.76,Q2 Topic 8,Q3 Topic 3,0.5,Q3 Topic 6,Q4 Topic 15,0.85
+Q1 Topic 9,Q2 Topic 11,0.61,Q2 Topic 8,Q3 Topic 4,0.56,Q3 Topic 7,Q4 Topic 0,0.72
+Q1 Topic 10,Q2 Topic 0,0.69,Q2 Topic 8,Q3 Topic 5,0.59,Q3 Topic 7,Q4 Topic 1,0.66
+Q1 Topic 10,Q2 Topic 1,0.62,Q2 Topic 8,Q3 Topic 6,0.62,Q3 Topic 7,Q4 Topic 2,0.79
+Q1 Topic 10,Q2 Topic 2,0.72,Q2 Topic 8,Q3 Topic 7,0.72,Q3 Topic 7,Q4 Topic 3,0.58
+Q1 Topic 10,Q2 Topic 4,0.63,Q2 Topic 8,Q3 Topic 8,0.76,Q3 Topic 7,Q4 Topic 4,0.84
+Q1 Topic 10,Q2 Topic 5,0.57,Q2 Topic 8,Q3 Topic 9,0.7,Q3 Topic 7,Q4 Topic 5,0.81
+Q1 Topic 10,Q2 Topic 6,0.68,Q2 Topic 8,Q3 Topic 10,0.69,Q3 Topic 7,Q4 Topic 6,0.88
+Q1 Topic 10,Q2 Topic 7,0.7,Q2 Topic 8,Q3 Topic 11,0.69,Q3 Topic 7,Q4 Topic 7,0.91
+Q1 Topic 10,Q2 Topic 8,0.72,Q2 Topic 8,Q3 Topic 12,0.63,Q3 Topic 7,Q4 Topic 8,0.78
+Q1 Topic 10,Q2 Topic 9,0.7,Q2 Topic 8,Q3 Topic 13,0.6,Q3 Topic 7,Q4 Topic 9,0.74
+Q1 Topic 10,Q2 Topic 10,0.83,Q2 Topic 9,Q3 Topic 0,0.6,Q3 Topic 7,Q4 Topic 10,0.84
+Q1 Topic 10,Q2 Topic 11,0.63,Q2 Topic 9,Q3 Topic 1,0.59,Q3 Topic 7,Q4 Topic 11,0.84
+Q1 Topic 10,Q2 Topic 12,0.54,Q2 Topic 9,Q3 Topic 2,0.65,Q3 Topic 7,Q4 Topic 12,0.74
+Q1 Topic 11,Q2 Topic 0,0.58,Q2 Topic 9,Q3 Topic 3,0.54,Q3 Topic 7,Q4 Topic 13,0.67
+Q1 Topic 11,Q2 Topic 1,0.65,Q2 Topic 9,Q3 Topic 4,0.54,Q3 Topic 7,Q4 Topic 14,0.7
+Q1 Topic 11,Q2 Topic 2,0.67,Q2 Topic 9,Q3 Topic 5,0.54,Q3 Topic 7,Q4 Topic 15,0.77
+Q1 Topic 11,Q2 Topic 3,0.57,Q2 Topic 9,Q3 Topic 6,0.62,Q3 Topic 8,Q4 Topic 0,0.65
+Q1 Topic 11,Q2 Topic 4,0.62,Q2 Topic 9,Q3 Topic 7,0.65,Q3 Topic 8,Q4 Topic 1,0.71
+Q1 Topic 11,Q2 Topic 5,0.67,Q2 Topic 9,Q3 Topic 8,0.64,Q3 Topic 8,Q4 Topic 2,0.7
+Q1 Topic 11,Q2 Topic 6,0.68,Q2 Topic 9,Q3 Topic 9,0.76,Q3 Topic 8,Q4 Topic 4,0.73
+Q1 Topic 11,Q2 Topic 7,0.73,Q2 Topic 9,Q3 Topic 10,0.65,Q3 Topic 8,Q4 Topic 5,0.81
+Q1 Topic 11,Q2 Topic 8,0.71,Q2 Topic 9,Q3 Topic 11,0.64,Q3 Topic 8,Q4 Topic 6,0.78
+Q1 Topic 11,Q2 Topic 9,0.62,Q2 Topic 9,Q3 Topic 13,0.6,Q3 Topic 8,Q4 Topic 7,0.83
+Q1 Topic 11,Q2 Topic 10,0.71,Q2 Topic 10,Q3 Topic 0,0.74,Q3 Topic 8,Q4 Topic 8,0.81
+Q1 Topic 11,Q2 Topic 11,0.81,Q2 Topic 10,Q3 Topic 1,0.65,Q3 Topic 8,Q4 Topic 9,0.74
+Q1 Topic 11,Q2 Topic 12,0.62,Q2 Topic 10,Q3 Topic 2,0.75,Q3 Topic 8,Q4 Topic 10,0.79
+Q1 Topic 12,Q2 Topic 0,0.62,Q2 Topic 10,Q3 Topic 3,0.61,Q3 Topic 8,Q4 Topic 11,0.75
+Q1 Topic 12,Q2 Topic 1,0.55,Q2 Topic 10,Q3 Topic 4,0.69,Q3 Topic 8,Q4 Topic 12,0.66
+Q1 Topic 12,Q2 Topic 2,0.58,Q2 Topic 10,Q3 Topic 5,0.74,Q3 Topic 8,Q4 Topic 13,0.59
+Q1 Topic 12,Q2 Topic 4,0.68,Q2 Topic 10,Q3 Topic 6,0.81,Q3 Topic 8,Q4 Topic 14,0.66
+Q1 Topic 12,Q2 Topic 5,0.66,Q2 Topic 10,Q3 Topic 7,0.78,Q3 Topic 8,Q4 Topic 15,0.68
+Q1 Topic 12,Q2 Topic 6,0.72,Q2 Topic 10,Q3 Topic 8,0.77,Q3 Topic 9,Q4 Topic 0,0.7
+Q1 Topic 12,Q2 Topic 7,0.7,Q2 Topic 10,Q3 Topic 9,0.75,Q3 Topic 9,Q4 Topic 1,0.72
+Q1 Topic 12,Q2 Topic 8,0.64,Q2 Topic 10,Q3 Topic 10,0.87,Q3 Topic 9,Q4 Topic 2,0.8
+Q1 Topic 12,Q2 Topic 9,0.5,Q2 Topic 10,Q3 Topic 11,0.74,Q3 Topic 9,Q4 Topic 4,0.67
+Q1 Topic 12,Q2 Topic 10,0.69,Q2 Topic 10,Q3 Topic 12,0.71,Q3 Topic 9,Q4 Topic 5,0.69
+Q1 Topic 12,Q2 Topic 11,0.63,Q2 Topic 10,Q3 Topic 13,0.72,Q3 Topic 9,Q4 Topic 6,0.74
+Q1 Topic 12,Q2 Topic 12,0.74,Q2 Topic 11,Q3 Topic 0,0.66,Q3 Topic 9,Q4 Topic 7,0.76
+Q1 Topic 13,Q2 Topic 0,0.53,Q2 Topic 11,Q3 Topic 1,0.63,Q3 Topic 9,Q4 Topic 8,0.71
+Q1 Topic 13,Q2 Topic 2,0.54,Q2 Topic 11,Q3 Topic 2,0.73,Q3 Topic 9,Q4 Topic 9,0.87
+Q1 Topic 13,Q2 Topic 4,0.59,Q2 Topic 11,Q3 Topic 3,0.66,Q3 Topic 9,Q4 Topic 10,0.78
+Q1 Topic 13,Q2 Topic 5,0.51,Q2 Topic 11,Q3 Topic 4,0.69,Q3 Topic 9,Q4 Topic 11,0.72
+Q1 Topic 13,Q2 Topic 6,0.57,Q2 Topic 11,Q3 Topic 5,0.66,Q3 Topic 9,Q4 Topic 12,0.57
+Q1 Topic 13,Q2 Topic 7,0.65,Q2 Topic 11,Q3 Topic 6,0.76,Q3 Topic 9,Q4 Topic 13,0.62
+Q1 Topic 13,Q2 Topic 8,0.51,Q2 Topic 11,Q3 Topic 7,0.78,Q3 Topic 9,Q4 Topic 14,0.56
+Q1 Topic 13,Q2 Topic 11,0.7,Q2 Topic 11,Q3 Topic 8,0.73,Q3 Topic 9,Q4 Topic 15,0.66
+Q1 Topic 13,Q2 Topic 12,0.53,Q2 Topic 11,Q3 Topic 9,0.7,Q3 Topic 10,Q4 Topic 0,0.81
+Q1 Topic 14,Q2 Topic 0,0.58,Q2 Topic 11,Q3 Topic 10,0.74,Q3 Topic 10,Q4 Topic 1,0.69
+Q1 Topic 14,Q2 Topic 1,0.64,Q2 Topic 11,Q3 Topic 11,0.85,Q3 Topic 10,Q4 Topic 2,0.84
+Q1 Topic 14,Q2 Topic 2,0.67,Q2 Topic 11,Q3 Topic 12,0.67,Q3 Topic 10,Q4 Topic 3,0.53
+Q1 Topic 14,Q2 Topic 3,0.72,Q2 Topic 11,Q3 Topic 13,0.73,Q3 Topic 10,Q4 Topic 4,0.82
+Q1 Topic 14,Q2 Topic 4,0.69,Q2 Topic 12,Q3 Topic 0,0.62,Q3 Topic 10,Q4 Topic 5,0.8
+Q1 Topic 14,Q2 Topic 5,0.69,Q2 Topic 12,Q3 Topic 1,0.52,Q3 Topic 10,Q4 Topic 6,0.91
+Q1 Topic 14,Q2 Topic 6,0.75,Q2 Topic 12,Q3 Topic 2,0.64,Q3 Topic 10,Q4 Topic 7,0.88
+Q1 Topic 14,Q2 Topic 7,0.7,Q2 Topic 12,Q3 Topic 4,0.7,Q3 Topic 10,Q4 Topic 8,0.78
+Q1 Topic 14,Q2 Topic 8,0.56,Q2 Topic 12,Q3 Topic 5,0.66,Q3 Topic 10,Q4 Topic 9,0.79
+Q1 Topic 14,Q2 Topic 9,0.55,Q2 Topic 12,Q3 Topic 6,0.72,Q3 Topic 10,Q4 Topic 10,0.92
+Q1 Topic 14,Q2 Topic 10,0.66,Q2 Topic 12,Q3 Topic 7,0.76,Q3 Topic 10,Q4 Topic 11,0.81
+Q1 Topic 14,Q2 Topic 11,0.72,Q2 Topic 12,Q3 Topic 8,0.72,Q3 Topic 10,Q4 Topic 12,0.76
+Q1 Topic 14,Q2 Topic 12,0.57,Q2 Topic 12,Q3 Topic 9,0.59,Q3 Topic 10,Q4 Topic 13,0.68
+Q1 Topic 15,Q2 Topic 0,0.61,Q2 Topic 12,Q3 Topic 10,0.74,Q3 Topic 10,Q4 Topic 14,0.69
+Q1 Topic 15,Q2 Topic 1,0.57,Q2 Topic 12,Q3 Topic 11,0.67,Q3 Topic 10,Q4 Topic 15,0.78
+Q1 Topic 15,Q2 Topic 2,0.74,Q2 Topic 12,Q3 Topic 12,0.78,Q3 Topic 11,Q4 Topic 0,0.66
+Q1 Topic 15,Q2 Topic 3,0.63,Q2 Topic 12,Q3 Topic 13,0.61,Q3 Topic 11,Q4 Topic 1,0.73
+Q1 Topic 15,Q2 Topic 4,0.79,,,,Q3 Topic 11,Q4 Topic 2,0.77
+Q1 Topic 15,Q2 Topic 5,0.7,,,,Q3 Topic 11,Q4 Topic 3,0.66
+Q1 Topic 15,Q2 Topic 6,0.81,,,,Q3 Topic 11,Q4 Topic 4,0.76
+Q1 Topic 15,Q2 Topic 7,0.75,,,,Q3 Topic 11,Q4 Topic 5,0.82
+Q1 Topic 15,Q2 Topic 8,0.54,,,,Q3 Topic 11,Q4 Topic 6,0.83
+Q1 Topic 15,Q2 Topic 9,0.56,,,,Q3 Topic 11,Q4 Topic 7,0.81
+Q1 Topic 15,Q2 Topic 10,0.67,,,,Q3 Topic 11,Q4 Topic 8,0.69
+Q1 Topic 15,Q2 Topic 11,0.72,,,,Q3 Topic 11,Q4 Topic 9,0.74
+Q1 Topic 15,Q2 Topic 12,0.6,,,,Q3 Topic 11,Q4 Topic 10,0.77
+Q1 Topic 16,Q2 Topic 0,0.64,,,,Q3 Topic 11,Q4 Topic 11,0.87
+Q1 Topic 16,Q2 Topic 1,0.6,,,,Q3 Topic 11,Q4 Topic 12,0.68
+Q1 Topic 16,Q2 Topic 2,0.65,,,,Q3 Topic 11,Q4 Topic 13,0.68
+Q1 Topic 16,Q2 Topic 4,0.72,,,,Q3 Topic 11,Q4 Topic 14,0.76
+Q1 Topic 16,Q2 Topic 5,0.65,,,,Q3 Topic 11,Q4 Topic 15,0.78
+Q1 Topic 16,Q2 Topic 6,0.75,,,,Q3 Topic 12,Q4 Topic 0,0.71
+Q1 Topic 16,Q2 Topic 7,0.75,,,,Q3 Topic 12,Q4 Topic 1,0.54
+Q1 Topic 16,Q2 Topic 8,0.64,,,,Q3 Topic 12,Q4 Topic 2,0.7
+Q1 Topic 16,Q2 Topic 9,0.68,,,,Q3 Topic 12,Q4 Topic 4,0.78
+Q1 Topic 16,Q2 Topic 10,0.74,,,,Q3 Topic 12,Q4 Topic 5,0.72
+Q1 Topic 16,Q2 Topic 11,0.66,,,,Q3 Topic 12,Q4 Topic 6,0.84
+Q1 Topic 16,Q2 Topic 12,0.67,,,,Q3 Topic 12,Q4 Topic 7,0.81
+Q1 Topic 18,Q2 Topic 0,0.66,,,,Q3 Topic 12,Q4 Topic 8,0.7
+Q1 Topic 18,Q2 Topic 1,0.52,,,,Q3 Topic 12,Q4 Topic 9,0.61
+Q1 Topic 18,Q2 Topic 2,0.62,,,,Q3 Topic 12,Q4 Topic 10,0.78
+Q1 Topic 18,Q2 Topic 4,0.77,,,,Q3 Topic 12,Q4 Topic 11,0.76
+Q1 Topic 18,Q2 Topic 5,0.65,,,,Q3 Topic 12,Q4 Topic 12,0.81
+Q1 Topic 18,Q2 Topic 6,0.75,,,,Q3 Topic 12,Q4 Topic 13,0.63
+Q1 Topic 18,Q2 Topic 7,0.77,,,,Q3 Topic 12,Q4 Topic 14,0.57
+Q1 Topic 18,Q2 Topic 8,0.6,,,,Q3 Topic 12,Q4 Topic 15,0.69
+Q1 Topic 18,Q2 Topic 9,0.55,,,,Q3 Topic 13,Q4 Topic 0,0.72
+Q1 Topic 18,Q2 Topic 10,0.72,,,,Q3 Topic 13,Q4 Topic 1,0.56
+Q1 Topic 18,Q2 Topic 11,0.69,,,,Q3 Topic 13,Q4 Topic 2,0.75
+Q1 Topic 18,Q2 Topic 12,0.69,,,,Q3 Topic 13,Q4 Topic 3,0.56
+,,,,,,Q3 Topic 13,Q4 Topic 4,0.68
+,,,,,,Q3 Topic 13,Q4 Topic 5,0.68
+,,,,,,Q3 Topic 13,Q4 Topic 6,0.75
+,,,,,,Q3 Topic 13,Q4 Topic 7,0.74
+,,,,,,Q3 Topic 13,Q4 Topic 8,0.62
+,,,,,,Q3 Topic 13,Q4 Topic 9,0.66
+,,,,,,Q3 Topic 13,Q4 Topic 10,0.74
+,,,,,,Q3 Topic 13,Q4 Topic 11,0.72
+,,,,,,Q3 Topic 13,Q4 Topic 12,0.62
+,,,,,,Q3 Topic 13,Q4 Topic 13,0.8
+,,,,,,Q3 Topic 13,Q4 Topic 14,0.57
+,,,,,,Q3 Topic 13,Q4 Topic 15,0.74
