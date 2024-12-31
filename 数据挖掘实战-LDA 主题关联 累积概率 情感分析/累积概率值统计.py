@@ -4,7 +4,6 @@ from gensim.models.ldamodel import LdaModel
 from collections import defaultdict
 
 
-
 import pandas as pd
 import matplotlib
 import seaborn as sns
@@ -35,13 +34,12 @@ def lad_probability(name,number):
 
     # 获取每个主题和每个词在各主题下的概率分布
 
-    word_topic = pd.read_csv(f'./{name}/{name}主题词分布表.csv',encoding='gbk')
-    word_topic = word_topic.iloc[:50]
+    word_topic = pd.read_excel(f'./{name}/主题词分布表.xlsx')
+    word_topic = word_topic.iloc[:30]
 
     list_columns = []
     for c in word_topic.columns:
         list_columns.append(c)
-
     # 初始化一个默认字典来存储不同维度的词组
     topic_word_groups = defaultdict(list)
 
@@ -64,7 +62,7 @@ def lad_probability(name,number):
             topic_word_groups1[dimension] = words
             labels.append(dimension)
 
-    print(topic_word_groups1)
+
     # 获取主题-词矩阵(即topic-term matrix)，其中每个元素是词在每个主题下的概率
     topic_term_matrix = lda.get_topics()
 
@@ -82,48 +80,47 @@ def lad_probability(name,number):
                 print(f"Warning: Word '{word}' not in dictionary!")
 
 
+    # 将累积概率结果转换为 DataFrame
+    df = pd.DataFrame(cumulative_prob)
+    df.index = [f'Topic {i+1}' for i in range(len(df))]
+    df = df.T.reset_index()  # 转置并重置索引
+    df.columns = ['Dimension'] + [f'Topic {i+1}' for i in range(len(df.columns) - 1)]
+    # 将 DataFrame 保存为 Excel 文件
+    excel_file = f'./{name}/累计概率值.xlsx'
+    df.to_excel(excel_file, index=False)
 
-    # # 将累积概率结果转换为 DataFrame
-    # df = pd.DataFrame(cumulative_prob)
-    # df.index = [f'Topic {i+1}' for i in range(len(df))]
-    # df = df.T.reset_index()  # 转置并重置索引
-    # df.columns = ['Dimension'] + [f'Topic {i+1}' for i in range(len(df.columns) - 1)]
-    # # 将 DataFrame 保存为 Excel 文件
-    # excel_file = f'./{name}/累计概率值.xlsx'
-    # df.to_excel(excel_file, index=False)
-    #
-    # # 打印累积概率
-    # for topic, probs in cumulative_prob.items():
-    #     print(f"{topic} cumulative probabilities:")
-    #     for topic_id, prob in enumerate(probs):
-    #         print(f"  Topic {topic_id + 1}: {prob:.4f}")
-    #
-    #
-    # # 可视化累积概率
-    # x = np.arange(number)  # 主题的数量
-    # fig, ax = plt.subplots(figsize=(18, 10),dpi=500)
-    #
-    # # 设置不同的颜色
-    # colors = sns.color_palette("hsv", len(labels))
-    #
-    # # 绘制柱状图
-    # for idx, word in enumerate(labels):
-    #     ax.bar(x + (idx * 0.15), cumulative_prob[word], width=0.15, color=colors[idx], label=word)
-    #
-    # plt.rcParams['font.sans-serif'] = ['SimHei']
-    # # 添加标签和标题
-    # ax.set_xlabel('Topics')
-    # ax.set_ylabel('Cumulative Probabilities')
-    # ax.set_title('Cumulative Probabilities of Words Across Topics')
-    # ax.set_xticks(x + 0.3)
-    # ax.set_xticklabels([f'Topic {i}' for i in range(number)])
-    # ax.legend(title='Words')
-    # plt.savefig(f'./{name}/累计概率值.png')
-    # plt.show()
+    # 打印累积概率
+    for topic, probs in cumulative_prob.items():
+        print(f"{topic} cumulative probabilities:")
+        for topic_id, prob in enumerate(probs):
+            print(f"  Topic {topic_id + 1}: {prob:.4f}")
+
+
+    # 可视化累积概率
+    x = np.arange(number)  # 主题的数量
+    fig, ax = plt.subplots(figsize=(18, 10),dpi=500)
+
+    # 设置不同的颜色
+    colors = sns.color_palette("hsv", len(labels))
+
+    # 绘制柱状图
+    for idx, word in enumerate(labels):
+        ax.bar(x + (idx * 0.15), cumulative_prob[word], width=0.15, color=colors[idx], label=word)
+
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    # 添加标签和标题
+    ax.set_xlabel('Topics')
+    ax.set_ylabel('Cumulative Probabilities')
+    ax.set_title('Cumulative Probabilities of Words Across Topics')
+    ax.set_xticks(x + 0.3)
+    ax.set_xticklabels([f'Topic {i}' for i in range(number)])
+    ax.legend(title='Words')
+    plt.savefig(f'./{name}/累计概率值.png')
+    plt.show()
 
 
 if __name__ == '__main__':
-    list_name = ['2023一季度']
-    list_number = [19]
+    list_name = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
+    list_number = [16,18,14,17,18,15,19,19,13,14,16,16]
     for name,number in zip(list_name,list_number):
         lad_probability(name,number)
