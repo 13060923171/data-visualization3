@@ -14,7 +14,8 @@ import pandas as pd
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.stem.isri import ISRIStemmer
-from mahaNLP.preprocess import Preprocess
+from maha.cleaners.functions import numbers_to_text
+from maha.cleaners.functions import normalize, keep, remove
 
 import matplotlib
 import seaborn as sns
@@ -22,48 +23,42 @@ import matplotlib.pyplot as plt
 matplotlib.use('Agg')  # 使用Agg后端
 sns.set_style(style="whitegrid")
 
-# nltk.download('stopwords')
-# nltk.download('punkt')
-# nltk.download('arabic')
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('arabic')
 
 # 定义预处理函数
 def preprocess_text(text, stop_words):
-    preprocessor = Preprocess()
-    text = preprocessor.remove_url(text)
-    text = re.sub(r'[^\w\s]', '', text)  # 去除标点符号
-    text = re.sub(r'\d+', '', text)  # 去除数字
-    text = remove_nonarabic(text)  # 去除非阿拉伯语字符
+    # 使用maha库进行预处理
+    text = remove(text, punctuations=True)  # 去除多余的空格
+    text = keep(text, arabic_letters=True, harakat=True)  # 保持仅阿拉伯语字符
+    text = numbers_to_text(text, accusative=True)  # 清理文本，去除URL、标点符号、数字等
+    text = normalize(str(text), alef=False, all=True)  # 艾利夫修正
     text = [word for word in word_tokenize(text) if word not in stop_words]  # 去除停用词
     stemmer = ISRIStemmer()
     text = [stemmer.stem(word) for word in text]  # 词干提取
     text1 = ' '.join(text)
     return text1
 
-# 自定义实现去除非阿拉伯语字符的函数
-def remove_nonarabic(text):
-    return re.sub(r'[^\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]+', ' ', text)
-
 # 示例停用词列表
-stop_words1 = Preprocess().stopwords.copy()
+stop_words1 = nltk.corpus.stopwords.words('arabic').copy()
 
-stop_words2 = nltk.corpus.stopwords.words('arabic')
-# 导入停用词列表
-stop_words3 = []
+stop_words2 = []
 with open("list.txt", 'r', encoding='utf-8') as f:
     lines = f.readlines()
     for line in lines:
-        stop_words3.append(line.strip())
+        stop_words2.append(line.strip())
 
-stop_words = stop_words1 + stop_words2 + stop_words3
-
+stop_words = stop_words1 + stop_words2
 
 df = pd.read_excel('data.xlsx')
 df = df.drop_duplicates(subset=['content'])
-df = df.dropna(subset=['content'],axis=0)
+df = df.dropna(subset=['content'], axis=0)
+
 # 预处理推文
-processed_tweets = [preprocess_text(tweet, stop_words) for tweet in df['content'].tolist()]
+processed_tweets = [preprocess_text(tweet, stop_words) for tweet in tqdm(df['content'].tolist())]
 df['fenci'] = processed_tweets
-df.to_excel('new_data.xlsx',index=False)
+df.to_excel('new_data.xlsx', index=False)
 
 
 def lda(processed_tweets):
@@ -135,6 +130,24 @@ def lda(processed_tweets):
     #把数据进行可视化处理
     pyLDAvis.save_html(data1, 'lda.html')
 
+    #主题判断模块
+    list3 = []
+    list2 = []
+    #这里进行lda主题判断
+    for i in lda.get_document_topics(corpus)[:]:
+        listj = []
+        list1 = []
+        for j in i:
+            list1.append(j)
+            listj.append(j[1])
+        list3.append(list1)
+        bz = listj.index(max(listj))
+        list2.append(i[bz][0])
+
+    df['主题概率'] = list3
+    df['主题类型'] = list2
+
+    df.to_excel('lda_new_data.xlsx',index=False)
 
 if __name__ == '__main__':
     lda(processed_tweets)

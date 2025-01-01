@@ -1,6 +1,6 @@
 import pandas as pd
 import jieba
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split,GridSearchCV
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder
 from sklearn.naive_bayes import MultinomialNB
@@ -68,11 +68,14 @@ def evaluate_model(y_true, y_pred, model_name):
     return accuracy, precision, recall, f1
 
 def nb1():
-    # 训练 CountVectorizer 特征的贝叶斯模型
-    nb_count = MultinomialNB()
-    nb_count.fit(X_train_count, y_train)
-    y_pred_count = nb_count.predict(X_test_count)
-    metrics_nb_count = evaluate_model(y_test, y_pred_count, 'Naive Bayes (CountVectorizer)')
+    # 训练 CountVectorizer 特征的贝叶斯模型，使用网格搜索
+    nb_count_params = {'alpha': [0.01, 0.1, 0.5, 1.0, 10.0]}
+    nb_count_grid = GridSearchCV(MultinomialNB(), nb_count_params, cv=5, scoring='accuracy')
+    nb_count_grid.fit(X_train_count, y_train)
+    best_nb_count = nb_count_grid.best_estimator_
+    print(best_nb_count)
+    y_pred_count = best_nb_count.predict(X_test_count)
+    metrics_nb_count = evaluate_model(y_test, y_pred_count, 'Naive Bayes (CountVectorizer, Grid Search)')
 
     # 计算每个点的FPR和TPR，这里假设正类是第二类（索引为1）
     fpr, tpr, thresholds = roc_curve(y_test, y_pred_count)
@@ -110,10 +113,14 @@ def nb1():
 
 def nb2():
     # 训练 TfidfVectorizer 特征的贝叶斯模型
-    nb_tfidf = MultinomialNB()
-    nb_tfidf.fit(X_train_tfidf, y_train)
-    y_pred_tfidf = nb_tfidf.predict(X_test_tfidf)
-    metrics_nb_tfidf = evaluate_model(y_test, y_pred_tfidf, 'Naive Bayes (TfidfVectorizer)')
+    # 训练 CountVectorizer 特征的贝叶斯模型，使用网格搜索
+    nb_tfidf_params = {'alpha': [0.01, 0.1, 0.5, 1.0, 10.0]}
+    nb_tfidf_grid = GridSearchCV(MultinomialNB(), nb_tfidf_params, cv=5, scoring='accuracy')
+    nb_tfidf_grid.fit(X_train_tfidf, y_train)
+    best_nb_tfidf = nb_tfidf_grid.best_estimator_
+    print(best_nb_tfidf)
+    y_pred_tfidf = best_nb_tfidf.predict(X_test_count)
+    metrics_nb_tfidf = evaluate_model(y_test, y_pred_tfidf, 'Naive Bayes (TfidfVectorizer, Grid Search)')
 
     # 计算每个点的FPR和TPR，这里假设正类是第二类（索引为1）
     fpr, tpr, thresholds = roc_curve(y_test, y_pred_tfidf)
@@ -254,10 +261,10 @@ def gru():
 
 
 if __name__ == '__main__':
-    # nb1()
+    nb1()
     nb2()
     # lstm()
-    gru()
+    # gru()
 
 # # 将所有模型的指标保存到一个列表中
 # all_metrics = [
