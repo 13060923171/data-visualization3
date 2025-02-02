@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 matplotlib.use('Agg')  # 使用Agg后端
 sns.set_style(style="whitegrid")
 
+
 from pyecharts import options as opts
 from pyecharts.charts import Bar
 from pyecharts.commons.utils import JsCode
