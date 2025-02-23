@@ -1,0 +1,12 @@
+ ARIMA(0,1,0)(0,0,0)[0] intercept   : AIC=25730.476, Time=0.02 sec
+ ARIMA(1,1,0)(0,0,0)[0] intercept   : AIC=25731.908, Time=0.05 sec
+ ARIMA(0,1,1)(0,0,0)[0] intercept   : AIC=25731.926, Time=0.05 sec
+ ARIMA(0,1,0)(0,0,0)[0]             : AIC=25730.031, Time=0.01 sec
+ ARIMA(1,1,1)(0,0,0)[0] intercept   : AIC=25733.136, Time=0.32 sec
+
+Best model:  ARIMA(0,1,0)(0,0,0)[0]          
+Total fit time: 0.460 seconds
+ADF统计量: -0.061, p值: 0.953
+差分后ADF统计量: -10.113, p值: 0.000
+MAE: 3117.22, RMSE: 3352.65
+Ljung-Box检验p值: 0.310
