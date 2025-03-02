@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="1418.0071"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-701.715210 -697.027649 1418.007080 1380.319824"
+     height="1380.3198" preserveAspectRatio="xMidYMid meet"
+     xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <g id="edges">
+        <path fill="none" stroke-width="4.8"
+              d="M 442.353912,-522.150574 C 496.639618,-576.436279 496.639618,-467.864868 442.353912,-522.150574"
+              class="id_确实" stroke-opacity="0.2" stroke="#8cb900"/>
+        <path fill="none" stroke-width="5.6"
+              d="M 418.891205,-535.797424 L 245.923691,-636.402222"
+              class="id_确实 id_厉害" stroke-opacity="0.2" stroke="#b29b6c"/>
+        <path fill="none" stroke-width="5.0"
+              d="M 417.235596,-511.864410 L 216.684662,-429.737030"
+              class="id_确实 id_优秀" stroke-opacity="0.2" stroke="#8cb900"/>
+        <path fill="none" stroke-width="7.0"
+              d="M 418.540039,-509.126221 L -426.847015,-46.764061"
+              class="id_确实 id_不错" stroke-opacity="0.2" stroke="#8cb900"/>
+        <path fill="none" stroke-width="5.0"
+              d="M 442.020935,-495.009766 L 437.380341,-116.741028"
+              class="id_确实 id_善良" stroke-opacity="0.2" stroke="#c59422"/>
+        <path fill="none" stroke-width="7.6"
+              d="M 425.148834,-501.157227 L 30.614681,-19.753426"
+              class="id_确实 id_平利" stroke-opacity="0.2" stroke="#8cb900"/>
+        <path fill="none" stroke-width="6.2000003"
+              d="M 466.223938,143.130386 C 491.938232,117.416100 491.938232,168.844666 466.223938,143.130386"
+              class="id_遗憾" stroke-opacity="0.2" stroke="#d97dd8"/>
+        <path fill="none" stroke-width="7.0"
+              d="M 565.732239,383.473022 C 591.446533,357.758728 591.446533,409.187317 565.732239,383.473022"
+              class="id_麻烦" stroke-opacity="0.2" stroke="#d97dd8"/>
+        <path fill="none" stroke-width="4.2000003"
+              d="M -583.126892,-364.093658 C -557.412598,-389.807953 -557.412598,-338.379364 -583.126892,-364.093658"
+              class="id_好奇" stroke-opacity="0.2" stroke="#d97dd8"/>
+        <path fill="none" stroke-width="4.4"
+              d="M -242.890671,79.292328 C -205.747818,42.149471 -205.747818,116.435181 -242.890671,79.292328"
+              class="id_漂亮" stroke-opacity="0.2" stroke="#8cb900"/>
+        <path fill="none" stroke-width="6.2000003"
+              d="M -238.016724,61.371876 L -199.211502,-81.306717"
+              class="id_漂亮 id_幸福" stroke-opacity="0.2" stroke="#57a737"/>
+        <path fill="none" stroke-width="4.4"
+              d="M -224.849411,74.886566 L 407.868744,-79.626282"
+              class="id_漂亮 id_善良" stroke-opacity="0.2" stroke="#c59422"/>
+        <path fill="none" stroke-width="8.8"
+              d="M -222.904373,-382.067444 C -180.047226,-424.924591 -180.047226,-339.210297 -222.904373,-382.067444"
+              class="id_辛苦" stroke-opacity="0.2" stroke="#00c7ff"/>
+        <path fill="none" stroke-width="7.4"
+              d="M -228.990540,-361.521332 L -472.386261,460.151764"
+              class="id_辛苦 id_心疼" stroke-opacity="0.2" stroke="#7f9ba2"/>
+        <path fill="none" stroke-width="6.6"
+              d="M -219.812897,-360.863037 L -193.302795,-179.031021"
+              class="id_辛苦 id_幸福" stroke-opacity="0.2" stroke="#11aeb7"/>
+        <path fill="none" stroke-width="5.8"
+              d="M -207.139069,-367.554047 L 231.489914,36.244202"
+              class="id_辛苦 id_干活" stroke-opacity="0.2" stroke="#46c07f"/>
+        <path fill="none" stroke-width="7.2000003"
+              d="M 232.340027,-644.303040 C 263.768585,-675.731628 263.768585,-612.874451 232.340027,-644.303040"
+              class="id_厉害" stroke-opacity="0.2" stroke="#d97dd8"/>
+        <path fill="none" stroke-width="6.8"
+              d="M -92.357109,204.700653 L -172.589020,-81.411163"
+              class="id_简单 id_幸福" stroke-opacity="0.2" stroke="#7e89a3"/>
+        <path fill="none" stroke-width="7.6"
+              d="M 199.615646,-413.093140 L 27.635780,-21.580713"
+              class="id_优秀 id_平利" stroke-opacity="0.2" stroke="#8cb900"/>
+        <path fill="none" stroke-width="4.8"
+              d="M 142.998581,474.149078 L -54.389626,664.936157"
+              class="id_细腻 id_成熟" stroke-opacity="0.2" stroke="#d97dd8"/>
+        <path fill="none" stroke-width="6.8"
+              d="M -443.140717,-37.852650 C -405.997864,-74.995506 -405.997864,-0.709793 -443.140717,-37.852650"
+              class="id_不错" stroke-opacity="0.2" stroke="#8cb900"/>
+        <path fill="none" stroke-width="4.4"
+              d="M -426.384491,-29.844730 L 113.772026,228.299881"
+              class="id_不错 id_舒适" stroke-opacity="0.2" stroke="#b29b6c"/>
+        <path fill="none" stroke-width="6.4"
+              d="M 396.001129,555.024292 C 421.715424,529.309998 421.715424,580.738586 396.001129,555.024292"
+              class="id_聪明" stroke-opacity="0.2" stroke="#d97dd8"/>
+        <path fill="none" stroke-width="14.8"
+              d="M -478.472412,480.697876 C -435.615265,437.840729 -435.615265,523.554993 -478.472412,480.697876"
+              class="id_心疼" stroke-opacity="0.2" stroke="#ff7045"/>
+        <path fill="none" stroke-width="4.0"
+              d="M -469.213440,461.372894 L -207.693588,-84.462448"
+              class="id_心疼 id_幸福" stroke-opacity="0.2" stroke="#91835a"/>
+        <path fill="none" stroke-width="4.8"
+              d="M -491.927460,464.020172 L -614.597778,311.968567"
+              class="id_心疼 id_舒服" stroke-opacity="0.2" stroke="#7f9ba2"/>
+        <path fill="none" stroke-width="4.4"
+              d="M -72.097023,436.718292 C -17.811310,382.432587 -17.811310,491.003998 -72.097023,436.718292"
+              class="id_勤劳" stroke-opacity="0.2" stroke="#00c7ff"/>
+        <path fill="none" stroke-width="5.6"
+              d="M -77.453506,410.109222 L -176.222137,-80.537376"
+              class="id_勤劳 id_幸福" stroke-opacity="0.2" stroke="#11aeb7"/>
+        <path fill="none" stroke-width="6.0"
+              d="M -95.033546,422.204468 L -632.630554,82.023018"
+              class="id_勤劳 id_努力" stroke-opacity="0.2" stroke="#00c7ff"/>
+        <path fill="none" stroke-width="8.0"
+              d="M -70.511955,409.621765 L -19.530233,-461.903259"
+              class="id_勤劳 id_朴实" stroke-opacity="0.2" stroke="#46c07f"/>
+        <path fill="none" stroke-width="4.8"
+              d="M -81.373505,411.209839 L -416.825714,-511.216278"
+              class="id_勤劳 id_贤惠" stroke-opacity="0.2" stroke="#6ca2eb"/>
+        <path fill="none" stroke-width="9.0"
+              d="M -49.775391,421.275513 L 655.761841,-66.836304"
+              class="id_勤劳 id_不适" stroke-opacity="0.2" stroke="#6ca2eb"/>
+        <path fill="none" stroke-width="8.400001"
+              d="M -232.102722,-109.989624 L -630.803345,59.534237"
+              class="id_幸福 id_努力" stroke-opacity="0.2" stroke="#11aeb7"/>
+        <path fill="none" stroke-width="5.2000003"
+              d="M -236.045792,-131.640472 L -652.574646,-149.036301"
+              class="id_幸福 id_幸运" stroke-opacity="0.2" stroke="#7e89a3"/>
+        <path fill="none" stroke-width="7.0"
+              d="M -190.439255,-179.364517 L -229.408401,-625.596741"
+              class="id_幸福 id_平淡" stroke-opacity="0.2" stroke="#7e89a3"/>
+        <path fill="none" stroke-width="15.0"
+              d="M -148.362411,-96.741302 L 321.574707,311.983917"
+              class="id_幸福 id_平安" stroke-opacity="0.2" stroke="#11aeb7"/>
+        <path fill="none" stroke-width="13.400001"
+              d="M -144.452942,-157.238220 L -7.286827,-248.440277"
+              class="id_幸福 id_健康" stroke-opacity="0.2" stroke="#7e89a3"/>
+        <path fill="none" stroke-width="10.6"
+              d="M -229.607529,-154.174561 L -383.698212,-241.351532"
+              class="id_幸福 id_快乐" stroke-opacity="0.2" stroke="#57a737"/>
+        <path fill="none" stroke-width="15.400001"
+              d="M -136.206940,-126.126877 L 407.082886,-88.799614"
+              class="id_幸福 id_善良" stroke-opacity="0.2" stroke="#91835a"/>
+        <path fill="none" stroke-width="8.2"
+              d="M -136.489883,-135.870239 L 199.992828,-178.718933"
+              class="id_幸福 id_温柔" stroke-opacity="0.2" stroke="#7e89a3"/>
+        <path fill="none" stroke-width="8.0"
+              d="M -215.642319,-89.222702 L -425.382935,197.013336"
+              class="id_幸福 id_恭喜" stroke-opacity="0.2" stroke="#7e89a3"/>
+        <path fill="none" stroke-width="4.2000003"
+              d="M -164.281174,-174.547470 L -24.387226,-463.168732"
+              class="id_幸福 id_朴实" stroke-opacity="0.2" stroke="#57a737"/>
+        <path fill="none" stroke-width="5.4"
+              d="M 616.323730,-299.086090 L 456.367737,-109.664200"
+              class="id_温暖 id_善良" stroke-opacity="0.2" stroke="#ec768e"/>
+        <path fill="none" stroke-width="7.8"
+              d="M 673.434753,157.972382 C 716.291870,115.115234 716.291870,200.829529 673.434753,157.972382"
+              class="id_美好" stroke-opacity="0.2" stroke="#00c7ff"/>
+        <path fill="none" stroke-width="15.6"
+              d="M 658.545837,142.561203 L 457.856781,-65.167641"
+              class="id_美好 id_善良" stroke-opacity="0.2" stroke="#7f9ba2"/>
+        <path fill="none" stroke-width="11.400001"
+              d="M 652.208618,160.910843 L 138.108170,232.080750"
+              class="id_美好 id_舒适" stroke-opacity="0.2" stroke="#6ca2eb"/>
+        <path fill="none" stroke-width="14.6"
+              d="M 672.779663,136.553833 L 666.728333,-61.300171"
+              class="id_美好 id_不适" stroke-opacity="0.2" stroke="#6ca2eb"/>
+        <path fill="none" stroke-width="9.2"
+              d="M 249.357254,52.692730 C 297.928680,4.121300 297.928680,101.264160 249.357254,52.692730"
+              class="id_干活" stroke-opacity="0.2" stroke="#8cb900"/>
+        <path fill="none" stroke-width="4.0"
+              d="M 259.220551,30.500134 L 404.908478,-297.300293"
+              class="id_干活 id_淳朴" stroke-opacity="0.2" stroke="#8cb900"/>
+        <path fill="none" stroke-width="6.0"
+              d="M 268.850708,38.208225 L 412.932159,-68.850662"
+              class="id_干活 id_善良" stroke-opacity="0.2" stroke="#c59422"/>
+        <path fill="none" stroke-width="7.8"
+              d="M 246.456573,76.804596 L 176.217361,660.665894"
+              class="id_干活 id_荒唐" stroke-opacity="0.2" stroke="#b29b6c"/>
+        <path fill="none" stroke-width="10.8"
+              d="M -653.152710,69.036980 C -604.581299,20.465549 -604.581299,117.608414 -653.152710,69.036980"
+              class="id_努力" stroke-opacity="0.2" stroke="#00c7ff"/>
+        <path fill="none" stroke-width="9.0"
+              d="M -629.111206,65.601547 L 407.313995,-82.499512"
+              class="id_努力 id_善良" stroke-opacity="0.2" stroke="#7f9ba2"/>
+        <path fill="none" stroke-width="5.0"
+              d="M -637.303345,50.636047 L -9.666285,-678.044556"
+              class="id_努力 id_健全" stroke-opacity="0.2" stroke="#6ca2eb"/>
+        <path fill="none" stroke-width="4.6"
+              d="M -626.258789,297.514557 C -589.115906,260.371704 -589.115906,334.657410 -626.258789,297.514557"
+              class="id_舒服" stroke-opacity="0.2" stroke="#00c7ff"/>
+        <path fill="none" stroke-width="4.2000003"
+              d="M -612.684814,310.189148 L -289.525757,611.935974"
+              class="id_舒服 id_干净" stroke-opacity="0.2" stroke="#6ca2eb"/>
+        <path fill="none" stroke-width="6.0"
+              d="M -283.296722,377.576691 C -257.582428,351.862396 -257.582428,403.290985 -283.296722,377.576691"
+              class="id_尊重" stroke-opacity="0.2" stroke="#d97dd8"/>
+        <path fill="none" stroke-width="14.400001"
+              d="M 411.673706,-296.285156 L 433.410858,-116.526321"
+              class="id_淳朴 id_善良" stroke-opacity="0.2" stroke="#c59422"/>
+        <path fill="none" stroke-width="4.0"
+              d="M 335.587555,324.171509 C 372.730408,287.028656 372.730408,361.314362 335.587555,324.171509"
+              class="id_平安" stroke-opacity="0.2" stroke="#00c7ff"/>
+        <path fill="none" stroke-width="6.2000003"
+              d="M 320.964172,312.723572 L -384.764740,-239.757019"
+              class="id_平安 id_快乐" stroke-opacity="0.2" stroke="#46c07f"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#8cb900" r="24.971428" cx="442.3539"
+                class="id_确实" cy="-522.1506" stroke="#628100"
+                stroke-opacity="1.0" stroke-width="4.342857"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="14.457143" cx="232.34003"
+                class="id_厉害" cy="-644.30304" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="2.5142856"/>
+        <circle fill-opacity="1.0" fill="#8cb900" r="11.828572" cx="204.78651"
+                class="id_优秀" cy="-424.86462" stroke="#628100"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+        <circle fill-opacity="1.0" fill="#8cb900" r="17.085714" cx="-443.14072"
+                class="id_不错" cy="-37.85265" stroke="#628100"
+                stroke-opacity="1.0" stroke-width="2.9714284"/>
+        <circle fill-opacity="1.0" fill="#ff7045" r="27.6" cx="437.01233"
+                class="id_善良" cy="-86.743286" stroke="#b24e30"
+                stroke-opacity="1.0" stroke-width="4.7999997"/>
+        <circle fill-opacity="1.0" fill="#8cb900" r="11.828572" cx="22.464909"
+                class="id_平利" cy="-9.809214" stroke="#628100"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="11.828572" cx="466.22394"
+                class="id_遗憾" cy="143.13039" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="11.828572" cx="565.73224"
+                class="id_麻烦" cy="383.47302" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="11.828572" cx="-583.1269"
+                class="id_好奇" cy="-364.09366" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+        <circle fill-opacity="1.0" fill="#8cb900" r="17.085714" cx="-242.89067"
+                class="id_漂亮" cy="79.29233" stroke="#628100"
+                stroke-opacity="1.0" stroke-width="2.9714284"/>
+        <circle fill-opacity="1.0" fill="#23966f" r="46.0" cx="-186.08934"
+                class="id_幸福" cy="-129.5541" stroke="#18694d"
+                stroke-opacity="1.0" stroke-width="8.0"/>
+        <circle fill-opacity="1.0" fill="#00c7ff" r="19.714287" cx="-222.90437"
+                class="id_辛苦" cy="-382.06744" stroke="#008bb2"
+                stroke-opacity="1.0" stroke-width="3.4285715"/>
+        <circle fill-opacity="1.0" fill="#ff7045" r="19.714287" cx="-478.4724"
+                class="id_心疼" cy="480.69788" stroke="#b24e30"
+                stroke-opacity="1.0" stroke-width="3.4285715"/>
+        <circle fill-opacity="1.0" fill="#8cb900" r="22.342857" cx="249.35725"
+                class="id_干活" cy="52.69273" stroke="#628100"
+                stroke-opacity="1.0" stroke-width="3.8857143"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="-89.65704"
+                class="id_简单" cy="214.32924" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="150.18886"
+                class="id_细腻" cy="467.19925" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="-61.579903"
+                class="id_成熟" cy="671.886" stroke="#975797" stroke-opacity="1.0"
+                stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="11.828572" cx="125.37249"
+                class="id_舒适" cy="233.84383" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="11.828572" cx="396.00113"
+                class="id_聪明" cy="555.0243" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+        <circle fill-opacity="1.0" fill="#00c7ff" r="17.085714" cx="-626.2588"
+                class="id_舒服" cy="297.51456" stroke="#008bb2"
+                stroke-opacity="1.0" stroke-width="2.9714284"/>
+        <circle fill-opacity="1.0" fill="#00c7ff" r="24.971428" cx="-72.09702"
+                class="id_勤劳" cy="436.7183" stroke="#008bb2"
+                stroke-opacity="1.0" stroke-width="4.342857"/>
+        <circle fill-opacity="1.0" fill="#00c7ff" r="22.342857" cx="-653.1527"
+                class="id_努力" cy="69.03698" stroke="#008bb2"
+                stroke-opacity="1.0" stroke-width="3.8857143"/>
+        <circle fill-opacity="1.0" fill="#8cb900" r="11.828572" cx="-18.779411"
+                class="id_朴实" cy="-474.73846" stroke="#628100"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="-420.24338"
+                class="id_贤惠" cy="-520.61414" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="11.828572" cx="666.33527"
+                class="id_不适" cy="-74.151306" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="-662.5659"
+                class="id_幸运" cy="-149.45357" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="-230.27838"
+                class="id_平淡" cy="-635.55884" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#00c7ff" r="17.085714" cx="335.58755"
+                class="id_平安" cy="324.1715" stroke="#008bb2"
+                stroke-opacity="1.0" stroke-width="2.9714284"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="1.0404516"
+                class="id_健康" cy="-253.9771" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#8cb900" r="11.828572" cx="-394.8886"
+                class="id_快乐" cy="-247.68251" stroke="#628100"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="209.91272"
+                class="id_温柔" cy="-179.98216" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="-431.29352"
+                class="id_恭喜" cy="205.07962" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="622.7755"
+                class="id_温暖" cy="-306.7264" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#00c7ff" r="19.714287" cx="673.43475"
+                class="id_美好" cy="157.97238" stroke="#008bb2"
+                stroke-opacity="1.0" stroke-width="3.4285715"/>
+        <circle fill-opacity="1.0" fill="#8cb900" r="11.828572" cx="410.13022"
+                class="id_淳朴" cy="-309.04932" stroke="#628100"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="175.02296"
+                class="id_荒唐" cy="670.5943" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="-3.1400855"
+                class="id_健全" cy="-685.6214" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="9.2" cx="-282.21667"
+                class="id_干净" cy="618.76074" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="1.5999999"/>
+        <circle fill-opacity="1.0" fill="#d97dd8" r="11.828572" cx="-283.29672"
+                class="id_尊重" cy="377.5767" stroke="#975797"
+                stroke-opacity="1.0" stroke-width="2.057143"/>
+    </g>
+    <g id="node-labels">
+        <text font-size="54" x="442.3539" y="-509.54706" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_确实">
+            确实
+        </text>
+        <text font-size="31" x="232.34003" y="-637.0677" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_厉害">
+            厉害
+        </text>
+        <text font-size="26" x="204.78651" y="-418.89783" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_优秀">
+            优秀
+        </text>
+        <text font-size="37" x="-443.14072" y="-29.50597" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_不错">
+            不错
+        </text>
+        <text font-size="60" x="437.01233" y="-72.85657" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_善良">
+            善良
+        </text>
+        <text font-size="26" x="22.464909" y="-3.8678074" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_平利">
+            平利
+        </text>
+        <text font-size="26" x="466.22394" y="149.12257" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_遗憾">
+            遗憾
+        </text>
+        <text font-size="26" x="565.73224" y="389.4652" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_麻烦">
+            麻烦
+        </text>
+        <text font-size="26" x="-583.1269" y="-358.15225" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_好奇">
+            好奇
+        </text>
+        <text font-size="37" x="-242.89067" y="87.92807" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_漂亮">
+            漂亮
+        </text>
+        <text font-size="100" x="-186.08934" y="-106.70253" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_幸福">
+            幸福
+        </text>
+        <text font-size="43" x="-222.90437" y="-372.1153" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_辛苦">
+            辛苦
+        </text>
+        <text font-size="43" x="-478.4724" y="490.69202" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_心疼">
+            心疼
+        </text>
+        <text font-size="49" x="249.35725" y="63.507183" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_干活">
+            干活
+        </text>
+        <text font-size="20" x="-89.65704" y="218.95815" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_简单">
+            简单
+        </text>
+        <text font-size="20" x="150.18886" y="471.76956" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_细腻">
+            细腻
+        </text>
+        <text font-size="20" x="-61.579903" y="676.5344" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_成熟">
+            成熟
+        </text>
+        <text font-size="26" x="125.37249" y="239.93758" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_舒适">
+            舒适
+        </text>
+        <text font-size="26" x="396.00113" y="561.0165" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_聪明">
+            聪明
+        </text>
+        <text font-size="37" x="-626.2588" y="306.18643" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_舒服">
+            舒服
+        </text>
+        <text font-size="54" x="-72.09702" y="449.05814" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_勤劳">
+            勤劳
+        </text>
+        <text font-size="49" x="-653.1527" y="80.2821" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_努力">
+            努力
+        </text>
+        <text font-size="26" x="-18.779411" y="-468.7209" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_朴实">
+            朴实
+        </text>
+        <text font-size="20" x="-420.24338" y="-516.12195" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_贤惠">
+            贤惠
+        </text>
+        <text font-size="26" x="666.33527" y="-68.387634" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_不适">
+            不适
+        </text>
+        <text font-size="20" x="-662.5659" y="-144.88326" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_幸运">
+            幸运
+        </text>
+        <text font-size="20" x="-230.27838" y="-630.94946" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_平淡">
+            平淡
+        </text>
+        <text font-size="37" x="335.58755" y="332.735" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_平安">
+            平安
+        </text>
+        <text font-size="20" x="1.0404516" y="-249.38725" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_健康">
+            健康
+        </text>
+        <text font-size="26" x="-394.8886" y="-241.7665" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_快乐">
+            快乐
+        </text>
+        <text font-size="20" x="209.91272" y="-175.58763" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_温柔">
+            温柔
+        </text>
+        <text font-size="20" x="-431.29352" y="209.66946" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_恭喜">
+            恭喜
+        </text>
+        <text font-size="20" x="622.7755" y="-302.07797" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_温暖">
+            温暖
+        </text>
+        <text font-size="43" x="673.43475" y="168.00851" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_美好">
+            美好
+        </text>
+        <text font-size="26" x="410.13022" y="-303.03174" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_淳朴">
+            淳朴
+        </text>
+        <text font-size="20" x="175.02296" y="675.1646" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_荒唐">
+            荒唐
+        </text>
+        <text font-size="20" x="-3.1400855" y="-681.09015" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_健全">
+            健全
+        </text>
+        <text font-size="20" x="-282.21667" y="623.4092" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_干净">
+            干净
+        </text>
+        <text font-size="26" x="-283.29672" y="383.5181" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="黑体" class="id_尊重">
+            尊重
+        </text>
+    </g>
+</svg>
