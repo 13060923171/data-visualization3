@@ -30,7 +30,7 @@ def data_process():
     )
 
     # 只保留 LABEL_0 和 LABEL_1（排除其他可能存在的类别）
-    result = result[["发布时间", "LABEL_0", "LABEL_1"]]
+    result = result[["发布时间", "LABEL_0", "LABEL_1", "LABEL_2"]]
 
     new_df = pd.merge(df1,result,left_on=['Date'],right_on=['发布时间'])
     new_df = new_df.drop(['发布时间'],axis=1)
@@ -42,8 +42,8 @@ def data_process():
 def main1():
     df = data_process()
     # 计算情感指标
-    df["Sentiment_Ratio"] = df["LABEL_1"] / (df["LABEL_0"] + df["LABEL_1"])  # 正面情感占比
-    df["Sentiment_Net"] = df["LABEL_1"] - df["LABEL_0"]  # 净情感数量
+    df["Sentiment_Ratio"] = df["LABEL_2"] / (df["LABEL_0"] + df["LABEL_1"] + df["LABEL_2"])  # 正面情感占比
+    df["Sentiment_Net"] = df["LABEL_2"] - (df["LABEL_0"] + df["LABEL_1"])  # 净情感数量
     # 优化2：分箱处理
     df["Sentiment_Net_Bin"] = pd.cut(
         df["Sentiment_Net"],

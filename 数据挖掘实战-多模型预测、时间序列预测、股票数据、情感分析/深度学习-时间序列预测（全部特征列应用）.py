@@ -61,8 +61,8 @@ data['收盘价_log'] = np.log1p(data['收盘价'])
 
 
 # 计算情感指标
-data["Sentiment_Ratio"] = data["LABEL_1"] / (data["LABEL_0"] + data["LABEL_1"])  # 正面情感占比
-data["Sentiment_Net"] = data["LABEL_1"] - data["LABEL_0"]  # 净情感数量
+data["Sentiment_Ratio"] = data["LABEL_2"] / (data["LABEL_0"] + data["LABEL_1"] + data["LABEL_2"])  # 正面情感占比
+data["Sentiment_Net"] = data["LABEL_2"] - (data["LABEL_0"] + data["LABEL_1"])  # 净情感数量
 
 # 外部经济指标交互
 data['GOLD_RATIO'] = data['收盘价'] / data['黄金价格:美元']

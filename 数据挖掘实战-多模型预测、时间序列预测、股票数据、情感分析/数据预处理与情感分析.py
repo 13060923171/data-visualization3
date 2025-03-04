@@ -22,7 +22,7 @@ df['发布内容'] = df['发布内容'].astype('str')
 
 device = 0 if torch.cuda.is_available() else -1  # 使用GPU（如果可用）
 # 使用更高效的模型和GPU
-classifier = pipeline("sentiment-analysis", model="bert-base-uncased", device=device)
+classifier = pipeline("sentiment-analysis", model="cardiffnlp/twitter-roberta-base-sentiment", device=device)
 
 # 并行化处理文本
 def classify_text(text):
