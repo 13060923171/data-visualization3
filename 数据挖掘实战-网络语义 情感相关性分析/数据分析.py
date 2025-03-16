@@ -46,6 +46,7 @@ def data_process(x):
 
 df['品牌'] = df['fenci'].apply(data_process)
 
+df.to_csv('new_data.csv',index=False)
 
 # 辅助函数（处理正则匹配）
 def contains_keyword(text, word):
@@ -307,8 +308,8 @@ if __name__ == '__main__':
 
     new_df = df['品牌'].value_counts()
     new_df = new_df[1:]
-    x_data = [x for x in new_df.index]
-    y_data = [y for y in new_df.values]
+    x_data = ['小米', '特斯拉', '品牌共现']
+    y_data = [845,677,1197]
     pp_bar(x_data,y_data)
 
 
