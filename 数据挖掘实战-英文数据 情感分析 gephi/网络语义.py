@@ -62,18 +62,18 @@ def process_weight_csv(input_csv_path, output_entity_path, output_weight_path):
     df1 = data[['Word1', 'Word2', 'Weight']].rename(columns={'Word1': 'Source', 'Word2': 'Target'})
     df1['Type'] = 'Undirected'
     df1['Weight'] = df1['Weight'].astype(int)
-    new_df1 = df1[df1['Weight'] >= 2].dropna()
+    new_df1 = df1[df1['Weight'] >= 10].dropna()
     new_df1.to_csv(output_weight_path, encoding='utf-8-sig', index=False)
 
 
 def main():
     data_dirs = ['.']
     for data_dir in data_dirs:
-        input_file_path = os.path.join(data_dir, 'new_comment.csv')
-        output_txt_path = os.path.join(data_dir, 'weight.txt')
-        output_csv_path = os.path.join(data_dir, 'weight.csv')
-        output_entity_path = os.path.join(data_dir, 'entity.csv')
-        output_weight_path = os.path.join(data_dir, f'new_weight.csv')
+        input_file_path = os.path.join(data_dir, 'new_data.csv')
+        output_txt_path = os.path.join(data_dir, './总（评论、转发）/weight.txt')
+        output_csv_path = os.path.join(data_dir, './总（评论、转发）/weight.csv')
+        output_entity_path = os.path.join(data_dir, './总（评论、转发）/entity.csv')
+        output_weight_path = os.path.join(data_dir, f'./总（评论、转发）/new_weight.csv')
 
         word_list, coo_dict = process_csv_file(input_file_path)
         write_txt_output(output_txt_path, word_list, coo_dict)
