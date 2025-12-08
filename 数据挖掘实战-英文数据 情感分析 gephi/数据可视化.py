@@ -3,6 +3,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from matplotlib.ticker import MaxNLocator
+import matplotlib
 matplotlib.use('Agg')  # 使用Agg后端
 sns.set_style(style="whitegrid")
 
